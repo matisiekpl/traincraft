@@ -2,6 +2,10 @@
 
 Minecraft 26.2 mod built with NeoForge and Java 25.
 
+Port of Traincraft to NeoForge by Mateusz Woźniak. Traincraft was originally created by
+Spitfire4466 and Mrbrutal; the 1.7.10 Community Edition was maintained by EternalBlueFlame
+and NitroxydeX.
+
 ## Source Sets
 
 - `main`: railway gameplay, vehicle simulation, client rendering and bundled definitions.

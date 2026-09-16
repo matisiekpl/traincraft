@@ -1,15 +1,18 @@
 modLoader="javafml"
 loaderVersion="[1,)"
 license="${mod_license}"
-issueTrackerURL="https://github.com/Traincraft/Traincraft/issues"
+issueTrackerURL="https://github.com/matisiekpl/traincraft/issues"
 
 [[mods]]
 modId="${mod_id}"
 version="${mod_version}"
 displayName="${mod_name}"
-authors="Spitfire4466, Mrbrutal, Mateusz and the Traincraft team"
+authors="Mateusz Woźniak"
+credits="Original Traincraft by Spitfire4466 and Mrbrutal; 1.7.10 Community Edition by EternalBlueFlame and NitroxydeX"
 description='''
 Traincraft adds locomotives, rolling stock, and a railway network with straights, curves, slopes, switches and crossings.
+
+This is a port of Traincraft to NeoForge by Mateusz Woźniak. Traincraft was originally created by Spitfire4466 and Mrbrutal; the 1.7.10 Community Edition was maintained by EternalBlueFlame and NitroxydeX.
 '''
 
 [[dependencies.${mod_id}]]
