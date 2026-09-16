@@ -64,6 +64,7 @@ neoForge {
         gameTestServer {
             type = "gameTestServer"
             systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+            systemProperty 'tc.gametestReport', file('build/test-results/gametest/TEST-gametest.xml').absolutePath
         }
 
         data {
