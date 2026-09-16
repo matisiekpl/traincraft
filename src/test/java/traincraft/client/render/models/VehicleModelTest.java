@@ -102,7 +102,7 @@ class VehicleModelTest {
     @Test
     void everySupportedLiveryHasAReadableTexture() throws IOException {
         var prefixes = java.util.Map.of(
-                "locoSteamBR80", "trains/locobr80_db_",
+                "locoSteamBR80", "ported/locobr80_db_",
                 "locoElectricBR185", "ported/br185_engine_",
                 "ES44", "ported/es44_",
                 "locoDieselSD40", "ported/locosd40_",
