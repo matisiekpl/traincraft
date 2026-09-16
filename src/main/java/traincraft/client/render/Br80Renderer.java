@@ -19,7 +19,7 @@ public class Br80Renderer extends EntityRenderer<Br80LocomotiveEntity, RollingSt
 
     private static final Identifier WINTER_TEXTURE =
             Identifier.fromNamespaceAndPath(
-                    Traincraft.MODID, "textures/trains/locobr80_db_winter.png");
+                    Traincraft.MODID, "textures/ported/locobr80_db_winter.png");
 
     private static final float[] MODEL_TRANSLATION = {-0.75F, -0.44F, 0.0F};
 
@@ -89,7 +89,7 @@ public class Br80Renderer extends EntityRenderer<Br80LocomotiveEntity, RollingSt
         collector.submitCustomGeometry(
                 poseStack,
                 RenderTypes.entityCutoutCull(holiday ? WINTER_TEXTURE : Identifier.fromNamespaceAndPath(
-                        Traincraft.MODID, "textures/trains/locobr80_db_"
+                        Traincraft.MODID, "textures/ported/locobr80_db_"
                                 + state.colour.toLowerCase(java.util.Locale.ROOT) + ".png")),
                 (pose, buffer) -> model.render(pose, buffer, light, wheelAngle, 0));
 

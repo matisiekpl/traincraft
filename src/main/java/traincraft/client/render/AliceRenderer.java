@@ -19,7 +19,7 @@ public class AliceRenderer extends EntityRenderer<AliceLocomotiveEntity, Rolling
 
     private static final Identifier TEXTURE =
             Identifier.fromNamespaceAndPath(
-                    Traincraft.MODID, "textures/trains/0-4-0-loco-alice.png");
+                    Traincraft.MODID, "textures/ported/0-4-0-loco-alice.png");
 
     private static final float[] MODEL_TRANSLATION = {0.0F, 0.15F, 0.0F};
     private static final float[] MODEL_ROTATION = {0.0F, 180.0F, 180.0F};

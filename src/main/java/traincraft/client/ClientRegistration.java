@@ -74,7 +74,7 @@ public final class ClientRegistration {
                                 context,
                                 "freightcart",
                                 net.minecraft.resources.Identifier.fromNamespaceAndPath(
-                                        Traincraft.MODID, "textures/trains/freightcart.png"),
+                                        Traincraft.MODID, "textures/ported/freightcart.png"),
                                 new float[] {0.0F, -0.32F, 0.0F},
                                 new float[] {0.0F, 0.0F, 0.0F},
                                 new float[] {1.0F, 1.0F, 1.0F}));
