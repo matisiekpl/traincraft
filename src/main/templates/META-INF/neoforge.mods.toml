@@ -1,0 +1,34 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="${mod_license}"
+issueTrackerURL="https://github.com/Traincraft/Traincraft/issues"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="Spitfire4466, Mrbrutal, Mateusz and the Traincraft team"
+description='''
+Traincraft adds locomotives, rolling stock, and a railway network with straights, curves, slopes, switches and crossings.
+'''
+
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="[${neo_version},)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="jei"
+    type="optional"
+    versionRange="[30,)"
+    ordering="AFTER"
+    side="CLIENT"

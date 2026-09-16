@@ -1,0 +1,39 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 1,
+      "ingredient": "tc:bogie",
+      "count": 4
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:steel_frame",
+      "count": 4
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/steel",
+      "count": 2
+    },
+    {
+      "slot": 8,
+      "ingredient": "#minecraft:coals",
+      "count": 2
+    },
+    {
+      "slot": 9,
+      "ingredient": "minecraft:black_dye"
+    }
+  ],
+  "result": {
+    "id": "tc:tender_berk_1225",
+    "components": {
+      "minecraft:custom_data": {
+        "trainColor": "Black"
+      }
+    }
+  },
+  "tier": 2
+}

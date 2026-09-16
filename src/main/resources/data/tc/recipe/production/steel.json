@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "tc:config",
+      "key": "MAKE_MODPACKS_GREAT_AGAIN",
+      "value": false
+    }
+  ],
+  "type": "tc:machine",
+  "machine": "open_hearth_furnace",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#c:ingots/iron"
+    },
+    {
+      "slot": 1,
+      "ingredient": "tc:graphite"
+    }
+  ],
+  "result": {
+    "id": "tc:steel_ingot"
+  },
+  "duration": 1000
+}

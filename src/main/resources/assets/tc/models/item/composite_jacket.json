@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tc:item/composite_jacket",
+    "layer1": "tc:item/composite_jacket_overlay"
+  }
+}

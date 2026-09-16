@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    "I I",
+    "RRR"
+  ],
+  "key": {
+    "W": "#minecraft:planks",
+    "R": "minecraft:rail",
+    "I": "#c:ingots/iron"
+  },
+  "result": {
+    "id": "tc:stopper",
+    "count": 1
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "parent": "tc:fine_copper_wire",
+  "criteria": {
+    "has_electronic_circuit": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:electronic_circuit"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.electronic_circuit.description"
+    },
+    "icon": {
+      "id": "tc:electronic_circuit"
+    },
+    "title": {
+      "translate": "advancements.tc.electronic_circuit.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_electronic_circuit"
+    ]
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "tc:item/track_two_ways_crossing"
+  }
+}

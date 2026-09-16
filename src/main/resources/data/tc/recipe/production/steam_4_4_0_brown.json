@@ -1,0 +1,54 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 1,
+      "ingredient": "tc:iron_bogie",
+      "count": 3
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:wooden_frame",
+      "count": 2
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:rods/wooden",
+      "count": 2
+    },
+    {
+      "slot": 4,
+      "ingredient": "tc:iron_chimney",
+      "count": 1
+    },
+    {
+      "slot": 5,
+      "ingredient": "tc:wooden_cab",
+      "count": 1
+    },
+    {
+      "slot": 6,
+      "ingredient": "tc:iron_boiler",
+      "count": 1
+    },
+    {
+      "slot": 7,
+      "ingredient": "tc:iron_firebox",
+      "count": 1
+    },
+    {
+      "slot": 9,
+      "ingredient": "minecraft:brown_dye"
+    }
+  ],
+  "result": {
+    "id": "tc:loco_steam_4_4_0",
+    "components": {
+      "minecraft:custom_data": {
+        "trainColor": "Brown"
+      }
+    }
+  },
+  "tier": 1
+}

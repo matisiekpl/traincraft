@@ -1,0 +1,43 @@
+{
+  "parent": "tc:assembly_table",
+  "criteria": {
+    "has_minecart_work": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:work_work_cart"
+          }
+        ]
+      }
+    },
+    "has_minecart_caboose_work": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:work_work_caboose"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.work_cart.description"
+    },
+    "icon": {
+      "id": "tc:work_work_cart"
+    },
+    "title": {
+      "translate": "advancements.tc.work_cart.title"
+    },
+    "frame": "challenge"
+  },
+  "requirements": [
+    [
+      "has_minecart_work",
+      "has_minecart_caboose_work"
+    ]
+  ]
+}

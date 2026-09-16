@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SRS"
+  ],
+  "key": {
+    "S": "minecraft:light_blue_terracotta",
+    "R": "minecraft:rail"
+  },
+  "result": {
+    "id": "tc:track_small_road_crossing_2",
+    "count": 1
+  }
+}

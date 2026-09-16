@@ -1,0 +1,59 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "tc:controls",
+      "count": 1
+    },
+    {
+      "slot": 1,
+      "ingredient": "tc:bogie",
+      "count": 2
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:steel_frame",
+      "count": 1
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/steel",
+      "count": 2
+    },
+    {
+      "slot": 4,
+      "ingredient": "tc:steel_chimney",
+      "count": 1
+    },
+    {
+      "slot": 5,
+      "ingredient": "tc:steel_cab",
+      "count": 1
+    },
+    {
+      "slot": 6,
+      "ingredient": "tc:transmission",
+      "count": 1
+    },
+    {
+      "slot": 7,
+      "ingredient": "tc:diesel_engine",
+      "count": 2
+    },
+    {
+      "slot": 9,
+      "ingredient": "minecraft:red_dye"
+    }
+  ],
+  "result": {
+    "id": "tc:loco_diesel_kof",
+    "components": {
+      "minecraft:custom_data": {
+        "trainColor": "Red"
+      }
+    }
+  },
+  "tier": 3
+}

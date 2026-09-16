@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "tc:copper_ore",
+    "tc:oil_sands",
+    "tc:petroleum_ore"
+  ]
+}

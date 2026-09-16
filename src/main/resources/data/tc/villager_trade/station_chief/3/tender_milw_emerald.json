@@ -1,0 +1,11 @@
+{
+  "wants": {
+    "id": "tc:tender_milw"
+  },
+  "gives": {
+    "id": "minecraft:emerald",
+    "count": 5
+  },
+  "max_uses": 12,
+  "xp": 5
+}

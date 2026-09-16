@@ -1,0 +1,54 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#c:ingots/iron",
+      "count": 2
+    },
+    {
+      "slot": 1,
+      "ingredient": "tc:iron_bogie",
+      "count": 3
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:steel_frame",
+      "count": 2
+    },
+    {
+      "slot": 3,
+      "ingredient": "minecraft:lime_dye"
+    },
+    {
+      "slot": 4,
+      "ingredient": "tc:steel_chimney",
+      "count": 1
+    },
+    {
+      "slot": 5,
+      "ingredient": "tc:steel_cab",
+      "count": 1
+    },
+    {
+      "slot": 6,
+      "ingredient": "tc:iron_boiler",
+      "count": 2
+    },
+    {
+      "slot": 7,
+      "ingredient": "tc:iron_firebox",
+      "count": 1
+    }
+  ],
+  "result": {
+    "id": "tc:loco_steam_a4",
+    "components": {
+      "minecraft:custom_data": {
+        "trainColor": "Lime"
+      }
+    }
+  },
+  "tier": 2
+}

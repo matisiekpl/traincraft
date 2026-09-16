@@ -1,0 +1,35 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#minecraft:planks",
+      "count": 4
+    },
+    {
+      "slot": 1,
+      "ingredient": "tc:iron_bogie",
+      "count": 2
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:iron_frame",
+      "count": 4
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/iron",
+      "count": 2
+    },
+    {
+      "slot": 8,
+      "ingredient": "minecraft:chest",
+      "count": 1
+    }
+  ],
+  "result": {
+    "id": "tc:freight_closed_red_brown"
+  },
+  "tier": 1
+}

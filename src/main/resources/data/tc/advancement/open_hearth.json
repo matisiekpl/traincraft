@@ -1,0 +1,31 @@
+{
+  "parent": "tc:root",
+  "criteria": {
+    "has_open_furnace_idle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:open_hearth_furnace"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.open_hearth.description"
+    },
+    "icon": {
+      "id": "tc:open_hearth_furnace"
+    },
+    "title": {
+      "translate": "advancements.tc.open_hearth.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_open_furnace_idle"
+    ]
+  ]
+}

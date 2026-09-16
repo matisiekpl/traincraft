@@ -1,0 +1,22 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 5,
+      "ingredient": "tc:steel_chimney"
+    },
+    {
+      "slot": 7,
+      "ingredient": "tc:firebox"
+    },
+    {
+      "slot": 8,
+      "ingredient": "tc:boiler"
+    }
+  ],
+  "result": {
+    "id": "tc:steam_engine",
+    "count": 1
+  }
+}

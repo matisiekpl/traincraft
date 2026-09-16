@@ -1,0 +1,46 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#c:ingots/copper"
+    },
+    {
+      "slot": 1,
+      "ingredient": "#c:ingots/copper"
+    },
+    {
+      "slot": 2,
+      "ingredient": "#c:ingots/copper"
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/copper"
+    },
+    {
+      "slot": 4,
+      "ingredient": "#c:plastics"
+    },
+    {
+      "slot": 5,
+      "ingredient": "#c:ingots/copper"
+    },
+    {
+      "slot": 6,
+      "ingredient": "#c:ingots/copper"
+    },
+    {
+      "slot": 7,
+      "ingredient": "#c:ingots/copper"
+    },
+    {
+      "slot": 8,
+      "ingredient": "#c:ingots/copper"
+    }
+  ],
+  "result": {
+    "id": "tc:fine_copper_wire",
+    "count": 6
+  }
+}

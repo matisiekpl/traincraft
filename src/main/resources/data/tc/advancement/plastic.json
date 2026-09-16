@@ -1,0 +1,31 @@
+{
+  "parent": "tc:distilation_tower",
+  "criteria": {
+    "has_raw_plastic": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:raw_plastic"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.plastic.description"
+    },
+    "icon": {
+      "id": "tc:raw_plastic"
+    },
+    "title": {
+      "translate": "advancements.tc.plastic.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_plastic"
+    ]
+  ]
+}

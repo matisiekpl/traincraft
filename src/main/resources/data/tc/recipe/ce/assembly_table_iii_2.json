@@ -1,0 +1,46 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "minecraft:gold_ingot"
+    },
+    {
+      "slot": 1,
+      "ingredient": "minecraft:piston"
+    },
+    {
+      "slot": 2,
+      "ingredient": "minecraft:gold_ingot"
+    },
+    {
+      "slot": 3,
+      "ingredient": "minecraft:diamond"
+    },
+    {
+      "slot": 4,
+      "ingredient": "minecraft:glowstone"
+    },
+    {
+      "slot": 5,
+      "ingredient": "minecraft:diamond"
+    },
+    {
+      "slot": 6,
+      "ingredient": "minecraft:obsidian"
+    },
+    {
+      "slot": 7,
+      "ingredient": "minecraft:piston"
+    },
+    {
+      "slot": 8,
+      "ingredient": "minecraft:obsidian"
+    }
+  ],
+  "result": {
+    "id": "tc:assembly_table_iii",
+    "count": 1
+  }
+}

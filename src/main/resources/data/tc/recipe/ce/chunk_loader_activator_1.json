@@ -1,0 +1,22 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 2,
+      "ingredient": "minecraft:ender_pearl"
+    },
+    {
+      "slot": 4,
+      "ingredient": "minecraft:blaze_rod"
+    },
+    {
+      "slot": 6,
+      "ingredient": "minecraft:blaze_rod"
+    }
+  ],
+  "result": {
+    "id": "tc:chunk_loader_activator",
+    "count": 1
+  }
+}

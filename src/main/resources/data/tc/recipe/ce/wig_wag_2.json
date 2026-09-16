@@ -1,0 +1,30 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#c:ingots/iron"
+    },
+    {
+      "slot": 1,
+      "ingredient": "minecraft:lever"
+    },
+    {
+      "slot": 2,
+      "ingredient": "#c:ingots/iron"
+    },
+    {
+      "slot": 4,
+      "ingredient": "#c:ingots/iron"
+    },
+    {
+      "slot": 7,
+      "ingredient": "#c:ingots/iron"
+    }
+  ],
+  "result": {
+    "id": "tc:wig_wag",
+    "count": 1
+  }
+}

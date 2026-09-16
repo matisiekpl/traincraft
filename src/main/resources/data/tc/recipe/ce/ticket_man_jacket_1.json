@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X X",
+    "XPX",
+    "X#X"
+  ],
+  "key": {
+    "P": "minecraft:leather_chestplate",
+    "#": "#c:dyes/blue",
+    "X": "minecraft:string"
+  },
+  "result": {
+    "id": "tc:ticket_man_jacket",
+    "count": 1
+  }
+}

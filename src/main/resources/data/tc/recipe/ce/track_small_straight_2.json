@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "R"
+  ],
+  "key": {
+    "R": "minecraft:rail"
+  },
+  "result": {
+    "id": "tc:track_small_straight",
+    "count": 1
+  }
+}

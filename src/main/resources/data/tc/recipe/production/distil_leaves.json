@@ -1,0 +1,17 @@
+{
+  "type": "tc:machine",
+  "machine": "distillation_tower",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#minecraft:leaves"
+    }
+  ],
+  "result": {
+    "id": "tc:raw_plastic",
+    "count": 2
+  },
+  "duration": 400,
+  "chance": 6,
+  "diesel": 1000
+}

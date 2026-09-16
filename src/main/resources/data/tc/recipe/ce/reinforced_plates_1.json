@@ -1,0 +1,46 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "tc:reinforced_plastic"
+    },
+    {
+      "slot": 1,
+      "ingredient": "tc:reinforced_plastic"
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:reinforced_plastic"
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/steel"
+    },
+    {
+      "slot": 4,
+      "ingredient": "#c:ingots/steel"
+    },
+    {
+      "slot": 5,
+      "ingredient": "#c:ingots/steel"
+    },
+    {
+      "slot": 6,
+      "ingredient": "minecraft:clay_ball"
+    },
+    {
+      "slot": 7,
+      "ingredient": "minecraft:clay_ball"
+    },
+    {
+      "slot": 8,
+      "ingredient": "minecraft:clay_ball"
+    }
+  ],
+  "result": {
+    "id": "tc:reinforced_plates",
+    "count": 1
+  }
+}

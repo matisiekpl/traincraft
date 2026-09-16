@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:redstone",
+    "minecraft:gravel"
+  ],
+  "result": {
+    "id": "tc:powered_gravel",
+    "count": 1
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "tc:block/ato_stop_transmitter"
+  }
+}

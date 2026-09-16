@@ -1,0 +1,15 @@
+{
+  "trackType": "EMBEDDED_RIGHT_TURN_29X29",
+  "facing": 1,
+  "playerYaw": 70.0,
+  "origin": [
+    0,
+    64,
+    0
+  ],
+  "onItemUseReturned": false,
+  "yaw": 70.0,
+  "resolvedType": "EMBEDDED_TURN_29X29",
+  "blocks": [],
+  "lean": "left"
+}

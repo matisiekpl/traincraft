@@ -1,0 +1,44 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#minecraft:planks",
+      "count": 6
+    },
+    {
+      "slot": 1,
+      "ingredient": "tc:iron_bogie",
+      "count": 2
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:iron_frame",
+      "count": 2
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/iron",
+      "count": 2
+    },
+    {
+      "slot": 8,
+      "ingredient": "minecraft:chest",
+      "count": 2
+    },
+    {
+      "slot": 9,
+      "ingredient": "minecraft:purple_dye"
+    }
+  ],
+  "result": {
+    "id": "tc:freight_bap40highcube",
+    "components": {
+      "minecraft:custom_data": {
+        "trainColor": "Purple"
+      }
+    }
+  },
+  "tier": 1
+}

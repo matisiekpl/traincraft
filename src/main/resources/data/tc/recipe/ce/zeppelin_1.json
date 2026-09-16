@@ -1,0 +1,46 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "tc:balloon"
+    },
+    {
+      "slot": 1,
+      "ingredient": "tc:balloon"
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:balloon"
+    },
+    {
+      "slot": 3,
+      "ingredient": "tc:propeller"
+    },
+    {
+      "slot": 4,
+      "ingredient": "tc:controls"
+    },
+    {
+      "slot": 5,
+      "ingredient": "tc:propeller"
+    },
+    {
+      "slot": 6,
+      "ingredient": "tc:electric_motor"
+    },
+    {
+      "slot": 7,
+      "ingredient": "tc:seats"
+    },
+    {
+      "slot": 8,
+      "ingredient": "tc:electric_motor"
+    }
+  ],
+  "result": {
+    "id": "tc:zeppelin",
+    "count": 1
+  }
+}

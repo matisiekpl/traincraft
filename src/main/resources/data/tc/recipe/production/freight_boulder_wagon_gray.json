@@ -1,0 +1,39 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "minecraft:gray_dye"
+    },
+    {
+      "slot": 1,
+      "ingredient": "tc:wooden_bogie",
+      "count": 2
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:iron_frame",
+      "count": 1
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/iron",
+      "count": 2
+    },
+    {
+      "slot": 6,
+      "ingredient": "minecraft:mossy_cobblestone",
+      "count": 1
+    }
+  ],
+  "result": {
+    "id": "tc:freight_boulder_wagon",
+    "components": {
+      "minecraft:custom_data": {
+        "trainColor": "Grey"
+      }
+    }
+  },
+  "tier": 1
+}

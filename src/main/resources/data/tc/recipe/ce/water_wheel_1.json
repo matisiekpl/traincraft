@@ -1,0 +1,30 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 1,
+      "ingredient": "#minecraft:logs"
+    },
+    {
+      "slot": 3,
+      "ingredient": "#minecraft:logs"
+    },
+    {
+      "slot": 4,
+      "ingredient": "tc:generator"
+    },
+    {
+      "slot": 5,
+      "ingredient": "#minecraft:logs"
+    },
+    {
+      "slot": 7,
+      "ingredient": "#minecraft:logs"
+    }
+  ],
+  "result": {
+    "id": "tc:water_wheel",
+    "count": 1
+  }
+}

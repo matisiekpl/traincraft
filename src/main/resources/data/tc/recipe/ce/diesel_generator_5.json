@@ -1,0 +1,22 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 1,
+      "ingredient": "tc:steel_chimney"
+    },
+    {
+      "slot": 3,
+      "ingredient": "tc:electronic_circuit"
+    },
+    {
+      "slot": 4,
+      "ingredient": "tc:diesel_engine"
+    }
+  ],
+  "result": {
+    "id": "tc:diesel_generator",
+    "count": 1
+  }
+}

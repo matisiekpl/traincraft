@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RIR",
+    " I ",
+    " L "
+  ],
+  "key": {
+    "L": "minecraft:redstone_lamp",
+    "I": "minecraft:iron_ingot",
+    "R": "minecraft:redstone"
+  },
+  "result": {
+    "id": "tc:k_signal",
+    "count": 1
+  }
+}

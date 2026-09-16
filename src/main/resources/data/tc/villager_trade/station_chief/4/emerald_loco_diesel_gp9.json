@@ -1,0 +1,11 @@
+{
+  "wants": {
+    "id": "minecraft:emerald",
+    "count": 4
+  },
+  "gives": {
+    "id": "tc:loco_diesel_gp9"
+  },
+  "max_uses": 12,
+  "xp": 5
+}

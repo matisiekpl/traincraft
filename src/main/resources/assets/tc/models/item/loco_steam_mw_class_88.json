@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tc:item/trains/0-8-0_box_tank_icon"
+  }
+}

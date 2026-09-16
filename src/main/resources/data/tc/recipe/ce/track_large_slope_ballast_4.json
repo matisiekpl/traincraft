@@ -1,0 +1,18 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 4,
+      "ingredient": "tc:track_slope_ballast"
+    },
+    {
+      "slot": 6,
+      "ingredient": "tc:track_slope_ballast"
+    }
+  ],
+  "result": {
+    "id": "tc:track_large_slope_ballast",
+    "count": 1
+  }
+}

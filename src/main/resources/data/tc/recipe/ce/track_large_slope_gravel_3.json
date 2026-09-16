@@ -1,0 +1,18 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 2,
+      "ingredient": "tc:track_slope_gravel"
+    },
+    {
+      "slot": 4,
+      "ingredient": "tc:track_slope_gravel"
+    }
+  ],
+  "result": {
+    "id": "tc:track_large_slope_gravel",
+    "count": 1
+  }
+}

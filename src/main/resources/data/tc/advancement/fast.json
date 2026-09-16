@@ -1,0 +1,42 @@
+{
+  "parent": "tc:elect_motor",
+  "criteria": {
+    "has_minecart_vl10": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_electric_vl10"
+          }
+        ]
+      }
+    },
+    "has_minecart_br_e69": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_electric_br_e69"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.fast.description"
+    },
+    "icon": {
+      "id": "tc:loco_electric_vl10"
+    },
+    "title": {
+      "translate": "advancements.tc.fast.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_minecart_vl10",
+      "has_minecart_br_e69"
+    ]
+  ]
+}

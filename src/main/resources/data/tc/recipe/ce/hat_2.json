@@ -1,0 +1,38 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 1,
+      "ingredient": "#c:dyes/blue"
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:dyes/blue"
+    },
+    {
+      "slot": 4,
+      "ingredient": "minecraft:leather_helmet"
+    },
+    {
+      "slot": 5,
+      "ingredient": "#c:dyes/blue"
+    },
+    {
+      "slot": 6,
+      "ingredient": "minecraft:string"
+    },
+    {
+      "slot": 7,
+      "ingredient": "#c:dyes/blue"
+    },
+    {
+      "slot": 8,
+      "ingredient": "minecraft:string"
+    }
+  ],
+  "result": {
+    "id": "tc:hat",
+    "count": 1
+  }
+}

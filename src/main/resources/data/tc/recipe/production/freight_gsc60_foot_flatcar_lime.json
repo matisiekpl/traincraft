@@ -1,0 +1,44 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#minecraft:planks",
+      "count": 2
+    },
+    {
+      "slot": 1,
+      "ingredient": "tc:iron_bogie",
+      "count": 2
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:iron_frame",
+      "count": 3
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/iron",
+      "count": 2
+    },
+    {
+      "slot": 8,
+      "ingredient": "minecraft:chest",
+      "count": 2
+    },
+    {
+      "slot": 9,
+      "ingredient": "minecraft:lime_dye"
+    }
+  ],
+  "result": {
+    "id": "tc:freight_gsc60_foot_flatcar",
+    "components": {
+      "minecraft:custom_data": {
+        "trainColor": "Lime"
+      }
+    }
+  },
+  "tier": 2
+}

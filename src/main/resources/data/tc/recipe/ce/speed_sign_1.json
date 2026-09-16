@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "R",
+    "I",
+    "I"
+  ],
+  "key": {
+    "R": "#c:dyes/red",
+    "I": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "tc:speed_sign",
+    "count": 8
+  }
+}

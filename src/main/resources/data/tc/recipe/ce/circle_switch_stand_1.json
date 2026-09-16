@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "R ",
+    "S ",
+    "IW"
+  ],
+  "key": {
+    "R": "#c:dyes/red",
+    "S": "minecraft:stick",
+    "I": "minecraft:iron_ingot",
+    "W": "#minecraft:planks"
+  },
+  "result": {
+    "id": "tc:circle_switch_stand",
+    "count": 1
+  }
+}

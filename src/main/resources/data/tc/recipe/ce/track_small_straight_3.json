@@ -1,0 +1,38 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "minecraft:iron_ingot"
+    },
+    {
+      "slot": 2,
+      "ingredient": "minecraft:iron_ingot"
+    },
+    {
+      "slot": 3,
+      "ingredient": "tc:bolt"
+    },
+    {
+      "slot": 4,
+      "ingredient": "#minecraft:planks"
+    },
+    {
+      "slot": 5,
+      "ingredient": "tc:bolt"
+    },
+    {
+      "slot": 6,
+      "ingredient": "minecraft:iron_ingot"
+    },
+    {
+      "slot": 8,
+      "ingredient": "minecraft:iron_ingot"
+    }
+  ],
+  "result": {
+    "id": "tc:track_small_straight",
+    "count": 16
+  }
+}

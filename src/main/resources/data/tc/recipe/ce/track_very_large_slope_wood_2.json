@@ -1,0 +1,22 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 2,
+      "ingredient": "tc:track_slope_wood"
+    },
+    {
+      "slot": 4,
+      "ingredient": "tc:track_slope_wood"
+    },
+    {
+      "slot": 6,
+      "ingredient": "tc:track_slope_wood"
+    }
+  ],
+  "result": {
+    "id": "tc:track_very_large_slope_wood",
+    "count": 1
+  }
+}

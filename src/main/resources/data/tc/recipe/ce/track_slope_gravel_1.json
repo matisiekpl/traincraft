@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " TG",
+    "TGG",
+    "GGG"
+  ],
+  "key": {
+    "T": "tc:track_medium_straight",
+    "G": "minecraft:gravel"
+  },
+  "result": {
+    "id": "tc:track_slope_gravel",
+    "count": 1
+  }
+}

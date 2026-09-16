@@ -1,0 +1,40 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#c:ingots/steel",
+      "count": 6
+    },
+    {
+      "slot": 1,
+      "ingredient": "tc:bogie",
+      "count": 2
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:steel_frame",
+      "count": 3
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/steel",
+      "count": 2
+    },
+    {
+      "slot": 4,
+      "ingredient": "minecraft:paper",
+      "count": 1
+    },
+    {
+      "slot": 8,
+      "ingredient": "#minecraft:coals",
+      "count": 1
+    }
+  ],
+  "result": {
+    "id": "tc:tender_er_ussr"
+  },
+  "tier": 2
+}

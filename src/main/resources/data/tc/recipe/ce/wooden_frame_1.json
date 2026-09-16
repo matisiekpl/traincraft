@@ -1,0 +1,30 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#minecraft:planks"
+    },
+    {
+      "slot": 2,
+      "ingredient": "#minecraft:planks"
+    },
+    {
+      "slot": 3,
+      "ingredient": "#minecraft:planks"
+    },
+    {
+      "slot": 4,
+      "ingredient": "#minecraft:planks"
+    },
+    {
+      "slot": 5,
+      "ingredient": "#minecraft:planks"
+    }
+  ],
+  "result": {
+    "id": "tc:wooden_frame",
+    "count": 2
+  }
+}

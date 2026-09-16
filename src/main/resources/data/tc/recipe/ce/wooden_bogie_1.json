@@ -1,0 +1,30 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 1,
+      "ingredient": "#minecraft:planks"
+    },
+    {
+      "slot": 3,
+      "ingredient": "#minecraft:planks"
+    },
+    {
+      "slot": 4,
+      "ingredient": "#minecraft:logs"
+    },
+    {
+      "slot": 5,
+      "ingredient": "#minecraft:planks"
+    },
+    {
+      "slot": 7,
+      "ingredient": "#minecraft:planks"
+    }
+  ],
+  "result": {
+    "id": "tc:wooden_bogie",
+    "count": 4
+  }
+}

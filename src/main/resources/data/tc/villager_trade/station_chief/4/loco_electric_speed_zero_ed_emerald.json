@@ -1,0 +1,11 @@
+{
+  "wants": {
+    "id": "tc:loco_electric_speed_zero_ed"
+  },
+  "gives": {
+    "id": "minecraft:emerald",
+    "count": 17
+  },
+  "max_uses": 12,
+  "xp": 5
+}

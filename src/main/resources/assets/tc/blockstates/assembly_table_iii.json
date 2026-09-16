@@ -1,0 +1,36 @@
+{
+  "variants": {
+    "facing=north,lit=false": {
+      "model": "tc:block/assembly_table_iii",
+      "y": 0
+    },
+    "facing=east,lit=false": {
+      "model": "tc:block/assembly_table_iii",
+      "y": 90
+    },
+    "facing=south,lit=false": {
+      "model": "tc:block/assembly_table_iii",
+      "y": 180
+    },
+    "facing=west,lit=false": {
+      "model": "tc:block/assembly_table_iii",
+      "y": 270
+    },
+    "facing=north,lit=true": {
+      "model": "tc:block/assembly_table_iii_lit",
+      "y": 0
+    },
+    "facing=east,lit=true": {
+      "model": "tc:block/assembly_table_iii_lit",
+      "y": 90
+    },
+    "facing=south,lit=true": {
+      "model": "tc:block/assembly_table_iii_lit",
+      "y": 180
+    },
+    "facing=west,lit=true": {
+      "model": "tc:block/assembly_table_iii_lit",
+      "y": 270
+    }
+  }
+}

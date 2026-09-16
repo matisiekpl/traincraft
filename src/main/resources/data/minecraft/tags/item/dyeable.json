@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "tc:ticket_man_hat",
+    "tc:ticket_man_jacket",
+    "tc:ticket_man_pants",
+    "tc:driver_hat",
+    "tc:driver_jacket",
+    "tc:driver_pants",
+    "tc:composite_helmet",
+    "tc:composite_jacket",
+    "tc:composite_pants",
+    "tc:composite_boots"
+  ]
+}

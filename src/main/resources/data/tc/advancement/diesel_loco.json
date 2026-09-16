@@ -1,0 +1,97 @@
+{
+  "parent": "tc:diesel_engine",
+  "criteria": {
+    "has_minecart_gp7_red": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_diesel_gp7_red"
+          }
+        ]
+      }
+    },
+    "has_minecart_shunter": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_diesel_shunter"
+          }
+        ]
+      }
+    },
+    "has_minecart_chm_e3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_diesel_chme3"
+          }
+        ]
+      }
+    },
+    "has_minecart_cd742": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_diesel_gp40"
+          }
+        ]
+      }
+    },
+    "has_minecart_kof_db": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_diesel_kof"
+          }
+        ]
+      }
+    },
+    "has_minecart_loco_sd70": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_diesel_sd70"
+          }
+        ]
+      }
+    },
+    "has_minecart_v60_db": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_diesel_v60"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.diesel_loco.description"
+    },
+    "icon": {
+      "id": "tc:loco_diesel_gp40"
+    },
+    "title": {
+      "translate": "advancements.tc.diesel_loco.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_minecart_gp7_red",
+      "has_minecart_shunter",
+      "has_minecart_chm_e3",
+      "has_minecart_cd742",
+      "has_minecart_kof_db",
+      "has_minecart_loco_sd70",
+      "has_minecart_v60_db"
+    ]
+  ]
+}

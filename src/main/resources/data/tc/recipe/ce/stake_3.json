@@ -1,0 +1,22 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 6,
+      "ingredient": "#c:ingots/steel"
+    },
+    {
+      "slot": 7,
+      "ingredient": "#c:ingots/iron"
+    },
+    {
+      "slot": 8,
+      "ingredient": "#c:ingots/steel"
+    }
+  ],
+  "result": {
+    "id": "tc:stake",
+    "count": 1
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "parent": "tc:assembly_table",
+  "criteria": {
+    "has_minecart_chest": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:freight_cart_yellow"
+          }
+        ]
+      }
+    },
+    "has_minecart_grain": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:freight_hopper"
+          }
+        ]
+      }
+    },
+    "has_minecart_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:freight_wood"
+          }
+        ]
+      }
+    },
+    "has_minecart_freight_cart2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:freight_cart_red"
+          }
+        ]
+      }
+    },
+    "has_minecart_open_wagon": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:freight_open_wagon"
+          }
+        ]
+      }
+    },
+    "has_minecart_box_cart_us": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:freight_box_cart_us"
+          }
+        ]
+      }
+    },
+    "has_minecart_freight_cart_small": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:freight_cart_small"
+          }
+        ]
+      }
+    },
+    "has_minecart_freight_cart_us": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:freight_cart_us"
+          }
+        ]
+      }
+    },
+    "has_minecart_freight_center_beam_empty": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:freight_center_beam_empty"
+          }
+        ]
+      }
+    },
+    "has_minecart_freight_center_beam_wood_1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:freight_center_beam_wood1"
+          }
+        ]
+      }
+    },
+    "has_minecart_freight_center_beam_wood_2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:freight_center_beam_wood2"
+          }
+        ]
+      }
+    },
+    "has_minecart_freight_closed": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:freight_closed_red_brown"
+          }
+        ]
+      }
+    },
+    "has_minecart_freight_gondola_db": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:freight_gondola_db"
+          }
+        ]
+      }
+    },
+    "has_minecart_freight_hopper_us": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:freight_hopper_us"
+          }
+        ]
+      }
+    },
+    "has_minecart_freight_open2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:freight_open_red_brown"
+          }
+        ]
+      }
+    },
+    "has_minecart_freight_trailer": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:freight_trailer"
+          }
+        ]
+      }
+    },
+    "has_minecart_freight_wagon_db": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:freight_wagen_db"
+          }
+        ]
+      }
+    },
+    "has_minecart_freight_wellcar": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:freight_wellcar"
+          }
+        ]
+      }
+    },
+    "has_minecart_freight_wood2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:freight_flat_cart_wood_logs"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.freight.description"
+    },
+    "icon": {
+      "id": "tc:freight_cart_yellow"
+    },
+    "title": {
+      "translate": "advancements.tc.freight.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_minecart_chest",
+      "has_minecart_grain",
+      "has_minecart_wood",
+      "has_minecart_freight_cart2",
+      "has_minecart_open_wagon",
+      "has_minecart_box_cart_us",
+      "has_minecart_freight_cart_small",
+      "has_minecart_freight_cart_us",
+      "has_minecart_freight_center_beam_empty",
+      "has_minecart_freight_center_beam_wood_1",
+      "has_minecart_freight_center_beam_wood_2",
+      "has_minecart_freight_closed",
+      "has_minecart_freight_gondola_db",
+      "has_minecart_freight_hopper_us",
+      "has_minecart_freight_open2",
+      "has_minecart_freight_trailer",
+      "has_minecart_freight_wagon_db",
+      "has_minecart_freight_wellcar",
+      "has_minecart_freight_wood2"
+    ]
+  ]
+}

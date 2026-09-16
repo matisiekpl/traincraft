@@ -1,0 +1,44 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 1,
+      "ingredient": "tc:bogie",
+      "count": 4
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:steel_frame",
+      "count": 1
+    },
+    {
+      "slot": 4,
+      "ingredient": "tc:steel_chimney",
+      "count": 1
+    },
+    {
+      "slot": 5,
+      "ingredient": "tc:steel_cab",
+      "count": 1
+    },
+    {
+      "slot": 6,
+      "ingredient": "tc:boiler",
+      "count": 3
+    },
+    {
+      "slot": 7,
+      "ingredient": "tc:firebox",
+      "count": 1
+    },
+    {
+      "slot": 9,
+      "ingredient": "minecraft:orange_dye"
+    }
+  ],
+  "result": {
+    "id": "tc:loco_steam_milw_class_a"
+  },
+  "tier": 3
+}

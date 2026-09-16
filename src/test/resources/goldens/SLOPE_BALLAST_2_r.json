@@ -1,0 +1,145 @@
+{
+  "trackType": "SLOPE_BALLAST",
+  "facing": 2,
+  "playerYaw": 200.0,
+  "origin": [
+    0,
+    64,
+    0
+  ],
+  "onItemUseReturned": true,
+  "yaw": 200.0,
+  "resolvedType": "SLOPE_BALLAST",
+  "blocks": [
+    {
+      "offset": [
+        0,
+        0,
+        -5
+      ],
+      "gag": true,
+      "blockMeta": 2,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "SLOPE_BALLAST",
+        "bbHeight": 1.0,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        0,
+        0,
+        -4
+      ],
+      "gag": true,
+      "blockMeta": 2,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "SLOPE_BALLAST",
+        "bbHeight": 0.8,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        0,
+        0,
+        -3
+      ],
+      "gag": true,
+      "blockMeta": 2,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "SLOPE_BALLAST",
+        "bbHeight": 0.6,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        0,
+        0,
+        -2
+      ],
+      "gag": true,
+      "blockMeta": 2,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "SLOPE_BALLAST",
+        "bbHeight": 0.4,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        0,
+        0,
+        -1
+      ],
+      "gag": true,
+      "blockMeta": 2,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "SLOPE_BALLAST",
+        "bbHeight": 0.2,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "gag": false,
+      "blockMeta": 2,
+      "tile": {
+        "r": 0.0,
+        "cx": 0.0,
+        "cy": 0.0,
+        "cz": 0.0,
+        "slopeHeight": 1.0,
+        "slopeLength": 6.0,
+        "slopeAngle": 0.13,
+        "railLength": 0.0,
+        "bbHeight": 0.125,
+        "ballastMaterial": 1,
+        "ballastMetadata": 0,
+        "ballastColour": 0,
+        "type": "SLOPE_BALLAST",
+        "facingMeta": 2,
+        "isLinkedToRail": false,
+        "linkedX": 0,
+        "linkedY": 0,
+        "linkedZ": 0,
+        "hasModel": true,
+        "switchActive": false,
+        "previousRedstoneState": false,
+        "canTypeBeModifiedBySwitch": false,
+        "manualOverride": false,
+        "updateTicks": 0,
+        "updateTicks2": 0,
+        "idDrop": "tc:tcRailSlopeBallast",
+        "hasRotated": false,
+        "isLeftFlag": -5
+      }
+    }
+  ],
+  "lean": "right"
+}

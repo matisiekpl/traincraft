@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C  ",
+    "BIW"
+  ],
+  "key": {
+    "C": "tc:electronic_circuit",
+    "B": "minecraft:iron_block",
+    "I": "minecraft:iron_ingot",
+    "W": "#minecraft:planks"
+  },
+  "result": {
+    "id": "tc:auto_switch_stand",
+    "count": 1
+  }
+}

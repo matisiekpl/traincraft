@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " SS",
+    "SS ",
+    "S  "
+  ],
+  "key": {
+    "S": "tc:track_small_straight"
+  },
+  "result": {
+    "id": "tc:track_large_turn",
+    "count": 1
+  }
+}

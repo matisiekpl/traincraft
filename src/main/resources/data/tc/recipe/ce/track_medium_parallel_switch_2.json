@@ -1,0 +1,38 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "tc:track_medium_straight"
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:track_small_straight"
+    },
+    {
+      "slot": 3,
+      "ingredient": "tc:track_medium_straight"
+    },
+    {
+      "slot": 4,
+      "ingredient": "tc:track_medium_turn"
+    },
+    {
+      "slot": 5,
+      "ingredient": "tc:track_medium_turn"
+    },
+    {
+      "slot": 6,
+      "ingredient": "tc:track_medium_straight"
+    },
+    {
+      "slot": 7,
+      "ingredient": "tc:track_medium_turn"
+    }
+  ],
+  "result": {
+    "id": "tc:track_medium_parallel_switch",
+    "count": 1
+  }
+}

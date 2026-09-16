@@ -1,0 +1,14 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 4,
+      "ingredient": "tc:track_small_straight"
+    }
+  ],
+  "result": {
+    "id": "minecraft:rail",
+    "count": 1
+  }
+}

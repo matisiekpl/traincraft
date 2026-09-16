@@ -1,0 +1,49 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#minecraft:planks",
+      "count": 6
+    },
+    {
+      "slot": 1,
+      "ingredient": "tc:bogie",
+      "count": 6
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:steel_frame",
+      "count": 6
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/steel",
+      "count": 8
+    },
+    {
+      "slot": 5,
+      "ingredient": "tc:steel_cab",
+      "count": 4
+    },
+    {
+      "slot": 8,
+      "ingredient": "minecraft:crafting_table",
+      "count": 1
+    },
+    {
+      "slot": 9,
+      "ingredient": "minecraft:blue_dye"
+    }
+  ],
+  "result": {
+    "id": "tc:passenger_light_crane",
+    "components": {
+      "minecraft:custom_data": {
+        "trainColor": "Blue"
+      }
+    }
+  },
+  "tier": 2
+}

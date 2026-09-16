@@ -1,0 +1,54 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#c:ingots/iron",
+      "count": 2
+    },
+    {
+      "slot": 1,
+      "ingredient": "tc:iron_bogie",
+      "count": 2
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:iron_frame",
+      "count": 1
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/iron",
+      "count": 1
+    },
+    {
+      "slot": 5,
+      "ingredient": "tc:controls",
+      "count": 1
+    },
+    {
+      "slot": 6,
+      "ingredient": "tc:transformer",
+      "count": 1
+    },
+    {
+      "slot": 7,
+      "ingredient": "tc:electric_motor",
+      "count": 2
+    },
+    {
+      "slot": 8,
+      "ingredient": "minecraft:redstone",
+      "count": 1
+    },
+    {
+      "slot": 9,
+      "ingredient": "minecraft:yellow_dye"
+    }
+  ],
+  "result": {
+    "id": "tc:loco_electric_mine_train"
+  },
+  "tier": 1
+}

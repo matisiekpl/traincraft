@@ -1,0 +1,11 @@
+{
+  "wants": {
+    "id": "tc:track_very_long_straight",
+    "count": 5
+  },
+  "gives": {
+    "id": "minecraft:emerald"
+  },
+  "max_uses": 12,
+  "xp": 5
+}

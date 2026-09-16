@@ -1,0 +1,64 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "tc:controls",
+      "count": 2
+    },
+    {
+      "slot": 1,
+      "ingredient": "tc:bogie",
+      "count": 4
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:steel_frame",
+      "count": 2
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/steel",
+      "count": 2
+    },
+    {
+      "slot": 4,
+      "ingredient": "tc:steel_chimney",
+      "count": 2
+    },
+    {
+      "slot": 5,
+      "ingredient": "tc:steel_cab",
+      "count": 1
+    },
+    {
+      "slot": 6,
+      "ingredient": "tc:electric_motor",
+      "count": 4
+    },
+    {
+      "slot": 7,
+      "ingredient": "tc:diesel_engine",
+      "count": 5
+    },
+    {
+      "slot": 8,
+      "ingredient": "tc:generator",
+      "count": 4
+    },
+    {
+      "slot": 9,
+      "ingredient": "minecraft:black_dye"
+    }
+  ],
+  "result": {
+    "id": "tc:loco_diesel_gp38dash2",
+    "components": {
+      "minecraft:custom_data": {
+        "trainColor": "Black"
+      }
+    }
+  },
+  "tier": 3
+}

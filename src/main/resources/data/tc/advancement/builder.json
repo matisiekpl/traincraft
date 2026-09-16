@@ -1,0 +1,31 @@
+{
+  "parent": "tc:assembly_table",
+  "criteria": {
+    "has_minecart_builder": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:passenger_tracks_builder"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.builder.description"
+    },
+    "icon": {
+      "id": "tc:passenger_tracks_builder"
+    },
+    "title": {
+      "translate": "advancements.tc.builder.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_minecart_builder"
+    ]
+  ]
+}

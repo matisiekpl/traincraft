@@ -1,0 +1,42 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 1,
+      "ingredient": "tc:track_medium_straight"
+    },
+    {
+      "slot": 2,
+      "ingredient": "#minecraft:planks"
+    },
+    {
+      "slot": 3,
+      "ingredient": "tc:track_medium_straight"
+    },
+    {
+      "slot": 4,
+      "ingredient": "#minecraft:planks"
+    },
+    {
+      "slot": 5,
+      "ingredient": "#minecraft:planks"
+    },
+    {
+      "slot": 6,
+      "ingredient": "#minecraft:planks"
+    },
+    {
+      "slot": 7,
+      "ingredient": "#minecraft:planks"
+    },
+    {
+      "slot": 8,
+      "ingredient": "#minecraft:planks"
+    }
+  ],
+  "result": {
+    "id": "tc:track_slope_wood",
+    "count": 1
+  }
+}

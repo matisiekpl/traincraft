@@ -1,0 +1,46 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#c:plastics"
+    },
+    {
+      "slot": 1,
+      "ingredient": "tc:graphite"
+    },
+    {
+      "slot": 2,
+      "ingredient": "#c:plastics"
+    },
+    {
+      "slot": 3,
+      "ingredient": "tc:graphite"
+    },
+    {
+      "slot": 4,
+      "ingredient": "#c:plastics"
+    },
+    {
+      "slot": 5,
+      "ingredient": "tc:graphite"
+    },
+    {
+      "slot": 6,
+      "ingredient": "minecraft:glass_pane"
+    },
+    {
+      "slot": 7,
+      "ingredient": "tc:graphite"
+    },
+    {
+      "slot": 8,
+      "ingredient": "minecraft:glass_pane"
+    }
+  ],
+  "result": {
+    "id": "tc:reinforced_plastic",
+    "count": 16
+  }
+}

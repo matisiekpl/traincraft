@@ -1,0 +1,86 @@
+{
+  "parent": "tc:firebox",
+  "criteria": {
+    "has_minecart_power": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_steam_4_4_0"
+          }
+        ]
+      }
+    },
+    "has_minecart_loco_br01_db": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_steam_br01"
+          }
+        ]
+      }
+    },
+    "has_minecart_loco_br80_db": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_steam_br80"
+          }
+        ]
+      }
+    },
+    "has_minecart_loco_er": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_steam_er_ussr"
+          }
+        ]
+      }
+    },
+    "has_minecart_loco_forney_red": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_steam_forney"
+          }
+        ]
+      }
+    },
+    "has_minecart_locomogul_blue": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_steam_mogul"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.normal_steam.description"
+    },
+    "icon": {
+      "id": "tc:loco_steam_4_4_0"
+    },
+    "title": {
+      "translate": "advancements.tc.normal_steam.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_minecart_power",
+      "has_minecart_loco_br01_db",
+      "has_minecart_loco_br80_db",
+      "has_minecart_loco_er",
+      "has_minecart_loco_forney_red",
+      "has_minecart_locomogul_blue"
+    ]
+  ]
+}

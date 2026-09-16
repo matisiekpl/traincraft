@@ -1,0 +1,75 @@
+{
+  "parent": "tc:normal_steam",
+  "criteria": {
+    "has_minecart_vbshay2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_steam_vb_shay_2truck"
+          }
+        ]
+      }
+    },
+    "has_minecart_loco_steam_vbshay": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_steam_vb_shay"
+          }
+        ]
+      }
+    },
+    "has_minecart_loco_steam_shay": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_steam_shay"
+          }
+        ]
+      }
+    },
+    "has_minecart_loco_steam_climax": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_steam_climax"
+          }
+        ]
+      }
+    },
+    "has_minecart_loco_lssp7": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_steam_lssp7"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.geared.description"
+    },
+    "icon": {
+      "id": "tc:loco_steam_vb_shay_2truck"
+    },
+    "title": {
+      "translate": "advancements.tc.geared.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_minecart_vbshay2",
+      "has_minecart_loco_steam_vbshay",
+      "has_minecart_loco_steam_shay",
+      "has_minecart_loco_steam_climax",
+      "has_minecart_loco_lssp7"
+    ]
+  ]
+}

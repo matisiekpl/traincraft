@@ -1,0 +1,31 @@
+{
+  "parent": "tc:assembly_table",
+  "criteria": {
+    "has_minecart_loco_mine_train": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_electric_mine_train"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.minetrain.description"
+    },
+    "icon": {
+      "id": "tc:freight_minetrain_2"
+    },
+    "title": {
+      "translate": "advancements.tc.minetrain.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_minecart_loco_mine_train"
+    ]
+  ]
+}

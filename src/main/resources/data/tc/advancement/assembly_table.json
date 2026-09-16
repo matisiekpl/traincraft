@@ -1,0 +1,53 @@
+{
+  "parent": "tc:root",
+  "criteria": {
+    "has_assembly_table_i": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:assembly_table_i"
+          }
+        ]
+      }
+    },
+    "has_assembly_table_ii": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:assembly_table_ii"
+          }
+        ]
+      }
+    },
+    "has_assembly_table_iii": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:assembly_table_iii"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.assembly_table.description"
+    },
+    "icon": {
+      "id": "tc:assembly_table_i"
+    },
+    "title": {
+      "translate": "advancements.tc.assembly_table.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_assembly_table_i",
+      "has_assembly_table_ii",
+      "has_assembly_table_iii"
+    ]
+  ]
+}

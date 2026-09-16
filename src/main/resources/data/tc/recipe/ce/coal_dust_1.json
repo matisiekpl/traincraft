@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "tc:config",
+      "key": "MAKE_MODPACKS_GREAT_AGAIN",
+      "value": false
+    }
+  ],
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#minecraft:coals"
+    },
+    {
+      "slot": 1,
+      "ingredient": "#minecraft:coals"
+    },
+    {
+      "slot": 2,
+      "ingredient": "#minecraft:coals"
+    }
+  ],
+  "result": {
+    "id": "tc:coal_dust",
+    "count": 4
+  }
+}

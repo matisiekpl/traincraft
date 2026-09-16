@@ -1,0 +1,54 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#c:ingots/steel",
+      "count": 2
+    },
+    {
+      "slot": 1,
+      "ingredient": "tc:bogie",
+      "count": 2
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:steel_frame",
+      "count": 2
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/steel",
+      "count": 2
+    },
+    {
+      "slot": 4,
+      "ingredient": "minecraft:paper",
+      "count": 2
+    },
+    {
+      "slot": 5,
+      "ingredient": "tc:steel_cab",
+      "count": 1
+    },
+    {
+      "slot": 7,
+      "ingredient": "tc:seats",
+      "count": 4
+    },
+    {
+      "slot": 9,
+      "ingredient": "minecraft:blue_dye"
+    }
+  ],
+  "result": {
+    "id": "tc:passenger_class162_coach_b",
+    "components": {
+      "minecraft:custom_data": {
+        "trainColor": "Blue"
+      }
+    }
+  },
+  "tier": 3
+}

@@ -1,0 +1,31 @@
+{
+  "parent": "tc:root",
+  "criteria": {
+    "has_train_workbench": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:train_workbench"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.train_wb.description"
+    },
+    "icon": {
+      "id": "tc:train_workbench"
+    },
+    "title": {
+      "translate": "advancements.tc.train_wb.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_train_workbench"
+    ]
+  ]
+}

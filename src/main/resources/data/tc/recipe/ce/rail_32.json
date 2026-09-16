@@ -1,0 +1,14 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "tc:track_small_road_crossing_2"
+    }
+  ],
+  "result": {
+    "id": "minecraft:rail",
+    "count": 1
+  }
+}

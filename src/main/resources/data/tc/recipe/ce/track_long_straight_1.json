@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "G",
+    "G"
+  ],
+  "key": {
+    "G": "tc:track_medium_straight"
+  },
+  "result": {
+    "id": "tc:track_long_straight",
+    "count": 1
+  }
+}

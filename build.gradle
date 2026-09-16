@@ -1,0 +1,219 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+    id 'net.neoforged.moddev' version '2.0.146'
+    id 'idea'
+}
+
+tasks.named('wrapper', Wrapper).configure {
+    distributionType = Wrapper.DistributionType.BIN
+}
+
+version = mod_version
+group = mod_group_id
+
+sourceSets.main.resources {
+    srcDir('src/generated/resources')
+    exclude("**/*.bbmodel")
+    exclude("src/generated/**/.cache")
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        name = "BlameJared"
+        url = "https://maven.blamejared.com"
+    }
+}
+
+base {
+    archivesName = mod_id
+}
+
+// Mojang ships Java 25 to end users in 26.2, so mods target Java 25.
+java.toolchain.languageVersion = JavaLanguageVersion.of(25)
+
+sourceSets {
+    development {
+        compileClasspath += sourceSets.main.output
+        runtimeClasspath += sourceSets.main.output
+    }
+}
+
+neoForge {
+    version = project.neo_version
+
+    accessTransformers.from(file('src/development/resources/META-INF/accesstransformer.cfg'))
+    accessTransformers.from(file('src/main/resources/META-INF/accesstransformer.cfg'))
+    accessTransformers.publish(file('src/main/resources/META-INF/accesstransformer.cfg'))
+
+    runs {
+        client {
+            client()
+            systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+        }
+
+        server {
+            server()
+            programArgument '--nogui'
+            systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+        }
+
+        // Runs all registered gametests headlessly, then exits with a status code.
+        // Doubles as the guard that no client-only class leaks into common code.
+        gameTestServer {
+            type = "gameTestServer"
+            systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+        }
+
+        data {
+            clientData()
+            programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath()
+        }
+
+        // Scripted screenshot harness. Driven by traincraft.development.scenario.HarnessBootstrap.
+        //   gradlew runHarness -Pscenario=../scenarios/tracks/t01_small_straight.json -Pout=../artifacts/captures/26.2/dev
+        harness {
+            client()
+            gameDirectory = project.file('run-harness')
+            systemProperty 'tc.harness.scenario', (project.findProperty('scenario') ?: '').toString()
+            systemProperty 'tc.harness.out',      (project.findProperty('out')      ?: '').toString()
+            systemProperty 'tc.trace',            (project.findProperty('trace')    ?: 'false').toString()
+            programArguments.addAll '--width', '1280', '--height', '720'
+        }
+
+        configureEach {
+            systemProperty 'forge.logging.markers', 'REGISTRIES'
+            logLevel = org.slf4j.event.Level.INFO
+        }
+    }
+
+    mods {
+        "${mod_id}" {
+            sourceSet(sourceSets.main)
+        }
+    }
+
+    addModdingDependenciesTo(sourceSets.development)
+    mods {
+        tc_development { sourceSet(sourceSets.development) }
+    }
+    runs.configureEach {
+        loadedMods = name in ['harness', 'gameTestServer'] ? [mods.tc, mods.tc_development] : [mods.tc]
+        if (name in ['harness', 'gameTestServer']) sourceSet = sourceSets.development
+    }
+
+    // Puts Minecraft on the test classpath so GameTest-adjacent helpers and
+    // StreamCodec round-trips can be unit tested. Pure-math tests must still
+    // avoid importing Minecraft types (see docs/decisions).
+    unitTest {
+        enable()
+        testedMod = mods."${mod_id}"
+    }
+}
+
+// Capture orchestration and resource generators are excluded from the published mod.
+sourceSets {
+    tools {
+        java.srcDir 'src/tools/java'
+    }
+}
+
+configurations {
+    runtimeClasspath.extendsFrom localRuntime
+    developmentImplementation.extendsFrom implementation
+    developmentRuntimeOnly.extendsFrom runtimeOnly
+}
+
+// gradlew tc --args="capture ../scenarios/tracks/t01_small_straight.json ../artifacts/captures/26.2/dev"
+tasks.register('tc', JavaExec) {
+    group = 'traincraft'
+    description = 'Traincraft verification tooling (capture / compare / sheet / objstat / trackitems)'
+    classpath = sourceSets.tools.runtimeClasspath
+    mainClass = 'traincraft.tools.Cli'
+    workingDir = rootDir
+}
+
+tasks.register('objstat', JavaExec) {
+    group = 'traincraft'
+    description = 'Regenerates src/test/resources/obj-manifest.json from the shipped OBJ models'
+    classpath = sourceSets.tools.runtimeClasspath
+    mainClass = 'traincraft.tools.Cli'
+    workingDir = rootDir
+    args = ['objstat']
+}
+
+// Generates item models, item definitions and language entries from the track catalog.
+tasks.register('trackitems', JavaExec) {
+    group = 'traincraft'
+    description = 'Regenerate the track items, their models and their language entries'
+    classpath = sourceSets.tools.runtimeClasspath
+    mainClass = 'traincraft.tools.Cli'
+    args 'trackitems'
+}
+
+
+dependencies {
+    compileOnly "mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"
+    compileOnly "mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}"
+    localRuntime "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
+    toolsImplementation 'com.google.code.gson:gson:2.11.0'
+    testImplementation platform('org.junit:junit-bom:5.11.4')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'org.junit.jupiter:junit-jupiter-params'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    testImplementation 'com.google.code.gson:gson:2.11.0'
+}
+
+tasks.named('test', Test).configure {
+    useJUnitPlatform()
+    // NeoForge's unit-test support runs tests from build/minecraft-junit, not the project dir,
+    // so tests that read committed fixtures need to be told where the project actually is.
+    systemProperty 'tc.projectDir', projectDir.absolutePath
+    testLogging {
+        events 'passed', 'skipped', 'failed'
+        exceptionFormat = 'full'
+    }
+}
+
+var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
+    var replaceProperties = [
+            minecraft_version      : minecraft_version,
+            minecraft_version_range: minecraft_version_range,
+            neo_version            : neo_version,
+            mod_id                 : mod_id,
+            mod_name               : mod_name,
+            mod_license            : mod_license,
+            mod_version            : mod_version,
+    ]
+    inputs.properties replaceProperties
+    expand replaceProperties
+    from "src/main/templates"
+    into "build/generated/sources/modMetadata"
+}
+sourceSets.main.resources.srcDir generateModMetadata
+neoForge.ideSyncTask generateModMetadata
+
+publishing {
+    publications {
+        register('mavenJava', MavenPublication) {
+            from components.java
+        }
+    }
+    repositories {
+        maven {
+            url = "file://${project.projectDir}/repo"
+        }
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+idea {
+    module {
+        downloadSources = true
+        downloadJavadoc = true
+    }
+}

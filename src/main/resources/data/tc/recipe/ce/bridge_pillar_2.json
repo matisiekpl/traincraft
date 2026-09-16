@@ -1,0 +1,46 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "minecraft:stick"
+    },
+    {
+      "slot": 1,
+      "ingredient": "minecraft:stick"
+    },
+    {
+      "slot": 2,
+      "ingredient": "minecraft:stick"
+    },
+    {
+      "slot": 3,
+      "ingredient": "minecraft:stick"
+    },
+    {
+      "slot": 4,
+      "ingredient": "#minecraft:logs"
+    },
+    {
+      "slot": 5,
+      "ingredient": "minecraft:stick"
+    },
+    {
+      "slot": 6,
+      "ingredient": "minecraft:stick"
+    },
+    {
+      "slot": 7,
+      "ingredient": "minecraft:stick"
+    },
+    {
+      "slot": 8,
+      "ingredient": "minecraft:stick"
+    }
+  ],
+  "result": {
+    "id": "tc:bridge_pillar",
+    "count": 8
+  }
+}

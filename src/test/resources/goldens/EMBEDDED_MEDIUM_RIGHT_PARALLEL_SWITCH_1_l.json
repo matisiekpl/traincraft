@@ -1,0 +1,747 @@
+{
+  "trackType": "EMBEDDED_MEDIUM_RIGHT_PARALLEL_SWITCH",
+  "facing": 1,
+  "playerYaw": 70.0,
+  "origin": [
+    0,
+    64,
+    0
+  ],
+  "onItemUseReturned": true,
+  "yaw": 70.0,
+  "resolvedType": "EMBEDDED_MEDIUM_LEFT_PARALLEL_SWITCH",
+  "blocks": [
+    {
+      "offset": [
+        -10,
+        0,
+        0
+      ],
+      "gag": false,
+      "blockMeta": 1,
+      "tile": {
+        "r": 0.0,
+        "cx": 0.0,
+        "cy": 0.0,
+        "cz": 0.0,
+        "slopeHeight": 0.0,
+        "slopeLength": 0.0,
+        "slopeAngle": 0.0,
+        "railLength": 0.0,
+        "bbHeight": 0.125,
+        "ballastMaterial": 0,
+        "ballastMetadata": 0,
+        "ballastColour": 0,
+        "type": "EMBEDDED_SMALL_STRAIGHT",
+        "facingMeta": 1,
+        "isLinkedToRail": true,
+        "linkedX": -3,
+        "linkedY": 64,
+        "linkedZ": 1,
+        "hasModel": true,
+        "switchActive": false,
+        "previousRedstoneState": false,
+        "canTypeBeModifiedBySwitch": false,
+        "manualOverride": false,
+        "updateTicks": 0,
+        "updateTicks2": 0,
+        "hasRotated": false,
+        "isLeftFlag": -5
+      }
+    },
+    {
+      "offset": [
+        -9,
+        0,
+        0
+      ],
+      "gag": false,
+      "blockMeta": 1,
+      "tile": {
+        "r": 0.0,
+        "cx": 0.0,
+        "cy": 64.0,
+        "cz": 0.0,
+        "slopeHeight": 0.0,
+        "slopeLength": 0.0,
+        "slopeAngle": 0.0,
+        "railLength": 0.0,
+        "bbHeight": 0.125,
+        "ballastMaterial": 0,
+        "ballastMetadata": 0,
+        "ballastColour": 0,
+        "type": "EMBEDDED_SMALL_STRAIGHT",
+        "facingMeta": 1,
+        "isLinkedToRail": true,
+        "linkedX": -3,
+        "linkedY": 64,
+        "linkedZ": 1,
+        "hasModel": true,
+        "switchActive": false,
+        "previousRedstoneState": false,
+        "canTypeBeModifiedBySwitch": false,
+        "manualOverride": false,
+        "updateTicks": 0,
+        "updateTicks2": 0,
+        "hasRotated": false,
+        "isLeftFlag": -5
+      }
+    },
+    {
+      "offset": [
+        -8,
+        0,
+        0
+      ],
+      "gag": false,
+      "blockMeta": 1,
+      "tile": {
+        "r": 0.0,
+        "cx": 0.0,
+        "cy": 64.0,
+        "cz": 0.0,
+        "slopeHeight": 0.0,
+        "slopeLength": 0.0,
+        "slopeAngle": 0.0,
+        "railLength": 0.0,
+        "bbHeight": 0.125,
+        "ballastMaterial": 0,
+        "ballastMetadata": 0,
+        "ballastColour": 0,
+        "type": "EMBEDDED_SMALL_STRAIGHT",
+        "facingMeta": 1,
+        "isLinkedToRail": true,
+        "linkedX": -3,
+        "linkedY": 64,
+        "linkedZ": 1,
+        "hasModel": true,
+        "switchActive": false,
+        "previousRedstoneState": false,
+        "canTypeBeModifiedBySwitch": false,
+        "manualOverride": false,
+        "updateTicks": 0,
+        "updateTicks2": 0,
+        "hasRotated": false,
+        "isLeftFlag": -5
+      }
+    },
+    {
+      "offset": [
+        -7,
+        0,
+        0
+      ],
+      "gag": false,
+      "blockMeta": 1,
+      "tile": {
+        "r": 0.0,
+        "cx": 0.0,
+        "cy": 64.0,
+        "cz": 0.0,
+        "slopeHeight": 0.0,
+        "slopeLength": 0.0,
+        "slopeAngle": 0.0,
+        "railLength": 0.0,
+        "bbHeight": 0.125,
+        "ballastMaterial": 0,
+        "ballastMetadata": 0,
+        "ballastColour": 0,
+        "type": "EMBEDDED_SMALL_STRAIGHT",
+        "facingMeta": 1,
+        "isLinkedToRail": true,
+        "linkedX": -3,
+        "linkedY": 64,
+        "linkedZ": 1,
+        "hasModel": true,
+        "switchActive": false,
+        "previousRedstoneState": false,
+        "canTypeBeModifiedBySwitch": false,
+        "manualOverride": false,
+        "updateTicks": 0,
+        "updateTicks2": 0,
+        "hasRotated": false,
+        "isLeftFlag": -5
+      }
+    },
+    {
+      "offset": [
+        -6,
+        0,
+        0
+      ],
+      "gag": false,
+      "blockMeta": 1,
+      "tile": {
+        "r": 0.0,
+        "cx": 0.0,
+        "cy": 64.0,
+        "cz": 0.0,
+        "slopeHeight": 0.0,
+        "slopeLength": 0.0,
+        "slopeAngle": 0.0,
+        "railLength": 0.0,
+        "bbHeight": 0.125,
+        "ballastMaterial": 0,
+        "ballastMetadata": 0,
+        "ballastColour": 0,
+        "type": "EMBEDDED_SMALL_STRAIGHT",
+        "facingMeta": 1,
+        "isLinkedToRail": true,
+        "linkedX": -3,
+        "linkedY": 64,
+        "linkedZ": 1,
+        "hasModel": true,
+        "switchActive": false,
+        "previousRedstoneState": false,
+        "canTypeBeModifiedBySwitch": false,
+        "manualOverride": false,
+        "updateTicks": 0,
+        "updateTicks2": 0,
+        "hasRotated": false,
+        "isLeftFlag": -5
+      }
+    },
+    {
+      "offset": [
+        -5,
+        0,
+        0
+      ],
+      "gag": false,
+      "blockMeta": 1,
+      "tile": {
+        "r": 0.0,
+        "cx": 0.0,
+        "cy": 64.0,
+        "cz": 0.0,
+        "slopeHeight": 0.0,
+        "slopeLength": 0.0,
+        "slopeAngle": 0.0,
+        "railLength": 0.0,
+        "bbHeight": 0.125,
+        "ballastMaterial": 0,
+        "ballastMetadata": 0,
+        "ballastColour": 0,
+        "type": "EMBEDDED_SMALL_STRAIGHT",
+        "facingMeta": 1,
+        "isLinkedToRail": true,
+        "linkedX": -3,
+        "linkedY": 64,
+        "linkedZ": 1,
+        "hasModel": true,
+        "switchActive": false,
+        "previousRedstoneState": false,
+        "canTypeBeModifiedBySwitch": false,
+        "manualOverride": false,
+        "updateTicks": 0,
+        "updateTicks2": 0,
+        "hasRotated": false,
+        "isLeftFlag": -5
+      }
+    },
+    {
+      "offset": [
+        -4,
+        0,
+        0
+      ],
+      "gag": false,
+      "blockMeta": 1,
+      "tile": {
+        "r": 0.0,
+        "cx": 0.0,
+        "cy": 64.0,
+        "cz": 0.0,
+        "slopeHeight": 0.0,
+        "slopeLength": 0.0,
+        "slopeAngle": 0.0,
+        "railLength": 0.0,
+        "bbHeight": 0.125,
+        "ballastMaterial": 0,
+        "ballastMetadata": 0,
+        "ballastColour": 0,
+        "type": "EMBEDDED_SMALL_STRAIGHT",
+        "facingMeta": 1,
+        "isLinkedToRail": true,
+        "linkedX": -3,
+        "linkedY": 64,
+        "linkedZ": 1,
+        "hasModel": false,
+        "switchActive": false,
+        "previousRedstoneState": false,
+        "canTypeBeModifiedBySwitch": false,
+        "manualOverride": false,
+        "updateTicks": 0,
+        "updateTicks2": 0,
+        "hasRotated": false,
+        "isLeftFlag": -5
+      }
+    },
+    {
+      "offset": [
+        -3,
+        0,
+        0
+      ],
+      "gag": false,
+      "blockMeta": 1,
+      "tile": {
+        "r": 8.5,
+        "cx": 0.5,
+        "cy": 64.0,
+        "cz": 9.0,
+        "slopeHeight": 0.0,
+        "slopeLength": 0.0,
+        "slopeAngle": 0.0,
+        "railLength": 0.0,
+        "bbHeight": 0.125,
+        "ballastMaterial": 0,
+        "ballastMetadata": 0,
+        "ballastColour": 0,
+        "type": "EMBEDDED_SMALL_STRAIGHT",
+        "facingMeta": 1,
+        "isLinkedToRail": true,
+        "linkedX": -3,
+        "linkedY": 64,
+        "linkedZ": 1,
+        "hasModel": false,
+        "switchActive": false,
+        "previousRedstoneState": false,
+        "canTypeBeModifiedBySwitch": true,
+        "manualOverride": false,
+        "updateTicks": 0,
+        "updateTicks2": 0,
+        "hasRotated": false,
+        "isLeftFlag": -5
+      }
+    },
+    {
+      "offset": [
+        -2,
+        0,
+        0
+      ],
+      "gag": false,
+      "blockMeta": 1,
+      "tile": {
+        "r": 8.5,
+        "cx": 0.5,
+        "cy": 64.0,
+        "cz": 9.0,
+        "slopeHeight": 0.0,
+        "slopeLength": 0.0,
+        "slopeAngle": 0.0,
+        "railLength": 0.0,
+        "bbHeight": 0.125,
+        "ballastMaterial": 0,
+        "ballastMetadata": 0,
+        "ballastColour": 0,
+        "type": "EMBEDDED_SMALL_STRAIGHT",
+        "facingMeta": 1,
+        "isLinkedToRail": true,
+        "linkedX": -3,
+        "linkedY": 64,
+        "linkedZ": 1,
+        "hasModel": false,
+        "switchActive": false,
+        "previousRedstoneState": false,
+        "canTypeBeModifiedBySwitch": true,
+        "manualOverride": false,
+        "updateTicks": 0,
+        "updateTicks2": 0,
+        "hasRotated": false,
+        "isLeftFlag": -5
+      }
+    },
+    {
+      "offset": [
+        -1,
+        0,
+        0
+      ],
+      "gag": false,
+      "blockMeta": 1,
+      "tile": {
+        "r": 8.5,
+        "cx": 0.5,
+        "cy": 64.0,
+        "cz": 9.0,
+        "slopeHeight": 0.0,
+        "slopeLength": 0.0,
+        "slopeAngle": 0.0,
+        "railLength": 0.0,
+        "bbHeight": 0.125,
+        "ballastMaterial": 0,
+        "ballastMetadata": 0,
+        "ballastColour": 0,
+        "type": "EMBEDDED_MEDIUM_LEFT_PARALLEL_SWITCH",
+        "facingMeta": 1,
+        "isLinkedToRail": true,
+        "linkedX": -3,
+        "linkedY": 64,
+        "linkedZ": 1,
+        "hasModel": true,
+        "switchActive": false,
+        "previousRedstoneState": false,
+        "canTypeBeModifiedBySwitch": true,
+        "manualOverride": false,
+        "updateTicks": 0,
+        "updateTicks2": 0,
+        "hasRotated": false,
+        "isLeftFlag": -5
+      }
+    },
+    {
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "gag": false,
+      "blockMeta": 1,
+      "tile": {
+        "r": 0.0,
+        "cx": 0.0,
+        "cy": 0.0,
+        "cz": 0.0,
+        "slopeHeight": 0.0,
+        "slopeLength": 0.0,
+        "slopeAngle": 0.0,
+        "railLength": 0.0,
+        "bbHeight": 0.125,
+        "ballastMaterial": 0,
+        "ballastMetadata": 0,
+        "ballastColour": 0,
+        "type": "EMBEDDED_SMALL_STRAIGHT",
+        "facingMeta": 1,
+        "isLinkedToRail": true,
+        "linkedX": -3,
+        "linkedY": 64,
+        "linkedZ": 1,
+        "hasModel": true,
+        "switchActive": false,
+        "previousRedstoneState": false,
+        "canTypeBeModifiedBySwitch": false,
+        "manualOverride": false,
+        "updateTicks": 0,
+        "updateTicks2": 0,
+        "hasRotated": false,
+        "isLeftFlag": -5
+      }
+    },
+    {
+      "offset": [
+        -5,
+        0,
+        1
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": -3,
+        "originY": 64,
+        "originZ": 1,
+        "type": "MEDIUM_LEFT_TURN",
+        "bbHeight": 0.125,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -4,
+        0,
+        1
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": -3,
+        "originY": 64,
+        "originZ": 1,
+        "type": "MEDIUM_LEFT_TURN",
+        "bbHeight": 0.125,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -3,
+        0,
+        1
+      ],
+      "gag": false,
+      "blockMeta": 1,
+      "tile": {
+        "r": 8.5,
+        "cx": 0.5,
+        "cy": 64.0,
+        "cz": 9.0,
+        "slopeHeight": 0.0,
+        "slopeLength": 0.0,
+        "slopeAngle": 0.0,
+        "railLength": 0.0,
+        "bbHeight": 0.125,
+        "ballastMaterial": 0,
+        "ballastMetadata": 0,
+        "ballastColour": 0,
+        "type": "MEDIUM_LEFT_TURN",
+        "facingMeta": 1,
+        "isLinkedToRail": true,
+        "linkedX": -4,
+        "linkedY": 64,
+        "linkedZ": 2,
+        "hasModel": false,
+        "switchActive": false,
+        "previousRedstoneState": false,
+        "canTypeBeModifiedBySwitch": false,
+        "manualOverride": false,
+        "updateTicks": 0,
+        "updateTicks2": 0,
+        "idDrop": "tc:tcRailEmbeddedMediumParallelSwitch",
+        "hasRotated": false,
+        "isLeftFlag": -5
+      }
+    },
+    {
+      "offset": [
+        -2,
+        0,
+        1
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": -3,
+        "originY": 64,
+        "originZ": 1,
+        "type": "MEDIUM_LEFT_TURN",
+        "bbHeight": 0.125,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -8,
+        0,
+        2
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": -4,
+        "originY": 64,
+        "originZ": 2,
+        "type": "MEDIUM_RIGHT_TURN",
+        "bbHeight": 0.125,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -7,
+        0,
+        2
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": -4,
+        "originY": 64,
+        "originZ": 2,
+        "type": "MEDIUM_RIGHT_TURN",
+        "bbHeight": 0.125,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -6,
+        0,
+        2
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": -4,
+        "originY": 64,
+        "originZ": 2,
+        "type": "MEDIUM_RIGHT_TURN",
+        "bbHeight": 0.125,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -5,
+        0,
+        2
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": -4,
+        "originY": 64,
+        "originZ": 2,
+        "type": "MEDIUM_RIGHT_TURN",
+        "bbHeight": 0.125,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -4,
+        0,
+        2
+      ],
+      "gag": false,
+      "blockMeta": 0,
+      "tile": {
+        "r": 8.5,
+        "cx": -9.0,
+        "cy": 64.0,
+        "cz": -5.0,
+        "slopeHeight": 0.0,
+        "slopeLength": 0.0,
+        "slopeAngle": 0.0,
+        "railLength": 0.0,
+        "bbHeight": 0.125,
+        "ballastMaterial": 0,
+        "ballastMetadata": 0,
+        "ballastColour": 0,
+        "type": "MEDIUM_RIGHT_TURN",
+        "facingMeta": 0,
+        "isLinkedToRail": true,
+        "linkedX": -3,
+        "linkedY": 64,
+        "linkedZ": 1,
+        "hasModel": false,
+        "switchActive": false,
+        "previousRedstoneState": false,
+        "canTypeBeModifiedBySwitch": false,
+        "manualOverride": false,
+        "updateTicks": 0,
+        "updateTicks2": 0,
+        "hasRotated": false,
+        "isLeftFlag": -5
+      }
+    },
+    {
+      "offset": [
+        -10,
+        0,
+        3
+      ],
+      "gag": false,
+      "blockMeta": 1,
+      "tile": {
+        "r": 0.0,
+        "cx": 0.0,
+        "cy": 0.0,
+        "cz": 0.0,
+        "slopeHeight": 0.0,
+        "slopeLength": 0.0,
+        "slopeAngle": 0.0,
+        "railLength": 0.0,
+        "bbHeight": 0.125,
+        "ballastMaterial": 0,
+        "ballastMetadata": 0,
+        "ballastColour": 0,
+        "type": "EMBEDDED_SMALL_STRAIGHT",
+        "facingMeta": 1,
+        "isLinkedToRail": true,
+        "linkedX": -4,
+        "linkedY": 64,
+        "linkedZ": 2,
+        "hasModel": true,
+        "switchActive": false,
+        "previousRedstoneState": false,
+        "canTypeBeModifiedBySwitch": false,
+        "manualOverride": false,
+        "updateTicks": 0,
+        "updateTicks2": 0,
+        "hasRotated": false,
+        "isLeftFlag": -5
+      }
+    },
+    {
+      "offset": [
+        -9,
+        0,
+        3
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": -4,
+        "originY": 64,
+        "originZ": 2,
+        "type": "MEDIUM_RIGHT_TURN",
+        "bbHeight": 0.125,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -8,
+        0,
+        3
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": -4,
+        "originY": 64,
+        "originZ": 2,
+        "type": "MEDIUM_RIGHT_TURN",
+        "bbHeight": 0.125,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -7,
+        0,
+        3
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": -4,
+        "originY": 64,
+        "originZ": 2,
+        "type": "MEDIUM_RIGHT_TURN",
+        "bbHeight": 0.125,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -6,
+        0,
+        3
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": -4,
+        "originY": 64,
+        "originZ": 2,
+        "type": "MEDIUM_RIGHT_TURN",
+        "bbHeight": 0.125,
+        "canPlaceRollingstock": true
+      }
+    }
+  ],
+  "lean": "left"
+}

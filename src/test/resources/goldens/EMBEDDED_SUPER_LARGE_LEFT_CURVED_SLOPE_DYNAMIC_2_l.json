@@ -1,0 +1,883 @@
+{
+  "trackType": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+  "facing": 2,
+  "playerYaw": 160.0,
+  "origin": [
+    0,
+    64,
+    0
+  ],
+  "onItemUseReturned": true,
+  "yaw": 160.0,
+  "resolvedType": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+  "blocks": [
+    {
+      "offset": [
+        -15,
+        0,
+        -15
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 1.0,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -14,
+        0,
+        -15
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.9782609,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -13,
+        0,
+        -15
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.95652175,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -12,
+        0,
+        -15
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.9130435,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -11,
+        0,
+        -15
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.8695652,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -10,
+        0,
+        -15
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.82608694,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -13,
+        0,
+        -14
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.9347826,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -12,
+        0,
+        -14
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.8913044,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -11,
+        0,
+        -14
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.84782606,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -10,
+        0,
+        -14
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.8043478,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -9,
+        0,
+        -14
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.76086956,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -8,
+        0,
+        -14
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.7173913,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -10,
+        0,
+        -13
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.7826087,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -9,
+        0,
+        -13
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.73913044,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -8,
+        0,
+        -13
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.6956522,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -7,
+        0,
+        -13
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.65217394,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -6,
+        0,
+        -13
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.6086956,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -8,
+        0,
+        -12
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.67391306,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -7,
+        0,
+        -12
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.6304348,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -6,
+        0,
+        -12
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.5869565,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -5,
+        0,
+        -12
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.54347825,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -6,
+        0,
+        -11
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.5652174,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -5,
+        0,
+        -11
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.5217391,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -4,
+        0,
+        -11
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.47826087,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -5,
+        0,
+        -10
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.5,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -4,
+        0,
+        -10
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.45652175,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -3,
+        0,
+        -10
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.41304347,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -4,
+        0,
+        -9
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.4347826,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -3,
+        0,
+        -9
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.39130434,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -2,
+        0,
+        -9
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.3478261,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -3,
+        0,
+        -8
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.36956522,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -2,
+        0,
+        -8
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.32608697,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -2,
+        0,
+        -7
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.3043478,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -1,
+        0,
+        -7
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.23913044,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -2,
+        0,
+        -6
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.2826087,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -1,
+        0,
+        -6
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.2173913,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -2,
+        0,
+        -5
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.26086956,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -1,
+        0,
+        -5
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.19565217,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        0,
+        0,
+        -5
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.125,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -1,
+        0,
+        -4
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.17391305,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        0,
+        0,
+        -4
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.125,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -1,
+        0,
+        -3
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.1521739,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        0,
+        0,
+        -3
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.125,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -1,
+        0,
+        -2
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.13043478,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        0,
+        0,
+        -2
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.125,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        0,
+        0,
+        -1
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "bbHeight": 0.125,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "gag": false,
+      "blockMeta": 2,
+      "tile": {
+        "r": 15.5,
+        "cx": -15.0,
+        "cy": 64.0,
+        "cz": 1.0,
+        "slopeHeight": 1.0,
+        "slopeLength": 21.9203,
+        "slopeAngle": 0.04558899998664856,
+        "railLength": 0.0,
+        "bbHeight": 0.125,
+        "ballastMaterial": 1,
+        "ballastMetadata": 0,
+        "ballastColour": 0,
+        "type": "EMBEDDED_SUPER_LARGE_LEFT_CURVED_SLOPE_DYNAMIC",
+        "facingMeta": 2,
+        "isLinkedToRail": false,
+        "linkedX": 0,
+        "linkedY": 0,
+        "linkedZ": 0,
+        "hasModel": true,
+        "switchActive": false,
+        "previousRedstoneState": false,
+        "canTypeBeModifiedBySwitch": false,
+        "manualOverride": false,
+        "updateTicks": 0,
+        "updateTicks2": 0,
+        "idDrop": "tc:tcRailEmbeddedSuperLargeCurvedSlopeDynamic",
+        "hasRotated": false,
+        "isLeftFlag": -5
+      }
+    }
+  ],
+  "lean": "left"
+}

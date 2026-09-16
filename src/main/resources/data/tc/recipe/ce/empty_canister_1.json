@@ -1,0 +1,42 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#c:plastics"
+    },
+    {
+      "slot": 1,
+      "ingredient": "#c:plastics"
+    },
+    {
+      "slot": 2,
+      "ingredient": "#c:plastics"
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:plastics"
+    },
+    {
+      "slot": 5,
+      "ingredient": "#c:plastics"
+    },
+    {
+      "slot": 6,
+      "ingredient": "#c:plastics"
+    },
+    {
+      "slot": 7,
+      "ingredient": "#c:plastics"
+    },
+    {
+      "slot": 8,
+      "ingredient": "#c:plastics"
+    }
+  ],
+  "result": {
+    "id": "tc:empty_canister",
+    "count": 4
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "parent": "tc:train_wb",
+  "criteria": {
+    "has_wooden_bogie": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:wooden_bogie"
+          }
+        ]
+      }
+    },
+    "has_wooden_cab": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:wooden_cab"
+          }
+        ]
+      }
+    },
+    "has_wooden_frame": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:wooden_frame"
+          }
+        ]
+      }
+    },
+    "has_seats": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:seats"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.wooden_parts.description"
+    },
+    "icon": {
+      "id": "tc:wooden_bogie"
+    },
+    "title": {
+      "translate": "advancements.tc.wooden_parts.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_wooden_bogie",
+      "has_wooden_cab",
+      "has_wooden_frame",
+      "has_seats"
+    ]
+  ]
+}

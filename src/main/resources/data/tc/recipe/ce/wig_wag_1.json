@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IWI",
+    " I ",
+    " I "
+  ],
+  "key": {
+    "W": "minecraft:lever",
+    "I": "#c:ingots/iron"
+  },
+  "result": {
+    "id": "tc:wig_wag",
+    "count": 1
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:gui/advancements/backgrounds/stone",
+    "description": {
+      "translate": "advancements.tc.root.description"
+    },
+    "icon": {
+      "id": "tc:train_workbench"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.tc.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "tick"
+    ]
+  ]
+}

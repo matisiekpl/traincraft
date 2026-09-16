@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "I I",
+    "RRR"
+  ],
+  "key": {
+    "R": "minecraft:rail",
+    "I": "#c:ingots/iron"
+  },
+  "result": {
+    "id": "tc:american_stopper",
+    "count": 1
+  }
+}

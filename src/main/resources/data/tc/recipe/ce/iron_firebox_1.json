@@ -1,0 +1,46 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#c:ingots/iron"
+    },
+    {
+      "slot": 1,
+      "ingredient": "#c:ingots/iron"
+    },
+    {
+      "slot": 2,
+      "ingredient": "#c:ingots/iron"
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/iron"
+    },
+    {
+      "slot": 4,
+      "ingredient": "minecraft:flint_and_steel"
+    },
+    {
+      "slot": 5,
+      "ingredient": "#c:ingots/iron"
+    },
+    {
+      "slot": 6,
+      "ingredient": "#c:ingots/iron"
+    },
+    {
+      "slot": 7,
+      "ingredient": "#c:ingots/iron"
+    },
+    {
+      "slot": 8,
+      "ingredient": "#c:ingots/iron"
+    }
+  ],
+  "result": {
+    "id": "tc:iron_firebox",
+    "count": 2
+  }
+}

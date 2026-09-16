@@ -1,0 +1,26 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#c:ingots/steel"
+    },
+    {
+      "slot": 2,
+      "ingredient": "#c:ingots/steel"
+    },
+    {
+      "slot": 4,
+      "ingredient": "tc:reinforced_plastic"
+    },
+    {
+      "slot": 7,
+      "ingredient": "tc:reinforced_plastic"
+    }
+  ],
+  "result": {
+    "id": "tc:composite_wrench",
+    "count": 1
+  }
+}

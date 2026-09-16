@@ -1,0 +1,36 @@
+{
+  "variants": {
+    "facing=north,lit=false": {
+      "model": "tc:block/distillation_tower",
+      "y": 0
+    },
+    "facing=east,lit=false": {
+      "model": "tc:block/distillation_tower",
+      "y": 90
+    },
+    "facing=south,lit=false": {
+      "model": "tc:block/distillation_tower",
+      "y": 180
+    },
+    "facing=west,lit=false": {
+      "model": "tc:block/distillation_tower",
+      "y": 270
+    },
+    "facing=north,lit=true": {
+      "model": "tc:block/distillation_tower_lit",
+      "y": 0
+    },
+    "facing=east,lit=true": {
+      "model": "tc:block/distillation_tower_lit",
+      "y": 90
+    },
+    "facing=south,lit=true": {
+      "model": "tc:block/distillation_tower_lit",
+      "y": 180
+    },
+    "facing=west,lit=true": {
+      "model": "tc:block/distillation_tower_lit",
+      "y": 270
+    }
+  }
+}

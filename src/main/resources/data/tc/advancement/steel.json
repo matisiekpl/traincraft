@@ -1,0 +1,31 @@
+{
+  "parent": "tc:open_hearth",
+  "criteria": {
+    "has_steel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:steel_ingot"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.steel.description"
+    },
+    "icon": {
+      "id": "tc:steel_ingot"
+    },
+    "title": {
+      "translate": "advancements.tc.steel.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_steel"
+    ]
+  ]
+}

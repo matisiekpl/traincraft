@@ -1,0 +1,31 @@
+{
+  "parent": "tc:elect_motor",
+  "criteria": {
+    "has_minecart_tram_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_electric_tram_yellow"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.tram.description"
+    },
+    "icon": {
+      "id": "tc:loco_electric_tram_yellow"
+    },
+    "title": {
+      "translate": "advancements.tc.tram.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_minecart_tram_wood"
+    ]
+  ]
+}

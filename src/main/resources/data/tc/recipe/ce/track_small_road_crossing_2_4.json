@@ -1,0 +1,22 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 6,
+      "ingredient": "minecraft:light_blue_terracotta"
+    },
+    {
+      "slot": 7,
+      "ingredient": "minecraft:rail"
+    },
+    {
+      "slot": 8,
+      "ingredient": "minecraft:light_blue_terracotta"
+    }
+  ],
+  "result": {
+    "id": "tc:track_small_road_crossing_2",
+    "count": 1
+  }
+}

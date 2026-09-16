@@ -1,0 +1,59 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 1,
+      "ingredient": "tc:iron_bogie",
+      "count": 4
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:iron_frame",
+      "count": 4
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/iron",
+      "count": 4
+    },
+    {
+      "slot": 4,
+      "ingredient": "tc:iron_chimney",
+      "count": 1
+    },
+    {
+      "slot": 5,
+      "ingredient": "tc:iron_cab",
+      "count": 1
+    },
+    {
+      "slot": 6,
+      "ingredient": "tc:iron_boiler",
+      "count": 3
+    },
+    {
+      "slot": 7,
+      "ingredient": "tc:iron_firebox",
+      "count": 2
+    },
+    {
+      "slot": 8,
+      "ingredient": "#minecraft:coals",
+      "count": 2
+    },
+    {
+      "slot": 9,
+      "ingredient": "minecraft:gray_dye"
+    }
+  ],
+  "result": {
+    "id": "tc:loco_steam_shay_3truck",
+    "components": {
+      "minecraft:custom_data": {
+        "trainColor": "Grey"
+      }
+    }
+  },
+  "tier": 1
+}

@@ -1,0 +1,31 @@
+{
+  "parent": "tc:firebox",
+  "criteria": {
+    "has_minecart_heavy_steam": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_steam_heavy"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.heavy_steam.description"
+    },
+    "icon": {
+      "id": "tc:loco_steam_heavy"
+    },
+    "title": {
+      "translate": "advancements.tc.heavy_steam.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_minecart_heavy_steam"
+    ]
+  ]
+}

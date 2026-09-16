@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "top": "tc:blocks/train_table_top",
+    "bottom": "tc:blocks/train_table_bottom",
+    "front": "tc:blocks/train_table_front",
+    "side": "tc:blocks/train_table_side"
+  }
+}

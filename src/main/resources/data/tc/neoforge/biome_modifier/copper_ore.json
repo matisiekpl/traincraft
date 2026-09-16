@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "tc:config",
+      "key": "ENABLE_COPPER_SPAWN"
+    }
+  ],
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": [
+    "tc:ore_copper"
+  ],
+  "step": "underground_ores"
+}

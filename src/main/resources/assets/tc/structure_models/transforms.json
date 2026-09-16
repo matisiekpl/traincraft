@@ -1,0 +1,2345 @@
+{
+ "signal": {
+  "base": [
+   [
+    "translate",
+    0.46,
+    0,
+    0.46
+   ]
+  ],
+  "facing": {
+   "north": [
+    [
+     "rotate",
+     270,
+     0,
+     1,
+     0
+    ]
+   ],
+   "east": [
+    [
+     "rotate",
+     180,
+     0,
+     1,
+     0
+    ]
+   ],
+   "south": [
+    [
+     "rotate",
+     90,
+     0,
+     1,
+     0
+    ]
+   ],
+   "west": []
+  },
+  "textures": {
+   "red": "signal_suisse_red",
+   "green": "signal_suisse_green"
+  },
+  "models": {
+   "red": "signal",
+   "green": "signal"
+  },
+  "obj": {},
+  "objOps": [],
+  "item": [
+   [
+    "translate",
+    0.3561,
+    0.025,
+    0.3335
+   ],
+   [
+    "scale",
+    0.3619,
+    0.3619,
+    0.3619
+   ]
+  ]
+ },
+ "stopper": {
+  "base": [
+   [
+    "translate",
+    0.5,
+    0,
+    0.5
+   ]
+  ],
+  "facing": {
+   "north": [
+    [
+     "rotate",
+     270,
+     0,
+     1,
+     0
+    ]
+   ],
+   "east": [
+    [
+     "rotate",
+     180,
+     0,
+     1,
+     0
+    ]
+   ],
+   "south": [
+    [
+     "rotate",
+     90,
+     0,
+     1,
+     0
+    ]
+   ],
+   "west": []
+  },
+  "textures": {
+   "default": "buffer"
+  },
+  "models": {
+   "default": "stopper"
+  },
+  "obj": {
+   "track_normal": "track_normal"
+  },
+  "objOps": [
+   [
+    "rotate",
+    90,
+    0,
+    1,
+    0
+   ]
+  ],
+  "item": [
+   [
+    "translate",
+    0.025,
+    0.1271,
+    0.025
+   ],
+   [
+    "scale",
+    0.95,
+    0.95,
+    0.95
+   ]
+  ]
+ },
+ "embedded_stopper": {
+  "base": [
+   [
+    "translate",
+    0.5,
+    0,
+    0.5
+   ]
+  ],
+  "facing": {
+   "north": [
+    [
+     "rotate",
+     270,
+     0,
+     1,
+     0
+    ]
+   ],
+   "east": [
+    [
+     "rotate",
+     180,
+     0,
+     1,
+     0
+    ]
+   ],
+   "south": [
+    [
+     "rotate",
+     90,
+     0,
+     1,
+     0
+    ]
+   ],
+   "west": []
+  },
+  "textures": {
+   "default": "embedded_buffer"
+  },
+  "models": {
+   "default": "embedded_stopper"
+  },
+  "obj": {
+   "track_normal": "track_normal"
+  },
+  "objOps": [
+   [
+    "rotate",
+    90,
+    0,
+    1,
+    0
+   ]
+  ],
+  "item": [
+   [
+    "translate",
+    0.025,
+    0.1271,
+    0.025
+   ],
+   [
+    "scale",
+    0.95,
+    0.95,
+    0.95
+   ]
+  ]
+ },
+ "american_stopper": {
+  "base": [
+   [
+    "translate",
+    0.5,
+    0,
+    0.5
+   ]
+  ],
+  "facing": {
+   "north": [
+    [
+     "rotate",
+     270,
+     0,
+     1,
+     0
+    ]
+   ],
+   "east": [
+    [
+     "rotate",
+     180,
+     0,
+     1,
+     0
+    ]
+   ],
+   "south": [
+    [
+     "rotate",
+     90,
+     0,
+     1,
+     0
+    ]
+   ],
+   "west": []
+  },
+  "textures": {
+   "default": "buffer"
+  },
+  "models": {},
+  "obj": {
+   "american_bumper": "american_stopper",
+   "track_normal": "track_normal"
+  },
+  "objOps": [
+   [
+    "rotate",
+    90,
+    0,
+    1,
+    0
+   ]
+  ],
+  "item": [
+   [
+    "translate",
+    0.025,
+    0.2768,
+    0.025
+   ],
+   [
+    "scale",
+    0.95,
+    0.95,
+    0.95
+   ]
+  ]
+ },
+ "lantern": {
+  "base": [
+   [
+    "translate",
+    0.5,
+    0.5,
+    0.5
+   ],
+   [
+    "scale",
+    0.5,
+    0.5,
+    0.5
+   ]
+  ],
+  "facing": {},
+  "textures": {
+   "default": "lantern_uv_draw_2"
+  },
+  "models": {},
+  "obj": {
+   "lantern": "lantern_uv_draw_2"
+  },
+  "objOps": [],
+  "tinted": true,
+  "item": [
+   [
+    "translate",
+    -0.0434,
+    0.007,
+    -0.0426
+   ],
+   [
+    "scale",
+    1.0847,
+    1.0847,
+    1.0847
+   ]
+  ]
+ },
+ "switch_stand": {
+  "base": [
+   [
+    "translate",
+    0.5,
+    0.6,
+    0.5
+   ],
+   [
+    "rotate",
+    180,
+    0,
+    1,
+    0
+   ]
+  ],
+  "facing": {
+   "south": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     90,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0,
+     0,
+     0.125
+    ]
+   ],
+   "north": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     270,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0,
+     0,
+     -0.125
+    ]
+   ],
+   "west": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     180,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.125,
+     0,
+     0
+    ]
+   ],
+   "east": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "translate",
+     -0.125,
+     0,
+     0
+    ]
+   ]
+  },
+  "textures": {
+   "on": "switchstand_uv_draw_2",
+   "off": "switchstand_uv_draw_1"
+  },
+  "models": {
+   "on": "switch_stand_modelswitchstandoff",
+   "off": "switch_stand_modelswitchstandon"
+  },
+  "obj": {},
+  "objOps": [],
+  "item": [
+   [
+    "translate",
+    0.2031,
+    0.0666,
+    0.025
+   ],
+   [
+    "scale",
+    0.475,
+    0.475,
+    0.475
+   ]
+  ]
+ },
+ "wig_wag": {
+  "base": [
+   [
+    "translate",
+    0.4,
+    0,
+    0.5
+   ],
+   [
+    "rotate",
+    180,
+    0,
+    1,
+    0
+   ]
+  ],
+  "facing": {
+   "south": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     90,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0,
+     0,
+     0.125
+    ]
+   ],
+   "north": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     270,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0,
+     0,
+     -0.125
+    ]
+   ],
+   "west": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     180,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.125,
+     0,
+     0
+    ]
+   ],
+   "east": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "translate",
+     -0.125,
+     0,
+     0
+    ]
+   ]
+  },
+  "textures": {
+   "on": "mfpbwigwagon",
+   "off": "mfpbwigwagoff"
+  },
+  "models": {
+   "on": "wig_wag",
+   "off": "wig_wag"
+  },
+  "obj": {},
+  "objOps": [],
+  "arms": {
+   "signal": {
+    "model": "wig_wag_signal",
+    "pivot": [
+     -3.5,
+     -34.0,
+     0.0
+    ]
+   }
+  },
+  "item": [
+   [
+    "translate",
+    0.3338,
+    0.025,
+    0.3374
+   ],
+   [
+    "scale",
+    0.3165,
+    0.3165,
+    0.3165
+   ]
+  ]
+ },
+ "water_wheel": {
+  "base": [
+   [
+    "translate",
+    0.5,
+    0.5,
+    0.5
+   ]
+  ],
+  "facing": {
+   "south": [
+    [
+     "scale",
+     0.7,
+     0.5,
+     0.5
+    ],
+    [
+     "scale",
+     1,
+     0.36,
+     0.36
+    ],
+    [
+     "rotate",
+     90,
+     0,
+     1,
+     0
+    ]
+   ],
+   "north": [
+    [
+     "scale",
+     0.7,
+     0.5,
+     0.5
+    ],
+    [
+     "scale",
+     1,
+     0.36,
+     0.36
+    ],
+    [
+     "rotate",
+     -90,
+     0,
+     1,
+     0
+    ]
+   ],
+   "west": [
+    [
+     "scale",
+     0.5,
+     0.5,
+     0.7
+    ],
+    [
+     "scale",
+     0.36,
+     0.36,
+     1
+    ]
+   ],
+   "east": [
+    [
+     "scale",
+     0.5,
+     0.5,
+     0.7
+    ],
+    [
+     "scale",
+     0.36,
+     0.36,
+     1
+    ],
+    [
+     "rotate",
+     180,
+     0,
+     1,
+     0
+    ]
+   ]
+  },
+  "textures": {
+   "default": "water_wheel_uv"
+  },
+  "models": {},
+  "obj": {
+   "water_wheel": "water_wheel_uv"
+  },
+  "objOps": [],
+  "tint": 3349780,
+  "spin": "z",
+  "item": [
+   [
+    "translate",
+    0.0515,
+    0.0526,
+    0.0516
+   ],
+   [
+    "scale",
+    0.898,
+    0.898,
+    0.898
+   ]
+  ]
+ },
+ "wind_mill": {
+  "base": [
+   [
+    "translate",
+    0.5,
+    0.43,
+    0.5
+   ],
+   [
+    "scale",
+    0.5,
+    0.5,
+    0.5
+   ]
+  ],
+  "facing": {
+   "south": [],
+   "north": [
+    [
+     "rotate",
+     180,
+     0,
+     1,
+     0
+    ]
+   ],
+   "west": [
+    [
+     "rotate",
+     -90,
+     0,
+     1,
+     0
+    ]
+   ],
+   "east": [
+    [
+     "rotate",
+     90,
+     0,
+     1,
+     0
+    ]
+   ]
+  },
+  "textures": {
+   "default": "water_wheel_uv"
+  },
+  "models": {},
+  "obj": {
+   "wind_mill": "water_wheel_uv"
+  },
+  "objOps": [],
+  "tint": 3349780,
+  "wheel": {
+   "obj": "wind_mill_wheel",
+   "base": [
+    [
+     "translate",
+     0.5,
+     1.43,
+     0.5
+    ],
+    [
+     "scale",
+     0.45,
+     0.45,
+     0.45
+    ]
+   ],
+   "tint": 8025716,
+   "spin": "z"
+  },
+  "item": [
+   [
+    "translate",
+    0.2547,
+    0.038,
+    0.3393
+   ],
+   [
+    "scale",
+    0.493,
+    0.493,
+    0.493
+   ]
+  ]
+ },
+ "diesel_generator": {
+  "base": [
+   [
+    "translate",
+    0.5,
+    0,
+    0.5
+   ]
+  ],
+  "facing": {
+   "north": [
+    [
+     "rotate",
+     270,
+     0,
+     1,
+     0
+    ]
+   ],
+   "east": [
+    [
+     "rotate",
+     180,
+     0,
+     1,
+     0
+    ]
+   ],
+   "south": [
+    [
+     "rotate",
+     90,
+     0,
+     1,
+     0
+    ]
+   ],
+   "west": []
+  },
+  "textures": {
+   "default": "generator_diesel"
+  },
+  "models": {
+   "default": "diesel_generator"
+  },
+  "obj": {},
+  "objOps": [],
+  "item": [
+   [
+    "translate",
+    0.2077,
+    0.025,
+    0.2077
+   ],
+   [
+    "scale",
+    0.5846,
+    0.5846,
+    0.5846
+   ]
+  ]
+ },
+ "bridge_pillar": {
+  "base": [
+   [
+    "translate",
+    0.5,
+    0,
+    0.5
+   ],
+   [
+    "rotate",
+    180,
+    1,
+    0,
+    0
+   ]
+  ],
+  "facing": {},
+  "textures": {
+   "default": "bridgepillar"
+  },
+  "models": {
+   "default": "bridge_pillar"
+  },
+  "obj": {},
+  "objOps": [],
+  "item": [
+   [
+    "translate",
+    0.025,
+    0.025,
+    0.025
+   ],
+   [
+    "scale",
+    0.95,
+    0.95,
+    0.95
+   ]
+  ]
+ },
+ "metro_madrid_pole": {
+  "base": [
+   [
+    "translate",
+    0.5,
+    0.65,
+    0.5
+   ]
+  ],
+  "facing": {
+   "south": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     90,
+     0,
+     1,
+     0
+    ]
+   ],
+   "north": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     270,
+     0,
+     1,
+     0
+    ]
+   ],
+   "east": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     180,
+     0,
+     1,
+     0
+    ]
+   ],
+   "west": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ]
+   ]
+  },
+  "textures": {
+   "default": "metromadridpole"
+  },
+  "models": {
+   "default": "metro_madrid_pole"
+  },
+  "obj": {},
+  "objOps": [],
+  "item": [
+   [
+    "translate",
+    0.3417,
+    0.314,
+    0.3516
+   ],
+   [
+    "scale",
+    0.3167,
+    0.3167,
+    0.3167
+   ]
+  ]
+ },
+ "forty_foot_container": {
+  "base": [
+   [
+    "translate",
+    0.5,
+    0.5,
+    0.44
+   ],
+   [
+    "rotate",
+    180,
+    0,
+    0,
+    1
+   ]
+  ],
+  "facing": {},
+  "textures": {
+   "generic": "container40_generic",
+   "honex": "container40_honex",
+   "flag": "container40_flag"
+  },
+  "models": {
+   "default": "forty_foot_container"
+  },
+  "obj": {},
+  "objOps": [],
+  "item": [
+   [
+    "translate",
+    0.3593,
+    0.3505,
+    0.3761
+   ],
+   [
+    "scale",
+    0.2815,
+    0.2815,
+    0.2815
+   ]
+  ]
+ },
+ "milw_switch_stand": {
+  "base": [
+   [
+    "translate",
+    0.5,
+    0.6,
+    0.5
+   ],
+   [
+    "rotate",
+    180,
+    0,
+    1,
+    0
+   ]
+  ],
+  "facing": {
+   "south": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     270,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ],
+   "north": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     90,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ],
+   "west": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     0,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ],
+   "east": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     180,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ]
+  },
+  "textures": {
+   "on": "milwswitchon",
+   "off": "milwswitchoff"
+  },
+  "models": {
+   "on": "milw_switch_stand_modelmilwswitchstandon",
+   "off": "milw_switch_stand_modelmilwswitchstandoff"
+  },
+  "obj": {},
+  "objOps": [],
+  "item": [
+   [
+    "translate",
+    0.3129,
+    0.0365,
+    0.0394
+   ],
+   [
+    "scale",
+    0.4606,
+    0.4606,
+    0.4606
+   ]
+  ]
+ },
+ "auto_switch_stand": {
+  "base": [
+   [
+    "translate",
+    0.5,
+    0.6,
+    0.5
+   ],
+   [
+    "rotate",
+    180,
+    0,
+    1,
+    0
+   ]
+  ],
+  "facing": {
+   "south": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     270,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ],
+   "north": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     90,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ],
+   "west": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     0,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ],
+   "east": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     180,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ]
+  },
+  "textures": {
+   "on": "autoswitchon",
+   "off": "autoswitchoff"
+  },
+  "models": {
+   "on": "auto_switch_stand_modelautoswitchon",
+   "off": "auto_switch_stand_modelautoswitchoff"
+  },
+  "obj": {},
+  "objOps": [],
+  "item": [
+   [
+    "translate",
+    0.3219,
+    0.4065,
+    0.025
+   ],
+   [
+    "scale",
+    0.475,
+    0.475,
+    0.475
+   ]
+  ]
+ },
+ "owo_switch_stand": {
+  "base": [
+   [
+    "translate",
+    0.5,
+    0.6,
+    0.5
+   ],
+   [
+    "rotate",
+    180,
+    0,
+    1,
+    0
+   ]
+  ],
+  "facing": {
+   "south": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     270,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ],
+   "north": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     90,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ],
+   "west": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     0,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ],
+   "east": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     180,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ]
+  },
+  "textures": {
+   "on": "owoswitchon",
+   "off": "owoswitchoff"
+  },
+  "models": {
+   "on": "owo_switch_stand_modelowoswitchstandon",
+   "off": "owo_switch_stand_modelowoswitchstandoff"
+  },
+  "obj": {},
+  "objOps": [],
+  "item": [
+   [
+    "translate",
+    0.3273,
+    0.0653,
+    0.0538
+   ],
+   [
+    "scale",
+    0.4606,
+    0.4606,
+    0.4606
+   ]
+  ]
+ },
+ "circle_switch_stand": {
+  "base": [
+   [
+    "translate",
+    0.5,
+    0.6,
+    0.5
+   ],
+   [
+    "rotate",
+    180,
+    0,
+    1,
+    0
+   ]
+  ],
+  "facing": {
+   "south": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     270,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ],
+   "north": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     90,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ],
+   "west": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     0,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ],
+   "east": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     180,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ]
+  },
+  "textures": {
+   "on": "circleswitchon",
+   "off": "circleswitchoff"
+  },
+  "models": {
+   "on": "circle_switch_stand_modelcircleswitchstandon",
+   "off": "circle_switch_stand_modelcircleswitchstandoff"
+  },
+  "obj": {},
+  "objOps": [],
+  "item": [
+   [
+    "translate",
+    0.3324,
+    0.0501,
+    0.0809
+   ],
+   [
+    "scale",
+    0.4471,
+    0.4471,
+    0.4471
+   ]
+  ]
+ },
+ "owo_yard_switch_stand": {
+  "base": [
+   [
+    "translate",
+    0.5,
+    0.6,
+    0.5
+   ],
+   [
+    "rotate",
+    180,
+    0,
+    1,
+    0
+   ]
+  ],
+  "facing": {
+   "south": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     270,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ],
+   "north": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     90,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ],
+   "west": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     0,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ],
+   "east": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     180,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ]
+  },
+  "textures": {
+   "on": "owoyardswitchon",
+   "off": "owoyardswitchoff"
+  },
+  "models": {
+   "on": "owo_yard_switch_stand_modelowoyardswitchstandon",
+   "off": "owo_yard_switch_stand_modelowoyardswitchstandoff"
+  },
+  "obj": {},
+  "objOps": [],
+  "item": [
+   [
+    "translate",
+    0.3034,
+    0.2838,
+    -0.0733
+   ],
+   [
+    "scale",
+    0.5241,
+    0.5241,
+    0.5241
+   ]
+  ]
+ },
+ "overhead_wire": {
+  "base": [
+   [
+    "translate",
+    0.5,
+    0.6,
+    0.5
+   ],
+   [
+    "rotate",
+    180,
+    0,
+    1,
+    0
+   ]
+  ],
+  "facing": {
+   "south": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     270,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ],
+   "north": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     90,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ],
+   "west": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     0,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ],
+   "east": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     180,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ]
+  },
+  "textures": {
+   "on": "overheadwireon",
+   "off": "overheadwire"
+  },
+  "models": {
+   "on": "overhead_wire_modeloverheadwireon",
+   "off": "overhead_wire_modeloverheadwire"
+  },
+  "obj": {},
+  "objOps": [],
+  "item": [
+   [
+    "translate",
+    0.3207,
+    0.2518,
+    -0.0041
+   ],
+   [
+    "scale",
+    0.1551,
+    0.1551,
+    0.1551
+   ]
+  ]
+ },
+ "overhead_wire_double": {
+  "base": [
+   [
+    "translate",
+    0.5,
+    0.6,
+    0.5
+   ],
+   [
+    "rotate",
+    180,
+    0,
+    1,
+    0
+   ]
+  ],
+  "facing": {
+   "south": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     270,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ],
+   "north": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     90,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ],
+   "west": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     0,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ],
+   "east": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     180,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ]
+  },
+  "textures": {
+   "default": "overheadwiredouble"
+  },
+  "models": {
+   "default": "overhead_wire_double"
+  },
+  "obj": {},
+  "objOps": [],
+  "item": [
+   [
+    "translate",
+    0.0451,
+    0.0304,
+    0.4331
+   ],
+   [
+    "scale",
+    0.2141,
+    0.2141,
+    0.2141
+   ]
+  ]
+ },
+ "spanish_signal": {
+  "base": [
+   [
+    "translate",
+    0.5,
+    0.6,
+    0.5
+   ]
+  ],
+  "facing": {
+   "south": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     90,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ],
+   "north": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     270,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ],
+   "west": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     180,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ],
+   "east": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ]
+  },
+  "textures": {
+   "red": "signalspanishred",
+   "green": "signalspanishgreen"
+  },
+  "models": {
+   "red": "spanish_signal",
+   "green": "spanish_signal"
+  },
+  "obj": {},
+  "objOps": [],
+  "item": [
+   [
+    "translate",
+    0.3509,
+    0.0349,
+    0.4131
+   ],
+   [
+    "scale",
+    0.3974,
+    0.3974,
+    0.3974
+   ]
+  ]
+ },
+ "k_signal": {
+  "base": [
+   [
+    "translate",
+    0.5,
+    0.6,
+    0.5
+   ],
+   [
+    "rotate",
+    180,
+    0,
+    1,
+    0
+   ]
+  ],
+  "facing": {
+   "south": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     270,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ],
+   "north": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     90,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ],
+   "west": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     0,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ],
+   "east": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     180,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     0.1875,
+     0,
+     0.125
+    ]
+   ]
+  },
+  "textures": {
+   "red": "ksignalred",
+   "green": "ksignalgreen"
+  },
+  "models": {
+   "red": "k_signal",
+   "green": "k_signal"
+  },
+  "obj": {},
+  "objOps": [],
+  "item": [
+   [
+    "translate",
+    0.3828,
+    0.0053,
+    0.4383
+   ],
+   [
+    "scale",
+    0.1974,
+    0.1974,
+    0.1974
+   ]
+  ]
+ },
+ "speed_sign": {
+  "base": [
+   [
+    "translate",
+    0.5,
+    0.625,
+    0.125
+   ],
+   [
+    "rotate",
+    180,
+    0,
+    1,
+    0
+   ]
+  ],
+  "facing": {
+   "south": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     90,
+     0,
+     1,
+     0
+    ]
+   ],
+   "north": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     270,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     -0.75,
+     0,
+     0
+    ]
+   ],
+   "west": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "rotate",
+     180,
+     0,
+     1,
+     0
+    ],
+    [
+     "translate",
+     -0.5,
+     0,
+     0.25
+    ]
+   ],
+   "east": [
+    [
+     "rotate",
+     180,
+     0,
+     0,
+     1
+    ],
+    [
+     "translate",
+     -0.375,
+     0,
+     -0.5
+    ]
+   ]
+  },
+  "textures": {
+   "0": "speedsign10",
+   "1": "speedsign50",
+   "2": "speedsign90",
+   "3": "speedsign125",
+   "4": "speedsign160"
+  },
+  "models": {
+   "default": "speed_sign"
+  },
+  "obj": {},
+  "objOps": [],
+  "item": [
+   [
+    "translate",
+    0.1833,
+    0.025,
+    0.4207
+   ],
+   [
+    "scale",
+    0.6333,
+    0.6333,
+    0.6333
+   ]
+  ]
+ },
+ "zeppelin": {
+  "base": [
+   [
+    "translate",
+    0,
+    -0.45,
+    0.55
+   ],
+   [
+    "rotate",
+    90,
+    0,
+    1,
+    0
+   ]
+  ],
+  "facing": {},
+  "textures": {
+   "default": "zeppelin_one_balloon"
+  },
+  "models": {
+   "default": "zeppelin"
+  },
+  "obj": {},
+  "objOps": [],
+  "entity": true
+ },
+ "airship": {
+  "base": [
+   [
+    "translate",
+    0,
+    -0.25,
+    0.9
+   ]
+  ],
+  "facing": {},
+  "textures": {
+   "default": "zeppelin_two_balloons"
+  },
+  "models": {
+   "default": "airship"
+  },
+  "obj": {},
+  "objOps": [],
+  "entity": true
+ }
+}

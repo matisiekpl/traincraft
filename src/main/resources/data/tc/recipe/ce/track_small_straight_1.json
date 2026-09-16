@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "G G",
+    "BPB",
+    "G G"
+  ],
+  "key": {
+    "G": "minecraft:iron_ingot",
+    "P": "#minecraft:planks",
+    "B": "tc:bolt"
+  },
+  "result": {
+    "id": "tc:track_small_straight",
+    "count": 16
+  }
+}

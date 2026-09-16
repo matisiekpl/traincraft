@@ -1,0 +1,22 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "minecraft:lever"
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/iron"
+    },
+    {
+      "slot": 6,
+      "ingredient": "minecraft:stick"
+    }
+  ],
+  "result": {
+    "id": "tc:switch_stand",
+    "count": 1
+  }
+}

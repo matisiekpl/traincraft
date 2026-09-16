@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GPG",
+    "O O",
+    "OPO"
+  ],
+  "key": {
+    "G": "minecraft:gold_ingot",
+    "P": "minecraft:piston",
+    "O": "minecraft:obsidian"
+  },
+  "result": {
+    "id": "tc:assembly_table_ii",
+    "count": 1
+  }
+}

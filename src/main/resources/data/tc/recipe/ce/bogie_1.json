@@ -1,0 +1,30 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 1,
+      "ingredient": "#c:ingots/steel"
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/steel"
+    },
+    {
+      "slot": 4,
+      "ingredient": "#c:ingots/iron"
+    },
+    {
+      "slot": 5,
+      "ingredient": "#c:ingots/steel"
+    },
+    {
+      "slot": 7,
+      "ingredient": "#c:ingots/steel"
+    }
+  ],
+  "result": {
+    "id": "tc:bogie",
+    "count": 4
+  }
+}

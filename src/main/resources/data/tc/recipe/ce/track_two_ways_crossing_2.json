@@ -1,0 +1,30 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 1,
+      "ingredient": "tc:track_small_straight"
+    },
+    {
+      "slot": 3,
+      "ingredient": "tc:track_small_straight"
+    },
+    {
+      "slot": 4,
+      "ingredient": "tc:track_small_straight"
+    },
+    {
+      "slot": 5,
+      "ingredient": "tc:track_small_straight"
+    },
+    {
+      "slot": 7,
+      "ingredient": "tc:track_small_straight"
+    }
+  ],
+  "result": {
+    "id": "tc:track_two_ways_crossing",
+    "count": 1
+  }
+}

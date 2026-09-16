@@ -1,0 +1,34 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "tc:steel_cab",
+      "count": 2
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:steel_frame",
+      "count": 2
+    },
+    {
+      "slot": 6,
+      "ingredient": "tc:loco_diesel_emdf7",
+      "count": 1
+    },
+    {
+      "slot": 9,
+      "ingredient": "minecraft:yellow_dye"
+    }
+  ],
+  "result": {
+    "id": "tc:loco_diesel_cf7",
+    "components": {
+      "minecraft:custom_data": {
+        "trainColor": "Yellow"
+      }
+    }
+  },
+  "tier": 3
+}

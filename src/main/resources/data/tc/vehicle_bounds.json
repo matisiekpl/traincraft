@@ -1,0 +1,3523 @@
+{
+ "freight_100_ton_hopper": {
+  "back": -3.025,
+  "front": 2.825,
+  "bottom": -0.765,
+  "top": 1.263,
+  "width": 1.018
+ },
+ "freight_5_plank": {
+  "back": -1.562,
+  "front": 1.438,
+  "bottom": -0.775,
+  "top": 0.6,
+  "width": 1.406
+ },
+ "freight_acfgnrpo_30": {
+  "back": -3.938,
+  "front": 4.0,
+  "bottom": -0.775,
+  "top": 1.187,
+  "width": 1.5
+ },
+ "freight_astf_autorack": {
+  "back": -4.469,
+  "front": 4.406,
+  "bottom": -0.763,
+  "top": 1.588,
+  "width": 1.25
+ },
+ "freight_bap40highcube": {
+  "back": -2.062,
+  "front": 2.125,
+  "bottom": -0.775,
+  "top": 1.363,
+  "width": 1.5
+ },
+ "freight_bap60centerbeam": {
+  "back": -3.406,
+  "front": 3.406,
+  "bottom": -0.775,
+  "top": 1.363,
+  "width": 1.375
+ },
+ "freight_bap66centerbeam": {
+  "back": -3.625,
+  "front": 3.625,
+  "bottom": -0.775,
+  "top": 1.3,
+  "width": 1.375
+ },
+ "freight_bap73centerbeam": {
+  "back": -4.031,
+  "front": 4.031,
+  "bottom": -0.775,
+  "top": 1.363,
+  "width": 1.375
+ },
+ "freight_bap_mill_gondola": {
+  "back": -2.5,
+  "front": 2.5,
+  "bottom": -0.775,
+  "top": 0.363,
+  "width": 1.375
+ },
+ "freight_bap_milw40boxcar": {
+  "back": -2.0,
+  "front": 2.0,
+  "bottom": -0.775,
+  "top": 1.097,
+  "width": 1.438
+ },
+ "freight_bap_ore_jenny": {
+  "back": -1.125,
+  "front": 1.125,
+  "bottom": -0.775,
+  "top": 0.363,
+  "width": 1.381
+ },
+ "freight_bap_ps140": {
+  "back": -1.938,
+  "front": 1.938,
+  "bottom": -0.775,
+  "top": 1.05,
+  "width": 1.438
+ },
+ "freight_bap_ps150": {
+  "back": -2.375,
+  "front": 2.375,
+  "bottom": -0.775,
+  "top": 1.1,
+  "width": 1.438
+ },
+ "freight_bap_ps160": {
+  "back": -2.969,
+  "front": 2.969,
+  "bottom": -0.775,
+  "top": 1.1,
+  "width": 1.5
+ },
+ "freight_bap_versa_longi": {
+  "back": -2.062,
+  "front": 2.062,
+  "bottom": -0.775,
+  "top": 0.8,
+  "width": 1.375
+ },
+ "freight_bap_versa_trans": {
+  "back": -2.062,
+  "front": 2.062,
+  "bottom": -0.775,
+  "top": 0.863,
+  "width": 1.375
+ },
+ "freight_bap_woodchip_hopper": {
+  "back": -2.812,
+  "front": 2.812,
+  "bottom": -0.775,
+  "top": 1.363,
+  "width": 1.5
+ },
+ "freight_bnsf_gon": {
+  "back": -4.953,
+  "front": 4.859,
+  "bottom": -0.738,
+  "top": 0.497,
+  "width": 1.375
+ },
+ "freight_boulder_wagon": {
+  "back": -0.812,
+  "front": 0.875,
+  "bottom": -0.725,
+  "top": 0.713,
+  "width": 1.0
+ },
+ "freight_box_cart_prr": {
+  "back": -3.125,
+  "front": 3.062,
+  "bottom": -0.78,
+  "top": 1.289,
+  "width": 1.469
+ },
+ "freight_box_cart_us": {
+  "back": -1.875,
+  "front": 1.875,
+  "bottom": -0.75,
+  "top": 1.438,
+  "width": 1.25
+ },
+ "freight_br_mk1_tpo_stowage": {
+  "back": -2.719,
+  "front": 2.719,
+  "bottom": -0.738,
+  "top": 1.106,
+  "width": 1.375
+ },
+ "freight_bulkhead_flat_cart_wood": {
+  "back": -2.419,
+  "front": 2.419,
+  "bottom": -0.773,
+  "top": 1.175,
+  "width": 1.35
+ },
+ "freight_car_l": {
+  "back": -2.75,
+  "front": 2.875,
+  "bottom": -0.775,
+  "top": 1.431,
+  "width": 1.5
+ },
+ "freight_cart_bamboo": {
+  "back": -1.431,
+  "front": 1.631,
+  "bottom": -0.8,
+  "top": 0.22,
+  "width": 1.625
+ },
+ "freight_cart_gs4": {
+  "back": -3.2,
+  "front": 3.15,
+  "bottom": -0.775,
+  "top": 1.35,
+  "width": 1.1
+ },
+ "freight_cart_red": {
+  "back": -1.5,
+  "front": 1.438,
+  "bottom": -0.682,
+  "top": 1.38,
+  "width": 1.375
+ },
+ "freight_cart_small": {
+  "back": -1.5,
+  "front": 1.562,
+  "bottom": -0.75,
+  "top": 1.188,
+  "width": 1.0
+ },
+ "freight_cart_us": {
+  "back": -1.875,
+  "front": 1.875,
+  "bottom": -0.77,
+  "top": 0.355,
+  "width": 1.125
+ },
+ "freight_cart_yellow": {
+  "back": -1.5,
+  "front": 1.438,
+  "bottom": -0.682,
+  "top": 1.38,
+  "width": 1.375
+ },
+ "freight_center_beam_empty": {
+  "back": -1.75,
+  "front": 1.75,
+  "bottom": -0.74,
+  "top": 1.198,
+  "width": 1.125
+ },
+ "freight_center_beam_wood1": {
+  "back": -1.75,
+  "front": 1.75,
+  "bottom": -0.74,
+  "top": 1.198,
+  "width": 1.125
+ },
+ "freight_center_beam_wood2": {
+  "back": -1.75,
+  "front": 1.75,
+  "bottom": -0.74,
+  "top": 1.198,
+  "width": 1.125
+ },
+ "freight_closed_red_brown": {
+  "back": -1.375,
+  "front": 1.438,
+  "bottom": -0.74,
+  "top": 1.259,
+  "width": 1.131
+ },
+ "freight_denver_rio_grange_2": {
+  "back": -3.263,
+  "front": 3.263,
+  "bottom": -0.785,
+  "top": 1.403,
+  "width": 1.238
+ },
+ "freight_depressed_flatbed": {
+  "back": -3.725,
+  "front": 4.15,
+  "bottom": -0.775,
+  "top": 1.339,
+  "width": 1.634
+ },
+ "freight_express_freight_van": {
+  "back": -1.875,
+  "front": 1.875,
+  "bottom": -0.825,
+  "top": 1.144,
+  "width": 1.381
+ },
+ "freight_flat_car_logs_db": {
+  "back": -1.875,
+  "front": 1.875,
+  "bottom": -0.74,
+  "top": 0.948,
+  "width": 1.5
+ },
+ "freight_flat_car_rails_db": {
+  "back": -1.875,
+  "front": 1.875,
+  "bottom": -0.74,
+  "top": 0.135,
+  "width": 1.375
+ },
+ "freight_flat_cart_wood_logs": {
+  "back": -1.375,
+  "front": 1.438,
+  "bottom": -0.74,
+  "top": 0.448,
+  "width": 1.0
+ },
+ "freight_flat_cart_wood_us": {
+  "back": -1.875,
+  "front": 1.875,
+  "bottom": -0.77,
+  "top": 0.73,
+  "width": 1.25
+ },
+ "freight_german_post": {
+  "back": -3.981,
+  "front": 3.95,
+  "bottom": -0.788,
+  "top": 1.225,
+  "width": 1.266
+ },
+ "freight_gondola_db": {
+  "back": -1.875,
+  "front": 1.875,
+  "bottom": -0.74,
+  "top": 0.573,
+  "width": 1.375
+ },
+ "freight_gsc60_foot_flatcar": {
+  "back": -2.938,
+  "front": 2.938,
+  "bottom": -0.775,
+  "top": 1.1,
+  "width": 1.563
+ },
+ "freight_gsi60_foot_bulkhead": {
+  "back": -2.938,
+  "front": 2.938,
+  "bottom": -0.775,
+  "top": 1.1,
+  "width": 1.563
+ },
+ "freight_gtng": {
+  "back": -2.025,
+  "front": 2.025,
+  "bottom": -0.725,
+  "top": 0.338,
+  "width": 1.125
+ },
+ "freight_heavyweight": {
+  "back": -3.219,
+  "front": 3.419,
+  "bottom": -0.745,
+  "top": 1.568,
+  "width": 1.238
+ },
+ "freight_heavyweight_2": {
+  "back": -5.075,
+  "front": 5.175,
+  "bottom": -0.8,
+  "top": 1.613,
+  "width": 1.375
+ },
+ "freight_hicube60foot": {
+  "back": -3.0,
+  "front": 3.0,
+  "bottom": -0.77,
+  "top": 1.418,
+  "width": 1.501
+ },
+ "freight_hopper": {
+  "back": -1.875,
+  "front": 1.812,
+  "bottom": -0.72,
+  "top": 1.218,
+  "width": 1.147
+ },
+ "freight_hopper5201": {
+  "back": -2.375,
+  "front": 2.375,
+  "bottom": -0.775,
+  "top": 1.113,
+  "width": 1.375
+ },
+ "freight_hopper6260": {
+  "back": -2.75,
+  "front": 2.75,
+  "bottom": -0.775,
+  "top": 1.113,
+  "width": 1.375
+ },
+ "freight_hopper_uk": {
+  "back": -1.875,
+  "front": 1.875,
+  "bottom": -0.794,
+  "top": 0.8,
+  "width": 1.375
+ },
+ "freight_hopper_us": {
+  "back": -1.875,
+  "front": 1.875,
+  "bottom": -0.77,
+  "top": 0.792,
+  "width": 1.125
+ },
+ "freight_ice_wagon": {
+  "back": -0.731,
+  "front": 0.787,
+  "bottom": -0.725,
+  "top": 0.213,
+  "width": 0.788
+ },
+ "freight_k_class_rail_box": {
+  "back": -1.812,
+  "front": 1.812,
+  "bottom": -0.712,
+  "top": 1.113,
+  "width": 1.375
+ },
+ "freight_long_covered_hopper": {
+  "back": -3.0,
+  "front": 3.188,
+  "bottom": -0.738,
+  "top": 1.263,
+  "width": 1.375
+ },
+ "freight_milw_baggage": {
+  "back": -2.544,
+  "front": 2.969,
+  "bottom": -0.763,
+  "top": 0.869,
+  "width": 1.238
+ },
+ "freight_mineralwagon": {
+  "back": -1.5,
+  "front": 1.5,
+  "bottom": -0.775,
+  "top": 0.6,
+  "width": 1.438
+ },
+ "freight_minetrain_2": {
+  "back": -0.688,
+  "front": 0.688,
+  "bottom": -0.77,
+  "top": 0.293,
+  "width": 0.927
+ },
+ "freight_open_red_brown": {
+  "back": -1.375,
+  "front": 1.438,
+  "bottom": -0.74,
+  "top": 0.635,
+  "width": 1.125
+ },
+ "freight_open_wagon": {
+  "back": -1.812,
+  "front": 1.812,
+  "bottom": -0.77,
+  "top": 0.792,
+  "width": 1.125
+ },
+ "freight_ps73_baggage": {
+  "back": -3.25,
+  "front": 3.25,
+  "bottom": -0.775,
+  "top": 1.116,
+  "width": 1.5
+ },
+ "freight_ps85_baggage": {
+  "back": -3.938,
+  "front": 4.0,
+  "bottom": -0.775,
+  "top": 1.131,
+  "width": 1.5
+ },
+ "freight_psrpo": {
+  "back": -3.25,
+  "front": 3.25,
+  "bottom": -0.775,
+  "top": 1.147,
+  "width": 1.5
+ },
+ "freight_psrpopm": {
+  "back": -3.25,
+  "front": 3.25,
+  "bottom": -0.775,
+  "top": 1.116,
+  "width": 1.5
+ },
+ "freight_reefer64": {
+  "back": -3.562,
+  "front": 3.562,
+  "bottom": -0.77,
+  "top": 1.48,
+  "width": 1.438
+ },
+ "freight_ribbed_hopper": {
+  "back": -2.567,
+  "front": 2.562,
+  "bottom": -0.763,
+  "top": 1.3,
+  "width": 1.438
+ },
+ "freight_round_hopper": {
+  "back": -3.094,
+  "front": 3.094,
+  "bottom": -0.763,
+  "top": 1.225,
+  "width": 1.376
+ },
+ "freight_short_covered_hopper": {
+  "back": -2.013,
+  "front": 1.987,
+  "bottom": -0.737,
+  "top": 1.263,
+  "width": 1.375
+ },
+ "freight_skeleton": {
+  "back": -2.125,
+  "front": 2.125,
+  "bottom": -0.775,
+  "top": 0.538,
+  "width": 1.281
+ },
+ "freight_slate_wagon": {
+  "back": -0.731,
+  "front": 0.787,
+  "bottom": -0.725,
+  "top": 0.213,
+  "width": 0.788
+ },
+ "freight_tipper_uk": {
+  "back": -1.562,
+  "front": 1.438,
+  "bottom": -0.825,
+  "top": 0.613,
+  "width": 1.381
+ },
+ "freight_trailer": {
+  "back": -1.75,
+  "front": 1.75,
+  "bottom": -0.74,
+  "top": -0.24,
+  "width": 1.125
+ },
+ "freight_ventilated_van": {
+  "back": -1.5,
+  "front": 1.5,
+  "bottom": -0.775,
+  "top": 1.225,
+  "width": 1.383
+ },
+ "freight_wagen_db": {
+  "back": -1.875,
+  "front": 1.875,
+  "bottom": -0.74,
+  "top": 1.26,
+  "width": 1.5
+ },
+ "freight_wellcar": {
+  "back": -2.0,
+  "front": 2.0,
+  "bottom": -0.775,
+  "top": 1.204,
+  "width": 1.125
+ },
+ "freight_wood": {
+  "back": -1.875,
+  "front": 1.875,
+  "bottom": -0.72,
+  "top": 0.056,
+  "width": 1.375
+ },
+ "loco_diesel_44_ton_switcher": {
+  "back": -3.875,
+  "front": 1.25,
+  "bottom": -0.725,
+  "top": 1.431,
+  "width": 1.376
+ },
+ "loco_diesel_alco_pa1": {
+  "back": -4.537,
+  "front": 1.337,
+  "bottom": -0.775,
+  "top": 1.475,
+  "width": 1.5
+ },
+ "loco_diesel_alco_pb1": {
+  "back": -4.394,
+  "front": 1.294,
+  "bottom": -0.775,
+  "top": 1.162,
+  "width": 1.5
+ },
+ "loco_diesel_alco_s2": {
+  "back": -3.062,
+  "front": 1.062,
+  "bottom": -0.744,
+  "top": 1.35,
+  "width": 1.531
+ },
+ "loco_diesel_bagnall": {
+  "back": -2.788,
+  "front": 0.775,
+  "bottom": -0.745,
+  "top": 1.38,
+  "width": 1.5
+ },
+ "loco_diesel_bamboo": {
+  "back": -2.531,
+  "front": 0.531,
+  "bottom": -0.8,
+  "top": -0.104,
+  "width": 1.625
+ },
+ "loco_diesel_bap_b23": {
+  "back": -4.575,
+  "front": 1.175,
+  "bottom": -0.756,
+  "top": 1.417,
+  "width": 1.5
+ },
+ "loco_diesel_bap_cf7": {
+  "back": -3.75,
+  "front": 1.25,
+  "bottom": -0.758,
+  "top": 1.662,
+  "width": 1.562
+ },
+ "loco_diesel_bap_f7a": {
+  "back": -3.531,
+  "front": 0.844,
+  "bottom": -0.765,
+  "top": 1.412,
+  "width": 1.5
+ },
+ "loco_diesel_bap_f7b": {
+  "back": -3.406,
+  "front": 0.969,
+  "bottom": -0.765,
+  "top": 1.225,
+  "width": 1.469
+ },
+ "loco_diesel_bap_gp15": {
+  "back": -3.737,
+  "front": 1.012,
+  "bottom": -0.733,
+  "top": 1.355,
+  "width": 1.531
+ },
+ "loco_diesel_beep": {
+  "back": -3.288,
+  "front": 1.15,
+  "bottom": -0.775,
+  "top": 1.313,
+  "width": 1.562
+ },
+ "loco_diesel_c415h": {
+  "back": -3.638,
+  "front": 1.175,
+  "bottom": -0.775,
+  "top": 1.506,
+  "width": 1.562
+ },
+ "loco_diesel_c415l": {
+  "back": -3.638,
+  "front": 1.175,
+  "bottom": -0.775,
+  "top": 1.194,
+  "width": 1.562
+ },
+ "loco_diesel_c415s": {
+  "back": -3.638,
+  "front": 1.175,
+  "bottom": -0.775,
+  "top": 1.381,
+  "width": 1.562
+ },
+ "loco_diesel_c424": {
+  "back": -4.475,
+  "front": 0.962,
+  "bottom": -0.731,
+  "top": 1.425,
+  "width": 1.562
+ },
+ "loco_diesel_c425": {
+  "back": -4.475,
+  "front": 0.962,
+  "bottom": -0.731,
+  "top": 1.425,
+  "width": 1.562
+ },
+ "loco_diesel_cd754": {
+  "back": -4.312,
+  "front": 1.25,
+  "bottom": -0.725,
+  "top": 1.337,
+  "width": 1.469
+ },
+ "loco_diesel_cd810": {
+  "back": -3.112,
+  "front": 1.387,
+  "bottom": -0.775,
+  "top": 0.788,
+  "width": 1.375
+ },
+ "loco_diesel_cd814": {
+  "back": -3.097,
+  "front": 1.45,
+  "bottom": -0.775,
+  "top": 0.788,
+  "width": 1.375
+ },
+ "loco_diesel_cf7": {
+  "back": -3.938,
+  "front": 0.938,
+  "bottom": -0.745,
+  "top": 1.412,
+  "width": 1.377
+ },
+ "loco_diesel_cf7round": {
+  "back": -3.75,
+  "front": 1.25,
+  "bottom": -0.758,
+  "top": 1.6,
+  "width": 1.562
+ },
+ "loco_diesel_chme3": {
+  "back": -2.375,
+  "front": 1.375,
+  "bottom": -0.77,
+  "top": 1.417,
+  "width": 1.375
+ },
+ "loco_diesel_class117": {
+  "back": -5.069,
+  "front": 0.931,
+  "bottom": -0.755,
+  "top": 1.308,
+  "width": 1.5
+ },
+ "loco_diesel_class121_bubblecar": {
+  "back": -5.069,
+  "front": 0.931,
+  "bottom": -0.755,
+  "top": 1.308,
+  "width": 1.5
+ },
+ "loco_diesel_class142_front": {
+  "back": -3.456,
+  "front": 0.887,
+  "bottom": -0.725,
+  "top": 1.181,
+  "width": 1.313
+ },
+ "loco_diesel_class143_front": {
+  "back": -3.0,
+  "front": 1.016,
+  "bottom": -0.775,
+  "top": 1.163,
+  "width": 1.406
+ },
+ "loco_diesel_class153": {
+  "back": -4.912,
+  "front": 0.712,
+  "bottom": -0.745,
+  "top": 1.161,
+  "width": 1.438
+ },
+ "loco_diesel_class156": {
+  "back": -4.938,
+  "front": 1.262,
+  "bottom": -0.745,
+  "top": 1.193,
+  "width": 1.375
+ },
+ "loco_diesel_class158": {
+  "back": -5.537,
+  "front": 0.837,
+  "bottom": -0.75,
+  "top": 1.125,
+  "width": 1.375
+ },
+ "loco_diesel_class175": {
+  "back": -5.487,
+  "front": 0.844,
+  "bottom": -0.74,
+  "top": 1.073,
+  "width": 1.375
+ },
+ "loco_diesel_class205": {
+  "back": -4.844,
+  "front": 0.781,
+  "bottom": -0.775,
+  "top": 1.162,
+  "width": 1.406
+ },
+ "loco_diesel_class34": {
+  "back": -4.0,
+  "front": 1.0,
+  "bottom": -0.755,
+  "top": 1.151,
+  "width": 1.406
+ },
+ "loco_diesel_class43": {
+  "back": -4.225,
+  "front": 1.256,
+  "bottom": -0.738,
+  "top": 1.075,
+  "width": 1.375
+ },
+ "loco_diesel_class44": {
+  "back": -5.875,
+  "front": 1.375,
+  "bottom": -0.775,
+  "top": 1.256,
+  "width": 1.438
+ },
+ "loco_diesel_class47": {
+  "back": -4.95,
+  "front": 0.825,
+  "bottom": -0.8,
+  "top": 1.184,
+  "width": 1.375
+ },
+ "loco_diesel_dash8_40b": {
+  "back": -4.6,
+  "front": 1.4,
+  "bottom": -0.761,
+  "top": 1.381,
+  "width": 1.531
+ },
+ "loco_diesel_dash8_40bb": {
+  "back": -4.6,
+  "front": 1.4,
+  "bottom": -0.761,
+  "top": 1.319,
+  "width": 1.469
+ },
+ "loco_diesel_dash8_40bw": {
+  "back": -4.6,
+  "front": 1.4,
+  "bottom": -0.761,
+  "top": 1.381,
+  "width": 1.5
+ },
+ "loco_diesel_dash8_40c": {
+  "back": -4.85,
+  "front": 1.65,
+  "bottom": -0.751,
+  "top": 1.381,
+  "width": 1.531
+ },
+ "loco_diesel_dash9_44cw": {
+  "back": -5.638,
+  "front": 1.3,
+  "bottom": -0.744,
+  "top": 1.412,
+  "width": 1.561
+ },
+ "loco_diesel_dd35a": {
+  "back": -6.35,
+  "front": 1.3,
+  "bottom": -0.745,
+  "top": 1.63,
+  "width": 1.013
+ },
+ "loco_diesel_deltic": {
+  "back": -5.938,
+  "front": 1.438,
+  "bottom": -0.75,
+  "top": 1.578,
+  "width": 1.5
+ },
+ "loco_diesel_dh643": {
+  "back": -5.5,
+  "front": 1.5,
+  "bottom": -0.745,
+  "top": 1.35,
+  "width": 1.561
+ },
+ "loco_diesel_emde7a": {
+  "back": -4.912,
+  "front": 1.212,
+  "bottom": -0.775,
+  "top": 1.225,
+  "width": 1.5
+ },
+ "loco_diesel_emde7b": {
+  "back": -4.938,
+  "front": 1.188,
+  "bottom": -0.775,
+  "top": 1.163,
+  "width": 1.469
+ },
+ "loco_diesel_emde8a": {
+  "back": -4.912,
+  "front": 1.212,
+  "bottom": -0.775,
+  "top": 1.412,
+  "width": 1.5
+ },
+ "loco_diesel_emde8b": {
+  "back": -4.938,
+  "front": 1.188,
+  "bottom": -0.775,
+  "top": 1.256,
+  "width": 1.469
+ },
+ "loco_diesel_emdf3": {
+  "back": -3.663,
+  "front": 0.954,
+  "bottom": -0.734,
+  "top": 1.472,
+  "width": 1.361
+ },
+ "loco_diesel_emdf7": {
+  "back": -3.663,
+  "front": 0.954,
+  "bottom": -0.734,
+  "top": 1.472,
+  "width": 1.361
+ },
+ "loco_diesel_es44": {
+  "back": -5.638,
+  "front": 1.3,
+  "bottom": -0.713,
+  "top": 1.412,
+  "width": 1.375
+ },
+ "loco_diesel_ews_class66": {
+  "back": -6.5,
+  "front": 1.125,
+  "bottom": -0.75,
+  "top": 1.394,
+  "width": 2.563
+ },
+ "loco_diesel_fol_m1": {
+  "back": -5.05,
+  "front": 1.263,
+  "bottom": -0.719,
+  "top": 1.406,
+  "width": 1.438
+ },
+ "loco_diesel_fol_m1b": {
+  "back": -4.888,
+  "front": 1.05,
+  "bottom": -0.719,
+  "top": 1.344,
+  "width": 1.438
+ },
+ "loco_diesel_ge25ton": {
+  "back": -1.562,
+  "front": 0.562,
+  "bottom": -0.775,
+  "top": 0.944,
+  "width": 1.411
+ },
+ "loco_diesel_ge44ton": {
+  "back": -2.812,
+  "front": 0.812,
+  "bottom": -0.745,
+  "top": 1.131,
+  "width": 1.411
+ },
+ "loco_diesel_gp13": {
+  "back": -2.675,
+  "front": 1.075,
+  "bottom": -0.77,
+  "top": 1.292,
+  "width": 1.178
+ },
+ "loco_diesel_gp15": {
+  "back": -3.737,
+  "front": 0.95,
+  "bottom": -0.77,
+  "top": 1.324,
+  "width": 1.376
+ },
+ "loco_diesel_gp30": {
+  "back": -4.25,
+  "front": 1.188,
+  "bottom": -0.733,
+  "top": 1.355,
+  "width": 1.5
+ },
+ "loco_diesel_gp38dash2": {
+  "back": -4.312,
+  "front": 1.188,
+  "bottom": -0.733,
+  "top": 1.386,
+  "width": 1.531
+ },
+ "loco_diesel_gp38dash9w": {
+  "back": -4.5,
+  "front": 1.562,
+  "bottom": -0.733,
+  "top": 1.386,
+  "width": 1.5
+ },
+ "loco_diesel_gp40": {
+  "back": -3.1,
+  "front": 0.6,
+  "bottom": -0.75,
+  "top": 1.018,
+  "width": 1.107
+ },
+ "loco_diesel_gp49": {
+  "back": -4.25,
+  "front": 1.188,
+  "bottom": -0.733,
+  "top": 1.355,
+  "width": 1.531
+ },
+ "loco_diesel_gp7": {
+  "back": -4.062,
+  "front": 1.125,
+  "bottom": -0.741,
+  "top": 1.525,
+  "width": 1.562
+ },
+ "loco_diesel_gp7_red": {
+  "back": -2.675,
+  "front": 1.075,
+  "bottom": -0.77,
+  "top": 1.169,
+  "width": 1.178
+ },
+ "loco_diesel_gp7b": {
+  "back": -4.062,
+  "front": 1.125,
+  "bottom": -0.741,
+  "top": 1.4,
+  "width": 1.378
+ },
+ "loco_diesel_gp7u": {
+  "back": -4.0,
+  "front": 1.062,
+  "bottom": -0.738,
+  "top": 1.337,
+  "width": 1.562
+ },
+ "loco_diesel_gp9": {
+  "back": -4.062,
+  "front": 1.125,
+  "bottom": -0.738,
+  "top": 1.4,
+  "width": 1.562
+ },
+ "loco_diesel_h1044": {
+  "back": -3.35,
+  "front": 1.15,
+  "bottom": -0.775,
+  "top": 1.319,
+  "width": 1.5
+ },
+ "loco_diesel_h16_66": {
+  "back": -4.481,
+  "front": 1.081,
+  "bottom": -0.745,
+  "top": 1.303,
+  "width": 1.5
+ },
+ "loco_diesel_h24_66": {
+  "back": -4.869,
+  "front": 1.069,
+  "bottom": -0.745,
+  "top": 1.366,
+  "width": 1.5
+ },
+ "loco_diesel_h24_66l": {
+  "back": -4.869,
+  "front": 1.069,
+  "bottom": -0.745,
+  "top": 1.366,
+  "width": 1.5
+ },
+ "loco_diesel_hh660": {
+  "back": -3.062,
+  "front": 1.062,
+  "bottom": -0.744,
+  "top": 1.381,
+  "width": 1.5
+ },
+ "loco_diesel_ic4_dsb_mg": {
+  "back": -8.451,
+  "front": 0.325,
+  "bottom": -0.703,
+  "top": 1.099,
+  "width": 1.053
+ },
+ "loco_diesel_kof": {
+  "back": -2.375,
+  "front": 0.625,
+  "bottom": -0.74,
+  "top": 0.948,
+  "width": 1.45
+ },
+ "loco_diesel_kof_iii": {
+  "back": -2.784,
+  "front": 1.184,
+  "bottom": -0.775,
+  "top": 0.959,
+  "width": 1.344
+ },
+ "loco_diesel_kof_iii_m": {
+  "back": -2.784,
+  "front": 1.184,
+  "bottom": -0.775,
+  "top": 0.959,
+  "width": 1.344
+ },
+ "loco_diesel_krautt": {
+  "back": -4.553,
+  "front": 1.353,
+  "bottom": -0.77,
+  "top": 1.246,
+  "width": 1.5
+ },
+ "loco_diesel_milw_h1044": {
+  "back": -5.4,
+  "front": 0.945,
+  "bottom": -0.79,
+  "top": 1.485,
+  "width": 1.485
+ },
+ "loco_diesel_nre3gs21b": {
+  "back": -4.312,
+  "front": 1.188,
+  "bottom": -0.733,
+  "top": 1.417,
+  "width": 1.5
+ },
+ "loco_diesel_rsd15": {
+  "back": -4.625,
+  "front": 1.438,
+  "bottom": -0.745,
+  "top": 1.444,
+  "width": 1.561
+ },
+ "loco_diesel_sd40": {
+  "back": -3.638,
+  "front": 1.238,
+  "bottom": -0.77,
+  "top": 1.355,
+  "width": 1.187
+ },
+ "loco_diesel_sd40dash2": {
+  "back": -5.119,
+  "front": 1.256,
+  "bottom": -0.77,
+  "top": 1.355,
+  "width": 1.531
+ },
+ "loco_diesel_sd70": {
+  "back": -3.638,
+  "front": 1.238,
+  "bottom": -0.74,
+  "top": 1.269,
+  "width": 1.191
+ },
+ "loco_diesel_sd70mac": {
+  "back": -5.6,
+  "front": 1.337,
+  "bottom": -0.745,
+  "top": 1.413,
+  "width": 1.536
+ },
+ "loco_diesel_sd9": {
+  "back": -4.475,
+  "front": 1.275,
+  "bottom": -0.739,
+  "top": 1.355,
+  "width": 1.531
+ },
+ "loco_diesel_shunter": {
+  "back": -3.075,
+  "front": 0.675,
+  "bottom": -0.751,
+  "top": 1.311,
+  "width": 1.463
+ },
+ "loco_diesel_sm42": {
+  "back": -4.625,
+  "front": 1.688,
+  "bottom": -0.763,
+  "top": 1.188,
+  "width": 1.375
+ },
+ "loco_diesel_sw1": {
+  "back": -3.094,
+  "front": 1.094,
+  "bottom": -0.775,
+  "top": 1.288,
+  "width": 1.5
+ },
+ "loco_diesel_sw1200": {
+  "back": -3.125,
+  "front": 1.094,
+  "bottom": -0.775,
+  "top": 1.475,
+  "width": 1.562
+ },
+ "loco_diesel_sw1500": {
+  "back": -3.188,
+  "front": 1.188,
+  "bottom": -0.761,
+  "top": 1.475,
+  "width": 1.531
+ },
+ "loco_diesel_sw8": {
+  "back": -3.094,
+  "front": 1.094,
+  "bottom": -0.775,
+  "top": 1.288,
+  "width": 1.5
+ },
+ "loco_diesel_u18b": {
+  "back": -3.862,
+  "front": 1.262,
+  "bottom": -0.761,
+  "top": 1.417,
+  "width": 1.541
+ },
+ "loco_diesel_u23b": {
+  "back": -4.575,
+  "front": 1.175,
+  "bottom": -0.761,
+  "top": 1.417,
+  "width": 1.541
+ },
+ "loco_diesel_u36c": {
+  "back": -5.062,
+  "front": 1.312,
+  "bottom": -0.731,
+  "top": 1.534,
+  "width": 1.5
+ },
+ "loco_diesel_v60": {
+  "back": -2.625,
+  "front": 1.125,
+  "bottom": -0.74,
+  "top": 1.573,
+  "width": 1.5
+ },
+ "loco_diesel_wls40": {
+  "back": -3.859,
+  "front": 0.812,
+  "bottom": -0.763,
+  "top": 1.363,
+  "width": 1.375
+ },
+ "loco_electric_440r_front": {
+  "back": -4.612,
+  "front": 0.913,
+  "bottom": -0.775,
+  "top": 1.675,
+  "width": 1.459
+ },
+ "loco_electric_b80c_a": {
+  "back": -3.688,
+  "front": 1.781,
+  "bottom": -0.713,
+  "top": 1.925,
+  "width": 1.469
+ },
+ "loco_electric_bnlrv_a": {
+  "back": -4.625,
+  "front": 0.859,
+  "bottom": -0.763,
+  "top": 1.706,
+  "width": 1.35
+ },
+ "loco_electric_bp4": {
+  "back": -5.013,
+  "front": 0.487,
+  "bottom": -0.738,
+  "top": 1.381,
+  "width": 1.5
+ },
+ "loco_electric_br155": {
+  "back": -4.888,
+  "front": 1.488,
+  "bottom": -0.825,
+  "top": 1.937,
+  "width": 1.5
+ },
+ "loco_electric_br185": {
+  "back": -5.438,
+  "front": 0.562,
+  "bottom": -0.7,
+  "top": 1.988,
+  "width": 1.563
+ },
+ "loco_electric_br_e69": {
+  "back": -1.5,
+  "front": 1.5,
+  "bottom": -0.72,
+  "top": 1.914,
+  "width": 1.51
+ },
+ "loco_electric_br_mk2f_dbso": {
+  "back": -4.688,
+  "front": 0.781,
+  "bottom": -0.738,
+  "top": 1.075,
+  "width": 1.375
+ },
+ "loco_electric_br_mk3_dvt": {
+  "back": -4.856,
+  "front": 0.856,
+  "bottom": -0.738,
+  "top": 1.075,
+  "width": 1.375
+ },
+ "loco_electric_br_mk4_dvt": {
+  "back": -5.131,
+  "front": 0.569,
+  "bottom": -0.738,
+  "top": 1.075,
+  "width": 1.375
+ },
+ "loco_electric_cd151": {
+  "back": -4.531,
+  "front": 0.475,
+  "bottom": -0.733,
+  "top": 1.943,
+  "width": 1.238
+ },
+ "loco_electric_class162_engine": {
+  "back": -5.25,
+  "front": 1.188,
+  "bottom": -0.77,
+  "top": 1.168,
+  "width": 1.413
+ },
+ "loco_electric_class230_engine": {
+  "back": -3.487,
+  "front": 0.887,
+  "bottom": -0.765,
+  "top": 1.313,
+  "width": 1.375
+ },
+ "loco_electric_class319_engine": {
+  "back": -4.4,
+  "front": 0.988,
+  "bottom": -0.744,
+  "top": 1.209,
+  "width": 1.375
+ },
+ "loco_electric_class321": {
+  "back": -4.825,
+  "front": 0.863,
+  "bottom": -0.755,
+  "top": 1.089,
+  "width": 1.375
+ },
+ "loco_electric_class345": {
+  "back": -4.125,
+  "front": 1.062,
+  "bottom": -0.755,
+  "top": 0.995,
+  "width": 1.375
+ },
+ "loco_electric_class374_front": {
+  "back": -6.287,
+  "front": 0.9,
+  "bottom": -0.763,
+  "top": 1.05,
+  "width": 1.375
+ },
+ "loco_electric_class378_front": {
+  "back": -4.65,
+  "front": 0.819,
+  "bottom": -0.725,
+  "top": 1.134,
+  "width": 1.375
+ },
+ "loco_electric_class387_front": {
+  "back": -4.862,
+  "front": 0.875,
+  "bottom": -0.738,
+  "top": 1.138,
+  "width": 1.375
+ },
+ "loco_electric_class389_front": {
+  "back": -5.262,
+  "front": 0.975,
+  "bottom": -0.738,
+  "top": 1.138,
+  "width": 1.375
+ },
+ "loco_electric_class390_front": {
+  "back": -5.8,
+  "front": 0.913,
+  "bottom": -0.738,
+  "top": 1.075,
+  "width": 1.375
+ },
+ "loco_electric_class401_engine": {
+  "back": -4.391,
+  "front": 1.019,
+  "bottom": -0.755,
+  "top": 1.307,
+  "width": 1.5
+ },
+ "loco_electric_class416_loco": {
+  "back": -4.844,
+  "front": 0.781,
+  "bottom": -0.775,
+  "top": 1.162,
+  "width": 1.406
+ },
+ "loco_electric_class442_dts": {
+  "back": -5.25,
+  "front": 0.969,
+  "bottom": -0.738,
+  "top": 1.075,
+  "width": 1.376
+ },
+ "loco_electric_class85": {
+  "back": -5.562,
+  "front": 0.625,
+  "bottom": -0.75,
+  "top": 1.881,
+  "width": 1.731
+ },
+ "loco_electric_class90": {
+  "back": -4.219,
+  "front": 1.494,
+  "bottom": -0.8,
+  "top": 1.45,
+  "width": 1.375
+ },
+ "loco_electric_class91": {
+  "back": -5.056,
+  "front": 0.813,
+  "bottom": -0.75,
+  "top": 1.5,
+  "width": 1.375
+ },
+ "loco_electric_cq310": {
+  "back": -3.875,
+  "front": 0.812,
+  "bottom": -0.725,
+  "top": 1.056,
+  "width": 1.531
+ },
+ "loco_electric_db143": {
+  "back": -4.513,
+  "front": 1.05,
+  "bottom": -0.825,
+  "top": 1.869,
+  "width": 1.5
+ },
+ "loco_electric_db420_loco": {
+  "back": -4.0,
+  "front": 1.0,
+  "bottom": -0.714,
+  "top": 1.411,
+  "width": 1.25
+ },
+ "loco_electric_dstock_engine": {
+  "back": -2.75,
+  "front": 0.875,
+  "bottom": -0.765,
+  "top": 1.313,
+  "width": 1.375
+ },
+ "loco_electric_duewag_gt6er": {
+  "back": -2.913,
+  "front": 1.556,
+  "bottom": -0.725,
+  "top": 2.009,
+  "width": 1.296
+ },
+ "loco_electric_duewag_gt6zr": {
+  "back": -2.881,
+  "front": 1.556,
+  "bottom": -0.725,
+  "top": 2.009,
+  "width": 1.3
+ },
+ "loco_electric_duewag_t4er": {
+  "back": -3.844,
+  "front": 1.344,
+  "bottom": -0.725,
+  "top": 2.009,
+  "width": 1.275
+ },
+ "loco_electric_e10": {
+  "back": -4.737,
+  "front": 1.0,
+  "bottom": -0.588,
+  "top": 1.663,
+  "width": 1.35
+ },
+ "loco_electric_e103": {
+  "back": -4.531,
+  "front": 1.038,
+  "bottom": -0.788,
+  "top": 1.469,
+  "width": 1.254
+ },
+ "loco_electric_ef1": {
+  "back": -4.537,
+  "front": 1.15,
+  "bottom": -0.738,
+  "top": 2.825,
+  "width": 1.5
+ },
+ "loco_electric_ef1b": {
+  "back": -3.469,
+  "front": 1.156,
+  "bottom": -0.738,
+  "top": 1.45,
+  "width": 1.377
+ },
+ "loco_electric_ep1a": {
+  "back": -4.537,
+  "front": 1.15,
+  "bottom": -0.738,
+  "top": 2.825,
+  "width": 1.5
+ },
+ "loco_electric_eu07": {
+  "back": -4.119,
+  "front": 0.719,
+  "bottom": -0.713,
+  "top": 1.734,
+  "width": 1.294
+ },
+ "loco_electric_feve3300front": {
+  "back": -4.237,
+  "front": 0.637,
+  "bottom": -0.745,
+  "top": 1.661,
+  "width": 1.375
+ },
+ "loco_electric_fgv4300_motor": {
+  "back": -3.65,
+  "front": 0.787,
+  "bottom": -0.768,
+  "top": 1.545,
+  "width": 1.156
+ },
+ "loco_electric_gm6c": {
+  "back": -5.119,
+  "front": 1.256,
+  "bottom": -0.794,
+  "top": 2.663,
+  "width": 1.531
+ },
+ "loco_electric_ice1": {
+  "back": -5.59,
+  "front": 0.75,
+  "bottom": -0.745,
+  "top": 1.349,
+  "width": 1.155
+ },
+ "loco_electric_ilma": {
+  "back": -2.188,
+  "front": 1.188,
+  "bottom": -0.77,
+  "top": 1.667,
+  "width": 1.25
+ },
+ "loco_electric_ilmb": {
+  "back": -2.188,
+  "front": 1.188,
+  "bottom": -0.77,
+  "top": 1.667,
+  "width": 1.25
+ },
+ "loco_electric_interurban_series_100": {
+  "back": -4.281,
+  "front": 1.281,
+  "bottom": -0.714,
+  "top": 2.13,
+  "width": 1.313
+ },
+ "loco_electric_kvb_2300": {
+  "back": -3.688,
+  "front": 1.781,
+  "bottom": -0.688,
+  "top": 1.95,
+  "width": 1.469
+ },
+ "loco_electric_lu_engine": {
+  "back": -2.688,
+  "front": 0.625,
+  "bottom": -0.765,
+  "top": 0.798,
+  "width": 1.438
+ },
+ "loco_electric_m8_dnf1": {
+  "back": -2.581,
+  "front": 1.225,
+  "bottom": -0.725,
+  "top": 1.15,
+  "width": 1.25
+ },
+ "loco_electric_m8c": {
+  "back": -3.188,
+  "front": 1.625,
+  "bottom": -0.725,
+  "top": 1.978,
+  "width": 1.25
+ },
+ "loco_electric_ma100_loco": {
+  "back": -3.169,
+  "front": 1.113,
+  "bottom": -0.734,
+  "top": 1.454,
+  "width": 1.375
+ },
+ "loco_electric_metal_tram": {
+  "back": -2.906,
+  "front": 1.344,
+  "bottom": -0.839,
+  "top": 2.372,
+  "width": 1.438
+ },
+ "loco_electric_metro2000": {
+  "back": -3.75,
+  "front": 0.656,
+  "bottom": -0.725,
+  "top": 1.369,
+  "width": 1.191
+ },
+ "loco_electric_metro3000": {
+  "back": -3.812,
+  "front": 0.876,
+  "bottom": -0.756,
+  "top": 1.306,
+  "width": 1.126
+ },
+ "loco_electric_mine_train": {
+  "back": -1.55,
+  "front": 0.387,
+  "bottom": -0.77,
+  "top": 0.48,
+  "width": 0.75
+ },
+ "loco_electric_nmbs_hle_18": {
+  "back": -4.688,
+  "front": 1.062,
+  "bottom": -0.75,
+  "top": 1.688,
+  "width": 1.375
+ },
+ "loco_electric_pch120": {
+  "back": -3.487,
+  "front": 0.887,
+  "bottom": -0.734,
+  "top": 1.851,
+  "width": 1.375
+ },
+ "loco_electric_renfe446_motor": {
+  "back": -4.512,
+  "front": 0.725,
+  "bottom": -0.725,
+  "top": 1.288,
+  "width": 1.375
+ },
+ "loco_electric_renfe450_motor": {
+  "back": -4.85,
+  "front": 0.725,
+  "bottom": -0.775,
+  "top": 1.55,
+  "width": 1.438
+ },
+ "loco_electric_speed_zero_ed": {
+  "back": -4.013,
+  "front": 0.55,
+  "bottom": -0.74,
+  "top": 1.698,
+  "width": 1.375
+ },
+ "loco_electric_tram_ny": {
+  "back": -3.75,
+  "front": 0.75,
+  "bottom": -0.74,
+  "top": 1.26,
+  "width": 1.375
+ },
+ "loco_electric_tram_yellow": {
+  "back": -2.675,
+  "front": 1.075,
+  "bottom": -0.74,
+  "top": 1.385,
+  "width": 1.393
+ },
+ "loco_electric_tw305": {
+  "back": -3.094,
+  "front": 1.094,
+  "bottom": -0.745,
+  "top": 2.005,
+  "width": 1.5
+ },
+ "loco_electric_vl10": {
+  "back": -3.075,
+  "front": 0.675,
+  "bottom": -0.77,
+  "top": 1.542,
+  "width": 1.375
+ },
+ "loco_steam_040vb": {
+  "back": -1.744,
+  "front": 0.506,
+  "bottom": -0.775,
+  "top": 1.6,
+  "width": 1.125
+ },
+ "loco_steam_262t": {
+  "back": -3.544,
+  "front": 0.619,
+  "bottom": -0.775,
+  "top": 1.537,
+  "width": 1.238
+ },
+ "loco_steam_4_4_0": {
+  "back": -2.491,
+  "front": 0.84,
+  "bottom": -0.74,
+  "top": 1.76,
+  "width": 1.255
+ },
+ "loco_steam_a4": {
+  "back": -6.199,
+  "front": 1.327,
+  "bottom": -0.709,
+  "top": 1.606,
+  "width": 1.341
+ },
+ "loco_steam_adler": {
+  "back": -1.931,
+  "front": 0.156,
+  "bottom": -0.75,
+  "top": 1.125,
+  "width": 0.844
+ },
+ "loco_steam_alco_sc4": {
+  "back": -4.566,
+  "front": 0.75,
+  "bottom": -0.738,
+  "top": 1.306,
+  "width": 1.411
+ },
+ "loco_steam_alice": {
+  "back": -2.813,
+  "front": 0.619,
+  "bottom": -0.775,
+  "top": 1.475,
+  "width": 1.238
+ },
+ "loco_steam_asteri": {
+  "back": -1.812,
+  "front": 1.812,
+  "bottom": -0.784,
+  "top": 1.176,
+  "width": 1.517
+ },
+ "loco_steam_berk_1225": {
+  "back": -5.844,
+  "front": 1.781,
+  "bottom": -0.763,
+  "top": 1.335,
+  "width": 1.5
+ },
+ "loco_steam_berk_765": {
+  "back": -5.844,
+  "front": 1.781,
+  "bottom": -0.763,
+  "top": 1.338,
+  "width": 1.5
+ },
+ "loco_steam_br01": {
+  "back": -4.5,
+  "front": 0.625,
+  "bottom": -0.74,
+  "top": 1.448,
+  "width": 1.387
+ },
+ "loco_steam_br80": {
+  "back": -2.375,
+  "front": 1.125,
+  "bottom": -0.74,
+  "top": 1.385,
+  "width": 1.416
+ },
+ "loco_steam_br_black_5": {
+  "back": -3.975,
+  "front": 0.688,
+  "bottom": -0.738,
+  "top": 1.037,
+  "width": 1.313
+ },
+ "loco_steam_br_britannia": {
+  "back": -4.591,
+  "front": 0.825,
+  "bottom": -0.725,
+  "top": 1.106,
+  "width": 1.313
+ },
+ "loco_steam_c11": {
+  "back": -3.938,
+  "front": 0.906,
+  "bottom": -0.725,
+  "top": 1.119,
+  "width": 1.382
+ },
+ "loco_steam_c41": {
+  "back": -4.566,
+  "front": 0.75,
+  "bottom": -0.738,
+  "top": 1.325,
+  "width": 1.535
+ },
+ "loco_steam_c41_080": {
+  "back": -4.25,
+  "front": 0.75,
+  "bottom": -0.738,
+  "top": 1.325,
+  "width": 1.535
+ },
+ "loco_steam_c41t": {
+  "back": -4.5,
+  "front": 0.875,
+  "bottom": -0.738,
+  "top": 1.325,
+  "width": 1.535
+ },
+ "loco_steam_c62": {
+  "back": -6.312,
+  "front": 0.688,
+  "bottom": -0.765,
+  "top": 1.385,
+  "width": 1.5
+ },
+ "loco_steam_cherepanov": {
+  "back": -1.938,
+  "front": 0.438,
+  "bottom": -0.77,
+  "top": 1.73,
+  "width": 0.753
+ },
+ "loco_steam_climax": {
+  "back": -2.981,
+  "front": 1.294,
+  "bottom": -0.745,
+  "top": 1.505,
+  "width": 1.35
+ },
+ "loco_steam_climax_2truck": {
+  "back": -2.275,
+  "front": 1.475,
+  "bottom": -0.762,
+  "top": 1.3,
+  "width": 1.457
+ },
+ "loco_steam_coranation_class": {
+  "back": -6.831,
+  "front": 1.013,
+  "bottom": -0.725,
+  "top": 1.619,
+  "width": 1.377
+ },
+ "loco_steam_d51_long": {
+  "back": -6.25,
+  "front": 0.562,
+  "bottom": -0.738,
+  "top": 1.512,
+  "width": 1.375
+ },
+ "loco_steam_d51_short": {
+  "back": -6.25,
+  "front": 0.562,
+  "bottom": -0.738,
+  "top": 1.512,
+  "width": 1.375
+ },
+ "loco_steam_er_ussr": {
+  "back": -4.125,
+  "front": 0.688,
+  "bottom": -0.74,
+  "top": 1.573,
+  "width": 1.446
+ },
+ "loco_steam_forney": {
+  "back": -3.006,
+  "front": 1.012,
+  "bottom": -0.74,
+  "top": 1.51,
+  "width": 1.255
+ },
+ "loco_steam_fowler": {
+  "back": -3.816,
+  "front": 0.5,
+  "bottom": -0.753,
+  "top": 1.247,
+  "width": 1.375
+ },
+ "loco_steam_garratt_front": {
+  "back": -3.219,
+  "front": 1.906,
+  "bottom": -0.77,
+  "top": 0.667,
+  "width": 1.375
+ },
+ "loco_steam_garratt_mid": {
+  "back": -5.375,
+  "front": 1.062,
+  "bottom": -0.395,
+  "top": 1.043,
+  "width": 1.381
+ },
+ "loco_steam_garratt_rear": {
+  "back": -3.531,
+  "front": 1.594,
+  "bottom": -0.77,
+  "top": 1.043,
+  "width": 1.375
+ },
+ "loco_steam_glyn": {
+  "back": -2.925,
+  "front": 0.675,
+  "bottom": -0.775,
+  "top": 1.6,
+  "width": 1.35
+ },
+ "loco_steam_gs4": {
+  "back": -7.006,
+  "front": 0.534,
+  "bottom": -0.744,
+  "top": 1.572,
+  "width": 1.425
+ },
+ "loco_steam_gwr_101_class": {
+  "back": -3.312,
+  "front": 0.75,
+  "bottom": -0.755,
+  "top": 1.339,
+  "width": 1.438
+ },
+ "loco_steam_gwr_42xx": {
+  "back": -5.1,
+  "front": 0.837,
+  "bottom": -0.755,
+  "top": 1.339,
+  "width": 1.625
+ },
+ "loco_steam_gwr_72xx": {
+  "back": -5.812,
+  "front": 0.875,
+  "bottom": -0.755,
+  "top": 1.339,
+  "width": 1.625
+ },
+ "loco_steam_hall_class": {
+  "back": -5.525,
+  "front": 0.662,
+  "bottom": -0.744,
+  "top": 1.256,
+  "width": 1.469
+ },
+ "loco_steam_heavy": {
+  "back": -3.875,
+  "front": 1.062,
+  "bottom": -0.782,
+  "top": 1.364,
+  "width": 1.375
+ },
+ "loco_steam_j50": {
+  "back": -3.719,
+  "front": 1.125,
+  "bottom": -0.775,
+  "top": 1.225,
+  "width": 1.375
+ },
+ "loco_steam_king_class": {
+  "back": -6.25,
+  "front": 0.656,
+  "bottom": -0.775,
+  "top": 1.256,
+  "width": 1.484
+ },
+ "loco_steam_lssp7": {
+  "back": -1.688,
+  "front": 0.438,
+  "bottom": -0.75,
+  "top": 1.188,
+  "width": 1.25
+ },
+ "loco_steam_milw_class_a": {
+  "back": -5.316,
+  "front": 0.844,
+  "bottom": -0.763,
+  "top": 1.009,
+  "width": 1.246
+ },
+ "loco_steam_mogul": {
+  "back": -2.431,
+  "front": 0.9,
+  "bottom": -0.74,
+  "top": 1.573,
+  "width": 1.255
+ },
+ "loco_steam_mr_compound": {
+  "back": -4.513,
+  "front": 0.925,
+  "bottom": -0.763,
+  "top": 1.331,
+  "width": 1.375
+ },
+ "loco_steam_mw_class_88": {
+  "back": -3.031,
+  "front": 0.594,
+  "bottom": -0.775,
+  "top": 1.287,
+  "width": 1.375
+ },
+ "loco_steam_onion": {
+  "back": -1.762,
+  "front": 0.425,
+  "bottom": -0.794,
+  "top": 1.206,
+  "width": 1.376
+ },
+ "loco_steam_pannier": {
+  "back": -4.434,
+  "front": 1.416,
+  "bottom": -0.775,
+  "top": 1.475,
+  "width": 1.463
+ },
+ "loco_steam_polar_express": {
+  "back": -4.0,
+  "front": 1.125,
+  "bottom": -0.775,
+  "top": 1.287,
+  "width": 1.375
+ },
+ "loco_steam_rw_type_2": {
+  "back": -2.812,
+  "front": 0.5,
+  "bottom": -0.755,
+  "top": 1.276,
+  "width": 1.375
+ },
+ "loco_steam_rw_type_3": {
+  "back": -3.375,
+  "front": 0.875,
+  "bottom": -0.755,
+  "top": 1.432,
+  "width": 1.375
+ },
+ "loco_steam_sentinel_y3": {
+  "back": -2.031,
+  "front": 1.031,
+  "bottom": -0.775,
+  "top": 1.287,
+  "width": 1.388
+ },
+ "loco_steam_shay": {
+  "back": -2.275,
+  "front": 1.475,
+  "bottom": -0.75,
+  "top": 1.312,
+  "width": 1.457
+ },
+ "loco_steam_shay_3truck": {
+  "back": -2.75,
+  "front": 0.875,
+  "bottom": -0.775,
+  "top": 1.038,
+  "width": 1.362
+ },
+ "loco_steam_skookum": {
+  "back": -3.9,
+  "front": 1.85,
+  "bottom": -0.744,
+  "top": 1.225,
+  "width": 1.251
+ },
+ "loco_steam_small": {
+  "back": -2.09,
+  "front": 0.11,
+  "bottom": -0.8,
+  "top": 1.05,
+  "width": 1.0
+ },
+ "loco_steam_snow_plow": {
+  "back": -4.938,
+  "front": 0.812,
+  "bottom": -0.78,
+  "top": 1.57,
+  "width": 2.25
+ },
+ "loco_steam_southern_1102": {
+  "back": -4.503,
+  "front": 0.75,
+  "bottom": -0.738,
+  "top": 1.325,
+  "width": 1.411
+ },
+ "loco_steam_star_class": {
+  "back": -2.362,
+  "front": 0.778,
+  "bottom": -0.838,
+  "top": 1.162,
+  "width": 1.125
+ },
+ "loco_steam_usatc_uk": {
+  "back": -3.066,
+  "front": 0.941,
+  "bottom": -0.75,
+  "top": 0.969,
+  "width": 1.313
+ },
+ "loco_steam_usatc_us": {
+  "back": -3.062,
+  "front": 0.938,
+  "bottom": -0.75,
+  "top": 0.969,
+  "width": 1.329
+ },
+ "loco_steam_vb_shay": {
+  "back": -2.756,
+  "front": 2.194,
+  "bottom": -0.725,
+  "top": 1.838,
+  "width": 1.238
+ },
+ "loco_steam_vb_shay_2truck": {
+  "back": -2.275,
+  "front": 1.475,
+  "bottom": -0.762,
+  "top": 1.613,
+  "width": 1.457
+ },
+ "loco_steam_wwcp_062t": {
+  "back": -5.0,
+  "front": 0.812,
+  "bottom": -0.755,
+  "top": 1.183,
+  "width": 1.375
+ },
+ "passenger_10ton_brake_van": {
+  "back": -1.5,
+  "front": 1.5,
+  "bottom": -0.775,
+  "top": 1.225,
+  "width": 1.5
+ },
+ "passenger_1class_db": {
+  "back": -1.875,
+  "front": 1.875,
+  "bottom": -0.74,
+  "top": 1.26,
+  "width": 1.434
+ },
+ "passenger_2class_db": {
+  "back": -1.875,
+  "front": 1.875,
+  "bottom": -0.74,
+  "top": 1.26,
+  "width": 1.434
+ },
+ "passenger_440_r_mid": {
+  "back": -2.688,
+  "front": 2.75,
+  "bottom": -0.775,
+  "top": 1.063,
+  "width": 1.459
+ },
+ "passenger_440_r_rear": {
+  "back": -2.812,
+  "front": 2.712,
+  "bottom": -0.775,
+  "top": 1.063,
+  "width": 1.459
+ },
+ "passenger_acfgn60_seat_coach": {
+  "back": -3.938,
+  "front": 4.0,
+  "bottom": -0.775,
+  "top": 1.187,
+  "width": 1.5
+ },
+ "passenger_adler": {
+  "back": -1.25,
+  "front": 1.062,
+  "bottom": -0.76,
+  "top": 0.509,
+  "width": 1.0
+ },
+ "passenger_amfleet": {
+  "back": -2.5,
+  "front": 2.438,
+  "bottom": -0.731,
+  "top": 1.27,
+  "width": 1.762
+ },
+ "passenger_amfleet2": {
+  "back": -2.5,
+  "front": 2.438,
+  "bottom": -0.731,
+  "top": 1.27,
+  "width": 1.762
+ },
+ "passenger_b80_c_b": {
+  "back": -3.688,
+  "front": 1.094,
+  "bottom": -0.713,
+  "top": 1.256,
+  "width": 1.469
+ },
+ "passenger_bamboo": {
+  "back": -1.431,
+  "front": 1.631,
+  "bottom": -0.8,
+  "top": -0.175,
+  "width": 1.625
+ },
+ "passenger_bap_p_ecoach": {
+  "back": -4.0,
+  "front": 3.938,
+  "bottom": -0.72,
+  "top": 1.243,
+  "width": 1.375
+ },
+ "passenger_bap_p_eobserve": {
+  "back": -4.0,
+  "front": 3.938,
+  "bottom": -0.72,
+  "top": 1.243,
+  "width": 1.5
+ },
+ "passenger_bap_w_vcaboose": {
+  "back": -1.969,
+  "front": 1.969,
+  "bottom": -0.758,
+  "top": 1.296,
+  "width": 1.5
+ },
+ "passenger_bnlrv_b": {
+  "back": -2.188,
+  "front": 2.625,
+  "bottom": -0.763,
+  "top": 1.238,
+  "width": 1.35
+ },
+ "passenger_br_brake_van": {
+  "back": -1.878,
+  "front": 1.878,
+  "bottom": -0.794,
+  "top": 1.175,
+  "width": 1.5
+ },
+ "passenger_br_mk1_baggage": {
+  "back": -2.594,
+  "front": 2.594,
+  "bottom": -0.738,
+  "top": 1.106,
+  "width": 1.375
+ },
+ "passenger_br_mk1_bso": {
+  "back": -2.719,
+  "front": 2.719,
+  "bottom": -0.738,
+  "top": 1.106,
+  "width": 1.375
+ },
+ "passenger_br_mk1_buffet": {
+  "back": -2.719,
+  "front": 2.719,
+  "bottom": -0.738,
+  "top": 1.106,
+  "width": 1.375
+ },
+ "passenger_br_mk1_tso": {
+  "back": -2.719,
+  "front": 2.719,
+  "bottom": -0.738,
+  "top": 1.106,
+  "width": 1.375
+ },
+ "passenger_br_mk2_c_bso": {
+  "back": -2.734,
+  "front": 2.766,
+  "bottom": -0.738,
+  "top": 1.106,
+  "width": 1.375
+ },
+ "passenger_br_mk2_c_coach": {
+  "back": -2.734,
+  "front": 2.766,
+  "bottom": -0.738,
+  "top": 1.106,
+  "width": 1.375
+ },
+ "passenger_br_mk2_f_bso": {
+  "back": -2.734,
+  "front": 2.766,
+  "bottom": -0.738,
+  "top": 1.075,
+  "width": 1.375
+ },
+ "passenger_br_mk2_f_coach": {
+  "back": -2.734,
+  "front": 2.766,
+  "bottom": -0.738,
+  "top": 1.075,
+  "width": 1.375
+ },
+ "passenger_br_mk3_buffet": {
+  "back": -3.069,
+  "front": 3.119,
+  "bottom": -0.738,
+  "top": 1.075,
+  "width": 1.375
+ },
+ "passenger_br_mk3_coach": {
+  "back": -3.069,
+  "front": 3.119,
+  "bottom": -0.738,
+  "top": 1.075,
+  "width": 1.375
+ },
+ "passenger_br_mk3_pantograph": {
+  "back": -3.069,
+  "front": 3.119,
+  "bottom": -0.738,
+  "top": 1.575,
+  "width": 1.375
+ },
+ "passenger_br_mk3a_coach": {
+  "back": -3.069,
+  "front": 3.119,
+  "bottom": -0.738,
+  "top": 1.075,
+  "width": 1.375
+ },
+ "passenger_br_mk4_buffet": {
+  "back": -2.999,
+  "front": 3.126,
+  "bottom": -0.738,
+  "top": 1.075,
+  "width": 1.375
+ },
+ "passenger_br_mk4_coach": {
+  "back": -3.019,
+  "front": 3.106,
+  "bottom": -0.738,
+  "top": 1.075,
+  "width": 1.375
+ },
+ "passenger_bw305": {
+  "back": -2.094,
+  "front": 2.094,
+  "bottom": -0.745,
+  "top": 1.13,
+  "width": 1.5
+ },
+ "passenger_caboose_black": {
+  "back": -1.375,
+  "front": 1.438,
+  "bottom": -0.74,
+  "top": 1.385,
+  "width": 1.131
+ },
+ "passenger_caboose_red": {
+  "back": -1.188,
+  "front": 1.25,
+  "bottom": -0.682,
+  "top": 1.692,
+  "width": 1.5
+ },
+ "passenger_caboose_renfe446_tail": {
+  "back": -2.625,
+  "front": 2.612,
+  "bottom": -0.725,
+  "top": 1.288,
+  "width": 1.375
+ },
+ "passenger_caboose_renfe450_tail": {
+  "back": -2.5,
+  "front": 3.075,
+  "bottom": -0.775,
+  "top": 1.3,
+  "width": 1.438
+ },
+ "passenger_cart_black_small": {
+  "back": -1.188,
+  "front": 1.25,
+  "bottom": -0.682,
+  "top": 1.13,
+  "width": 1.5
+ },
+ "passenger_cart_blue": {
+  "back": -2.25,
+  "front": 2.25,
+  "bottom": -0.77,
+  "top": 1.23,
+  "width": 1.375
+ },
+ "passenger_cattle_van": {
+  "back": -1.5,
+  "front": 1.5,
+  "bottom": -0.775,
+  "top": 1.225,
+  "width": 1.406
+ },
+ "passenger_cd010": {
+  "back": -2.312,
+  "front": 2.188,
+  "bottom": -0.775,
+  "top": 0.788,
+  "width": 1.375
+ },
+ "passenger_cd014": {
+  "back": -2.188,
+  "front": 2.188,
+  "bottom": -0.775,
+  "top": 0.788,
+  "width": 1.375
+ },
+ "passenger_cd914": {
+  "back": -2.297,
+  "front": 2.25,
+  "bottom": -0.775,
+  "top": 0.788,
+  "width": 1.375
+ },
+ "passenger_class117_middle": {
+  "back": -2.969,
+  "front": 3.031,
+  "bottom": -0.755,
+  "top": 1.308,
+  "width": 1.5
+ },
+ "passenger_class121_trailer": {
+  "back": -2.969,
+  "front": 3.031,
+  "bottom": -0.755,
+  "top": 1.308,
+  "width": 1.5
+ },
+ "passenger_class142_tail": {
+  "back": -2.186,
+  "front": 2.157,
+  "bottom": -0.725,
+  "top": 1.181,
+  "width": 1.313
+ },
+ "passenger_class143_middle": {
+  "back": -1.938,
+  "front": 2.016,
+  "bottom": -0.775,
+  "top": 1.131,
+  "width": 1.406
+ },
+ "passenger_class143_rear": {
+  "back": -2.0,
+  "front": 2.016,
+  "bottom": -0.775,
+  "top": 1.163,
+  "width": 1.406
+ },
+ "passenger_class153_coach": {
+  "back": -2.812,
+  "front": 2.812,
+  "bottom": -0.745,
+  "top": 1.161,
+  "width": 1.438
+ },
+ "passenger_class158_coach": {
+  "back": -3.125,
+  "front": 3.188,
+  "bottom": -0.75,
+  "top": 1.125,
+  "width": 1.375
+ },
+ "passenger_class162_coach_a": {
+  "back": -3.206,
+  "front": 3.188,
+  "bottom": -0.77,
+  "top": 1.168,
+  "width": 1.413
+ },
+ "passenger_class162_coach_b": {
+  "back": -3.206,
+  "front": 3.188,
+  "bottom": -0.77,
+  "top": 1.168,
+  "width": 1.413
+ },
+ "passenger_class162_tail": {
+  "back": -3.25,
+  "front": 3.188,
+  "bottom": -0.77,
+  "top": 1.168,
+  "width": 1.413
+ },
+ "passenger_class175_coach": {
+  "back": -3.094,
+  "front": 3.094,
+  "bottom": -0.74,
+  "top": 1.073,
+  "width": 1.375
+ },
+ "passenger_class205_tail": {
+  "back": -2.722,
+  "front": 2.906,
+  "bottom": -0.775,
+  "top": 1.163,
+  "width": 1.406
+ },
+ "passenger_class205tso": {
+  "back": -2.722,
+  "front": 2.719,
+  "bottom": -0.775,
+  "top": 1.1,
+  "width": 1.375
+ },
+ "passenger_class230_middle": {
+  "back": -2.062,
+  "front": 2.188,
+  "bottom": -0.765,
+  "top": 1.313,
+  "width": 1.375
+ },
+ "passenger_class319_middle": {
+  "back": -2.631,
+  "front": 2.638,
+  "bottom": -0.744,
+  "top": 1.209,
+  "width": 1.375
+ },
+ "passenger_class319_panto": {
+  "back": -2.631,
+  "front": 2.638,
+  "bottom": -0.744,
+  "top": 1.756,
+  "width": 1.375
+ },
+ "passenger_class319_tail": {
+  "back": -2.638,
+  "front": 2.75,
+  "bottom": -0.744,
+  "top": 1.209,
+  "width": 1.375
+ },
+ "passenger_class321_coach": {
+  "back": -2.775,
+  "front": 2.663,
+  "bottom": -0.755,
+  "top": 1.089,
+  "width": 1.375
+ },
+ "passenger_class321_motor": {
+  "back": -2.775,
+  "front": 2.663,
+  "bottom": -0.755,
+  "top": 1.432,
+  "width": 1.375
+ },
+ "passenger_class345_coach": {
+  "back": -2.469,
+  "front": 2.531,
+  "bottom": -0.75,
+  "top": 1.0,
+  "width": 1.375
+ },
+ "passenger_class374_buffet": {
+  "back": -3.562,
+  "front": 4.438,
+  "bottom": -0.763,
+  "top": 1.112,
+  "width": 1.375
+ },
+ "passenger_class374_premier_panto": {
+  "back": -3.562,
+  "front": 4.438,
+  "bottom": -0.763,
+  "top": 1.543,
+  "width": 1.375
+ },
+ "passenger_class374_standard_panto": {
+  "back": -3.562,
+  "front": 4.438,
+  "bottom": -0.763,
+  "top": 1.543,
+  "width": 1.375
+ },
+ "passenger_class378_middle": {
+  "back": -2.656,
+  "front": 2.719,
+  "bottom": -0.725,
+  "top": 1.65,
+  "width": 1.375
+ },
+ "passenger_class378_tail": {
+  "back": -2.75,
+  "front": 2.719,
+  "bottom": -0.725,
+  "top": 1.134,
+  "width": 1.375
+ },
+ "passenger_class387_coach": {
+  "back": -2.812,
+  "front": 2.875,
+  "bottom": -0.738,
+  "top": 1.138,
+  "width": 1.375
+ },
+ "passenger_class387_panto": {
+  "back": -2.812,
+  "front": 2.875,
+  "bottom": -0.738,
+  "top": 1.638,
+  "width": 1.375
+ },
+ "passenger_class387_tail": {
+  "back": -2.862,
+  "front": 2.875,
+  "bottom": -0.738,
+  "top": 1.138,
+  "width": 1.375
+ },
+ "passenger_class389_middle": {
+  "back": -3.123,
+  "front": 3.065,
+  "bottom": -0.738,
+  "top": 1.638,
+  "width": 1.375
+ },
+ "passenger_class389_tail": {
+  "back": -3.172,
+  "front": 3.065,
+  "bottom": -0.738,
+  "top": 1.138,
+  "width": 1.375
+ },
+ "passenger_class390_coach": {
+  "back": -3.212,
+  "front": 3.212,
+  "bottom": -0.738,
+  "top": 1.075,
+  "width": 1.375
+ },
+ "passenger_class390_panto": {
+  "back": -3.212,
+  "front": 3.212,
+  "bottom": -0.738,
+  "top": 1.462,
+  "width": 1.375
+ },
+ "passenger_class401_tail": {
+  "back": -2.733,
+  "front": 2.77,
+  "bottom": -0.755,
+  "top": 1.214,
+  "width": 1.469
+ },
+ "passenger_class416_tail": {
+  "back": -2.906,
+  "front": 2.722,
+  "bottom": -0.775,
+  "top": 1.163,
+  "width": 1.375
+ },
+ "passenger_class442_mbls": {
+  "back": -3.069,
+  "front": 3.119,
+  "bottom": -0.738,
+  "top": 1.075,
+  "width": 1.375
+ },
+ "passenger_class442_ts": {
+  "back": -3.069,
+  "front": 3.119,
+  "bottom": -0.738,
+  "top": 1.075,
+  "width": 1.375
+ },
+ "passenger_cq310_passenger": {
+  "back": -2.312,
+  "front": 2.375,
+  "bottom": -0.725,
+  "top": 1.056,
+  "width": 1.531
+ },
+ "passenger_db420_middle": {
+  "back": -2.219,
+  "front": 2.219,
+  "bottom": -0.714,
+  "top": 1.974,
+  "width": 1.25
+ },
+ "passenger_db420_tail": {
+  "back": -4.0,
+  "front": 1.0,
+  "bottom": -0.714,
+  "top": 1.411,
+  "width": 1.25
+ },
+ "passenger_db_oriental": {
+  "back": -2.25,
+  "front": 2.25,
+  "bottom": -0.72,
+  "top": 1.218,
+  "width": 1.464
+ },
+ "passenger_denver_rio_grande_combo": {
+  "back": -3.206,
+  "front": 3.319,
+  "bottom": -0.785,
+  "top": 1.403,
+  "width": 1.238
+ },
+ "passenger_denver_rio_grange": {
+  "back": -3.263,
+  "front": 3.263,
+  "bottom": -0.785,
+  "top": 1.403,
+  "width": 1.238
+ },
+ "passenger_drgw_caboose": {
+  "back": -2.469,
+  "front": 2.469,
+  "bottom": -0.775,
+  "top": 1.35,
+  "width": 1.375
+ },
+ "passenger_drwg_stock_car": {
+  "back": -1.656,
+  "front": 1.719,
+  "bottom": -0.7,
+  "top": 1.275,
+  "width": 1.312
+ },
+ "passenger_dstock_passenger": {
+  "back": -1.75,
+  "front": 1.875,
+  "bottom": -0.765,
+  "top": 1.313,
+  "width": 1.375
+ },
+ "passenger_duewag_gt6_er_tail": {
+  "back": -2.663,
+  "front": 1.0,
+  "bottom": -0.725,
+  "top": 1.15,
+  "width": 1.276
+ },
+ "passenger_duewag_gt6_zr_tail": {
+  "back": -2.694,
+  "front": 0.995,
+  "bottom": -0.725,
+  "top": 1.125,
+  "width": 1.3
+ },
+ "passenger_feve3300rear": {
+  "back": -2.438,
+  "front": 2.438,
+  "bottom": -0.745,
+  "top": 1.255,
+  "width": 1.375
+ },
+ "passenger_fgv4300_coach": {
+  "back": -2.188,
+  "front": 2.188,
+  "bottom": -0.768,
+  "top": 1.17,
+  "width": 1.156
+ },
+ "passenger_fgv4300_tail": {
+  "back": -2.087,
+  "front": 2.35,
+  "bottom": -0.768,
+  "top": 1.233,
+  "width": 1.156
+ },
+ "passenger_flat_car_db": {
+  "back": -1.875,
+  "front": 1.875,
+  "bottom": -0.74,
+  "top": 0.135,
+  "width": 1.375
+ },
+ "passenger_flat_cart": {
+  "back": -1.562,
+  "front": 1.438,
+  "bottom": -0.682,
+  "top": -0.182,
+  "width": 1.25
+ },
+ "passenger_flat_cart_su": {
+  "back": -1.875,
+  "front": 1.875,
+  "bottom": -0.77,
+  "top": -0.02,
+  "width": 1.125
+ },
+ "passenger_flat_cart_us": {
+  "back": -1.875,
+  "front": 1.875,
+  "bottom": -0.77,
+  "top": -0.207,
+  "width": 1.125
+ },
+ "passenger_gs4": {
+  "back": -3.2,
+  "front": 3.15,
+  "bottom": -0.77,
+  "top": 1.355,
+  "width": 1.1
+ },
+ "passenger_gs4_observatory": {
+  "back": -3.2,
+  "front": 3.15,
+  "bottom": -0.775,
+  "top": 1.35,
+  "width": 1.1
+ },
+ "passenger_gs4_tail": {
+  "back": -3.4,
+  "front": 3.3,
+  "bottom": -0.775,
+  "top": 1.35,
+  "width": 1.1
+ },
+ "passenger_high_speed_zero_ed": {
+  "back": -2.188,
+  "front": 2.188,
+  "bottom": -0.77,
+  "top": 1.23,
+  "width": 1.375
+ },
+ "passenger_ic4_dsb_fg": {
+  "back": -3.713,
+  "front": 3.788,
+  "bottom": -0.69,
+  "top": 1.091,
+  "width": 1.033
+ },
+ "passenger_ic4_dsb_fh": {
+  "back": -3.713,
+  "front": 3.788,
+  "bottom": -0.69,
+  "top": 1.091,
+  "width": 1.033
+ },
+ "passenger_ice1_class1": {
+  "back": -3.25,
+  "front": 3.15,
+  "bottom": -0.745,
+  "top": 1.03,
+  "width": 1.155
+ },
+ "passenger_ice1_class2": {
+  "back": -3.25,
+  "front": 3.15,
+  "bottom": -0.745,
+  "top": 1.03,
+  "width": 1.155
+ },
+ "passenger_ice1_restaurant": {
+  "back": -3.3,
+  "front": 3.1,
+  "bottom": -0.745,
+  "top": 1.218,
+  "width": 1.155
+ },
+ "passenger_juke_box_cart": {
+  "back": -1.875,
+  "front": 1.875,
+  "bottom": -0.72,
+  "top": 0.968,
+  "width": 1.375
+ },
+ "passenger_kvb_2300_b": {
+  "back": -3.688,
+  "front": 1.094,
+  "bottom": -0.688,
+  "top": 1.281,
+  "width": 1.469
+ },
+ "passenger_l_upassenger": {
+  "back": -1.688,
+  "front": 1.625,
+  "bottom": -0.765,
+  "top": 0.798,
+  "width": 1.438
+ },
+ "passenger_light_crane": {
+  "back": -3.781,
+  "front": 2.25,
+  "bottom": -0.775,
+  "top": 2.737,
+  "width": 1.188
+ },
+ "passenger_long_green": {
+  "back": -1.812,
+  "front": 1.75,
+  "bottom": -0.682,
+  "top": 1.442,
+  "width": 1.375
+ },
+ "passenger_m8_c_tail": {
+  "back": -3.0,
+  "front": 1.062,
+  "bottom": -0.725,
+  "top": 1.088,
+  "width": 1.25
+ },
+ "passenger_m8_dnf1_middlelong": {
+  "back": -2.25,
+  "front": 2.25,
+  "bottom": -0.725,
+  "top": 1.884,
+  "width": 1.25
+ },
+ "passenger_m8_dnf1_middleshort": {
+  "back": -1.156,
+  "front": 1.156,
+  "bottom": -0.725,
+  "top": 1.884,
+  "width": 1.25
+ },
+ "passenger_m8_dnf1_tail": {
+  "back": -2.581,
+  "front": 1.225,
+  "bottom": -0.725,
+  "top": 1.15,
+  "width": 1.25
+ },
+ "passenger_ma100_tail": {
+  "back": -2.062,
+  "front": 2.219,
+  "bottom": -0.734,
+  "top": 1.11,
+  "width": 1.375
+ },
+ "passenger_metal_tram_coach": {
+  "back": -1.906,
+  "front": 1.906,
+  "bottom": -0.745,
+  "top": 1.161,
+  "width": 1.438
+ },
+ "passenger_metro2000": {
+  "back": -2.156,
+  "front": 2.25,
+  "bottom": -0.725,
+  "top": 1.181,
+  "width": 1.191
+ },
+ "passenger_metro3000": {
+  "back": -2.251,
+  "front": 2.251,
+  "bottom": -0.756,
+  "top": 1.119,
+  "width": 1.125
+ },
+ "passenger_metro3000_tail": {
+  "back": -2.376,
+  "front": 2.312,
+  "bottom": -0.756,
+  "top": 1.306,
+  "width": 1.126
+ },
+ "passenger_milw": {
+  "back": -2.688,
+  "front": 2.825,
+  "bottom": -0.75,
+  "top": 0.909,
+  "width": 1.238
+ },
+ "passenger_milw_tail": {
+  "back": -3.106,
+  "front": 3.419,
+  "bottom": -0.763,
+  "top": 0.897,
+  "width": 1.238
+ },
+ "passenger_minetrain": {
+  "back": -0.688,
+  "front": 0.688,
+  "bottom": -0.77,
+  "top": 0.293,
+  "width": 0.927
+ },
+ "passenger_p_scenter_diner": {
+  "back": -3.938,
+  "front": 4.0,
+  "bottom": -0.775,
+  "top": 1.225,
+  "width": 1.5
+ },
+ "passenger_pch120coach": {
+  "back": -2.125,
+  "front": 2.062,
+  "bottom": -0.734,
+  "top": 1.148,
+  "width": 1.375
+ },
+ "passenger_propaganda_britain": {
+  "back": -3.775,
+  "front": 3.85,
+  "bottom": -0.725,
+  "top": 2.088,
+  "width": 1.375
+ },
+ "passenger_propaganda_japan": {
+  "back": -3.775,
+  "front": 3.85,
+  "bottom": -0.725,
+  "top": 2.088,
+  "width": 1.375
+ },
+ "passenger_propaganda_us": {
+  "back": -3.775,
+  "front": 3.85,
+  "bottom": -0.725,
+  "top": 2.088,
+  "width": 1.375
+ },
+ "passenger_propaganda_ussr": {
+  "back": -3.775,
+  "front": 3.85,
+  "bottom": -0.725,
+  "top": 2.088,
+  "width": 1.375
+ },
+ "passenger_ps30_seat_parlor": {
+  "back": -3.938,
+  "front": 4.0,
+  "bottom": -0.775,
+  "top": 1.1,
+  "width": 1.5
+ },
+ "passenger_ps52_seat_coach": {
+  "back": -3.938,
+  "front": 4.0,
+  "bottom": -0.775,
+  "top": 1.147,
+  "width": 1.5
+ },
+ "passenger_ps54_seat_coach_lounge": {
+  "back": -3.938,
+  "front": 4.0,
+  "bottom": -0.775,
+  "top": 1.1,
+  "width": 1.5
+ },
+ "passenger_ps58_seat_coach_observation": {
+  "back": -3.938,
+  "front": 4.0,
+  "bottom": -0.775,
+  "top": 1.159,
+  "width": 1.5
+ },
+ "passenger_ps_another_diner": {
+  "back": -3.938,
+  "front": 4.0,
+  "bottom": -0.775,
+  "top": 1.209,
+  "width": 1.5
+ },
+ "passenger_ps_combine": {
+  "back": -3.938,
+  "front": 4.0,
+  "bottom": -0.775,
+  "top": 1.163,
+  "width": 1.5
+ },
+ "passenger_ps_lunch_counter_lounge": {
+  "back": -3.938,
+  "front": 4.0,
+  "bottom": -0.775,
+  "top": 1.147,
+  "width": 1.5
+ },
+ "passenger_ps_sleeper565": {
+  "back": -3.938,
+  "front": 4.0,
+  "bottom": -0.775,
+  "top": 1.1,
+  "width": 1.5
+ },
+ "passenger_ps_sleeper565_drgw": {
+  "back": -3.938,
+  "front": 4.0,
+  "bottom": -0.775,
+  "top": 1.147,
+  "width": 1.5
+ },
+ "passenger_psbm56_seat_coach": {
+  "back": -3.938,
+  "front": 4.0,
+  "bottom": -0.775,
+  "top": 1.131,
+  "width": 1.5
+ },
+ "passenger_psbm_combine": {
+  "back": -3.938,
+  "front": 4.0,
+  "bottom": -0.775,
+  "top": 1.131,
+  "width": 1.5
+ },
+ "passenger_psbm_diner_lounge": {
+  "back": -3.938,
+  "front": 4.0,
+  "bottom": -0.775,
+  "top": 1.131,
+  "width": 1.5
+ },
+ "passenger_renfe446_coach": {
+  "back": -2.3,
+  "front": 2.263,
+  "bottom": -0.725,
+  "top": 1.675,
+  "width": 1.344
+ },
+ "passenger_renfe450_coach": {
+  "back": -2.5,
+  "front": 2.5,
+  "bottom": -0.775,
+  "top": 1.3,
+  "width": 1.375
+ },
+ "passenger_rheingold": {
+  "back": -4.019,
+  "front": 3.913,
+  "bottom": -0.788,
+  "top": 1.225,
+  "width": 1.266
+ },
+ "passenger_rheingold_panorama": {
+  "back": -4.15,
+  "front": 3.781,
+  "bottom": -0.788,
+  "top": 1.428,
+  "width": 1.266
+ },
+ "passenger_short_green": {
+  "back": -1.438,
+  "front": 1.5,
+  "bottom": -0.74,
+  "top": 1.323,
+  "width": 1.131
+ },
+ "passenger_sncb_m6": {
+  "back": -5.312,
+  "front": 1.25,
+  "bottom": -0.768,
+  "top": 1.295,
+  "width": 1.378
+ },
+ "passenger_sncb_m6_tail": {
+  "back": -5.55,
+  "front": 1.138,
+  "bottom": -0.76,
+  "top": 1.303,
+  "width": 1.378
+ },
+ "passenger_star_car_fat": {
+  "back": -1.969,
+  "front": 1.969,
+  "bottom": -0.744,
+  "top": 1.131,
+  "width": 1.375
+ },
+ "passenger_star_car_not_fat": {
+  "back": -1.531,
+  "front": 1.531,
+  "bottom": -0.744,
+  "top": 0.694,
+  "width": 1.5
+ },
+ "passenger_stock_car": {
+  "back": -1.5,
+  "front": 1.438,
+  "bottom": -0.682,
+  "top": 1.444,
+  "width": 1.375
+ },
+ "passenger_tracks_builder": {
+  "back": -1.875,
+  "front": 1.875,
+  "bottom": -0.736,
+  "top": 2.156,
+  "width": 2.753
+ },
+ "passenger_tram_ny": {
+  "back": -2.25,
+  "front": 2.25,
+  "bottom": -0.74,
+  "top": 1.26,
+  "width": 1.375
+ },
+ "passenger_wooden_tram_coach": {
+  "back": -1.5,
+  "front": 1.5,
+  "bottom": -0.745,
+  "top": 1.411,
+  "width": 1.5
+ },
+ "tank_b_unit_dd35": {
+  "back": -3.15,
+  "front": 3.15,
+  "bottom": -0.745,
+  "top": 1.505,
+  "width": 1.013
+ },
+ "tank_b_unit_emdf3": {
+  "back": -2.25,
+  "front": 2.25,
+  "bottom": -0.734,
+  "top": 1.472,
+  "width": 1.361
+ },
+ "tank_b_unit_emdf7": {
+  "back": -2.25,
+  "front": 2.25,
+  "bottom": -0.734,
+  "top": 1.472,
+  "width": 1.361
+ },
+ "tank_bap_dot11111000": {
+  "back": -1.938,
+  "front": 1.938,
+  "bottom": -0.775,
+  "top": 1.272,
+  "width": 1.379
+ },
+ "tank_bap_dot11120600": {
+  "back": -2.188,
+  "front": 2.188,
+  "bottom": -0.775,
+  "top": 1.209,
+  "width": 1.379
+ },
+ "tank_bap_dot11129080": {
+  "back": -2.781,
+  "front": 2.781,
+  "bottom": -0.775,
+  "top": 1.319,
+  "width": 1.379
+ },
+ "tank_tank_cart_lava": {
+  "back": -1.875,
+  "front": 1.875,
+  "bottom": -0.74,
+  "top": 1.073,
+  "width": 1.375
+ },
+ "tank_tank_tanker_uk": {
+  "back": -1.562,
+  "front": 1.438,
+  "bottom": -0.77,
+  "top": 0.855,
+  "width": 1.313
+ },
+ "tank_tank_three_dome": {
+  "back": -2.75,
+  "front": 2.75,
+  "bottom": -0.755,
+  "top": 1.245,
+  "width": 1.375
+ },
+ "tank_tank_wagon_db": {
+  "back": -1.875,
+  "front": 1.875,
+  "bottom": -0.74,
+  "top": 1.51,
+  "width": 1.25
+ },
+ "tank_tank_wagon_grey": {
+  "back": -1.5,
+  "front": 1.438,
+  "bottom": -0.682,
+  "top": 0.942,
+  "width": 1.25
+ },
+ "tank_tank_wagon_us": {
+  "back": -1.875,
+  "front": 1.875,
+  "bottom": -0.77,
+  "top": 1.042,
+  "width": 1.0
+ },
+ "tank_tank_wagon_yellow": {
+  "back": -1.812,
+  "front": 1.812,
+  "bottom": -0.833,
+  "top": 1.167,
+  "width": 1.312
+ },
+ "tender_4_4_0": {
+  "back": -1.25,
+  "front": 1.312,
+  "bottom": -0.74,
+  "top": 0.698,
+  "width": 1.125
+ },
+ "tender_a4": {
+  "back": -2.138,
+  "front": 2.206,
+  "bottom": -0.725,
+  "top": 1.588,
+  "width": 1.375
+ },
+ "tender_adler": {
+  "back": -1.0,
+  "front": 0.906,
+  "bottom": -0.75,
+  "top": 0.375,
+  "width": 0.95
+ },
+ "tender_berk_1225": {
+  "back": -2.844,
+  "front": 2.938,
+  "bottom": -0.762,
+  "top": 1.081,
+  "width": 1.469
+ },
+ "tender_br01": {
+  "back": -1.5,
+  "front": 1.625,
+  "bottom": -0.74,
+  "top": 1.26,
+  "width": 1.375
+ },
+ "tender_br1": {
+  "back": -1.5,
+  "front": 1.512,
+  "bottom": -0.748,
+  "top": 1.081,
+  "width": 1.313
+ },
+ "tender_br_black_5": {
+  "back": -1.488,
+  "front": 1.488,
+  "bottom": -0.738,
+  "top": 1.044,
+  "width": 1.338
+ },
+ "tender_c41": {
+  "back": -1.837,
+  "front": 1.85,
+  "bottom": -0.725,
+  "top": 0.9,
+  "width": 1.375
+ },
+ "tender_c62": {
+  "back": -2.375,
+  "front": 2.062,
+  "bottom": -0.72,
+  "top": 1.093,
+  "width": 1.25
+ },
+ "tender_coranation_class": {
+  "back": -2.312,
+  "front": 2.125,
+  "bottom": -0.725,
+  "top": 1.588,
+  "width": 1.375
+ },
+ "tender_d51": {
+  "back": -1.812,
+  "front": 2.062,
+  "bottom": -0.75,
+  "top": 1.05,
+  "width": 1.375
+ },
+ "tender_er_ussr": {
+  "back": -1.627,
+  "front": 1.623,
+  "bottom": -0.74,
+  "top": 1.448,
+  "width": 1.446
+ },
+ "tender_fowler": {
+  "back": -1.688,
+  "front": 1.681,
+  "bottom": -0.753,
+  "top": 0.809,
+  "width": 1.375
+ },
+ "tender_gs4": {
+  "back": -2.19,
+  "front": 2.11,
+  "bottom": -0.806,
+  "top": 1.537,
+  "width": 1.203
+ },
+ "tender_gwr_4000_gallon": {
+  "back": -1.75,
+  "front": 2.062,
+  "bottom": -0.775,
+  "top": 0.913,
+  "width": 1.469
+ },
+ "tender_heavy": {
+  "back": -1.562,
+  "front": 1.938,
+  "bottom": -0.762,
+  "top": 0.863,
+  "width": 1.25
+ },
+ "tender_milw": {
+  "back": -1.988,
+  "front": 2.119,
+  "bottom": -0.751,
+  "top": 0.936,
+  "width": 1.255
+ },
+ "tender_mr_compound": {
+  "back": -1.688,
+  "front": 1.875,
+  "bottom": -0.775,
+  "top": 1.006,
+  "width": 1.438
+ },
+ "tender_onion": {
+  "back": -1.125,
+  "front": 1.125,
+  "bottom": -0.794,
+  "top": 0.863,
+  "width": 1.383
+ },
+ "tender_polar_express": {
+  "back": -1.962,
+  "front": 2.163,
+  "bottom": -0.775,
+  "top": 1.1,
+  "width": 1.471
+ },
+ "tender_rw_type_2": {
+  "back": -1.438,
+  "front": 1.312,
+  "bottom": -0.765,
+  "top": 1.016,
+  "width": 1.5
+ },
+ "tender_shay_3truck": {
+  "back": -0.75,
+  "front": 0.625,
+  "bottom": -0.775,
+  "top": 0.787,
+  "width": 1.281
+ },
+ "tender_shunting_uk": {
+  "back": -1.562,
+  "front": 1.438,
+  "bottom": -0.838,
+  "top": 0.6,
+  "width": 1.381
+ },
+ "tender_skookum": {
+  "back": -1.525,
+  "front": 1.663,
+  "bottom": -0.764,
+  "top": 0.655,
+  "width": 1.375
+ },
+ "tender_small": {
+  "back": -0.703,
+  "front": 0.703,
+  "bottom": -0.8,
+  "top": 0.512,
+  "width": 0.938
+ },
+ "tender_southern_1102": {
+  "back": -1.438,
+  "front": 1.625,
+  "bottom": -0.8,
+  "top": 0.888,
+  "width": 1.375
+ },
+ "tender_star_class": {
+  "back": -0.828,
+  "front": 0.969,
+  "bottom": -0.775,
+  "top": 0.413,
+  "width": 1.25
+ },
+ "work_caboose_logging": {
+  "back": -1.0,
+  "front": 1.0,
+  "bottom": -0.75,
+  "top": 1.5,
+  "width": 1.457
+ },
+ "work_caboose_logging_prr": {
+  "back": -2.25,
+  "front": 2.25,
+  "bottom": -0.78,
+  "top": 1.133,
+  "width": 1.375
+ },
+ "work_gwr_brake_van": {
+  "back": -3.438,
+  "front": 3.438,
+  "bottom": -0.825,
+  "top": 1.55,
+  "width": 1.5
+ },
+ "work_mail_wagen_db": {
+  "back": -1.875,
+  "front": 1.875,
+  "bottom": -0.74,
+  "top": 1.323,
+  "width": 1.434
+ },
+ "work_rheingold_dining1": {
+  "back": -3.869,
+  "front": 4.062,
+  "bottom": -0.788,
+  "top": 1.35,
+  "width": 1.266
+ },
+ "work_rheingold_dining2": {
+  "back": -4.056,
+  "front": 3.875,
+  "bottom": -0.788,
+  "top": 1.366,
+  "width": 1.266
+ },
+ "work_work_caboose": {
+  "back": -1.5,
+  "front": 1.438,
+  "bottom": -0.682,
+  "top": 1.882,
+  "width": 1.316
+ },
+ "work_work_cart": {
+  "back": -1.875,
+  "front": 1.875,
+  "bottom": -0.72,
+  "top": 1.28,
+  "width": 1.434
+ }
+}

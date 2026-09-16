@@ -1,0 +1,20 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "tc:ticket_man",
+        "dyeable": {
+          "color_when_undyed": 11483
+        }
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "tc:ticket_man",
+        "dyeable": {
+          "color_when_undyed": 11483
+        }
+      }
+    ]
+  }
+}

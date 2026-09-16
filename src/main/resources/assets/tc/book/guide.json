@@ -1,0 +1,1005 @@
+[
+ {
+  "text": "",
+  "side": "left",
+  "items": []
+ },
+ {
+  "text": "",
+  "side": "right",
+  "items": []
+ },
+ {
+  "text": "Welcome to the Traincraft guide! \nThis book contains everything you need to know about Traincraft.\n\nAuthors:\nSpitfire4466,\nMrbrutal\n\nBukkit port: \nDV8FromTheWorld\n\nThanks to CovertJaguar for his help and a great API.\n",
+  "side": "left",
+  "items": [
+   [
+    "tc:loco_steam_br80",
+    20,
+    16
+   ],
+   [
+    "tc:train_workbench",
+    170,
+    16
+   ],
+   [
+    "tc:work_work_caboose",
+    60,
+    175
+   ],
+   [
+    "tc:tank_tank_wagon_db",
+    80,
+    175
+   ],
+   [
+    "tc:freight_flat_car_rails_db",
+    100,
+    175
+   ],
+   [
+    "tc:freight_wagen_db",
+    120,
+    175
+   ],
+   [
+    "tc:passenger_cart_blue",
+    140,
+    175
+   ],
+   [
+    "tc:loco_diesel_v60",
+    160,
+    175
+   ]
+  ]
+ },
+ {
+  "text": "Modelers:\nDAYdiecast,\nhelldiver,\nBlockStormTwo,\nChandlerBingUA.\n\nGitHub 1.7.10 port Team: \nEternal BlueFlame,\nNitroxydeX,\nFirEmerald,\nHagurd\n \nWebsite:\nhttp://traincraft-mod.\nblogspot.com",
+  "side": "right",
+  "items": [
+   [
+    "tc:loco_steam_adler",
+    20,
+    16
+   ],
+   [
+    "tc:assembly_table_ii",
+    170,
+    16
+   ],
+   [
+    "tc:loco_steam_forney",
+    20,
+    175
+   ],
+   [
+    "tc:passenger_cart_blue",
+    40,
+    175
+   ],
+   [
+    "tc:passenger_cart_blue",
+    60,
+    175
+   ],
+   [
+    "tc:freight_wagen_db",
+    80,
+    175
+   ],
+   [
+    "tc:freight_wood",
+    100,
+    175
+   ],
+   [
+    "tc:work_caboose_logging",
+    120,
+    175
+   ]
+  ]
+ },
+ {
+  "text": "World generation:\n\n By default, petrol and oil sands will be generated in the world. If you don't want them, open Traincraft.cfg and change the line ENABLE_ORE_SPAWN from true to false.\nOnly the new ores will generate, the old ones can be transformed into the new ones in a crafting table.",
+  "side": "left",
+  "items": [
+   [
+    "tc:petroleum_ore",
+    60,
+    160
+   ],
+   [
+    "tc:oil_sands",
+    120,
+    160
+   ]
+  ]
+ },
+ {
+  "text": "Keys:\nTo interact with the trains (e.g. enter, display the inventory) click above the shadow the train is casting on the ground.\nInside the locomotive press R to open up the GUI: This is where you can put fuel, water, additional cargo, set brakes, etc.\n",
+  "side": "right",
+  "items": [
+   [
+    "minecraft:coal",
+    60,
+    160
+   ],
+   [
+    "minecraft:water_bucket",
+    120,
+    160
+   ]
+  ]
+ },
+ {
+  "text": "Use the W and S keys to move the locomotive forwards or backwards, respectively.\nPress H in the locomotive to activate the whistle.\nIn the Work Carts, press R to open up the Crafting Table and F for the Furnace.\n",
+  "side": "left",
+  "items": [
+   [
+    "tc:loco_steam_br80",
+    20,
+    16
+   ],
+   [
+    "tc:loco_diesel_gp7_red",
+    170,
+    16
+   ],
+   [
+    "tc:loco_steam_cherepanov",
+    40,
+    145
+   ],
+   [
+    "tc:work_work_cart",
+    60,
+    145
+   ],
+   [
+    "tc:work_work_caboose",
+    80,
+    145
+   ],
+   [
+    "tc:loco_steam_forney",
+    100,
+    145
+   ],
+   [
+    "tc:loco_diesel_shunter",
+    120,
+    145
+   ],
+   [
+    "tc:loco_steam_br01",
+    140,
+    145
+   ]
+  ]
+ },
+ {
+  "text": "Zeppelin:\nRight click on the Zeppelin to enter it. \nInside, press R to open its GUI. \nUse the WASD keys to move the zeppelin around. \nPress once Y to ascend or X to descend, To lock altitude, press C. \n",
+  "side": "right",
+  "items": [
+   [
+    "tc:airship",
+    20,
+    16
+   ],
+   [
+    "tc:balloon",
+    170,
+    16
+   ],
+   [
+    "tc:propeller",
+    40,
+    135
+   ],
+   [
+    "tc:steam_engine",
+    60,
+    135
+   ],
+   [
+    "minecraft:oak_boat",
+    120,
+    135
+   ],
+   [
+    "minecraft:stick",
+    140,
+    135
+   ]
+  ]
+ },
+ {
+  "text": "Fuel:\nSteam locomotives need coal and water.\nTenders can only hold coal and water. Attach them to a steam locomotive, they will provide fuel and water for the loco.\nDiesel locos need diesel canisters (from distillation tower) or fuel from BC and Forestry.\n",
+  "side": "left",
+  "items": [
+   [
+    "tc:tender_small",
+    20,
+    16
+   ],
+   [
+    "tc:loco_steam_mogul",
+    170,
+    16
+   ],
+   [
+    "minecraft:coal",
+    40,
+    155
+   ],
+   [
+    "minecraft:water_bucket",
+    60,
+    155
+   ],
+   [
+    "minecraft:oak_planks",
+    80,
+    155
+   ],
+   [
+    "minecraft:blaze_rod",
+    100,
+    155
+   ],
+   [
+    "tc:diesel",
+    120,
+    155
+   ],
+   [
+    "tc:refined_fuel",
+    140,
+    155
+   ]
+  ]
+ },
+ {
+  "text": "Electric locomotives need redstone or RF-based energy storages, they can also be powered by Electric tracks.\n\nHeat:\nHeat level is indicated by the heat bar in the HUD.\nHeat level will go to a normal state when the train is fueled but don't forget to put water in steam locomotive or it will overheat very fast.\n",
+  "side": "right",
+  "items": [
+   [
+    "tc:loco_electric_br_e69",
+    20,
+    16
+   ],
+   [
+    "minecraft:redstone",
+    170,
+    16
+   ]
+  ]
+ },
+ {
+  "text": "Heat level will go down to cold when there's no fuel.\nWait until the locomotive has heated up before trying to move. but be careful overheating can cause explosions...\n\nRouting:\nLocomotives can be routed using Railcraft routing track. Destination will show in the GUI, Sneak+Crowbar to reset. There is no space for tickets. Not 'Color=' compatible.",
+  "side": "left",
+  "items": [
+   [
+    "tc:firebox",
+    20,
+    16
+   ],
+   [
+    "minecraft:tnt",
+    170,
+    16
+   ]
+  ]
+ },
+ {
+  "text": "Minecraft Horse Power - Mhp:\n\nLocomotives have different pulling abilities represented by their 'power' in Mhp.\nEach cart has a mass in tons which will affect the locomotive depending on its power.\nMass pulled affects the maximum speed, the brake rate and accelerate rate, as well as fuel consumption.\n",
+  "side": "right",
+  "items": [
+   [
+    "tc:stake",
+    20,
+    16
+   ],
+   [
+    "tc:loco_steam_br01",
+    40,
+    165
+   ],
+   [
+    "tc:stake",
+    60,
+    165
+   ],
+   [
+    "tc:freight_cart_red",
+    80,
+    165
+   ],
+   [
+    "tc:stake",
+    100,
+    165
+   ],
+   [
+    "tc:freight_closed_red_brown",
+    120,
+    165
+   ],
+   [
+    "tc:stake",
+    140,
+    165
+   ],
+   [
+    "tc:tank_tank_cart_lava",
+    160,
+    165
+   ]
+  ]
+ },
+ {
+  "text": "Derailment:\n\nDo not go too fast on turns or your locomotives will derail!\n\nIt is recommended to slow down under 90km/h before turning or you will find yourself crashing off tracks.",
+  "side": "left",
+  "items": [
+   [
+    "minecraft:wither_skeleton_skull",
+    20,
+    16
+   ]
+  ]
+ },
+ {
+  "text": "Pulling:\nRight click both carts with a stake in your hand, it will say 'Attaching mode on', then make them collide and it will say 'Attached'.\nLocomotives have pulling capabilities, don't make too long trains with weak locomotives. Stats of the locomotive will be affected. (they can be seen on the top left corner when you open the locomotive's inventory).\n",
+  "side": "right",
+  "items": [
+   [
+    "tc:stake",
+    20,
+    16
+   ],
+   [
+    "tc:passenger_caboose_red",
+    40,
+    165
+   ],
+   [
+    "tc:stake",
+    60,
+    165
+   ],
+   [
+    "tc:freight_box_cart_us",
+    80,
+    165
+   ],
+   [
+    "tc:stake",
+    100,
+    165
+   ],
+   [
+    "tc:freight_flat_car_logs_db",
+    120,
+    165
+   ],
+   [
+    "tc:stake",
+    140,
+    165
+   ],
+   [
+    "tc:loco_diesel_gp40",
+    160,
+    165
+   ]
+  ]
+ },
+ {
+  "text": "Chunk Loading:\n\nEach rolling stock can load one chunk around itself.\nTo start chunk loading, right click with chunk loader activator on the rolling stock.\nTo stop chunk loading, right click again.\n",
+  "side": "left",
+  "items": [
+   [
+    "tc:chunk_loader_activator",
+    20,
+    16
+   ],
+   [
+    "minecraft:ender_pearl",
+    170,
+    16
+   ]
+  ]
+ },
+ {
+  "text": "Colors:\n\nSome rolling stock has several textures and can be painted with dyes.\nThe rolling stock that can be painted will show the possible colors in the chat once placed in the world.\nTo paint, simply right click with the correct dye.\n\nLantern color is randomly picked, but you can set the hex color manually with a wrench",
+  "side": "right",
+  "items": [
+   [
+    "minecraft:red_dye",
+    20,
+    16
+   ],
+   [
+    "minecraft:yellow_dye",
+    170,
+    16
+   ]
+  ]
+ },
+ {
+  "text": "Stock car:\n\nThe stock car is the only rolling stock that can be ridden by any animals and mobs.\nTo fill the stock car, either collide the animal with the car or use the animal/mob boarding tracks (Railcraft required).\nTo empty the car, use the disembark track (Railcraft required).\n",
+  "side": "left",
+  "items": [
+   [
+    "tc:passenger_stock_car",
+    20,
+    16
+   ],
+   [
+    "minecraft:creeper_head",
+    170,
+    16
+   ]
+  ]
+ },
+ {
+  "text": "A word about tracks I:\nCopper tracks will slow trains down.\nSteel tracks allow trains to go faster.\nSpeed controller track allows you to change the locomotive's max speed (hit with crowbar).\nThe energy track can be powered by redstone and will power electric trains, redstone power will be transmitted two tracks away.\n",
+  "side": "right",
+  "items": [
+   [
+    "minecraft:rail",
+    17,
+    16
+   ],
+   [
+    "minecraft:rail",
+    17,
+    32
+   ],
+   [
+    "minecraft:rail",
+    17,
+    48
+   ],
+   [
+    "minecraft:rail",
+    17,
+    64
+   ],
+   [
+    "minecraft:rail",
+    17,
+    80
+   ],
+   [
+    "minecraft:rail",
+    17,
+    96
+   ],
+   [
+    "minecraft:rail",
+    17,
+    112
+   ],
+   [
+    "minecraft:rail",
+    17,
+    128
+   ],
+   [
+    "minecraft:rail",
+    17,
+    144
+   ],
+   [
+    "minecraft:rail",
+    17,
+    160
+   ],
+   [
+    "minecraft:detector_rail",
+    170,
+    16
+   ]
+  ]
+ },
+ {
+  "text": "A word about tracks II:\nTo check the current charge click the track with a crowbar.\nAn electric track connected to a redstone power source gets 1 energy unit every two ticks.\nLocomotive holding track will only hold TC locomotives. No boost is given, the previous speed is restored once released.\nAll tracks require Railcraft to be installed.",
+  "side": "left",
+  "items": [
+   [
+    "minecraft:activator_rail",
+    17,
+    16
+   ],
+   [
+    "minecraft:detector_rail",
+    170,
+    16
+   ]
+  ]
+ },
+ {
+  "text": "Steel rails parts and copper rails parts are crafted inside RC Rolling Machine, tracks are assembled in vanilla workbench.\nTC boarding/disembarking track are designed to work only on the Stock Car. Animal boarding will take any nearby animal and put it inside a passing Stock Car. Mob boarding will affect any mob.\nDisembark will eject any mob inside the Stock Car.",
+  "side": "right",
+  "items": [
+   [
+    "minecraft:powered_rail",
+    17,
+    16
+   ],
+   [
+    "minecraft:detector_rail",
+    170,
+    16
+   ]
+  ]
+ },
+ {
+  "text": "Builder I:\n\nThe tracks builder has a very special inventory, in order to start it you must provide:\nBallast in the slot under it (planks, gravel, stone, ...).\nCoal in the fuel slot, Tracks in the slot under the fuel slot. The slot on the right of the builder will activate tunnel function when provided (not all blocks are accepted).\n",
+  "side": "left",
+  "items": [
+   [
+    "tc:passenger_tracks_builder",
+    20,
+    16
+   ],
+   [
+    "tc:passenger_tracks_builder",
+    60,
+    165
+   ],
+   [
+    "tc:stake",
+    80,
+    165
+   ],
+   [
+    "tc:freight_closed_red_brown",
+    100,
+    165
+   ]
+  ]
+ },
+ {
+  "text": "Builder II:\n\nThe slots on top of the builder are roof slots, the builder will build a roof when provided (not all blocks are accepted). If you attach a freight cart to the builder, it will dump things in it.\n\n",
+  "side": "right",
+  "items": [
+   [
+    "tc:passenger_tracks_builder",
+    20,
+    16
+   ],
+   [
+    "tc:passenger_tracks_builder",
+    60,
+    125
+   ],
+   [
+    "tc:stake",
+    80,
+    125
+   ],
+   [
+    "tc:freight_closed_red_brown",
+    100,
+    125
+   ]
+  ]
+ },
+ {
+  "text": "Limitations:\n\nVERY IMPORTANT:\nLong trains imply limitations: Do not try to make sharp 180 turns, leave 3+ spaces between each 90 turn. Otherwise weird stuff may happen especially with very long trains.\n\nAlways PULL carts! Bounding boxes are buggy and unreliable!",
+  "side": "left",
+  "items": [
+   [
+    "minecraft:powered_rail",
+    20,
+    16
+   ],
+   [
+    "minecraft:rail",
+    170,
+    16
+   ],
+   [
+    "tc:loco_steam_4_4_0",
+    40,
+    165
+   ],
+   [
+    "tc:freight_flat_cart_wood_us",
+    60,
+    165
+   ],
+   [
+    "tc:freight_box_cart_us",
+    80,
+    165
+   ],
+   [
+    "tc:passenger_2class_db",
+    100,
+    165
+   ],
+   [
+    "tc:freight_flat_car_logs_db",
+    120,
+    165
+   ],
+   [
+    "tc:freight_cart_red",
+    140,
+    165
+   ],
+   [
+    "tc:passenger_caboose_red",
+    160,
+    165
+   ]
+  ]
+ },
+ {
+  "text": "Crafting:\nAll train parts are crafted in the train workbench,\n\nthen trains have to be assembled in the assembly tables.\n\nThere are three assembly tables:\n\nTierI - Iron age\nTierII - Steel age\nTierIII - Advanced age\n",
+  "side": "right",
+  "items": [
+   [
+    "tc:train_workbench",
+    20,
+    16
+   ],
+   [
+    "tc:assembly_table_i",
+    40,
+    165
+   ],
+   [
+    "tc:assembly_table_ii",
+    80,
+    165
+   ],
+   [
+    "tc:assembly_table_iii",
+    140,
+    165
+   ]
+  ]
+ },
+ {
+  "text": "Crafting steel:\nSteel is crafted in Open Hearth Furnace, supply iron ingots and graphite in the top slots, fuel in the bottom slot, \nand it will cook slowly into steel.\nYou can also use steel from other mods or use this steel in other mods.\n",
+  "side": "left",
+  "items": [
+   [
+    "tc:open_hearth_furnace",
+    20,
+    16
+   ],
+   [
+    "tc:open_hearth_furnace",
+    80,
+    155
+   ],
+   [
+    "tc:graphite",
+    70,
+    135
+   ],
+   [
+    "minecraft:iron_ingot",
+    90,
+    135
+   ],
+   [
+    "minecraft:coal",
+    80,
+    175
+   ],
+   [
+    "tc:steel_ingot",
+    120,
+    155
+   ]
+  ]
+ },
+ {
+  "text": "Making diesel:\nDiesel is made in a distillation tower using petroleum or oil sands found in the world.\nInsert petroleum in the top slot and fuel in the bottom slot, also try reed.\nIt will cook into liquid diesel and give you plastic with a random chance depending on the input.\nTo get diesel into canisters, you must first craft them using plastic. Then put an empty one in the top right slot.",
+  "side": "right",
+  "items": [
+   [
+    "tc:distillation_tower",
+    20,
+    16
+   ],
+   [
+    "tc:distillation_tower",
+    150,
+    40
+   ],
+   [
+    "tc:petroleum_ore",
+    150,
+    20
+   ],
+   [
+    "minecraft:coal",
+    150,
+    60
+   ],
+   [
+    "tc:diesel",
+    167,
+    40
+   ],
+   [
+    "tc:raw_plastic",
+    167,
+    60
+   ]
+  ]
+ },
+ {
+  "text": "Special pull I: \nYou can attach two locomotives together.\n\nTo do that: shift+click the locomotive you want to PULL with a stake in your hand. Then fuel it and wait until it heats up.\n\nNow put both locomotives in attaching mode. Then move attach them by moving one locomotive towards the other.",
+  "side": "left",
+  "items": [
+   [
+    "tc:loco_steam_br80",
+    20,
+    16
+   ],
+   [
+    "tc:stake",
+    170,
+    16
+   ],
+   [
+    "tc:work_work_caboose",
+    40,
+    165
+   ],
+   [
+    "tc:tank_tank_wagon_db",
+    60,
+    165
+   ],
+   [
+    "tc:freight_flat_car_rails_db",
+    80,
+    165
+   ],
+   [
+    "tc:freight_wagen_db",
+    100,
+    165
+   ],
+   [
+    "tc:loco_diesel_gp40",
+    120,
+    165
+   ],
+   [
+    "tc:loco_diesel_gp40",
+    140,
+    165
+   ]
+  ]
+ },
+ {
+  "text": "Special pull II: \nLocomotives have two states: 'Can pull' and 'Can be pulled'.\n'Can pull' means that the locomotive is able to pull any attach cart. But it can't be pulled.\n'Can be pulled' means that the locomotive behaves like a cart and can be pulled by another locomotive (which is in 'can pull' state). Attached locomotives share power.",
+  "side": "right",
+  "items": [
+   [
+    "tc:loco_steam_small",
+    20,
+    16
+   ],
+   [
+    "tc:stake",
+    170,
+    16
+   ],
+   [
+    "tc:loco_diesel_gp40",
+    40,
+    165
+   ],
+   [
+    "tc:freight_wagen_db",
+    60,
+    165
+   ],
+   [
+    "tc:freight_wagen_db",
+    80,
+    165
+   ],
+   [
+    "tc:freight_wagen_db",
+    100,
+    165
+   ],
+   [
+    "tc:freight_wagen_db",
+    120,
+    165
+   ],
+   [
+    "tc:loco_diesel_gp40",
+    140,
+    165
+   ]
+  ]
+ },
+ {
+  "text": "Armors I: \nThere are several armors in the mod.\nThree of them are mostly skins (engineer, ticket man and driver) with same caracteristics as leather armor.\nOn the contrary, the composite suit is an armor with special capabilities and strong resistance and durability.\nSee next page for details.",
+  "side": "left",
+  "items": [
+   [
+    "tc:hat",
+    20,
+    16
+   ],
+   [
+    "tc:ticket_man_hat",
+    170,
+    16
+   ],
+   [
+    "tc:driver_hat",
+    40,
+    165
+   ],
+   [
+    "tc:driver_jacket",
+    90,
+    165
+   ],
+   [
+    "tc:driver_pants",
+    140,
+    165
+   ]
+  ]
+ },
+ {
+  "text": "Armors II: \nThe helmet cures poisons, helps you breathe under water, and gives night vision in dark places (not when riding an entity)\nThe chest regen half a heart every 5s.\nThe pants protect you against fire damage.\nThe boots absorb fall damage.\nTicket man, driver and composite armors are paintable (in train workbench)",
+  "side": "right",
+  "items": [
+   [
+    "tc:composite_helmet",
+    20,
+    16
+   ],
+   [
+    "tc:reinforced_plates",
+    170,
+    16
+   ]
+  ]
+ },
+ {
+  "text": "Generators:\nThere are three generators in the mod.\nWater wheel, Wind mill, and Diesel Generator are RF generators. Water wheel has to be placed beside flowing water. Plug kinesis pipes to the sides.\nWind mill will produce various energy amount depending on wind strength.\nFill the Diesel Generator with diesel, power it with redstone, plug some kinesis pipes.\n",
+  "side": "left",
+  "items": [
+   [
+    "tc:wind_mill",
+    20,
+    16
+   ],
+   [
+    "tc:water_wheel",
+    170,
+    16
+   ]
+  ]
+ },
+ {
+  "text": "Villager\n\nTraincraft adds a new villager and a train station to village generation.\n\nThe villager will trade all traincraft items with you upon various prices.\n",
+  "side": "right",
+  "items": [
+   [
+    "tc:driver_jacket",
+    20,
+    16
+   ],
+   [
+    "tc:driver_hat",
+    170,
+    16
+   ]
+  ]
+ },
+ {
+  "text": "Known bugs:\n- Sharp turns are not supported (close 180 turns)\n- When coming backwards from the Curve of a switch too slow Switchstate can be false\n- Jukebox Volume incorrect after rejoin/restart\n- Don't use 4 TC Slopes in a row!\n- TC Slopes won't work above about y=160 ",
+  "side": "left",
+  "items": [
+   [
+    "minecraft:creeper_head",
+    20,
+    16
+   ],
+   [
+    "minecraft:creeper_head",
+    170,
+    16
+   ]
+  ]
+ },
+ {
+  "text": "Advice:\nDue to the bounding box issues, carts have to be attached and PULLED. Don't try to push\n\nRailcraft pull system has been deactivated on Traincraft loco. Use TC's system. \n",
+  "side": "right",
+  "items": [
+   [
+    "tc:tank_tank_wagon_db",
+    20,
+    16
+   ],
+   [
+    "tc:copper_ore",
+    170,
+    16
+   ],
+   [
+    "tc:passenger_caboose_black",
+    40,
+    155
+   ],
+   [
+    "tc:freight_wellcar",
+    60,
+    155
+   ],
+   [
+    "tc:freight_open_wagon",
+    80,
+    155
+   ],
+   [
+    "tc:passenger_stock_car",
+    100,
+    155
+   ],
+   [
+    "tc:freight_open_wagon",
+    120,
+    155
+   ],
+   [
+    "tc:loco_electric_br_e69",
+    140,
+    155
+   ]
+  ]
+ },
+ {
+  "text": "On the following pages you will find all the train workbench recipes and assembly table recipes.\nIt is however strongly suggested to try to discover the recipes by yourself...\n\nWe hope you will enjoy the mod!\n\nSpitfire4466 and MrBrutal",
+  "side": "left",
+  "items": [
+   [
+    "tc:train_workbench",
+    20,
+    16
+   ],
+   [
+    "tc:hat",
+    40,
+    155
+   ],
+   [
+    "tc:jacket",
+    90,
+    155
+   ],
+   [
+    "tc:overalls",
+    140,
+    155
+   ]
+  ]
+ },
+ {
+  "text": "this page was intentionally left blank, as a joke.",
+  "side": "right",
+  "items": []
+ }
+]

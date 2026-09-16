@@ -1,0 +1,16 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="tc_development"
+version="1.0.0"
+displayName="Traincraft Development Tools"
+description="Game tests and scripted client scenarios."
+
+[[dependencies.tc_development]]
+modId="tc"
+type="required"
+versionRange="[0.1,)"
+ordering="AFTER"
+side="BOTH"

@@ -1,0 +1,42 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "tc:reinforced_plates"
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:reinforced_plates"
+    },
+    {
+      "slot": 3,
+      "ingredient": "tc:reinforced_plates"
+    },
+    {
+      "slot": 4,
+      "ingredient": "minecraft:diamond_block"
+    },
+    {
+      "slot": 5,
+      "ingredient": "tc:reinforced_plates"
+    },
+    {
+      "slot": 6,
+      "ingredient": "tc:reinforced_plates"
+    },
+    {
+      "slot": 7,
+      "ingredient": "minecraft:golden_apple"
+    },
+    {
+      "slot": 8,
+      "ingredient": "tc:reinforced_plates"
+    }
+  ],
+  "result": {
+    "id": "tc:composite_jacket",
+    "count": 1
+  }
+}

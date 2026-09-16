@@ -1,0 +1,273 @@
+{
+  "trackType": "SMALL_LEFT_PARALLEL_CURVE",
+  "facing": 1,
+  "playerYaw": 110.0,
+  "origin": [
+    0,
+    64,
+    0
+  ],
+  "onItemUseReturned": true,
+  "yaw": 110.0,
+  "resolvedType": "SMALL_RIGHT_PARALLEL_CURVE",
+  "blocks": [
+    {
+      "offset": [
+        -7,
+        0,
+        -1
+      ],
+      "gag": false,
+      "blockMeta": 2,
+      "tile": {
+        "r": 16.25,
+        "cx": -7.0,
+        "cy": 64.0,
+        "cz": 15.75,
+        "slopeHeight": 0.0,
+        "slopeLength": 0.0,
+        "slopeAngle": 0.0,
+        "railLength": 0.0,
+        "bbHeight": 0.125,
+        "ballastMaterial": 0,
+        "ballastMetadata": 0,
+        "ballastColour": 0,
+        "type": "MEDIUM_LEFT_TURN",
+        "facingMeta": 2,
+        "isLinkedToRail": true,
+        "linkedX": 0,
+        "linkedY": 64,
+        "linkedZ": 0,
+        "hasModel": false,
+        "switchActive": false,
+        "previousRedstoneState": false,
+        "canTypeBeModifiedBySwitch": false,
+        "manualOverride": false,
+        "updateTicks": 0,
+        "updateTicks2": 0,
+        "hasRotated": false,
+        "isLeftFlag": -5
+      }
+    },
+    {
+      "offset": [
+        -6,
+        0,
+        -1
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": -7,
+        "originY": 64,
+        "originZ": -1,
+        "type": "MEDIUM_LEFT_TURN",
+        "bbHeight": 0.125,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -5,
+        0,
+        -1
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": -7,
+        "originY": 64,
+        "originZ": -1,
+        "type": "MEDIUM_LEFT_TURN",
+        "bbHeight": 0.125,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -4,
+        0,
+        -1
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": -7,
+        "originY": 64,
+        "originZ": -1,
+        "type": "MEDIUM_LEFT_TURN",
+        "bbHeight": 0.125,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -3,
+        0,
+        -1
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": -7,
+        "originY": 64,
+        "originZ": -1,
+        "type": "MEDIUM_LEFT_TURN",
+        "bbHeight": 0.125,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -2,
+        0,
+        -1
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": -7,
+        "originY": 64,
+        "originZ": -1,
+        "type": "MEDIUM_LEFT_TURN",
+        "bbHeight": 0.125,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -5,
+        0,
+        0
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "SMALL_RIGHT_PARALLEL_CURVE",
+        "bbHeight": 0.125,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -4,
+        0,
+        0
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "SMALL_RIGHT_PARALLEL_CURVE",
+        "bbHeight": 0.125,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -3,
+        0,
+        0
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "SMALL_RIGHT_PARALLEL_CURVE",
+        "bbHeight": 0.125,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -2,
+        0,
+        0
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "SMALL_RIGHT_PARALLEL_CURVE",
+        "bbHeight": 0.125,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -1,
+        0,
+        0
+      ],
+      "gag": true,
+      "blockMeta": 0,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "SMALL_RIGHT_PARALLEL_CURVE",
+        "bbHeight": 0.125,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "gag": false,
+      "blockMeta": 1,
+      "tile": {
+        "r": 16.25,
+        "cx": 1.0,
+        "cy": 64.0,
+        "cz": -15.75,
+        "slopeHeight": 0.0,
+        "slopeLength": 0.0,
+        "slopeAngle": 0.0,
+        "railLength": 0.0,
+        "bbHeight": 0.125,
+        "ballastMaterial": 0,
+        "ballastMetadata": 0,
+        "ballastColour": 0,
+        "type": "SMALL_RIGHT_PARALLEL_CURVE",
+        "facingMeta": 1,
+        "isLinkedToRail": true,
+        "linkedX": -7,
+        "linkedY": 64,
+        "linkedZ": -1,
+        "hasModel": true,
+        "switchActive": false,
+        "previousRedstoneState": false,
+        "canTypeBeModifiedBySwitch": false,
+        "manualOverride": false,
+        "updateTicks": 0,
+        "updateTicks2": 0,
+        "idDrop": "tc:tcRailSmallParallelCurve",
+        "hasRotated": false,
+        "isLeftFlag": -5
+      }
+    }
+  ],
+  "lean": "right"
+}

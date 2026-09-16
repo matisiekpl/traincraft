@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:snowball",
+    "minecraft:gravel"
+  ],
+  "result": {
+    "id": "tc:snow_gravel",
+    "count": 1
+  }
+}

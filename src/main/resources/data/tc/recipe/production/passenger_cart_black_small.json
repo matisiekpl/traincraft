@@ -1,0 +1,40 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#minecraft:planks",
+      "count": 6
+    },
+    {
+      "slot": 1,
+      "ingredient": "tc:wooden_bogie",
+      "count": 2
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:wooden_frame",
+      "count": 2
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:rods/wooden",
+      "count": 2
+    },
+    {
+      "slot": 5,
+      "ingredient": "tc:wooden_cab",
+      "count": 1
+    },
+    {
+      "slot": 8,
+      "ingredient": "tc:seats",
+      "count": 1
+    }
+  ],
+  "result": {
+    "id": "tc:passenger_cart_black_small"
+  },
+  "tier": 1
+}

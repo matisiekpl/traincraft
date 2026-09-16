@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IPI",
+    "S S",
+    "SPS"
+  ],
+  "key": {
+    "I": "#c:ingots/iron",
+    "P": "minecraft:piston",
+    "S": "minecraft:stone"
+  },
+  "result": {
+    "id": "tc:assembly_table_i",
+    "count": 1
+  }
+}

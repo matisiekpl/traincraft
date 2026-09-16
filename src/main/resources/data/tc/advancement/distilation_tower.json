@@ -1,0 +1,31 @@
+{
+  "parent": "tc:root",
+  "criteria": {
+    "has_distil_idle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:distillation_tower"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.distilation_tower.description"
+    },
+    "icon": {
+      "id": "tc:distillation_tower"
+    },
+    "title": {
+      "translate": "advancements.tc.distilation_tower.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_distil_idle"
+    ]
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 1,
+      "ingredient": "tc:propeller"
+    },
+    {
+      "slot": 4,
+      "ingredient": "tc:generator"
+    },
+    {
+      "slot": 6,
+      "ingredient": "#c:ingots/iron"
+    },
+    {
+      "slot": 8,
+      "ingredient": "#c:ingots/iron"
+    }
+  ],
+  "result": {
+    "id": "tc:wind_mill",
+    "count": 1
+  }
+}

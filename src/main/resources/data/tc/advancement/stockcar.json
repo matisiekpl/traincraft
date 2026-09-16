@@ -1,0 +1,42 @@
+{
+  "parent": "tc:assembly_table",
+  "criteria": {
+    "has_minecart_stock_car": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:passenger_stock_car"
+          }
+        ]
+      }
+    },
+    "has_minecart_drwgstock_car": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:passenger_drwg_stock_car"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.stockcar.description"
+    },
+    "icon": {
+      "id": "tc:passenger_stock_car"
+    },
+    "title": {
+      "translate": "advancements.tc.stockcar.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_minecart_stock_car",
+      "has_minecart_drwgstock_car"
+    ]
+  ]
+}

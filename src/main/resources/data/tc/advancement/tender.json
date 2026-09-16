@@ -1,0 +1,64 @@
+{
+  "parent": "tc:assembly_table",
+  "criteria": {
+    "has_minecart_tender": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:tender_small"
+          }
+        ]
+      }
+    },
+    "has_minecart_tender_br01_db": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:tender_br01"
+          }
+        ]
+      }
+    },
+    "has_minecart_tender_er": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:tender_er_ussr"
+          }
+        ]
+      }
+    },
+    "has_minecart_steam_red_tender": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:tender_4_4_0"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.tender.description"
+    },
+    "icon": {
+      "id": "tc:tender_small"
+    },
+    "title": {
+      "translate": "advancements.tc.tender.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_minecart_tender",
+      "has_minecart_tender_br01_db",
+      "has_minecart_tender_er",
+      "has_minecart_steam_red_tender"
+    ]
+  ]
+}

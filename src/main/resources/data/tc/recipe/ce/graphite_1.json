@@ -1,0 +1,46 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#c:dusts/coal"
+    },
+    {
+      "slot": 1,
+      "ingredient": "#c:dusts/coal"
+    },
+    {
+      "slot": 2,
+      "ingredient": "#c:dusts/coal"
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:dusts/coal"
+    },
+    {
+      "slot": 4,
+      "ingredient": "minecraft:clay_ball"
+    },
+    {
+      "slot": 5,
+      "ingredient": "#c:dusts/coal"
+    },
+    {
+      "slot": 6,
+      "ingredient": "#c:dusts/coal"
+    },
+    {
+      "slot": 7,
+      "ingredient": "#c:dusts/coal"
+    },
+    {
+      "slot": 8,
+      "ingredient": "#c:dusts/coal"
+    }
+  ],
+  "result": {
+    "id": "tc:graphite",
+    "count": 2
+  }
+}

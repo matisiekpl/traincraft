@@ -1,0 +1,42 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "tc:balloon"
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:balloon"
+    },
+    {
+      "slot": 3,
+      "ingredient": "minecraft:stick"
+    },
+    {
+      "slot": 4,
+      "ingredient": "tc:steam_engine"
+    },
+    {
+      "slot": 5,
+      "ingredient": "minecraft:stick"
+    },
+    {
+      "slot": 6,
+      "ingredient": "tc:propeller"
+    },
+    {
+      "slot": 7,
+      "ingredient": "minecraft:oak_boat"
+    },
+    {
+      "slot": 8,
+      "ingredient": "tc:propeller"
+    }
+  ],
+  "result": {
+    "id": "tc:airship",
+    "count": 1
+  }
+}

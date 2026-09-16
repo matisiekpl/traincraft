@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "PTP",
+    "III"
+  ],
+  "key": {
+    "I": "#c:ingots/iron",
+    "P": "minecraft:glass_pane",
+    "T": "minecraft:torch"
+  },
+  "result": {
+    "id": "tc:lantern",
+    "count": 4
+  }
+}

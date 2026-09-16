@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    " I ",
+    "C C"
+  ],
+  "key": {
+    "I": "#c:ingots/iron",
+    "C": "#c:ingots/copper"
+  },
+  "result": {
+    "id": "tc:metro_madrid_pole",
+    "count": 1
+  }
+}

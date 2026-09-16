@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "tc:block/assembly_table_ii",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "tc:block/assembly_table_ii",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "tc:block/assembly_table_ii",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "tc:block/assembly_table_ii",
+      "y": 270
+    }
+  }
+}

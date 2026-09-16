@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " TP",
+    "TPP",
+    "PPP"
+  ],
+  "key": {
+    "T": "tc:track_medium_straight",
+    "P": "#minecraft:planks"
+  },
+  "result": {
+    "id": "tc:track_slope_wood",
+    "count": 1
+  }
+}

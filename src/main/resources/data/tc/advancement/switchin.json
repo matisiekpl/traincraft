@@ -1,0 +1,42 @@
+{
+  "parent": "tc:diesel_engine",
+  "criteria": {
+    "has_minecart_loco_sw8": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_diesel_sw8"
+          }
+        ]
+      }
+    },
+    "has_minecart_loco_gp15": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_diesel_gp15"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.switchin.description"
+    },
+    "icon": {
+      "id": "tc:loco_diesel_sw8"
+    },
+    "title": {
+      "translate": "advancements.tc.switchin.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_minecart_loco_sw8",
+      "has_minecart_loco_gp15"
+    ]
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "tc:block/asphalt_slab"
+    },
+    "type=top": {
+      "model": "tc:block/asphalt_slab_top"
+    },
+    "type=double": {
+      "model": "tc:block/asphalt"
+    }
+  }
+}

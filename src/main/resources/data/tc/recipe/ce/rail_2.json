@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "R"
+  ],
+  "key": {
+    "R": "tc:track_small_road_crossing"
+  },
+  "result": {
+    "id": "minecraft:rail",
+    "count": 1
+  }
+}

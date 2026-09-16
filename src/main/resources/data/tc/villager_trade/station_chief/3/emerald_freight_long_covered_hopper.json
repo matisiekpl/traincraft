@@ -1,0 +1,11 @@
+{
+  "wants": {
+    "id": "minecraft:emerald",
+    "count": 3
+  },
+  "gives": {
+    "id": "tc:freight_long_covered_hopper"
+  },
+  "max_uses": 12,
+  "xp": 5
+}

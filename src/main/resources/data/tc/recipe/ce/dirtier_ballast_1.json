@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "tc:dirty_ballast",
+    "tc:dirty_ballast",
+    "tc:dirty_ballast",
+    "tc:dirty_ballast",
+    "tc:dirty_ballast",
+    "tc:dirty_ballast",
+    "tc:dirty_ballast",
+    "tc:dirty_ballast",
+    "minecraft:dirt"
+  ],
+  "result": {
+    "id": "tc:dirtier_ballast",
+    "count": 16
+  }
+}

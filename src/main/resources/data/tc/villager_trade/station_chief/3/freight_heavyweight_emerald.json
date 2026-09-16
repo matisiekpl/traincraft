@@ -1,0 +1,11 @@
+{
+  "wants": {
+    "id": "tc:freight_heavyweight"
+  },
+  "gives": {
+    "id": "minecraft:emerald",
+    "count": 5
+  },
+  "max_uses": 12,
+  "xp": 5
+}

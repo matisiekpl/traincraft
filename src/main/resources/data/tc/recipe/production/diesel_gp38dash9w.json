@@ -1,0 +1,25 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 2,
+      "ingredient": "tc:loco_diesel_gp38dash2",
+      "count": 1
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/steel",
+      "count": 2
+    },
+    {
+      "slot": 5,
+      "ingredient": "tc:steel_cab",
+      "count": 4
+    }
+  ],
+  "result": {
+    "id": "tc:loco_diesel_gp38dash9w"
+  },
+  "tier": 3
+}

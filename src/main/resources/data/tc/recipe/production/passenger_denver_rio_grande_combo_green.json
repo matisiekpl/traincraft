@@ -1,0 +1,44 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "minecraft:chest",
+      "count": 4
+    },
+    {
+      "slot": 1,
+      "ingredient": "tc:iron_bogie",
+      "count": 4
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:wooden_frame",
+      "count": 3
+    },
+    {
+      "slot": 5,
+      "ingredient": "tc:wooden_cab",
+      "count": 3
+    },
+    {
+      "slot": 8,
+      "ingredient": "tc:seats",
+      "count": 1
+    },
+    {
+      "slot": 9,
+      "ingredient": "minecraft:green_dye"
+    }
+  ],
+  "result": {
+    "id": "tc:passenger_denver_rio_grande_combo",
+    "components": {
+      "minecraft:custom_data": {
+        "trainColor": "Green"
+      }
+    }
+  },
+  "tier": 1
+}

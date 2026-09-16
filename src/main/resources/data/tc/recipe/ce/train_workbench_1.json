@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "tc:config",
+      "key": "DISABLE_TRAIN_WORKBENCH",
+      "value": false
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "IFI",
+    "###"
+  ],
+  "key": {
+    "#": "#minecraft:planks",
+    "F": "minecraft:furnace",
+    "I": "#c:ingots/iron"
+  },
+  "result": {
+    "id": "tc:train_workbench",
+    "count": 1
+  }
+}

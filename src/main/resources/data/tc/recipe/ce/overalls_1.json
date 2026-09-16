@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "X$X",
+    "X$X"
+  ],
+  "key": {
+    "X": "#c:dyes/blue",
+    "$": "minecraft:leather_leggings",
+    "#": "#c:dyes/red"
+  },
+  "result": {
+    "id": "tc:overalls",
+    "count": 1
+  }
+}

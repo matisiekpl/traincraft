@@ -1,0 +1,39 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 1,
+      "ingredient": "tc:bogie",
+      "count": 2
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:steel_frame",
+      "count": 3
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/steel",
+      "count": 2
+    },
+    {
+      "slot": 8,
+      "ingredient": "#minecraft:coals",
+      "count": 1
+    },
+    {
+      "slot": 9,
+      "ingredient": "minecraft:blue_dye"
+    }
+  ],
+  "result": {
+    "id": "tc:tender_onion",
+    "components": {
+      "minecraft:custom_data": {
+        "trainColor": "Blue"
+      }
+    }
+  },
+  "tier": 2
+}

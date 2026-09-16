@@ -1,0 +1,31 @@
+{
+  "parent": "tc:assembly_table",
+  "criteria": {
+    "has_minecart_juke_box_cart": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:passenger_juke_box_cart"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.jukebox.description"
+    },
+    "icon": {
+      "id": "tc:passenger_juke_box_cart"
+    },
+    "title": {
+      "translate": "advancements.tc.jukebox.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_minecart_juke_box_cart"
+    ]
+  ]
+}

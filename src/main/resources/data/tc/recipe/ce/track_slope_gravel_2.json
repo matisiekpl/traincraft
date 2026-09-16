@@ -1,0 +1,42 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 1,
+      "ingredient": "tc:track_medium_straight"
+    },
+    {
+      "slot": 2,
+      "ingredient": "minecraft:gravel"
+    },
+    {
+      "slot": 3,
+      "ingredient": "tc:track_medium_straight"
+    },
+    {
+      "slot": 4,
+      "ingredient": "minecraft:gravel"
+    },
+    {
+      "slot": 5,
+      "ingredient": "minecraft:gravel"
+    },
+    {
+      "slot": 6,
+      "ingredient": "minecraft:gravel"
+    },
+    {
+      "slot": 7,
+      "ingredient": "minecraft:gravel"
+    },
+    {
+      "slot": 8,
+      "ingredient": "minecraft:gravel"
+    }
+  ],
+  "result": {
+    "id": "tc:track_slope_gravel",
+    "count": 1
+  }
+}

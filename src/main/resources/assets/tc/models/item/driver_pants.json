@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tc:item/driver_pants",
+    "layer1": "tc:item/driver_pants_overlay"
+  }
+}

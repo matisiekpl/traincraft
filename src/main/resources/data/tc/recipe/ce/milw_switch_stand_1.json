@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " RW",
+    "BWR",
+    "AAA"
+  ],
+  "key": {
+    "A": "minecraft:stick",
+    "B": "minecraft:iron_bars",
+    "R": "#c:dyes/red",
+    "W": "#c:dyes/white"
+  },
+  "result": {
+    "id": "tc:milw_switch_stand",
+    "count": 1
+  }
+}

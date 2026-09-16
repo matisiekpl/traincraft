@@ -1,0 +1,39 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 1,
+      "ingredient": "tc:bogie",
+      "count": 3
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:steel_frame",
+      "count": 3
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/steel",
+      "count": 2
+    },
+    {
+      "slot": 8,
+      "ingredient": "#minecraft:coals",
+      "count": 2
+    },
+    {
+      "slot": 9,
+      "ingredient": "minecraft:red_dye"
+    }
+  ],
+  "result": {
+    "id": "tc:tender_mr_compound",
+    "components": {
+      "minecraft:custom_data": {
+        "trainColor": "Red"
+      }
+    }
+  },
+  "tier": 2
+}

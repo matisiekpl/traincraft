@@ -1,0 +1,11 @@
+{
+  "wants": {
+    "id": "tc:iron_chimney",
+    "count": 7
+  },
+  "gives": {
+    "id": "minecraft:emerald"
+  },
+  "max_uses": 12,
+  "xp": 2
+}

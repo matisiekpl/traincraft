@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X X",
+    "XRX",
+    "XPX"
+  ],
+  "key": {
+    "X": "#c:dyes/blue",
+    "P": "minecraft:leather_chestplate",
+    "R": "#c:dyes/red"
+  },
+  "result": {
+    "id": "tc:driver_jacket",
+    "count": 1
+  }
+}

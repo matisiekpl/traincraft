@@ -1,0 +1,11 @@
+{
+  "wants": {
+    "id": "tc:passenger_denver_rio_grange"
+  },
+  "gives": {
+    "id": "minecraft:emerald",
+    "count": 10
+  },
+  "max_uses": 12,
+  "xp": 5
+}

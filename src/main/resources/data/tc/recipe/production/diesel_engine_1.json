@@ -1,0 +1,46 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "tc:piston"
+    },
+    {
+      "slot": 1,
+      "ingredient": "tc:piston"
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:piston"
+    },
+    {
+      "slot": 3,
+      "ingredient": "tc:cylinder"
+    },
+    {
+      "slot": 4,
+      "ingredient": "tc:cylinder"
+    },
+    {
+      "slot": 5,
+      "ingredient": "tc:cylinder"
+    },
+    {
+      "slot": 6,
+      "ingredient": "tc:camshaft"
+    },
+    {
+      "slot": 7,
+      "ingredient": "tc:camshaft"
+    },
+    {
+      "slot": 8,
+      "ingredient": "tc:camshaft"
+    }
+  ],
+  "result": {
+    "id": "tc:diesel_engine",
+    "count": 2
+  }
+}

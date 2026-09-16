@@ -1,0 +1,49 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#c:ingots/iron",
+      "count": 2
+    },
+    {
+      "slot": 1,
+      "ingredient": "tc:iron_bogie",
+      "count": 2
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:iron_frame",
+      "count": 2
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/iron",
+      "count": 2
+    },
+    {
+      "slot": 4,
+      "ingredient": "minecraft:light_gray_dye"
+    },
+    {
+      "slot": 5,
+      "ingredient": "minecraft:paper",
+      "count": 2
+    },
+    {
+      "slot": 8,
+      "ingredient": "#minecraft:coals",
+      "count": 2
+    }
+  ],
+  "result": {
+    "id": "tc:tender_rw_type_2",
+    "components": {
+      "minecraft:custom_data": {
+        "trainColor": "LightGrey"
+      }
+    }
+  },
+  "tier": 1
+}

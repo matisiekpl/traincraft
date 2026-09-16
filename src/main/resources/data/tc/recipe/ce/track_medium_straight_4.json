@@ -1,0 +1,22 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 2,
+      "ingredient": "tc:track_small_straight"
+    },
+    {
+      "slot": 5,
+      "ingredient": "tc:track_small_straight"
+    },
+    {
+      "slot": 8,
+      "ingredient": "tc:track_small_straight"
+    }
+  ],
+  "result": {
+    "id": "tc:track_medium_straight",
+    "count": 1
+  }
+}

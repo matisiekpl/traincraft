@@ -1,0 +1,46 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "minecraft:lever"
+    },
+    {
+      "slot": 1,
+      "ingredient": "minecraft:stone_button"
+    },
+    {
+      "slot": 2,
+      "ingredient": "minecraft:lever"
+    },
+    {
+      "slot": 3,
+      "ingredient": "minecraft:lever"
+    },
+    {
+      "slot": 4,
+      "ingredient": "tc:electronic_circuit"
+    },
+    {
+      "slot": 5,
+      "ingredient": "minecraft:lever"
+    },
+    {
+      "slot": 6,
+      "ingredient": "#c:ingots/iron"
+    },
+    {
+      "slot": 7,
+      "ingredient": "#c:ingots/iron"
+    },
+    {
+      "slot": 8,
+      "ingredient": "#c:ingots/iron"
+    }
+  ],
+  "result": {
+    "id": "tc:controls",
+    "count": 1
+  }
+}

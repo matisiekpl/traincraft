@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "tc:block/high_speed_ballast"
+  }
+}

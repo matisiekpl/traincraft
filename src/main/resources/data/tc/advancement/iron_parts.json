@@ -1,0 +1,86 @@
+{
+  "parent": "tc:train_wb",
+  "criteria": {
+    "has_iron_bogie": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:iron_bogie"
+          }
+        ]
+      }
+    },
+    "has_iron_boiler": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:iron_boiler"
+          }
+        ]
+      }
+    },
+    "has_iron_cab": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:iron_cab"
+          }
+        ]
+      }
+    },
+    "has_iron_chimney": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:iron_chimney"
+          }
+        ]
+      }
+    },
+    "has_iron_firebox": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:iron_firebox"
+          }
+        ]
+      }
+    },
+    "has_iron_frame": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:iron_frame"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.iron_parts.description"
+    },
+    "icon": {
+      "id": "tc:iron_bogie"
+    },
+    "title": {
+      "translate": "advancements.tc.iron_parts.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_iron_bogie",
+      "has_iron_boiler",
+      "has_iron_cab",
+      "has_iron_chimney",
+      "has_iron_firebox",
+      "has_iron_frame"
+    ]
+  ]
+}

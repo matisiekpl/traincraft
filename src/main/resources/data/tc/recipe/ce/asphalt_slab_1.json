@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB"
+  ],
+  "key": {
+    "B": "tc:asphalt"
+  },
+  "result": {
+    "id": "tc:asphalt_slab",
+    "count": 6
+  }
+}

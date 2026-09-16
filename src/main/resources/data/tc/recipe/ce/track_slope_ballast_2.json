@@ -1,0 +1,42 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 1,
+      "ingredient": "tc:track_medium_straight"
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:ballast"
+    },
+    {
+      "slot": 3,
+      "ingredient": "tc:track_medium_straight"
+    },
+    {
+      "slot": 4,
+      "ingredient": "tc:ballast"
+    },
+    {
+      "slot": 5,
+      "ingredient": "tc:ballast"
+    },
+    {
+      "slot": 6,
+      "ingredient": "tc:ballast"
+    },
+    {
+      "slot": 7,
+      "ingredient": "tc:ballast"
+    },
+    {
+      "slot": 8,
+      "ingredient": "tc:ballast"
+    }
+  ],
+  "result": {
+    "id": "tc:track_slope_ballast",
+    "count": 1
+  }
+}

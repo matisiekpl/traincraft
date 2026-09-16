@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "tc:block/open_hearth_furnace"
+  }
+}

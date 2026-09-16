@@ -1,0 +1,18 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 5,
+      "ingredient": "#c:ingots/steel"
+    },
+    {
+      "slot": 8,
+      "ingredient": "minecraft:stick"
+    }
+  ],
+  "result": {
+    "id": "tc:piston",
+    "count": 3
+  }
+}

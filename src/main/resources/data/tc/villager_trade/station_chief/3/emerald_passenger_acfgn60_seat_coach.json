@@ -1,0 +1,11 @@
+{
+  "wants": {
+    "id": "minecraft:emerald",
+    "count": 3
+  },
+  "gives": {
+    "id": "tc:passenger_acfgn60_seat_coach"
+  },
+  "max_uses": 12,
+  "xp": 5
+}

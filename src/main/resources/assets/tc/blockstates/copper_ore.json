@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "tc:block/copper_ore"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "wants": {
+    "id": "minecraft:powered_rail",
+    "count": {
+      "type": "minecraft:uniform",
+      "min": 1,
+      "max": 10
+    }
+  },
+  "gives": {
+    "id": "minecraft:emerald"
+  },
+  "max_uses": 12,
+  "xp": 2
+}

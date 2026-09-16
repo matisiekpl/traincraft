@@ -1,0 +1,46 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#c:ingots/steel"
+    },
+    {
+      "slot": 1,
+      "ingredient": "#c:ingots/steel"
+    },
+    {
+      "slot": 2,
+      "ingredient": "#c:ingots/steel"
+    },
+    {
+      "slot": 3,
+      "ingredient": "minecraft:water_bucket"
+    },
+    {
+      "slot": 4,
+      "ingredient": "minecraft:water_bucket"
+    },
+    {
+      "slot": 5,
+      "ingredient": "minecraft:water_bucket"
+    },
+    {
+      "slot": 6,
+      "ingredient": "#c:ingots/steel"
+    },
+    {
+      "slot": 7,
+      "ingredient": "#c:ingots/steel"
+    },
+    {
+      "slot": 8,
+      "ingredient": "#c:ingots/steel"
+    }
+  ],
+  "result": {
+    "id": "tc:boiler",
+    "count": 2
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 1,
+      "ingredient": "#c:dyes/red"
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:dyes/blue"
+    },
+    {
+      "slot": 4,
+      "ingredient": "minecraft:leather_leggings"
+    },
+    {
+      "slot": 5,
+      "ingredient": "#c:dyes/blue"
+    },
+    {
+      "slot": 6,
+      "ingredient": "#c:dyes/blue"
+    },
+    {
+      "slot": 8,
+      "ingredient": "#c:dyes/blue"
+    }
+  ],
+  "result": {
+    "id": "tc:overalls",
+    "count": 1
+  }
+}

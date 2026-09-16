@@ -1,0 +1,59 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#c:ingots/steel",
+      "count": 3
+    },
+    {
+      "slot": 1,
+      "ingredient": "tc:bogie",
+      "count": 4
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:steel_frame",
+      "count": 2
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/steel",
+      "count": 4
+    },
+    {
+      "slot": 4,
+      "ingredient": "tc:iron_chimney",
+      "count": 1
+    },
+    {
+      "slot": 5,
+      "ingredient": "tc:steel_cab",
+      "count": 1
+    },
+    {
+      "slot": 6,
+      "ingredient": "minecraft:pink_dye"
+    },
+    {
+      "slot": 7,
+      "ingredient": "minecraft:furnace",
+      "count": 1
+    },
+    {
+      "slot": 8,
+      "ingredient": "minecraft:crafting_table",
+      "count": 1
+    }
+  ],
+  "result": {
+    "id": "tc:passenger_drgw_caboose",
+    "components": {
+      "minecraft:custom_data": {
+        "trainColor": "Pink"
+      }
+    }
+  },
+  "tier": 2
+}

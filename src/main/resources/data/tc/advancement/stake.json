@@ -1,0 +1,31 @@
+{
+  "parent": "tc:steel",
+  "criteria": {
+    "has_stake": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:stake"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.stake.description"
+    },
+    "icon": {
+      "id": "tc:stake"
+    },
+    "title": {
+      "translate": "advancements.tc.stake.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_stake"
+    ]
+  ]
+}

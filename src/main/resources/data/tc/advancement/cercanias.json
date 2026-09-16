@@ -1,0 +1,31 @@
+{
+  "parent": "tc:mtg",
+  "criteria": {
+    "has_minecart_loco_renfe446_motor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_electric_renfe446_motor"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.cercanias.description"
+    },
+    "icon": {
+      "id": "tc:loco_electric_renfe446_motor"
+    },
+    "title": {
+      "translate": "advancements.tc.cercanias.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_minecart_loco_renfe446_motor"
+    ]
+  ]
+}

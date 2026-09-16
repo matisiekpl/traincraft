@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "top": "tc:blocks/distil_top",
+    "bottom": "tc:blocks/distil_bottom",
+    "front": "tc:blocks/distil_on_front",
+    "side": "tc:blocks/distil_side"
+  }
+}

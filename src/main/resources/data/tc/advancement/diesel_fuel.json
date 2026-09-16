@@ -1,0 +1,31 @@
+{
+  "parent": "tc:distilation_tower",
+  "criteria": {
+    "has_diesel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:diesel"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.diesel_fuel.description"
+    },
+    "icon": {
+      "id": "tc:diesel"
+    },
+    "title": {
+      "translate": "advancements.tc.diesel_fuel.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_diesel"
+    ]
+  ]
+}

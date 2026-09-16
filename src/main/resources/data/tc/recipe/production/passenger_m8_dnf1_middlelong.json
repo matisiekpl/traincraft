@@ -1,0 +1,55 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#minecraft:planks",
+      "count": 4
+    },
+    {
+      "slot": 1,
+      "ingredient": "tc:iron_bogie",
+      "count": 2
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:wooden_frame",
+      "count": 1
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/iron",
+      "count": 1
+    },
+    {
+      "slot": 4,
+      "ingredient": "minecraft:paper",
+      "count": 2
+    },
+    {
+      "slot": 5,
+      "ingredient": "tc:wooden_cab",
+      "count": 1
+    },
+    {
+      "slot": 6,
+      "ingredient": "tc:transformer",
+      "count": 1
+    },
+    {
+      "slot": 7,
+      "ingredient": "tc:electric_motor",
+      "count": 2
+    },
+    {
+      "slot": 8,
+      "ingredient": "minecraft:redstone",
+      "count": 4
+    }
+  ],
+  "result": {
+    "id": "tc:passenger_m8_dnf1_middlelong"
+  },
+  "tier": 1
+}

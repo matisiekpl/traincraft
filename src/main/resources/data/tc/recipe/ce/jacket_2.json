@@ -1,0 +1,42 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#c:dyes/orange"
+    },
+    {
+      "slot": 2,
+      "ingredient": "#c:dyes/orange"
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:dyes/orange"
+    },
+    {
+      "slot": 4,
+      "ingredient": "minecraft:leather_chestplate"
+    },
+    {
+      "slot": 5,
+      "ingredient": "#c:dyes/orange"
+    },
+    {
+      "slot": 6,
+      "ingredient": "#c:dyes/orange"
+    },
+    {
+      "slot": 7,
+      "ingredient": "minecraft:string"
+    },
+    {
+      "slot": 8,
+      "ingredient": "#c:dyes/orange"
+    }
+  ],
+  "result": {
+    "id": "tc:jacket",
+    "count": 1
+  }
+}

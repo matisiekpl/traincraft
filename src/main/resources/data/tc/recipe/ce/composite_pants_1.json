@@ -1,0 +1,42 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "tc:reinforced_plates"
+    },
+    {
+      "slot": 1,
+      "ingredient": "minecraft:diamond"
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:reinforced_plates"
+    },
+    {
+      "slot": 3,
+      "ingredient": "tc:reinforced_plates"
+    },
+    {
+      "slot": 4,
+      "ingredient": "minecraft:fire_charge"
+    },
+    {
+      "slot": 5,
+      "ingredient": "tc:reinforced_plates"
+    },
+    {
+      "slot": 6,
+      "ingredient": "tc:reinforced_plates"
+    },
+    {
+      "slot": 8,
+      "ingredient": "tc:reinforced_plates"
+    }
+  ],
+  "result": {
+    "id": "tc:composite_pants",
+    "count": 1
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:gravel",
+    "minecraft:gravel",
+    "minecraft:gravel",
+    "minecraft:gravel",
+    "minecraft:gravel",
+    "minecraft:gravel",
+    "minecraft:gravel",
+    "minecraft:gravel",
+    "minecraft:clay"
+  ],
+  "result": {
+    "id": "tc:ballast",
+    "count": 16
+  }
+}

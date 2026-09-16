@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " TG",
+    "TGG",
+    "GGG"
+  ],
+  "key": {
+    "T": "tc:track_medium_straight",
+    "G": "tc:ballast"
+  },
+  "result": {
+    "id": "tc:track_slope_ballast",
+    "count": 1
+  }
+}

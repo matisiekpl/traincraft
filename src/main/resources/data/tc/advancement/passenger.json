@@ -1,0 +1,108 @@
+{
+  "parent": "tc:assembly_table",
+  "criteria": {
+    "has_minecart_passenger5": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:passenger_long_green"
+          }
+        ]
+      }
+    },
+    "has_minecart_passenger_blue": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:passenger_cart_blue"
+          }
+        ]
+      }
+    },
+    "has_minecart_passenger2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:passenger_cart_black_small"
+          }
+        ]
+      }
+    },
+    "has_minecart_caboose": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:passenger_caboose_red"
+          }
+        ]
+      }
+    },
+    "has_minecart_caboose3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:passenger_caboose_black"
+          }
+        ]
+      }
+    },
+    "has_minecart_passenger7": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:passenger_short_green"
+          }
+        ]
+      }
+    },
+    "has_minecart_passenger8_1class_db": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:passenger_1class_db"
+          }
+        ]
+      }
+    },
+    "has_minecart_passenger9_2class_db": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:passenger_2class_db"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.passenger.description"
+    },
+    "icon": {
+      "id": "tc:passenger_cart_black_small"
+    },
+    "title": {
+      "translate": "advancements.tc.passenger.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_minecart_passenger5",
+      "has_minecart_passenger_blue",
+      "has_minecart_passenger2",
+      "has_minecart_caboose",
+      "has_minecart_caboose3",
+      "has_minecart_passenger7",
+      "has_minecart_passenger8_1class_db",
+      "has_minecart_passenger9_2class_db"
+    ]
+  ]
+}

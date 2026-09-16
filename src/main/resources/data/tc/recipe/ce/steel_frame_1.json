@@ -1,0 +1,30 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#c:ingots/iron"
+    },
+    {
+      "slot": 2,
+      "ingredient": "#c:ingots/iron"
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/steel"
+    },
+    {
+      "slot": 4,
+      "ingredient": "#c:ingots/steel"
+    },
+    {
+      "slot": 5,
+      "ingredient": "#c:ingots/steel"
+    }
+  ],
+  "result": {
+    "id": "tc:steel_frame",
+    "count": 2
+  }
+}

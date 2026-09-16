@@ -1,0 +1,75 @@
+{
+  "parent": "tc:assembly_table",
+  "criteria": {
+    "has_minecart_watertransp": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:tank_tank_cart_lava"
+          }
+        ]
+      }
+    },
+    "has_minecart_tank_wagon": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:tank_tank_wagon_yellow"
+          }
+        ]
+      }
+    },
+    "has_minecart_tank_wagon2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:tank_tank_wagon_grey"
+          }
+        ]
+      }
+    },
+    "has_minecart_tank_wagon_db": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:tank_tank_wagon_db"
+          }
+        ]
+      }
+    },
+    "has_minecart_tank_wagon_us": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:tank_tank_wagon_us"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.liquid.description"
+    },
+    "icon": {
+      "id": "tc:tank_tank_cart_lava"
+    },
+    "title": {
+      "translate": "advancements.tc.liquid.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_minecart_watertransp",
+      "has_minecart_tank_wagon",
+      "has_minecart_tank_wagon2",
+      "has_minecart_tank_wagon_db",
+      "has_minecart_tank_wagon_us"
+    ]
+  ]
+}

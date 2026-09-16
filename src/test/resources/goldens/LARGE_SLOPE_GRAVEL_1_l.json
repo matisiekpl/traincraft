@@ -1,0 +1,253 @@
+{
+  "trackType": "LARGE_SLOPE_GRAVEL",
+  "facing": 1,
+  "playerYaw": 70.0,
+  "origin": [
+    0,
+    64,
+    0
+  ],
+  "onItemUseReturned": true,
+  "yaw": 70.0,
+  "resolvedType": "LARGE_SLOPE_GRAVEL",
+  "blocks": [
+    {
+      "offset": [
+        -11,
+        0,
+        0
+      ],
+      "gag": true,
+      "blockMeta": 1,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "LARGE_SLOPE_GRAVEL",
+        "bbHeight": 1.0,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -10,
+        0,
+        0
+      ],
+      "gag": true,
+      "blockMeta": 1,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "LARGE_SLOPE_GRAVEL",
+        "bbHeight": 0.90909094,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -9,
+        0,
+        0
+      ],
+      "gag": true,
+      "blockMeta": 1,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "LARGE_SLOPE_GRAVEL",
+        "bbHeight": 0.8181818,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -8,
+        0,
+        0
+      ],
+      "gag": true,
+      "blockMeta": 1,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "LARGE_SLOPE_GRAVEL",
+        "bbHeight": 0.72727275,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -7,
+        0,
+        0
+      ],
+      "gag": true,
+      "blockMeta": 1,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "LARGE_SLOPE_GRAVEL",
+        "bbHeight": 0.6363636,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -6,
+        0,
+        0
+      ],
+      "gag": true,
+      "blockMeta": 1,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "LARGE_SLOPE_GRAVEL",
+        "bbHeight": 0.54545456,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -5,
+        0,
+        0
+      ],
+      "gag": true,
+      "blockMeta": 1,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "LARGE_SLOPE_GRAVEL",
+        "bbHeight": 0.45454547,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -4,
+        0,
+        0
+      ],
+      "gag": true,
+      "blockMeta": 1,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "LARGE_SLOPE_GRAVEL",
+        "bbHeight": 0.36363637,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -3,
+        0,
+        0
+      ],
+      "gag": true,
+      "blockMeta": 1,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "LARGE_SLOPE_GRAVEL",
+        "bbHeight": 0.27272728,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -2,
+        0,
+        0
+      ],
+      "gag": true,
+      "blockMeta": 1,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "LARGE_SLOPE_GRAVEL",
+        "bbHeight": 0.18181819,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        -1,
+        0,
+        0
+      ],
+      "gag": true,
+      "blockMeta": 1,
+      "tile": {
+        "rand": "Random",
+        "originX": 0,
+        "originY": 64,
+        "originZ": 0,
+        "type": "LARGE_SLOPE_GRAVEL",
+        "bbHeight": 0.125,
+        "canPlaceRollingstock": true
+      }
+    },
+    {
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "gag": false,
+      "blockMeta": 1,
+      "tile": {
+        "r": 0.0,
+        "cx": 0.0,
+        "cy": 0.0,
+        "cz": 0.0,
+        "slopeHeight": 1.0,
+        "slopeLength": 12.0,
+        "slopeAngle": 0.0666,
+        "railLength": 0.0,
+        "bbHeight": 0.125,
+        "ballastMaterial": 1,
+        "ballastMetadata": 0,
+        "ballastColour": 0,
+        "type": "LARGE_SLOPE_GRAVEL",
+        "facingMeta": 1,
+        "isLinkedToRail": false,
+        "linkedX": 0,
+        "linkedY": 0,
+        "linkedZ": 0,
+        "hasModel": true,
+        "switchActive": false,
+        "previousRedstoneState": false,
+        "canTypeBeModifiedBySwitch": false,
+        "manualOverride": false,
+        "updateTicks": 0,
+        "updateTicks2": 0,
+        "idDrop": "tc:tcRailLargeSlopeGravel",
+        "hasRotated": false,
+        "isLeftFlag": -5
+      }
+    }
+  ],
+  "lean": "left"
+}

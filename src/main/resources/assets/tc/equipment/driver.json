@@ -1,0 +1,20 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "tc:driver",
+        "dyeable": {
+          "color_when_undyed": 1337817
+        }
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "tc:driver",
+        "dyeable": {
+          "color_when_undyed": 1337817
+        }
+      }
+    ]
+  }
+}

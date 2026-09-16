@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "G  ",
+    "HIG",
+    "G  "
+  ],
+  "key": {
+    "G": "tc:track_small_straight",
+    "H": "tc:track_medium_straight",
+    "I": "tc:track_large_turn"
+  },
+  "result": {
+    "id": "tc:track_large_switch",
+    "count": 1
+  }
+}

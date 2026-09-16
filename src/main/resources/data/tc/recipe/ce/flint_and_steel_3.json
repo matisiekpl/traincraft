@@ -1,0 +1,18 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/steel"
+    },
+    {
+      "slot": 7,
+      "ingredient": "minecraft:flint"
+    }
+  ],
+  "result": {
+    "id": "minecraft:flint_and_steel",
+    "count": 1
+  }
+}

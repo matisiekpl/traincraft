@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  T",
+    " T ",
+    "T  "
+  ],
+  "key": {
+    "T": "tc:track_slope_ballast"
+  },
+  "result": {
+    "id": "tc:track_very_large_slope_ballast",
+    "count": 1
+  }
+}

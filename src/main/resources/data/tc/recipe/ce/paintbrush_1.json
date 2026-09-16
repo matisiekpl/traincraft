@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GB ",
+    "RIS",
+    " ST"
+  ],
+  "key": {
+    "G": "#c:dyes/green",
+    "B": "#c:dyes/blue",
+    "R": "#c:dyes/red",
+    "I": "minecraft:iron_ingot",
+    "S": "minecraft:string",
+    "T": "minecraft:stick"
+  },
+  "result": {
+    "id": "tc:paintbrush",
+    "count": 1
+  }
+}

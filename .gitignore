@@ -1,0 +1,24 @@
+# Gradle / build
+**/build/
+**/.gradle/
+run/
+run-data/
+run-harness/
+run-showcase/
+bin/
+*.class
+
+# Decompiled upstream (licensing)
+upstream/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.run/
+.eclipse/
+
+# OS
+.DS_Store
+Thumbs.db
+__pycache__/

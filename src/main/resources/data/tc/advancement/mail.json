@@ -1,0 +1,31 @@
+{
+  "parent": "tc:assembly_table",
+  "criteria": {
+    "has_minecart_mail_wagon_db": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:work_mail_wagen_db"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.mail.description"
+    },
+    "icon": {
+      "id": "tc:work_mail_wagen_db"
+    },
+    "title": {
+      "translate": "advancements.tc.mail.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_minecart_mail_wagon_db"
+    ]
+  ]
+}

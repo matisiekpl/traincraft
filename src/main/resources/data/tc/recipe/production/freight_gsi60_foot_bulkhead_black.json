@@ -1,0 +1,44 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#minecraft:planks",
+      "count": 2
+    },
+    {
+      "slot": 1,
+      "ingredient": "tc:iron_bogie",
+      "count": 2
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:iron_frame",
+      "count": 3
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/iron",
+      "count": 4
+    },
+    {
+      "slot": 8,
+      "ingredient": "minecraft:chest",
+      "count": 2
+    },
+    {
+      "slot": 9,
+      "ingredient": "minecraft:black_dye"
+    }
+  ],
+  "result": {
+    "id": "tc:freight_gsi60_foot_bulkhead",
+    "components": {
+      "minecraft:custom_data": {
+        "trainColor": "Black"
+      }
+    }
+  },
+  "tier": 2
+}

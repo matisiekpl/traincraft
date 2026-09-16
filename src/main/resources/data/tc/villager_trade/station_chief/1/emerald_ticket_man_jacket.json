@@ -1,0 +1,11 @@
+{
+  "wants": {
+    "id": "minecraft:emerald"
+  },
+  "gives": {
+    "id": "tc:ticket_man_jacket",
+    "count": 1
+  },
+  "max_uses": 12,
+  "xp": 2
+}

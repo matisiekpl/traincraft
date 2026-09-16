@@ -1,0 +1,42 @@
+{
+  "parent": "tc:iron_parts",
+  "criteria": {
+    "has_firebox": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:firebox"
+          }
+        ]
+      }
+    },
+    "has_iron_firebox": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:iron_firebox"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.firebox.description"
+    },
+    "icon": {
+      "id": "tc:firebox"
+    },
+    "title": {
+      "translate": "advancements.tc.firebox.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_firebox",
+      "has_iron_firebox"
+    ]
+  ]
+}

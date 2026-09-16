@@ -1,0 +1,31 @@
+{
+  "parent": "tc:electronic_circuit",
+  "criteria": {
+    "has_electmotor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:electric_motor"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.elect_motor.description"
+    },
+    "icon": {
+      "id": "tc:electric_motor"
+    },
+    "title": {
+      "translate": "advancements.tc.elect_motor.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_electmotor"
+    ]
+  ]
+}

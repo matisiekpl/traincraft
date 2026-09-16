@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ICI",
+    "ICI",
+    "I I"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "C": "#c:ingots/copper"
+  },
+  "result": {
+    "id": "tc:overhead_wire_double",
+    "count": 16
+  }
+}

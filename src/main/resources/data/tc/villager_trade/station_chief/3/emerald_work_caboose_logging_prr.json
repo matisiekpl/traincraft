@@ -1,0 +1,11 @@
+{
+  "wants": {
+    "id": "minecraft:emerald",
+    "count": 1
+  },
+  "gives": {
+    "id": "tc:work_caboose_logging_prr"
+  },
+  "max_uses": 12,
+  "xp": 5
+}

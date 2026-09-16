@@ -1,0 +1,31 @@
+{
+  "parent": "tc:diesel_engine",
+  "criteria": {
+    "has_minecart_loco_dd35_a": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_diesel_dd35a"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.powerful.description"
+    },
+    "icon": {
+      "id": "tc:loco_diesel_dd35a"
+    },
+    "title": {
+      "translate": "advancements.tc.powerful.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_minecart_loco_dd35_a"
+    ]
+  ]
+}

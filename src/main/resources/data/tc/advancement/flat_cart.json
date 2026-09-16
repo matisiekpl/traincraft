@@ -1,0 +1,97 @@
+{
+  "parent": "tc:assembly_table",
+  "criteria": {
+    "has_minecart_flat_cart": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:passenger_flat_cart"
+          }
+        ]
+      }
+    },
+    "has_minecart_flat_cart_db": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:passenger_flat_car_db"
+          }
+        ]
+      }
+    },
+    "has_minecart_flat_cart_logs_db": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:freight_flat_car_logs_db"
+          }
+        ]
+      }
+    },
+    "has_minecart_flat_cart_rail_db": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:freight_flat_car_rails_db"
+          }
+        ]
+      }
+    },
+    "has_minecart_flat_cart_su": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:passenger_flat_cart_su"
+          }
+        ]
+      }
+    },
+    "has_minecart_flat_cart_us": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:passenger_flat_cart_us"
+          }
+        ]
+      }
+    },
+    "has_minecart_flat_cart_wood_us": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:freight_flat_cart_wood_us"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.flat_cart.description"
+    },
+    "icon": {
+      "id": "tc:freight_flat_car_rails_db"
+    },
+    "title": {
+      "translate": "advancements.tc.flat_cart.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_minecart_flat_cart",
+      "has_minecart_flat_cart_db",
+      "has_minecart_flat_cart_logs_db",
+      "has_minecart_flat_cart_rail_db",
+      "has_minecart_flat_cart_su",
+      "has_minecart_flat_cart_us",
+      "has_minecart_flat_cart_wood_us"
+    ]
+  ]
+}

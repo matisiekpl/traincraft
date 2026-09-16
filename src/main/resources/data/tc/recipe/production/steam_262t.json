@@ -1,0 +1,40 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 1,
+      "ingredient": "tc:iron_bogie",
+      "count": 4
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:wooden_frame",
+      "count": 1
+    },
+    {
+      "slot": 4,
+      "ingredient": "tc:iron_chimney",
+      "count": 1
+    },
+    {
+      "slot": 5,
+      "ingredient": "tc:iron_cab",
+      "count": 1
+    },
+    {
+      "slot": 6,
+      "ingredient": "tc:boiler",
+      "count": 1
+    },
+    {
+      "slot": 7,
+      "ingredient": "tc:firebox",
+      "count": 1
+    }
+  ],
+  "result": {
+    "id": "tc:loco_steam_262t"
+  },
+  "tier": 1
+}

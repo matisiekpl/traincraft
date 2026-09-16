@@ -1,0 +1,11 @@
+{
+  "wants": {
+    "id": "minecraft:emerald",
+    "count": 4
+  },
+  "gives": {
+    "id": "tc:freight_gsi60_foot_bulkhead"
+  },
+  "max_uses": 12,
+  "xp": 5
+}

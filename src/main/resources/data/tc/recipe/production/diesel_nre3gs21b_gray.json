@@ -1,0 +1,64 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "tc:controls",
+      "count": 3
+    },
+    {
+      "slot": 1,
+      "ingredient": "tc:bogie",
+      "count": 4
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:steel_frame",
+      "count": 3
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/steel",
+      "count": 4
+    },
+    {
+      "slot": 4,
+      "ingredient": "tc:steel_chimney",
+      "count": 3
+    },
+    {
+      "slot": 5,
+      "ingredient": "tc:steel_cab",
+      "count": 1
+    },
+    {
+      "slot": 6,
+      "ingredient": "tc:electric_motor",
+      "count": 4
+    },
+    {
+      "slot": 7,
+      "ingredient": "tc:diesel_engine",
+      "count": 6
+    },
+    {
+      "slot": 8,
+      "ingredient": "tc:generator",
+      "count": 6
+    },
+    {
+      "slot": 9,
+      "ingredient": "minecraft:gray_dye"
+    }
+  ],
+  "result": {
+    "id": "tc:loco_diesel_nre3gs21b",
+    "components": {
+      "minecraft:custom_data": {
+        "trainColor": "Grey"
+      }
+    }
+  },
+  "tier": 3
+}

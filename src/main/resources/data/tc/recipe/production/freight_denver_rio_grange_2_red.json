@@ -1,0 +1,39 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "minecraft:chest",
+      "count": 4
+    },
+    {
+      "slot": 1,
+      "ingredient": "tc:iron_bogie",
+      "count": 4
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:wooden_frame",
+      "count": 3
+    },
+    {
+      "slot": 5,
+      "ingredient": "tc:wooden_cab",
+      "count": 3
+    },
+    {
+      "slot": 9,
+      "ingredient": "minecraft:red_dye"
+    }
+  ],
+  "result": {
+    "id": "tc:freight_denver_rio_grange_2",
+    "components": {
+      "minecraft:custom_data": {
+        "trainColor": "Red"
+      }
+    }
+  },
+  "tier": 1
+}

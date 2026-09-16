@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "tc:config",
+      "key": "MAKE_MODPACKS_GREAT_AGAIN",
+      "value": false
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#L#",
+    "#B#",
+    "#I#"
+  ],
+  "key": {
+    "#": "minecraft:nether_bricks",
+    "L": "minecraft:lava_bucket",
+    "B": "minecraft:bucket",
+    "I": "minecraft:iron_block"
+  },
+  "result": {
+    "id": "tc:open_hearth_furnace",
+    "count": 1
+  }
+}

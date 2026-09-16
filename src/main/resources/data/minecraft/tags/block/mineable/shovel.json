@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "tc:powered_gravel",
+    "tc:snow_gravel",
+    "tc:dirty_ballast",
+    "tc:dirtier_ballast",
+    "tc:high_speed_ballast",
+    "tc:ballast"
+  ]
+}

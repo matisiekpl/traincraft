@@ -1,0 +1,11 @@
+{
+  "wants": {
+    "id": "tc:freight_br_mk1_tpo_stowage"
+  },
+  "gives": {
+    "id": "minecraft:emerald",
+    "count": 3
+  },
+  "max_uses": 12,
+  "xp": 5
+}

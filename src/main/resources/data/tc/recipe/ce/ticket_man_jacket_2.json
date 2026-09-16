@@ -1,0 +1,42 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "minecraft:string"
+    },
+    {
+      "slot": 2,
+      "ingredient": "minecraft:string"
+    },
+    {
+      "slot": 3,
+      "ingredient": "minecraft:string"
+    },
+    {
+      "slot": 4,
+      "ingredient": "minecraft:leather_chestplate"
+    },
+    {
+      "slot": 5,
+      "ingredient": "minecraft:string"
+    },
+    {
+      "slot": 6,
+      "ingredient": "minecraft:string"
+    },
+    {
+      "slot": 7,
+      "ingredient": "#c:dyes/blue"
+    },
+    {
+      "slot": 8,
+      "ingredient": "minecraft:string"
+    }
+  ],
+  "result": {
+    "id": "tc:ticket_man_jacket",
+    "count": 1
+  }
+}

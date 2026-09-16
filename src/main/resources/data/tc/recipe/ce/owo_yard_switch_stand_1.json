@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "OS",
+    "IW"
+  ],
+  "key": {
+    "O": "#c:dyes/orange",
+    "S": "minecraft:stick",
+    "I": "minecraft:iron_ingot",
+    "W": "#minecraft:planks"
+  },
+  "result": {
+    "id": "tc:owo_yard_switch_stand",
+    "count": 1
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#minecraft:wool"
+    },
+    {
+      "slot": 1,
+      "ingredient": "#minecraft:wool"
+    },
+    {
+      "slot": 2,
+      "ingredient": "#minecraft:wool"
+    },
+    {
+      "slot": 3,
+      "ingredient": "#minecraft:wool"
+    },
+    {
+      "slot": 5,
+      "ingredient": "#minecraft:wool"
+    },
+    {
+      "slot": 6,
+      "ingredient": "#minecraft:wool"
+    },
+    {
+      "slot": 7,
+      "ingredient": "#minecraft:wool"
+    },
+    {
+      "slot": 8,
+      "ingredient": "#minecraft:wool"
+    }
+  ],
+  "result": {
+    "id": "tc:balloon",
+    "count": 1
+  }
+}

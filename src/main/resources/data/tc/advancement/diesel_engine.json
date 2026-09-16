@@ -1,0 +1,31 @@
+{
+  "parent": "tc:steel",
+  "criteria": {
+    "has_dieselengine": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:diesel_engine"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.diesel_engine.description"
+    },
+    "icon": {
+      "id": "tc:diesel_engine"
+    },
+    "title": {
+      "translate": "advancements.tc.diesel_engine.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_dieselengine"
+    ]
+  ]
+}

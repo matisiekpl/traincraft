@@ -1,0 +1,42 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#minecraft:planks"
+    },
+    {
+      "slot": 1,
+      "ingredient": "#minecraft:planks"
+    },
+    {
+      "slot": 2,
+      "ingredient": "#minecraft:planks"
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/steel"
+    },
+    {
+      "slot": 5,
+      "ingredient": "#c:ingots/steel"
+    },
+    {
+      "slot": 6,
+      "ingredient": "#c:ingots/steel"
+    },
+    {
+      "slot": 7,
+      "ingredient": "#c:ingots/steel"
+    },
+    {
+      "slot": 8,
+      "ingredient": "#c:ingots/steel"
+    }
+  ],
+  "result": {
+    "id": "tc:steel_cab",
+    "count": 2
+  }
+}

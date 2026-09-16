@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "tc:copper_ore",
+    "tc:oil_sands",
+    "tc:petroleum_ore",
+    "tc:asphalt",
+    "tc:asphalt_slab",
+    "tc:asphalt_stairs",
+    "tc:spanish_signal",
+    "tc:metro_madrid_pole",
+    "tc:mtc_speed_transmitter",
+    "tc:mtc_transmitter",
+    "tc:ato_stop_transmitter",
+    "tc:mtc_receiver",
+    "tc:destination_receiver",
+    "tc:pdm_radio"
+  ]
+}

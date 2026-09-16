@@ -1,0 +1,30 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 1,
+      "ingredient": "#c:ingots/iron"
+    },
+    {
+      "slot": 3,
+      "ingredient": "minecraft:redstone"
+    },
+    {
+      "slot": 4,
+      "ingredient": "tc:electronic_circuit"
+    },
+    {
+      "slot": 5,
+      "ingredient": "#c:ingots/iron"
+    },
+    {
+      "slot": 7,
+      "ingredient": "minecraft:redstone"
+    }
+  ],
+  "result": {
+    "id": "tc:ato_stop_transmitter",
+    "count": 1
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tc:item/trains/bap_pullman_standard_lightweight_center_diner_icom"
+  }
+}

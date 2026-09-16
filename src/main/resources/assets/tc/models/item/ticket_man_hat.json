@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tc:item/ticket_man_hat",
+    "layer1": "tc:item/ticket_man_hat_overlay"
+  }
+}

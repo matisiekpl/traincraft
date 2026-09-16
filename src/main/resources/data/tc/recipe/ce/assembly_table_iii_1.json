@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GPG",
+    "DLD",
+    "OPO"
+  ],
+  "key": {
+    "G": "minecraft:gold_ingot",
+    "P": "minecraft:piston",
+    "D": "minecraft:diamond",
+    "L": "minecraft:glowstone",
+    "O": "minecraft:obsidian"
+  },
+  "result": {
+    "id": "tc:assembly_table_iii",
+    "count": 1
+  }
+}

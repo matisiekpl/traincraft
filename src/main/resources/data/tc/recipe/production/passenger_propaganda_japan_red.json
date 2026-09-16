@@ -1,0 +1,44 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#minecraft:planks",
+      "count": 2
+    },
+    {
+      "slot": 1,
+      "ingredient": "tc:iron_bogie",
+      "count": 2
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:wooden_frame",
+      "count": 2
+    },
+    {
+      "slot": 3,
+      "ingredient": "minecraft:red_dye"
+    },
+    {
+      "slot": 4,
+      "ingredient": "minecraft:paper",
+      "count": 2
+    },
+    {
+      "slot": 8,
+      "ingredient": "minecraft:painting",
+      "count": 2
+    }
+  ],
+  "result": {
+    "id": "tc:passenger_propaganda_japan",
+    "components": {
+      "minecraft:custom_data": {
+        "trainColor": "Red"
+      }
+    }
+  },
+  "tier": 1
+}

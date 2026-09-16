@@ -1,0 +1,31 @@
+{
+  "parent": "tc:electronic_circuit",
+  "criteria": {
+    "has_generator": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:generator"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.generator.description"
+    },
+    "icon": {
+      "id": "tc:generator"
+    },
+    "title": {
+      "translate": "advancements.tc.generator.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_generator"
+    ]
+  ]
+}

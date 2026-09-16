@@ -1,0 +1,39 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#c:ingots/steel",
+      "count": 5
+    },
+    {
+      "slot": 1,
+      "ingredient": "tc:bogie",
+      "count": 2
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:steel_frame",
+      "count": 2
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/steel",
+      "count": 2
+    },
+    {
+      "slot": 8,
+      "ingredient": "minecraft:light_gray_dye"
+    }
+  ],
+  "result": {
+    "id": "tc:freight_long_covered_hopper",
+    "components": {
+      "minecraft:custom_data": {
+        "trainColor": "LightGrey"
+      }
+    }
+  },
+  "tier": 2
+}

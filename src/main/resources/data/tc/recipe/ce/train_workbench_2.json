@@ -1,0 +1,53 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "tc:config",
+      "key": "DISABLE_TRAIN_WORKBENCH",
+      "value": false
+    }
+  ],
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#minecraft:planks"
+    },
+    {
+      "slot": 1,
+      "ingredient": "#minecraft:planks"
+    },
+    {
+      "slot": 2,
+      "ingredient": "#minecraft:planks"
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/iron"
+    },
+    {
+      "slot": 4,
+      "ingredient": "minecraft:furnace"
+    },
+    {
+      "slot": 5,
+      "ingredient": "#c:ingots/iron"
+    },
+    {
+      "slot": 6,
+      "ingredient": "#minecraft:planks"
+    },
+    {
+      "slot": 7,
+      "ingredient": "#minecraft:planks"
+    },
+    {
+      "slot": 8,
+      "ingredient": "#minecraft:planks"
+    }
+  ],
+  "result": {
+    "id": "tc:train_workbench",
+    "count": 1
+  }
+}

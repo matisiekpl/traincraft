@@ -1,0 +1,34 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#minecraft:planks"
+    },
+    {
+      "slot": 3,
+      "ingredient": "#minecraft:planks"
+    },
+    {
+      "slot": 4,
+      "ingredient": "#minecraft:planks"
+    },
+    {
+      "slot": 6,
+      "ingredient": "#c:ingots/iron"
+    },
+    {
+      "slot": 7,
+      "ingredient": "#c:ingots/iron"
+    },
+    {
+      "slot": 8,
+      "ingredient": "#c:ingots/iron"
+    }
+  ],
+  "result": {
+    "id": "tc:seats",
+    "count": 1
+  }
+}

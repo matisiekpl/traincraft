@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "G  ",
+    "GHG",
+    "G  "
+  ],
+  "key": {
+    "G": "tc:track_small_straight",
+    "H": "tc:track_medium_turn"
+  },
+  "result": {
+    "id": "tc:track_medium_switch",
+    "count": 1
+  }
+}

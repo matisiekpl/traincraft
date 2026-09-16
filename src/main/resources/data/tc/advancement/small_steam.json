@@ -1,0 +1,31 @@
+{
+  "parent": "tc:firebox",
+  "criteria": {
+    "has_minecart_loco3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_steam_small"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.small_steam.description"
+    },
+    "icon": {
+      "id": "tc:loco_steam_small"
+    },
+    "title": {
+      "translate": "advancements.tc.small_steam.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_minecart_loco3"
+    ]
+  ]
+}

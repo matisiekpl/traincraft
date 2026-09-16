@@ -1,0 +1,53 @@
+{
+  "parent": "tc:root",
+  "criteria": {
+    "has_overalls": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:overalls"
+          }
+        ]
+      }
+    },
+    "has_hat": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:hat"
+          }
+        ]
+      }
+    },
+    "has_jacket": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:jacket"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.engineer.description"
+    },
+    "icon": {
+      "id": "tc:overalls"
+    },
+    "title": {
+      "translate": "advancements.tc.engineer.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_overalls",
+      "has_hat",
+      "has_jacket"
+    ]
+  ]
+}

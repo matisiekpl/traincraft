@@ -1,0 +1,35 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#c:ingots/steel",
+      "count": 6
+    },
+    {
+      "slot": 1,
+      "ingredient": "tc:bogie",
+      "count": 2
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:steel_frame",
+      "count": 2
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/steel",
+      "count": 2
+    },
+    {
+      "slot": 8,
+      "ingredient": "minecraft:hopper",
+      "count": 1
+    }
+  ],
+  "result": {
+    "id": "tc:freight_gtng"
+  },
+  "tier": 3
+}

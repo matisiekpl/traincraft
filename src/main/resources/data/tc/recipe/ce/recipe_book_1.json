@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TTT",
+    "TBT",
+    "TTT"
+  ],
+  "key": {
+    "T": "minecraft:rail",
+    "B": "minecraft:book"
+  },
+  "result": {
+    "id": "tc:recipe_book",
+    "count": 1
+  }
+}

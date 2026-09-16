@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "tc:assembly_table_i",
+    "tc:assembly_table_ii",
+    "tc:water_wheel",
+    "tc:wind_mill",
+    "tc:bridge_pillar"
+  ]
+}

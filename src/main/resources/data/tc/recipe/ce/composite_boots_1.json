@@ -1,0 +1,34 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 1,
+      "ingredient": "minecraft:diamond"
+    },
+    {
+      "slot": 3,
+      "ingredient": "tc:reinforced_plates"
+    },
+    {
+      "slot": 5,
+      "ingredient": "tc:reinforced_plates"
+    },
+    {
+      "slot": 6,
+      "ingredient": "tc:reinforced_plates"
+    },
+    {
+      "slot": 7,
+      "ingredient": "minecraft:feather"
+    },
+    {
+      "slot": 8,
+      "ingredient": "tc:reinforced_plates"
+    }
+  ],
+  "result": {
+    "id": "tc:composite_boots",
+    "count": 1
+  }
+}

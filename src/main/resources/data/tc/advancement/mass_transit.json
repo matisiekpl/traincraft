@@ -1,0 +1,53 @@
+{
+  "parent": "tc:mtg",
+  "criteria": {
+    "has_minecart_class345engine": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_electric_class345"
+          }
+        ]
+      }
+    },
+    "has_minecart_dstock_engine": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_electric_dstock_engine"
+          }
+        ]
+      }
+    },
+    "has_minecart_loco_renfe446_motor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_electric_renfe446_motor"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.mass_transit.description"
+    },
+    "icon": {
+      "id": "tc:passenger_class345_coach"
+    },
+    "title": {
+      "translate": "advancements.tc.mass_transit.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_minecart_class345engine",
+      "has_minecart_dstock_engine",
+      "has_minecart_loco_renfe446_motor"
+    ]
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#minecraft:planks"
+    },
+    {
+      "slot": 2,
+      "ingredient": "#minecraft:planks"
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/iron"
+    },
+    {
+      "slot": 4,
+      "ingredient": "#c:ingots/iron"
+    },
+    {
+      "slot": 5,
+      "ingredient": "#c:ingots/iron"
+    }
+  ],
+  "result": {
+    "id": "tc:iron_frame",
+    "count": 2
+  }
+}

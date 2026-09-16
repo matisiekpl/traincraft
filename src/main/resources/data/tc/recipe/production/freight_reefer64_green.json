@@ -1,0 +1,49 @@
+{
+  "type": "tc:machine",
+  "machine": "assembly_table_iii",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#c:ingots/steel",
+      "count": 6
+    },
+    {
+      "slot": 1,
+      "ingredient": "tc:bogie",
+      "count": 4
+    },
+    {
+      "slot": 2,
+      "ingredient": "tc:steel_frame",
+      "count": 4
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:ingots/steel",
+      "count": 6
+    },
+    {
+      "slot": 4,
+      "ingredient": "minecraft:green_dye"
+    },
+    {
+      "slot": 8,
+      "ingredient": "minecraft:chest",
+      "count": 4
+    },
+    {
+      "slot": 9,
+      "ingredient": "minecraft:ice",
+      "count": 16
+    }
+  ],
+  "result": {
+    "id": "tc:freight_reefer64",
+    "components": {
+      "minecraft:custom_data": {
+        "trainColor": "Green"
+      }
+    }
+  },
+  "tier": 3
+}

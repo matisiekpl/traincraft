@@ -1,0 +1,42 @@
+{
+  "parent": "tc:firebox",
+  "criteria": {
+    "has_zeppelin": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:zeppelin"
+          }
+        ]
+      }
+    },
+    "has_airship": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:airship"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.zeppelin.description"
+    },
+    "icon": {
+      "id": "tc:airship"
+    },
+    "title": {
+      "translate": "advancements.tc.zeppelin.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_zeppelin",
+      "has_airship"
+    ]
+  ]
+}

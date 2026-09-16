@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "W",
+    "I",
+    "R"
+  ],
+  "key": {
+    "W": "minecraft:lever",
+    "R": "minecraft:stick",
+    "I": "#c:ingots/iron"
+  },
+  "result": {
+    "id": "tc:switch_stand",
+    "count": 1
+  }
+}

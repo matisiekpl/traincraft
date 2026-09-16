@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "tc:coal_dust",
+    "tc:coal_dust",
+    "tc:coal_dust",
+    "tc:coal_dust",
+    "minecraft:cobblestone",
+    "minecraft:cobblestone",
+    "minecraft:cobblestone",
+    "minecraft:cobblestone",
+    "minecraft:cobblestone"
+  ],
+  "result": {
+    "id": "tc:asphalt",
+    "count": 8
+  }
+}

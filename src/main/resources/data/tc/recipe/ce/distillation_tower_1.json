@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#F#",
+    "###"
+  ],
+  "key": {
+    "#": "#c:ingots/steel",
+    "F": "tc:firebox"
+  },
+  "result": {
+    "id": "tc:distillation_tower",
+    "count": 1
+  }
+}

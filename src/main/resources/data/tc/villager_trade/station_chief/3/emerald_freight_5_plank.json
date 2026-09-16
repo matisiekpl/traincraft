@@ -1,0 +1,11 @@
+{
+  "wants": {
+    "id": "minecraft:emerald",
+    "count": 5
+  },
+  "gives": {
+    "id": "tc:freight_5_plank"
+  },
+  "max_uses": 12,
+  "xp": 5
+}

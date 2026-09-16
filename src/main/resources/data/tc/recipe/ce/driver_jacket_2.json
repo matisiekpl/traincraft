@@ -1,0 +1,42 @@
+{
+  "type": "tc:machine",
+  "machine": "train_workbench",
+  "inputs": [
+    {
+      "slot": 0,
+      "ingredient": "#c:dyes/blue"
+    },
+    {
+      "slot": 2,
+      "ingredient": "#c:dyes/blue"
+    },
+    {
+      "slot": 3,
+      "ingredient": "#c:dyes/blue"
+    },
+    {
+      "slot": 4,
+      "ingredient": "#c:dyes/red"
+    },
+    {
+      "slot": 5,
+      "ingredient": "#c:dyes/blue"
+    },
+    {
+      "slot": 6,
+      "ingredient": "#c:dyes/blue"
+    },
+    {
+      "slot": 7,
+      "ingredient": "minecraft:leather_chestplate"
+    },
+    {
+      "slot": 8,
+      "ingredient": "#c:dyes/blue"
+    }
+  ],
+  "result": {
+    "id": "tc:driver_jacket",
+    "count": 1
+  }
+}

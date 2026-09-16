@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "tc:item/track_medium_parallel_switch"
+  }
+}

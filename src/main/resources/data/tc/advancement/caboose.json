@@ -1,0 +1,53 @@
+{
+  "parent": "tc:assembly_table",
+  "criteria": {
+    "has_minecart_caboose": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:passenger_caboose_red"
+          }
+        ]
+      }
+    },
+    "has_minecart_caboose3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:passenger_caboose_black"
+          }
+        ]
+      }
+    },
+    "has_minecart_caboose_work": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:work_work_caboose"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.caboose.description"
+    },
+    "icon": {
+      "id": "tc:passenger_caboose_red"
+    },
+    "title": {
+      "translate": "advancements.tc.caboose.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_minecart_caboose",
+      "has_minecart_caboose3",
+      "has_minecart_caboose_work"
+    ]
+  ]
+}

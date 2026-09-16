@@ -1,0 +1,11 @@
+{
+  "wants": {
+    "id": "minecraft:emerald",
+    "count": 4
+  },
+  "gives": {
+    "id": "tc:freight_box_cart_prr"
+  },
+  "max_uses": 12,
+  "xp": 5
+}

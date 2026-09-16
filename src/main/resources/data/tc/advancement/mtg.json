@@ -1,0 +1,31 @@
+{
+  "parent": "tc:tram",
+  "criteria": {
+    "has_minecart_luengine": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tc:loco_electric_lu_engine"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.tc.mtg.description"
+    },
+    "icon": {
+      "id": "tc:loco_electric_lu_engine"
+    },
+    "title": {
+      "translate": "advancements.tc.mtg.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_minecart_luengine"
+    ]
+  ]
+}

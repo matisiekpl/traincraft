@@ -1,0 +1,2096 @@
+{
+  "summary": {
+    "obj_count": 104,
+    "mtl_count": 0,
+    "files_referencing_mtllib": ["ballast_curved_slope_large.obj", "ballast_curved_slope_large_l.obj", "ballast_curved_slope_super_large.obj", "ballast_curved_slope_super_large_l.obj", "ballast_curved_slope_very_large.obj", "ballast_curved_slope_very_large_l.obj", "supports_curve_ballast_large.obj", "track_concrete.obj", "track_curve_1x.obj", "track_curve_29x.obj", "track_curve_32x.obj", "track_curve_45degree_large.obj", "track_curve_45degree_large_left.obj", "track_curve_45degree_medium.obj", "track_curve_45degree_medium_left.obj", "track_curve_45degree_super_large.obj", "track_curve_45degree_super_large_left.obj", "track_curve_45degree_very_large.obj", "track_curve_45degree_very_large_left.obj", "track_curve_medium.obj", "track_curve_parallel_l.obj", "track_curve_parallel_l_left.obj", "track_curve_parallel_m.obj", "track_curve_parallel_s.obj", "track_curve_super_big.obj", "track_curve_very_big.obj", "track_diagonal_crossing.obj", "track_diagonal_fourways_crossing.obj", "track_diagonal_twoways_crossing.obj", "track_diamond_crossing.obj", "track_diamond_crossing_l.obj", "track_double_diamond_crossing.obj", "track_slope_curve_large.obj", "track_slope_curve_large_l.obj", "track_slope_curve_super_large.obj", "track_slope_curve_super_large_l.obj", "track_slope_curve_very_large.obj", "track_slope_curve_very_large_l.obj", "track_straight_45degree_small.obj", "track_straight_diagonal.obj", "track_straight_diagonal_medium.obj", "track_switch_large_active.obj", "track_switch_large_active_left.obj", "track_switch_large_inactive.obj", "track_switch_large_inactive_left.obj", "track_switch_medium_45degree_active.obj", "track_switch_medium_45degree_active_left.obj", "track_switch_medium_45degree_inactive.obj", "track_switch_medium_45degree_inactive_left.obj", "track_switch_very_large.obj", "track_switch_very_large_active.obj", "track_switch_very_large_active_left.obj", "track_switch_very_large_left.obj", "track_universal_crossing.obj", "turn_slope_ballast_large.obj", "turn_slope_ballast_large_l.obj"],
+    "files_with_usemtl": ["ballast_curved_slope_large.obj", "ballast_curved_slope_large_l.obj", "bridge_block.obj", "lantern.obj", "small_straight.obj", "supports_ballast.obj", "track_concrete.obj", "track_curve_1x.obj", "track_curve_29x.obj", "track_curve_32x.obj", "track_curve_45degree_large.obj", "track_curve_45degree_large_left.obj", "track_curve_45degree_medium.obj", "track_curve_45degree_medium_left.obj", "track_curve_45degree_super_large.obj", "track_curve_45degree_super_large_left.obj", "track_curve_45degree_very_large.obj", "track_curve_45degree_very_large_left.obj", "track_curve_medium.obj", "track_curve_parallel_l.obj", "track_curve_parallel_l_left.obj", "track_curve_parallel_m.obj", "track_curve_parallel_s.obj", "track_curve_super_big.obj", "track_curve_very_big.obj", "track_diagonal_crossing.obj", "track_diagonal_fourways_crossing.obj", "track_diagonal_twoways_crossing.obj", "track_diamond_crossing.obj", "track_diamond_crossing_l.obj", "track_double_diamond_crossing.obj", "track_roadcrossing.obj", "track_slope_curve_large.obj", "track_slope_curve_large_l.obj", "track_slope_curve_super_large.obj", "track_slope_curve_super_large_l.obj", "track_slope_curve_very_large.obj", "track_slope_curve_very_large_l.obj", "track_slope_large.obj", "track_straight_45degree_small.obj", "track_straight_diagonal.obj", "track_straight_diagonal_medium.obj", "track_switch_large_active.obj", "track_switch_large_active_left.obj", "track_switch_large_active_right.obj", "track_switch_large_inactive.obj", "track_switch_large_inactive_left.obj", "track_switch_large_inactive_right.obj", "track_switch_medium_45degree_active.obj", "track_switch_medium_45degree_active_left.obj", "track_switch_medium_45degree_inactive.obj", "track_switch_medium_45degree_inactive_left.obj", "track_switch_parallel_straight_left_01.obj", "track_switch_parallel_straight_right_11.obj", "track_switch_very_large.obj", "track_switch_very_large_active.obj", "track_switch_very_large_active_left.obj", "track_switch_very_large_left.obj", "track_universal_crossing.obj", "turn_slope_ballast_large.obj", "turn_slope_ballast_large_l.obj", "water_wheel.obj", "wind_mill.obj", "wind_mill_wheel.obj"],
+    "files_with_uvs_outside_unit_square": ["american_bumper.obj", "ballast_curved_slope_large.obj", "ballast_curved_slope_large_l.obj", "ballast_curved_slope_very_large.obj", "ballast_curved_slope_very_large_l.obj", "book2.obj", "bridge_block.obj", "present.obj", "supports_ballast.obj", "supports_ballast_long.obj", "supports_ballast_verylong.obj", "supports_wood.obj", "supports_wood_long.obj", "supports_wood_verylong.obj", "track_concrete.obj", "track_curve_1x.obj", "track_curve_29x.obj", "track_curve_32x.obj", "track_curve_45degree_large.obj", "track_curve_45degree_large_left.obj", "track_curve_45degree_medium.obj", "track_curve_45degree_medium_left.obj", "track_curve_45degree_super_large.obj", "track_curve_45degree_super_large_left.obj", "track_curve_45degree_very_large.obj", "track_curve_45degree_very_large_left.obj", "track_curve_big.obj", "track_curve_medium.obj", "track_curve_parallel_l.obj", "track_curve_parallel_l_left.obj", "track_curve_parallel_m.obj", "track_curve_parallel_m_left.obj", "track_curve_parallel_s.obj", "track_curve_parallel_s_left.obj", "track_curve_super_big.obj", "track_curve_very_big.obj", "track_diagonal_crossing.obj", "track_diagonal_fourways_crossing.obj", "track_diagonal_twoways_crossing.obj", "track_diamond_crossing.obj", "track_diamond_crossing_l.obj", "track_double_diamond_crossing.obj", "track_normal.obj", "track_slope.obj", "track_slope_curve_large.obj", "track_slope_curve_large_l.obj", "track_slope_curve_super_large.obj", "track_slope_curve_super_large_l.obj", "track_slope_curve_very_large.obj", "track_slope_curve_very_large_l.obj", "track_slope_large.obj", "track_slope_long.obj", "track_slope_verylong.obj", "track_straight_45degree_small.obj", "track_straight_diagonal.obj", "track_straight_diagonal_medium.obj", "track_switch_large_active.obj", "track_switch_large_active_left.obj", "track_switch_large_active_right.obj", "track_switch_large_inactive.obj", "track_switch_large_inactive_left.obj", "track_switch_large_inactive_right.obj", "track_switch_medium_45degree_active.obj", "track_switch_medium_45degree_active_left.obj", "track_switch_medium_45degree_inactive.obj", "track_switch_medium_45degree_inactive_left.obj", "track_switch_medium_active.obj", "track_switch_medium_active_left.obj", "track_switch_medium_inactive.obj", "track_switch_medium_inactive_left.obj", "track_switch_parallel_active.obj", "track_switch_parallel_active_left.obj", "track_switch_parallel_inactive.obj", "track_switch_parallel_inactive_left.obj", "track_switch_parallel_straight_left_01.obj", "track_switch_parallel_straight_right_11.obj", "track_switch_small_active.obj", "track_switch_small_active_left.obj", "track_switch_small_active_left_new.obj", "track_switch_small_inactive.obj", "track_switch_small_inactive_left.obj", "track_switch_small_inactive_left_new.obj", "track_switch_small_inactive_new.obj", "track_switch_very_large.obj", "track_switch_very_large_active.obj", "track_switch_very_large_active_left.obj", "track_switch_very_large_left.obj", "track_universal_crossing.obj", "track_x.obj", "turn_slope_ballast_large.obj", "turn_slope_ballast_large_l.obj", "water_wheel.obj", "wind_mill.obj", "wind_mill_wheel.obj"],
+    "files_with_negative_indices": [],
+    "files_missing_normals": ["book.obj", "book2.obj", "lantern.obj", "lights.obj", "lights2.obj", "present.obj", "ring.obj", "small_straight.obj", "supports_wood.obj", "track_curve_big.obj", "track_normal.obj", "track_slope.obj", "track_slope_large.obj", "track_switch_large_active_right.obj", "track_switch_large_inactive_right.obj", "track_switch_medium_active.obj", "track_switch_medium_active_left.obj", "track_switch_medium_inactive.obj", "track_switch_medium_inactive_left.obj", "track_switch_parallel_active.obj", "track_switch_parallel_active_left.obj", "track_switch_parallel_inactive.obj", "track_switch_parallel_inactive_left.obj", "track_switch_small_active.obj", "track_switch_small_active_left.obj", "track_switch_small_active_left_new.obj", "track_switch_small_inactive.obj", "track_switch_small_inactive_left.obj", "track_switch_small_inactive_left_new.obj", "track_switch_small_inactive_new.obj", "track_x.obj", "water_wheel.obj", "wind_mill.obj", "wind_mill_wheel.obj"],
+    "files_with_ngons": ["track_straight_45degree_small.obj"],
+    "total_triangles": 388065,
+    "max_face_size": 12
+  },
+  "models": [{
+    "file": "american_bumper.obj",
+    "bytes": 34948,
+    "positions": 280,
+    "uvs": 774,
+    "normals": 24,
+    "faces": 234,
+    "quads": 234,
+    "triangles": 468,
+    "face_sizes": {
+      "4": 234
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-3.91E-4, 0.0],
+    "uv_max": [0.971911, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "ballast_curved_slope_large.obj",
+    "bytes": 5144,
+    "positions": 36,
+    "uvs": 100,
+    "normals": 26,
+    "faces": 33,
+    "quads": 33,
+    "triangles": 66,
+    "face_sizes": {
+      "4": 33
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [1.0E-4, -3.37E-4],
+    "uv_max": [0.999899, 0.9999],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Balast"],
+    "mtllib": ["turn_slope_gravel_test.mtl"]
+  }, {
+    "file": "ballast_curved_slope_large_l.obj",
+    "bytes": 5165,
+    "positions": 36,
+    "uvs": 100,
+    "normals": 26,
+    "faces": 33,
+    "quads": 33,
+    "triangles": 66,
+    "face_sizes": {
+      "4": 33
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [1.0E-4, -3.37E-4],
+    "uv_max": [0.999899, 0.9999],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Balast"],
+    "mtllib": ["turn_slope_gravel_test_l.mtl"]
+  }, {
+    "file": "ballast_curved_slope_super_large.obj",
+    "bytes": 15111,
+    "positions": 100,
+    "uvs": 294,
+    "normals": 74,
+    "faces": 97,
+    "quads": 97,
+    "triangles": 194,
+    "face_sizes": {
+      "4": 97
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [0.0, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": false,
+    "usemtl": [],
+    "mtllib": ["ballast_curved_slope_super_large.mtl"]
+  }, {
+    "file": "ballast_curved_slope_super_large_l.obj",
+    "bytes": 15176,
+    "positions": 100,
+    "uvs": 294,
+    "normals": 74,
+    "faces": 97,
+    "quads": 97,
+    "triangles": 194,
+    "face_sizes": {
+      "4": 97
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [0.0, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": false,
+    "usemtl": [],
+    "mtllib": ["ballast_curved_slope_super_large_l.mtl"]
+  }, {
+    "file": "ballast_curved_slope_very_large.obj",
+    "bytes": 8213,
+    "positions": 56,
+    "uvs": 160,
+    "normals": 41,
+    "faces": 53,
+    "quads": 53,
+    "triangles": 106,
+    "face_sizes": {
+      "4": 53
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-0.011334, 1.0E-4],
+    "uv_max": [1.000264, 0.9999],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": ["supports_curve_ballast_very_large.mtl"]
+  }, {
+    "file": "ballast_curved_slope_very_large_l.obj",
+    "bytes": 8247,
+    "positions": 56,
+    "uvs": 160,
+    "normals": 41,
+    "faces": 53,
+    "quads": 53,
+    "triangles": 106,
+    "face_sizes": {
+      "4": 53
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-0.011334, 1.0E-4],
+    "uv_max": [1.000264, 0.9999],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": ["ballast_curved_slope_very_large_l.mtl"]
+  }, {
+    "file": "book.obj",
+    "bytes": 9017,
+    "positions": 96,
+    "uvs": 216,
+    "normals": 0,
+    "faces": 84,
+    "quads": 84,
+    "triangles": 168,
+    "face_sizes": {
+      "4": 84
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 84,
+    "uv_min": [0.022728, 0.021626],
+    "uv_max": [0.947808, 0.982147],
+    "uv_outside_unit_square": false,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "book2.obj",
+    "bytes": 7267,
+    "positions": 128,
+    "uvs": 162,
+    "normals": 0,
+    "faces": 41,
+    "quads": 41,
+    "triangles": 82,
+    "face_sizes": {
+      "4": 41
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 41,
+    "uv_min": [0.001502, 5.72E-4],
+    "uv_max": [0.999753, 1.000004],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "bridge_block.obj",
+    "bytes": 69556,
+    "positions": 224,
+    "uvs": 234,
+    "normals": 34,
+    "faces": 1224,
+    "quads": 1224,
+    "triangles": 2448,
+    "face_sizes": {
+      "4": 1224
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [0.0, 3.004074097E-5],
+    "uv_max": [1.0, 1.00025296211243],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default"],
+    "mtllib": []
+  }, {
+    "file": "lantern.obj",
+    "bytes": 24138,
+    "positions": 228,
+    "uvs": 525,
+    "normals": 0,
+    "faces": 195,
+    "quads": 195,
+    "triangles": 390,
+    "face_sizes": {
+      "4": 195
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 195,
+    "uv_min": [0.0, 0.0],
+    "uv_max": [1.0, 0.970317],
+    "uv_outside_unit_square": false,
+    "usemtl": ["None"],
+    "mtllib": []
+  }, {
+    "file": "lights.obj",
+    "bytes": 15336,
+    "positions": 244,
+    "uvs": 288,
+    "normals": 0,
+    "faces": 72,
+    "quads": 72,
+    "triangles": 144,
+    "face_sizes": {
+      "4": 72
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 72,
+    "uv_min": [0.0, 1.31E-4],
+    "uv_max": [0.547064, 1.0],
+    "uv_outside_unit_square": false,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "lights2.obj",
+    "bytes": 38067,
+    "positions": 504,
+    "uvs": 780,
+    "normals": 0,
+    "faces": 210,
+    "quads": 210,
+    "triangles": 420,
+    "face_sizes": {
+      "4": 210
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 210,
+    "uv_min": [0.0, 1.31E-4],
+    "uv_max": [0.984357, 1.0],
+    "uv_outside_unit_square": false,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "present.obj",
+    "bytes": 24873,
+    "positions": 258,
+    "uvs": 591,
+    "normals": 0,
+    "faces": 163,
+    "quads": 163,
+    "triangles": 326,
+    "face_sizes": {
+      "4": 163
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 163,
+    "uv_min": [-1.58E-4, 3.2E-4],
+    "uv_max": [0.999743, 1.000707],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "ring.obj",
+    "bytes": 12173,
+    "positions": 120,
+    "uvs": 304,
+    "normals": 0,
+    "faces": 94,
+    "quads": 94,
+    "triangles": 188,
+    "face_sizes": {
+      "4": 94
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 94,
+    "uv_min": [1.26E-4, 3.49E-4],
+    "uv_max": [0.999385, 1.0],
+    "uv_outside_unit_square": false,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "small_straight.obj",
+    "bytes": 3049,
+    "positions": 48,
+    "uvs": 24,
+    "normals": 0,
+    "faces": 36,
+    "quads": 36,
+    "triangles": 72,
+    "face_sizes": {
+      "4": 36
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 36,
+    "uv_min": [0.14909, 0.001411],
+    "uv_max": [0.858379, 0.981394],
+    "uv_outside_unit_square": false,
+    "usemtl": ["rail", "wood"],
+    "mtllib": []
+  }, {
+    "file": "supports_ballast.obj",
+    "bytes": 5878,
+    "positions": 38,
+    "uvs": 86,
+    "normals": 10,
+    "faces": 26,
+    "quads": 26,
+    "triangles": 52,
+    "face_sizes": {
+      "4": 26
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-1.00094497203827, -2.06340408325195],
+    "uv_max": [2.99890899658203, 1.03662896156311],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Mat"],
+    "mtllib": []
+  }, {
+    "file": "supports_ballast_long.obj",
+    "bytes": 8644,
+    "positions": 76,
+    "uvs": 101,
+    "normals": 7,
+    "faces": 52,
+    "quads": 52,
+    "triangles": 104,
+    "face_sizes": {
+      "4": 52
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-1.00193166732788, -0.00301694869995],
+    "uv_max": [2.00094032287598, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "supports_ballast_verylong.obj",
+    "bytes": 10818,
+    "positions": 114,
+    "uvs": 96,
+    "normals": 7,
+    "faces": 76,
+    "quads": 76,
+    "triangles": 152,
+    "face_sizes": {
+      "4": 76
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-1.0008544921875, -0.00124168395996],
+    "uv_max": [2.00372314453125, 1.00015163421631],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "supports_curve_ballast_large.obj",
+    "bytes": 25009,
+    "positions": 348,
+    "uvs": 250,
+    "normals": 105,
+    "faces": 105,
+    "quads": 105,
+    "triangles": 210,
+    "face_sizes": {
+      "4": 105
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [0.125, 0.0],
+    "uv_max": [0.875, 1.0],
+    "uv_outside_unit_square": false,
+    "usemtl": [],
+    "mtllib": ["supports_curve_ballast_large.mtl"]
+  }, {
+    "file": "supports_wood.obj",
+    "bytes": 68386,
+    "positions": 608,
+    "uvs": 1220,
+    "normals": 0,
+    "faces": 376,
+    "quads": 376,
+    "triangles": 752,
+    "face_sizes": {
+      "4": 376
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 376,
+    "uv_min": [-0.186644, -7.53E-4],
+    "uv_max": [5.756286, 1.002074],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "supports_wood_long.obj",
+    "bytes": 95893,
+    "positions": 943,
+    "uvs": 426,
+    "normals": 11,
+    "faces": 708,
+    "quads": 708,
+    "triangles": 1416,
+    "face_sizes": {
+      "4": 708
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-0.18664400279522, -7.529258728E-4],
+    "uv_max": [5.75628614425659, 1.0020740032196],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "supports_wood_verylong.obj",
+    "bytes": 141935,
+    "positions": 1478,
+    "uvs": 426,
+    "normals": 13,
+    "faces": 1141,
+    "quads": 1141,
+    "triangles": 2282,
+    "face_sizes": {
+      "4": 1141
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-0.18664400279522, -7.529258728E-4],
+    "uv_max": [5.75628614425659, 1.0020740032196],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "track_concrete.obj",
+    "bytes": 21619,
+    "positions": 176,
+    "uvs": 496,
+    "normals": 16,
+    "faces": 132,
+    "quads": 132,
+    "triangles": 264,
+    "face_sizes": {
+      "4": 132
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [0.99905, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ"],
+    "mtllib": ["track_concretre.mtl"]
+  }, {
+    "file": "track_curve_1x.obj",
+    "bytes": 17220,
+    "positions": 216,
+    "uvs": 93,
+    "normals": 71,
+    "faces": 180,
+    "quads": 180,
+    "triangles": 360,
+    "face_sizes": {
+      "4": 180
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.004"],
+    "mtllib": ["track_curve_1x.mtl"]
+  }, {
+    "file": "track_curve_29x.obj",
+    "bytes": 850876,
+    "positions": 8616,
+    "uvs": 93,
+    "normals": 3943,
+    "faces": 9672,
+    "quads": 9672,
+    "triangles": 19344,
+    "face_sizes": {
+      "4": 9672
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.005"],
+    "mtllib": ["track_curve_29x.mtl"]
+  }, {
+    "file": "track_curve_32x.obj",
+    "bytes": 947407,
+    "positions": 9480,
+    "uvs": 93,
+    "normals": 4649,
+    "faces": 10644,
+    "quads": 10644,
+    "triangles": 21288,
+    "face_sizes": {
+      "4": 10644
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.001"],
+    "mtllib": ["track_curve_32x.mtl"]
+  }, {
+    "file": "track_curve_45degree_large.obj",
+    "bytes": 238720,
+    "positions": 1320,
+    "uvs": 5304,
+    "normals": 513,
+    "faces": 1464,
+    "quads": 1464,
+    "triangles": 2928,
+    "face_sizes": {
+      "4": 1464
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.001"],
+    "mtllib": ["track_curve_45degree_large.mtl"]
+  }, {
+    "file": "track_curve_45degree_large_left.obj",
+    "bytes": 240739,
+    "positions": 1320,
+    "uvs": 5304,
+    "normals": 539,
+    "faces": 1464,
+    "quads": 1464,
+    "triangles": 2928,
+    "face_sizes": {
+      "4": 1464
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.001"],
+    "mtllib": ["track_curve_45degree_large_left.mtl"]
+  }, {
+    "file": "track_curve_45degree_medium.obj",
+    "bytes": 109687,
+    "positions": 744,
+    "uvs": 2400,
+    "normals": 292,
+    "faces": 612,
+    "quads": 612,
+    "triangles": 1224,
+    "face_sizes": {
+      "4": 612
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.002"],
+    "mtllib": ["track_curve_45degree_medium.mtl"]
+  }, {
+    "file": "track_curve_45degree_medium_left.obj",
+    "bytes": 111389,
+    "positions": 744,
+    "uvs": 2400,
+    "normals": 328,
+    "faces": 612,
+    "quads": 612,
+    "triangles": 1224,
+    "face_sizes": {
+      "4": 612
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.003"],
+    "mtllib": ["track_curve_45degree_medium_left.mtl"]
+  }, {
+    "file": "track_curve_45degree_super_large.obj",
+    "bytes": 396623,
+    "positions": 3667,
+    "uvs": 8000,
+    "normals": 444,
+    "faces": 2000,
+    "quads": 2000,
+    "triangles": 4000,
+    "face_sizes": {
+      "4": 2000
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ"],
+    "mtllib": ["track_curve_45degree_super_large.mtl"]
+  }, {
+    "file": "track_curve_45degree_super_large_left.obj",
+    "bytes": 400239,
+    "positions": 3667,
+    "uvs": 8000,
+    "normals": 442,
+    "faces": 2000,
+    "quads": 2000,
+    "triangles": 4000,
+    "face_sizes": {
+      "4": 2000
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ"],
+    "mtllib": ["track_curve_45degree_super_large_left.mtl"]
+  }, {
+    "file": "track_curve_45degree_very_large.obj",
+    "bytes": 322167,
+    "positions": 1764,
+    "uvs": 7094,
+    "normals": 672,
+    "faces": 1963,
+    "quads": 1963,
+    "triangles": 3926,
+    "face_sizes": {
+      "4": 1963
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.001"],
+    "mtllib": ["track_curve_45degree_very_large.mtl"]
+  }, {
+    "file": "track_curve_45degree_very_large_left.obj",
+    "bytes": 323443,
+    "positions": 1764,
+    "uvs": 7094,
+    "normals": 652,
+    "faces": 1963,
+    "quads": 1963,
+    "triangles": 3926,
+    "face_sizes": {
+      "4": 1963
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.001"],
+    "mtllib": ["track_curve_45degree_very_large_left.mtl"]
+  }, {
+    "file": "track_curve_big.obj",
+    "bytes": 112552,
+    "positions": 1140,
+    "uvs": 2568,
+    "normals": 0,
+    "faces": 720,
+    "quads": 720,
+    "triangles": 1440,
+    "face_sizes": {
+      "4": 720
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 720,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "track_curve_medium.obj",
+    "bytes": 306531,
+    "positions": 1712,
+    "uvs": 4909,
+    "normals": 351,
+    "faces": 3775,
+    "quads": 3775,
+    "triangles": 3775,
+    "face_sizes": {
+      "3": 3775
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-0.012534, -0.0],
+    "uv_max": [1.001332, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ"],
+    "mtllib": ["track_curve_medium.mtl"]
+  }, {
+    "file": "track_curve_parallel_l.obj",
+    "bytes": 377530,
+    "positions": 3000,
+    "uvs": 6928,
+    "normals": 472,
+    "faces": 2456,
+    "quads": 2456,
+    "triangles": 4912,
+    "face_sizes": {
+      "4": 2456
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ"],
+    "mtllib": ["4x16S_bend_fix_fix.mtl"]
+  }, {
+    "file": "track_curve_parallel_l_left.obj",
+    "bytes": 379740,
+    "positions": 3000,
+    "uvs": 6928,
+    "normals": 470,
+    "faces": 2456,
+    "quads": 2456,
+    "triangles": 4912,
+    "face_sizes": {
+      "4": 2456
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ"],
+    "mtllib": ["4x16S_bend_fix_fix_left.mtl"]
+  }, {
+    "file": "track_curve_parallel_m.obj",
+    "bytes": 280338,
+    "positions": 2232,
+    "uvs": 5168,
+    "normals": 411,
+    "faces": 1816,
+    "quads": 1816,
+    "triangles": 3632,
+    "face_sizes": {
+      "4": 1816
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ"],
+    "mtllib": ["track_curve_parallel_m.mtl"]
+  }, {
+    "file": "track_curve_parallel_m_left.obj",
+    "bytes": 281148,
+    "positions": 2232,
+    "uvs": 5168,
+    "normals": 380,
+    "faces": 1816,
+    "quads": 1816,
+    "triangles": 3632,
+    "face_sizes": {
+      "4": 1816
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "track_curve_parallel_s.obj",
+    "bytes": 190287,
+    "positions": 1536,
+    "uvs": 3528,
+    "normals": 300,
+    "faces": 1256,
+    "quads": 1256,
+    "triangles": 2512,
+    "face_sizes": {
+      "4": 1256
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ"],
+    "mtllib": ["track_curve_parallel_s.mtl"]
+  }, {
+    "file": "track_curve_parallel_s_left.obj",
+    "bytes": 189671,
+    "positions": 1536,
+    "uvs": 3528,
+    "normals": 254,
+    "faces": 1256,
+    "quads": 1256,
+    "triangles": 2512,
+    "face_sizes": {
+      "4": 1256
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "track_curve_super_big.obj",
+    "bytes": 808988,
+    "positions": 7200,
+    "uvs": 16000,
+    "normals": 921,
+    "faces": 4000,
+    "quads": 4000,
+    "triangles": 8000,
+    "face_sizes": {
+      "4": 4000
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ"],
+    "mtllib": ["extremely large curve.mtl"]
+  }, {
+    "file": "track_curve_very_big.obj",
+    "bytes": 541972,
+    "positions": 2904,
+    "uvs": 11772,
+    "normals": 1081,
+    "faces": 3246,
+    "quads": 3246,
+    "triangles": 6492,
+    "face_sizes": {
+      "4": 3246
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.003"],
+    "mtllib": ["track_curve_very_big.mtl"]
+  }, {
+    "file": "track_diagonal_crossing.obj",
+    "bytes": 437390,
+    "positions": 3580,
+    "uvs": 8420,
+    "normals": 179,
+    "faces": 2885,
+    "quads": 2885,
+    "triangles": 5770,
+    "face_sizes": {
+      "4": 2885
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [0.999534, 0.998895],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.004", "Default_OBJ.022", "Default_OBJ.222", "Default_OBJ.223", "Default_OBJ.224", "Default_OBJ.225", "Default_OBJ.226", "Default_OBJ.227", "Default_OBJ.228", "Default_OBJ.229", "Default_OBJ.230", "Default_OBJ.231", "Default_OBJ.232", "Default_OBJ.233", "Default_OBJ.234", "Default_OBJ.235", "Default_OBJ.236", "Default_OBJ.237", "Default_OBJ.238", "Default_OBJ.239", "Default_OBJ.240", "Default_OBJ.241", "Default_OBJ.242", "Default_OBJ.243", "Default_OBJ.244", "Default_OBJ.245", "Default_OBJ.246", "Default_OBJ.247", "Default_OBJ.248", "Default_OBJ.249", "Default_OBJ.250", "Default_OBJ.251", "Default_OBJ.252", "Default_OBJ.253", "Default_OBJ.254", "Default_OBJ.255", "Default_OBJ.256", "Default_OBJ.257", "Default_OBJ.258", "Default_OBJ.259", "Default_OBJ.260", "Default_OBJ.261", "Default_OBJ.262", "Default_OBJ.263", "Default_OBJ.264"],
+    "mtllib": ["track_diagonal_crossing.mtl"]
+  }, {
+    "file": "track_diagonal_fourways_crossing.obj",
+    "bytes": 188241,
+    "positions": 1506,
+    "uvs": 3824,
+    "normals": 34,
+    "faces": 1242,
+    "quads": 1242,
+    "triangles": 2484,
+    "face_sizes": {
+      "4": 1242
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.013", "Default_OBJ.014", "Default_OBJ.015", "Default_OBJ.016", "Default_OBJ.017", "Default_OBJ.018", "Default_OBJ.019", "Default_OBJ.020", "Default_OBJ.021", "Default_OBJ.022", "Default_OBJ.023", "Default_OBJ.024"],
+    "mtllib": ["track_diagonal_fourways_crossing.mtl"]
+  }, {
+    "file": "track_diagonal_twoways_crossing.obj",
+    "bytes": 149198,
+    "positions": 1218,
+    "uvs": 3024,
+    "normals": 22,
+    "faces": 1026,
+    "quads": 1026,
+    "triangles": 2052,
+    "face_sizes": {
+      "4": 1026
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [0.999534, 0.998895],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.013", "Default_OBJ.014", "Default_OBJ.015", "Default_OBJ.016", "Default_OBJ.017", "Default_OBJ.018", "Default_OBJ.019", "Default_OBJ.020", "Default_OBJ.021", "Default_OBJ.022", "Default_OBJ.023", "Default_OBJ.024"],
+    "mtllib": ["track_diagonal_twoways_crossing.mtl"]
+  }, {
+    "file": "track_diamond_crossing.obj",
+    "bytes": 271296,
+    "positions": 2199,
+    "uvs": 5508,
+    "normals": 64,
+    "faces": 1796,
+    "quads": 1796,
+    "triangles": 3592,
+    "face_sizes": {
+      "4": 1796
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ", "Default_OBJ.001", "Default_OBJ.002", "Default_OBJ.003", "Default_OBJ.004", "Default_OBJ.005", "Default_OBJ.006", "Default_OBJ.007", "Default_OBJ.008", "Default_OBJ.009", "Default_OBJ.010", "Default_OBJ.011", "Default_OBJ.013", "Default_OBJ.014", "Default_OBJ.015", "Default_OBJ.016", "Default_OBJ.017", "Default_OBJ.018"],
+    "mtllib": ["diamond_crossing.mtl"]
+  }, {
+    "file": "track_diamond_crossing_l.obj",
+    "bytes": 271394,
+    "positions": 2199,
+    "uvs": 5508,
+    "normals": 65,
+    "faces": 1796,
+    "quads": 1796,
+    "triangles": 3592,
+    "face_sizes": {
+      "4": 1796
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.096", "Default_OBJ.097", "Default_OBJ.098", "Default_OBJ.099", "Default_OBJ.100", "Default_OBJ.101", "Default_OBJ.102", "Default_OBJ.103", "Default_OBJ.104", "Default_OBJ.105", "Default_OBJ.106", "Default_OBJ.107", "Default_OBJ.108", "Default_OBJ.109", "Default_OBJ.110", "Default_OBJ.111", "Default_OBJ.112", "Default_OBJ.113"],
+    "mtllib": ["diamond_crossing_l.mtl"]
+  }, {
+    "file": "track_double_diamond_crossing.obj",
+    "bytes": 497715,
+    "positions": 4021,
+    "uvs": 9708,
+    "normals": 180,
+    "faces": 3241,
+    "quads": 3241,
+    "triangles": 6482,
+    "face_sizes": {
+      "4": 3241
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.144", "Default_OBJ.145", "Default_OBJ.146", "Default_OBJ.147", "Default_OBJ.148", "Default_OBJ.149", "Default_OBJ.150", "Default_OBJ.151", "Default_OBJ.152", "Default_OBJ.153", "Default_OBJ.154", "Default_OBJ.155", "Default_OBJ.156", "Default_OBJ.157", "Default_OBJ.158", "Default_OBJ.159", "Default_OBJ.160", "Default_OBJ.161", "Default_OBJ.162", "Default_OBJ.163", "Default_OBJ.164", "Default_OBJ.165", "Default_OBJ.166", "Default_OBJ.167", "Default_OBJ.168", "Default_OBJ.169", "Default_OBJ.170", "Default_OBJ.171", "Default_OBJ.172", "Default_OBJ.173", "Default_OBJ.174", "Default_OBJ.175", "Default_OBJ.176", "Default_OBJ.177", "Default_OBJ.178", "Default_OBJ.179", "Default_OBJ.180", "Default_OBJ.181", "Default_OBJ.182", "Default_OBJ.183"],
+    "mtllib": ["track_double_diamond_crossing.mtl"]
+  }, {
+    "file": "track_normal.obj",
+    "bytes": 19833,
+    "positions": 144,
+    "uvs": 400,
+    "normals": 0,
+    "faces": 108,
+    "quads": 108,
+    "triangles": 216,
+    "face_sizes": {
+      "4": 108
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 108,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "track_roadcrossing.obj",
+    "bytes": 19868,
+    "positions": 145,
+    "uvs": 178,
+    "normals": 20,
+    "faces": 108,
+    "quads": 108,
+    "triangles": 216,
+    "face_sizes": {
+      "4": 108
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [3.051757812E-5, 0.0],
+    "uv_max": [1.0, 0.99996948242188],
+    "uv_outside_unit_square": false,
+    "usemtl": ["Mat_1"],
+    "mtllib": []
+  }, {
+    "file": "track_slope.obj",
+    "bytes": 111331,
+    "positions": 864,
+    "uvs": 2160,
+    "normals": 0,
+    "faces": 548,
+    "quads": 548,
+    "triangles": 1096,
+    "face_sizes": {
+      "4": 548
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 548,
+    "uv_min": [-0.001049, 0.0],
+    "uv_max": [1.001852, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "track_slope_curve_large.obj",
+    "bytes": 739451,
+    "positions": 4464,
+    "uvs": 11656,
+    "normals": 4695,
+    "faces": 4030,
+    "quads": 4030,
+    "triangles": 8060,
+    "face_sizes": {
+      "4": 4030
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.001"],
+    "mtllib": ["track_slope_curve_large.mtl"]
+  }, {
+    "file": "track_slope_curve_large_l.obj",
+    "bytes": 742461,
+    "positions": 4464,
+    "uvs": 11656,
+    "normals": 4695,
+    "faces": 4030,
+    "quads": 4030,
+    "triangles": 8060,
+    "face_sizes": {
+      "4": 4030
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.001"],
+    "mtllib": ["track_slope_curve_large_l.mtl"]
+  }, {
+    "file": "track_slope_curve_super_large.obj",
+    "bytes": 1166378,
+    "positions": 7152,
+    "uvs": 20616,
+    "normals": 5517,
+    "faces": 5950,
+    "quads": 5950,
+    "triangles": 11900,
+    "face_sizes": {
+      "4": 5950
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.004", "Default_OBJ.005"],
+    "mtllib": ["track_slope_curve_super_large.mtl"]
+  }, {
+    "file": "track_slope_curve_super_large_l.obj",
+    "bytes": 1172007,
+    "positions": 7152,
+    "uvs": 20616,
+    "normals": 5516,
+    "faces": 5950,
+    "quads": 5950,
+    "triangles": 11900,
+    "face_sizes": {
+      "4": 5950
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.004", "Default_OBJ.005"],
+    "mtllib": ["track_slope_curve_super_large_l.mtl"]
+  }, {
+    "file": "track_slope_curve_very_large.obj",
+    "bytes": 647618,
+    "positions": 3888,
+    "uvs": 11232,
+    "normals": 3947,
+    "faces": 3240,
+    "quads": 3240,
+    "triangles": 6480,
+    "face_sizes": {
+      "4": 3240
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.001"],
+    "mtllib": ["track_slope_curve_very_large.mtl"]
+  }, {
+    "file": "track_slope_curve_very_large_l.obj",
+    "bytes": 650707,
+    "positions": 3888,
+    "uvs": 11232,
+    "normals": 3947,
+    "faces": 3240,
+    "quads": 3240,
+    "triangles": 6480,
+    "face_sizes": {
+      "4": 3240
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.001"],
+    "mtllib": ["track_slope_curve_very_large_l.mtl"]
+  }, {
+    "file": "track_slope_large.obj",
+    "bytes": 70509,
+    "positions": 1024,
+    "uvs": 624,
+    "normals": 0,
+    "faces": 717,
+    "quads": 717,
+    "triangles": 1434,
+    "face_sizes": {
+      "4": 717
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 717,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Mat_1"],
+    "mtllib": []
+  }, {
+    "file": "track_slope_long.obj",
+    "bytes": 148756,
+    "positions": 1512,
+    "uvs": 200,
+    "normals": 269,
+    "faces": 1096,
+    "quads": 1096,
+    "triangles": 2192,
+    "face_sizes": {
+      "4": 1096
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-0.00104899995495, 0.0],
+    "uv_max": [1.00185203552246, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "track_slope_verylong.obj",
+    "bytes": 222958,
+    "positions": 2208,
+    "uvs": 200,
+    "normals": 428,
+    "faces": 1628,
+    "quads": 1628,
+    "triangles": 3256,
+    "face_sizes": {
+      "4": 1628
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-0.00104899995495, 0.0],
+    "uv_max": [1.00185203552246, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "track_straight_45degree_small.obj",
+    "bytes": 44465,
+    "positions": 396,
+    "uvs": 839,
+    "normals": 19,
+    "faces": 318,
+    "quads": 372,
+    "triangles": 684,
+    "face_sizes": {
+      "12": 6,
+      "4": 312
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.004"],
+    "mtllib": ["track_straight_45degree_small.mtl"]
+  }, {
+    "file": "track_straight_diagonal.obj",
+    "bytes": 71916,
+    "positions": 609,
+    "uvs": 1512,
+    "normals": 12,
+    "faces": 513,
+    "quads": 513,
+    "triangles": 1026,
+    "face_sizes": {
+      "4": 513
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [0.999534, 0.998895],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ", "Default_OBJ.001", "Default_OBJ.002", "Default_OBJ.003", "Default_OBJ.004", "Default_OBJ.005"],
+    "mtllib": ["track_straight_diagonal.mtl"]
+  }, {
+    "file": "track_straight_diagonal_medium.obj",
+    "bytes": 226228,
+    "positions": 1827,
+    "uvs": 4536,
+    "normals": 38,
+    "faces": 1539,
+    "quads": 1539,
+    "triangles": 3078,
+    "face_sizes": {
+      "4": 1539
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [0.999534, 0.998895],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ", "Default_OBJ.001", "Default_OBJ.002", "Default_OBJ.003", "Default_OBJ.004", "Default_OBJ.005"],
+    "mtllib": ["track_straight_diagonal_medium.mtl"]
+  }, {
+    "file": "track_switch_large_active.obj",
+    "bytes": 1158159,
+    "positions": 6484,
+    "uvs": 25240,
+    "normals": 1211,
+    "faces": 6948,
+    "quads": 6948,
+    "triangles": 13896,
+    "face_sizes": {
+      "4": 6948
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.005", "Default_OBJ.006"],
+    "mtllib": ["track_switch_large_active.mtl"]
+  }, {
+    "file": "track_switch_large_active_left.obj",
+    "bytes": 1194046,
+    "positions": 6484,
+    "uvs": 25240,
+    "normals": 2510,
+    "faces": 6948,
+    "quads": 6948,
+    "triangles": 13896,
+    "face_sizes": {
+      "4": 6948
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.005", "Default_OBJ.006"],
+    "mtllib": ["track_switch_large_active_left.mtl"]
+  }, {
+    "file": "track_switch_large_active_right.obj",
+    "bytes": 99570,
+    "positions": 1596,
+    "uvs": 625,
+    "normals": 0,
+    "faces": 1049,
+    "quads": 1049,
+    "triangles": 2098,
+    "face_sizes": {
+      "4": 1049
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 1049,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Mat_1.001", "Mat_1.002"],
+    "mtllib": []
+  }, {
+    "file": "track_switch_large_inactive.obj",
+    "bytes": 1187460,
+    "positions": 6484,
+    "uvs": 25120,
+    "normals": 2515,
+    "faces": 6920,
+    "quads": 6920,
+    "triangles": 13840,
+    "face_sizes": {
+      "4": 6920
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.005", "Default_OBJ.006"],
+    "mtllib": ["track_switch_large_inactive.mtl"]
+  }, {
+    "file": "track_switch_large_inactive_left.obj",
+    "bytes": 1190118,
+    "positions": 6484,
+    "uvs": 25120,
+    "normals": 2515,
+    "faces": 6920,
+    "quads": 6920,
+    "triangles": 13840,
+    "face_sizes": {
+      "4": 6920
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.005", "Default_OBJ.006"],
+    "mtllib": ["track_switch_large_inactive_left.mtl"]
+  }, {
+    "file": "track_switch_large_inactive_right.obj",
+    "bytes": 99580,
+    "positions": 1596,
+    "uvs": 625,
+    "normals": 0,
+    "faces": 1049,
+    "quads": 1049,
+    "triangles": 2098,
+    "face_sizes": {
+      "4": 1049
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 1049,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Mat_1.001", "Mat_1.002"],
+    "mtllib": []
+  }, {
+    "file": "track_switch_medium_45degree_active.obj",
+    "bytes": 137427,
+    "positions": 984,
+    "uvs": 3004,
+    "normals": 278,
+    "faces": 790,
+    "quads": 790,
+    "triangles": 1580,
+    "face_sizes": {
+      "4": 790
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ"],
+    "mtllib": ["track_switch_medium_45degree_active.mtl"]
+  }, {
+    "file": "track_switch_medium_45degree_active_left.obj",
+    "bytes": 137881,
+    "positions": 984,
+    "uvs": 3004,
+    "normals": 276,
+    "faces": 790,
+    "quads": 790,
+    "triangles": 1580,
+    "face_sizes": {
+      "4": 790
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ"],
+    "mtllib": ["track_switch_medium_45degree_active_left.mtl"]
+  }, {
+    "file": "track_switch_medium_45degree_inactive.obj",
+    "bytes": 137516,
+    "positions": 984,
+    "uvs": 3004,
+    "normals": 282,
+    "faces": 790,
+    "quads": 790,
+    "triangles": 1580,
+    "face_sizes": {
+      "4": 790
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.001"],
+    "mtllib": ["track_switch_medium_45degree_inactive.mtl"]
+  }, {
+    "file": "track_switch_medium_45degree_inactive_left.obj",
+    "bytes": 137970,
+    "positions": 984,
+    "uvs": 3004,
+    "normals": 280,
+    "faces": 790,
+    "quads": 790,
+    "triangles": 1580,
+    "face_sizes": {
+      "4": 790
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.001"],
+    "mtllib": ["track_switch_medium_45degree_inactive_left.mtl"]
+  }, {
+    "file": "track_switch_medium_active.obj",
+    "bytes": 184031,
+    "positions": 1380,
+    "uvs": 3540,
+    "normals": 0,
+    "faces": 921,
+    "quads": 921,
+    "triangles": 1842,
+    "face_sizes": {
+      "4": 921
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 921,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "track_switch_medium_active_left.obj",
+    "bytes": 182800,
+    "positions": 1380,
+    "uvs": 3540,
+    "normals": 0,
+    "faces": 921,
+    "quads": 921,
+    "triangles": 1842,
+    "face_sizes": {
+      "4": 921
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 921,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "track_switch_medium_inactive.obj",
+    "bytes": 187210,
+    "positions": 1404,
+    "uvs": 3600,
+    "normals": 0,
+    "faces": 936,
+    "quads": 936,
+    "triangles": 1872,
+    "face_sizes": {
+      "4": 936
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 936,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "track_switch_medium_inactive_left.obj",
+    "bytes": 185955,
+    "positions": 1404,
+    "uvs": 3600,
+    "normals": 0,
+    "faces": 936,
+    "quads": 936,
+    "triangles": 1872,
+    "face_sizes": {
+      "4": 936
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 936,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "track_switch_parallel_active.obj",
+    "bytes": 201334,
+    "positions": 1782,
+    "uvs": 4400,
+    "normals": 0,
+    "faces": 1127,
+    "quads": 1127,
+    "triangles": 2254,
+    "face_sizes": {
+      "4": 1127
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 1127,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "track_switch_parallel_active_left.obj",
+    "bytes": 202509,
+    "positions": 1782,
+    "uvs": 4400,
+    "normals": 0,
+    "faces": 1127,
+    "quads": 1127,
+    "triangles": 2254,
+    "face_sizes": {
+      "4": 1127
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 1127,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "track_switch_parallel_inactive.obj",
+    "bytes": 201335,
+    "positions": 1782,
+    "uvs": 4400,
+    "normals": 0,
+    "faces": 1127,
+    "quads": 1127,
+    "triangles": 2254,
+    "face_sizes": {
+      "4": 1127
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 1127,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "track_switch_parallel_inactive_left.obj",
+    "bytes": 202510,
+    "positions": 1782,
+    "uvs": 4400,
+    "normals": 0,
+    "faces": 1127,
+    "quads": 1127,
+    "triangles": 2254,
+    "face_sizes": {
+      "4": 1127
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 1127,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "track_switch_parallel_straight_left_01.obj",
+    "bytes": 271234,
+    "positions": 2015,
+    "uvs": 472,
+    "normals": 655,
+    "faces": 2532,
+    "quads": 2532,
+    "triangles": 5064,
+    "face_sizes": {
+      "4": 2532
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.8100000974E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Mat_1"],
+    "mtllib": []
+  }, {
+    "file": "track_switch_parallel_straight_right_11.obj",
+    "bytes": 598060,
+    "positions": 2030,
+    "uvs": 472,
+    "normals": 688,
+    "faces": 9904,
+    "quads": 9904,
+    "triangles": 19808,
+    "face_sizes": {
+      "4": 9904
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.8100000974E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Mat_1"],
+    "mtllib": []
+  }, {
+    "file": "track_switch_small_active.obj",
+    "bytes": 88982,
+    "positions": 904,
+    "uvs": 2097,
+    "normals": 0,
+    "faces": 590,
+    "quads": 590,
+    "triangles": 1180,
+    "face_sizes": {
+      "4": 590
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 590,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "track_switch_small_active_left.obj",
+    "bytes": 303591,
+    "positions": 2994,
+    "uvs": 5039,
+    "normals": 0,
+    "faces": 2377,
+    "quads": 2377,
+    "triangles": 4754,
+    "face_sizes": {
+      "4": 2377
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 2377,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "track_switch_small_active_left_new.obj",
+    "bytes": 314007,
+    "positions": 2994,
+    "uvs": 5039,
+    "normals": 0,
+    "faces": 2377,
+    "quads": 2377,
+    "triangles": 4754,
+    "face_sizes": {
+      "4": 2377
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 2377,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "track_switch_small_inactive.obj",
+    "bytes": 303455,
+    "positions": 2994,
+    "uvs": 5039,
+    "normals": 0,
+    "faces": 2377,
+    "quads": 2377,
+    "triangles": 4754,
+    "face_sizes": {
+      "4": 2377
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 2377,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "track_switch_small_inactive_left.obj",
+    "bytes": 303493,
+    "positions": 2994,
+    "uvs": 5039,
+    "normals": 0,
+    "faces": 2377,
+    "quads": 2377,
+    "triangles": 4754,
+    "face_sizes": {
+      "4": 2377
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 2377,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "track_switch_small_inactive_left_new.obj",
+    "bytes": 313909,
+    "positions": 2994,
+    "uvs": 5039,
+    "normals": 0,
+    "faces": 2377,
+    "quads": 2377,
+    "triangles": 4754,
+    "face_sizes": {
+      "4": 2377
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 2377,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "track_switch_small_inactive_new.obj",
+    "bytes": 313872,
+    "positions": 2994,
+    "uvs": 5039,
+    "normals": 0,
+    "faces": 2377,
+    "quads": 2377,
+    "triangles": 4754,
+    "face_sizes": {
+      "4": 2377
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 2377,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "track_switch_very_large.obj",
+    "bytes": 332436,
+    "positions": 3804,
+    "uvs": 120,
+    "normals": 1273,
+    "faces": 3883,
+    "quads": 3883,
+    "triangles": 7766,
+    "face_sizes": {
+      "4": 3883
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.016", "Default_OBJ.017", "Default_OBJ.018", "Default_OBJ.019", "Default_OBJ.020"],
+    "mtllib": ["track_switch_very_large.mtl"]
+  }, {
+    "file": "track_switch_very_large_active.obj",
+    "bytes": 393779,
+    "positions": 3860,
+    "uvs": 120,
+    "normals": 3032,
+    "faces": 3958,
+    "quads": 3958,
+    "triangles": 7916,
+    "face_sizes": {
+      "4": 3958
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.011", "Default_OBJ.012", "Default_OBJ.013", "Default_OBJ.014", "Default_OBJ.015"],
+    "mtllib": ["track_switch_very_large_active.mtl"]
+  }, {
+    "file": "track_switch_very_large_active_left.obj",
+    "bytes": 397238,
+    "positions": 3860,
+    "uvs": 120,
+    "normals": 3058,
+    "faces": 3958,
+    "quads": 3958,
+    "triangles": 7916,
+    "face_sizes": {
+      "4": 3958
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.011", "Default_OBJ.012", "Default_OBJ.013", "Default_OBJ.014", "Default_OBJ.015"],
+    "mtllib": ["track_switch_very_large_active_left.mtl"]
+  }, {
+    "file": "track_switch_very_large_left.obj",
+    "bytes": 334869,
+    "positions": 3804,
+    "uvs": 120,
+    "normals": 1273,
+    "faces": 3883,
+    "quads": 3883,
+    "triangles": 7766,
+    "face_sizes": {
+      "4": 3883
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.016", "Default_OBJ.017", "Default_OBJ.018", "Default_OBJ.019", "Default_OBJ.020"],
+    "mtllib": ["track_switch_very_large_left.mtl"]
+  }, {
+    "file": "track_universal_crossing.obj",
+    "bytes": 628300,
+    "positions": 4928,
+    "uvs": 12237,
+    "normals": 309,
+    "faces": 3978,
+    "quads": 3978,
+    "triangles": 7956,
+    "face_sizes": {
+      "4": 3978
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Default_OBJ.001", "Default_OBJ.144", "Default_OBJ.145", "Default_OBJ.146", "Default_OBJ.147", "Default_OBJ.148", "Default_OBJ.149", "Default_OBJ.150", "Default_OBJ.151", "Default_OBJ.152", "Default_OBJ.153", "Default_OBJ.154", "Default_OBJ.155", "Default_OBJ.156", "Default_OBJ.157", "Default_OBJ.158", "Default_OBJ.159", "Default_OBJ.160", "Default_OBJ.161", "Default_OBJ.162", "Default_OBJ.163", "Default_OBJ.164", "Default_OBJ.165", "Default_OBJ.166", "Default_OBJ.167", "Default_OBJ.168", "Default_OBJ.169", "Default_OBJ.170", "Default_OBJ.171", "Default_OBJ.172", "Default_OBJ.173", "Default_OBJ.174", "Default_OBJ.175", "Default_OBJ.176", "Default_OBJ.177", "Default_OBJ.178", "Default_OBJ.179", "Default_OBJ.180", "Default_OBJ.181", "Default_OBJ.182", "Default_OBJ.183", "Default_OBJ.184", "Default_OBJ.185", "Default_OBJ.187", "Default_OBJ.204", "Default_OBJ.205", "Default_OBJ.206", "Default_OBJ.207", "Default_OBJ.208", "Default_OBJ.209", "Default_OBJ.210", "Default_OBJ.212", "Default_OBJ.213", "Default_OBJ.214", "Default_OBJ.215", "Default_OBJ.216", "Default_OBJ.217", "Default_OBJ.218", "Default_OBJ.219", "Default_OBJ.220", "Default_OBJ.221"],
+    "mtllib": ["track_universal_crossing.mtl"]
+  }, {
+    "file": "track_x.obj",
+    "bytes": 59374,
+    "positions": 481,
+    "uvs": 1346,
+    "normals": 0,
+    "faces": 382,
+    "quads": 382,
+    "triangles": 764,
+    "face_sizes": {
+      "4": 382
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 382,
+    "uv_min": [-7.81E-4, 0.0],
+    "uv_max": [1.0, 1.0],
+    "uv_outside_unit_square": true,
+    "usemtl": [],
+    "mtllib": []
+  }, {
+    "file": "turn_slope_ballast_large.obj",
+    "bytes": 5144,
+    "positions": 36,
+    "uvs": 100,
+    "normals": 26,
+    "faces": 33,
+    "quads": 33,
+    "triangles": 66,
+    "face_sizes": {
+      "4": 33
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [1.0E-4, -3.37E-4],
+    "uv_max": [0.999899, 0.9999],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Balast"],
+    "mtllib": ["turn_slope_gravel_test.mtl"]
+  }, {
+    "file": "turn_slope_ballast_large_l.obj",
+    "bytes": 5165,
+    "positions": 36,
+    "uvs": 100,
+    "normals": 26,
+    "faces": 33,
+    "quads": 33,
+    "triangles": 66,
+    "face_sizes": {
+      "4": 33
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 0,
+    "uv_min": [1.0E-4, -3.37E-4],
+    "uv_max": [0.999899, 0.9999],
+    "uv_outside_unit_square": true,
+    "usemtl": ["Balast"],
+    "mtllib": ["turn_slope_gravel_test_l.mtl"]
+  }, {
+    "file": "water_wheel.obj",
+    "bytes": 95772,
+    "positions": 1096,
+    "uvs": 1237,
+    "normals": 0,
+    "faces": 1020,
+    "quads": 1020,
+    "triangles": 2040,
+    "face_sizes": {
+      "4": 1020
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 1020,
+    "uv_min": [-1.468994, -0.973538],
+    "uv_max": [2.803175, 1.871151],
+    "uv_outside_unit_square": true,
+    "usemtl": ["None"],
+    "mtllib": []
+  }, {
+    "file": "wind_mill.obj",
+    "bytes": 28065,
+    "positions": 272,
+    "uvs": 591,
+    "normals": 0,
+    "faces": 228,
+    "quads": 228,
+    "triangles": 456,
+    "face_sizes": {
+      "4": 228
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 228,
+    "uv_min": [0.0, 0.0],
+    "uv_max": [1.0, 1.107388],
+    "uv_outside_unit_square": true,
+    "usemtl": ["None"],
+    "mtllib": []
+  }, {
+    "file": "wind_mill_wheel.obj",
+    "bytes": 40524,
+    "positions": 380,
+    "uvs": 872,
+    "normals": 0,
+    "faces": 329,
+    "quads": 329,
+    "triangles": 658,
+    "face_sizes": {
+      "4": 329
+    },
+    "negative_indices": false,
+    "faces_without_uv": 0,
+    "faces_without_normal": 329,
+    "uv_min": [0.0, 0.0],
+    "uv_max": [1.0, 1.000949],
+    "uv_outside_unit_square": true,
+    "usemtl": ["None"],
+    "mtllib": []
+  }]
+}
