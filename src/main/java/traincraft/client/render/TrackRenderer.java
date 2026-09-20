@@ -7,6 +7,7 @@ import net.minecraft.client.renderer.SubmitNodeCollector;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.client.renderer.feature.ModelFeatureRenderer;
+import net.minecraft.client.renderer.rendertype.RenderTypes;
 import net.minecraft.client.renderer.state.level.CameraRenderState;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.world.phys.Vec3;
@@ -81,7 +82,7 @@ public class TrackRenderer implements BlockEntityRenderer<TrackBlockEntity, Trac
             ObjMesh mesh = part.mesh();
             collector.submitCustomGeometry(
                     poseStack,
-                    TrackRenderTypes.track(part.texture()),
+                    RenderTypes.entityCutout(part.texture()),
                     (pose, buffer) -> emit(pose, buffer, mesh, light));
         }
 
