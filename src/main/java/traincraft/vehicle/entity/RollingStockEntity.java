@@ -55,6 +55,7 @@ import traincraft.vehicle.animation.WheelAnimation;
 import traincraft.vehicle.control.StockAccess;
 import traincraft.vehicle.coupling.Consist;
 import traincraft.vehicle.coupling.LinkHandler;
+import traincraft.vehicle.coupling.VehicleEnd;
 import traincraft.vehicle.coupling.StockCollision;
 import traincraft.vehicle.definition.VehicleBounds;
 import traincraft.vehicle.definition.VehicleDefinition;
@@ -140,6 +141,9 @@ public abstract class RollingStockEntity extends VehicleEntity implements TrackM
         builder.define(OWNER, "");
         builder.define(ENGINE_NUMBER, "");
         builder.define(COLOUR, defaultColour());
+        builder.define(COUPLING_ARMED, false);
+        builder.define(COUPLED_FRONT, -1);
+        builder.define(COUPLED_BACK, -1);
     }
 
     public boolean isLocked() {
@@ -327,8 +331,22 @@ public abstract class RollingStockEntity extends VehicleEntity implements TrackM
 
     // --- Couplings --------------------------------------------------------------------------
 
-    public boolean isAttached;
-    public boolean isAttaching;
+    /** Whether every free end of this piece of stock is hunting for a partner. */
+    private static final EntityDataAccessor<Boolean> COUPLING_ARMED =
+            SynchedEntityData.defineId(RollingStockEntity.class, EntityDataSerializers.BOOLEAN);
+
+    /**
+     * The entity ids the screen names its uncouple buttons after.
+     *
+     * <p>Minus one means the end is free. Zero means it is coupled to something that is not
+     * loaded -- {@code Entity.getId()} counts up from one, so zero is not an entity.
+     */
+    private static final EntityDataAccessor<Integer> COUPLED_FRONT =
+            SynchedEntityData.defineId(RollingStockEntity.class, EntityDataSerializers.INT);
+
+    private static final EntityDataAccessor<Integer> COUPLED_BACK =
+            SynchedEntityData.defineId(RollingStockEntity.class, EntityDataSerializers.INT);
+
     public double link1;
     public double link2;
     public @Nullable RollingStockEntity cartLinked1;
@@ -341,6 +359,130 @@ public abstract class RollingStockEntity extends VehicleEntity implements TrackM
     private int uniqueID = -1;
 
     private final LinkHandler linkHandler = new LinkHandler();
+
+    public double link(VehicleEnd end) {
+        return end == VehicleEnd.FRONT ? link1 : link2;
+    }
+
+    public void setLink(VehicleEnd end, double id) {
+        if (end == VehicleEnd.FRONT) {
+            link1 = id;
+        } else {
+            link2 = id;
+        }
+    }
+
+    /** Upstream writes a broken coupling as either zero or minus one, and means the same thing. */
+    public boolean hasLink(VehicleEnd end) {
+        double id = link(end);
+        return id != 0.0 && id != -1.0;
+    }
+
+    public boolean hasAnyLink() {
+        return hasLink(VehicleEnd.FRONT) || hasLink(VehicleEnd.BACK);
+    }
+
+    public @Nullable RollingStockEntity coupled(VehicleEnd end) {
+        return end == VehicleEnd.FRONT ? cartLinked1 : cartLinked2;
+    }
+
+    public void setCoupled(VehicleEnd end, @Nullable RollingStockEntity stock) {
+        if (end == VehicleEnd.FRONT) {
+            cartLinked1 = stock;
+        } else {
+            cartLinked2 = stock;
+        }
+    }
+
+    public boolean isArmed() {
+        return entityData.get(COUPLING_ARMED);
+    }
+
+    public void setArmed(boolean armed) {
+        entityData.set(COUPLING_ARMED, armed);
+    }
+
+    /** The id of what this end is coupled to, as the screen reads it. */
+    public int coupledId(VehicleEnd end) {
+        return entityData.get(end == VehicleEnd.FRONT ? COUPLED_FRONT : COUPLED_BACK);
+    }
+
+    private void syncCoupling() {
+        if (level().isClientSide()) {
+            return;
+        }
+        for (VehicleEnd end : VehicleEnd.values()) {
+            RollingStockEntity neighbour = coupled(end);
+            int id = !hasLink(end) ? -1 : neighbour == null ? 0 : neighbour.getId();
+            entityData.set(end == VehicleEnd.FRONT ? COUPLED_FRONT : COUPLED_BACK, id);
+        }
+    }
+
+    /**
+     * What the coupling toggle does.
+     *
+     * <p>Arming is per vehicle rather than per end, which is what lets a symmetric wagon carry one
+     * button: the player never has to say which of two identical ends they meant.
+     */
+    public void toggleArming() {
+        if (hasLink(VehicleEnd.FRONT) && hasLink(VehicleEnd.BACK)) {
+            return;
+        }
+        setArmed(!isArmed());
+    }
+
+    /**
+     * Breaks the coupling on one end, from both sides.
+     *
+     * <p>Neither side is left armed, so stock that has just been released does not latch straight
+     * back onto what it was released from. The end's own slot is cleared whether or not the
+     * neighbour can be resolved, which is the only way out of a coupling whose other half is in a
+     * chunk that is not loaded.
+     */
+    public void decouple(VehicleEnd end) {
+        RollingStockEntity neighbour = coupled(end);
+        if (neighbour != null) {
+            for (VehicleEnd theirs : VehicleEnd.values()) {
+                if (neighbour.coupled(theirs) == this || neighbour.link(theirs) == uniqueID) {
+                    neighbour.setLink(theirs, 0.0);
+                    neighbour.setCoupled(theirs, null);
+                }
+            }
+            neighbour.setArmed(false);
+            neighbour.dropConsist();
+            neighbour.syncCoupling();
+        }
+        setLink(end, 0.0);
+        setCoupled(end, null);
+        setArmed(false);
+        dropConsist();
+    }
+
+    /**
+     * Throws away the consist this piece of stock belongs to, so the next pass of handleTrain
+     * builds whatever the remaining couplings now describe.
+     */
+    public void dropConsist() {
+        if (consist == null) {
+            return;
+        }
+        Consist.ALL.remove(consist);
+        consist.reset();
+    }
+
+    /**
+     * Which of this piece of stock's two ends another entity is at.
+     *
+     * <p>The axis is the one the body's parts are laid out along, so the answer is in the model's
+     * own terms: positive is the end at {@code VehicleBounds.front()}.
+     */
+    public VehicleEnd endFacing(Entity other) {
+        double heading = Math.toRadians(getYRot());
+        double local =
+                (other.getX() - getX()) * Math.sin(heading)
+                        - (other.getZ() - getZ()) * Math.cos(heading);
+        return local >= 0.0 ? VehicleEnd.FRONT : VehicleEnd.BACK;
+    }
 
     public int getUniqueTrainID() {
         return uniqueID;
@@ -402,30 +544,12 @@ public abstract class RollingStockEntity extends VehicleEntity implements TrackM
 
     /** Breaks both of this piece of stock's couplings, from both ends. */
     public void unLink() {
-        if (!isAttached) {
+        if (!hasAnyLink()) {
             return;
         }
-        for (RollingStockEntity neighbour : new RollingStockEntity[] {cartLinked1, cartLinked2}) {
-            if (neighbour == null) {
-                continue;
-            }
-            if (neighbour.link1 == uniqueID) {
-                neighbour.link1 = 0.0;
-                neighbour.cartLinked1 = null;
-                if (neighbour.consist != null) {
-                    neighbour.consist.members().clear();
-                }
-            } else if (neighbour.link2 == uniqueID) {
-                neighbour.link2 = 0.0;
-                neighbour.cartLinked2 = null;
-                if (neighbour.consist != null) {
-                    neighbour.consist.members().clear();
-                }
-            }
+        for (VehicleEnd end : VehicleEnd.values()) {
+            decouple(end);
         }
-        cartLinked1 = null;
-        cartLinked2 = null;
-        isAttached = false;
     }
 
     /** Drops the live references to coupled stock but keeps the saved ids, so a reload relinks. */
@@ -546,24 +670,10 @@ public abstract class RollingStockEntity extends VehicleEntity implements TrackM
         if (!level().isClientSide()) {
             StockLog.delete(this);
         }
+        // unLink now releases each end from both sides and throws the consist away with it.
+        // Upstream followed it with a sweep that wiped every locomotive's links in the consist,
+        // which under per-end couplings would leave their other neighbours pointing at nothing.
         unLink();
-        if (consist != null) {
-            for (RollingStockEntity member : consist.members()) {
-                if (member instanceof LocomotiveEntity) {
-                    member.cartLinked1 = null;
-                    member.link1 = 0.0;
-                    member.cartLinked2 = null;
-                    member.link2 = 0.0;
-                }
-                if (member != this && member.consist != null) {
-                    member.consist.members().clear();
-                }
-            }
-            if (consist.members().size() <= 1) {
-                consist.members().clear();
-                Consist.ALL.remove(consist);
-            }
-        }
         super.remove(reason);
     }
 
@@ -773,13 +883,14 @@ public abstract class RollingStockEntity extends VehicleEntity implements TrackM
         updateTicks++;
         pushNeighbours();
         handleTrain();
-        linkHandler.handleStake(this);
+        linkHandler.tick(this);
         if (getHurtTime() > 0) {
             setHurtTime(getHurtTime() - 1);
         }
         if (getDamage() > 0.0F) {
             setDamage(getDamage() - 1.0F);
         }
+        syncCoupling();
     }
 
     /**
@@ -1201,12 +1312,11 @@ public abstract class RollingStockEntity extends VehicleEntity implements TrackM
             setEngineNumber(input.getString("engineNumber").orElse(""));
         }
         uniqueID = input.getIntOr("uniqueID", -1);
-        isAttached = input.getBooleanOr("isAttached", false);
         link1 = input.getDoubleOr("Link1", 0.0);
         link2 = input.getDoubleOr("Link2", 0.0);
+        setArmed(input.getBooleanOr("Coupling", false));
         String colour = input.getStringOr("trainColor", defaultColour());
         entityData.set(COLOUR, spec().colours().contains(colour) ? colour : defaultColour());
-        isAttaching = false;
         cartLinked1 = null;
         cartLinked2 = null;
     }
@@ -1219,9 +1329,9 @@ public abstract class RollingStockEntity extends VehicleEntity implements TrackM
             output.putString("engineNumber", getEngineNumber());
         }
         output.putInt("uniqueID", uniqueID);
-        output.putBoolean("isAttached", isAttached);
         output.putDouble("Link1", link1);
         output.putDouble("Link2", link2);
+        output.putBoolean("Coupling", isArmed());
         output.putString("trainColor", getColour());
     }
 

@@ -36,6 +36,10 @@ public final class NetworkRegistration {
                 LocomotiveActionPayload::handle);
         registrar.playToServer(
                 StockLockPayload.TYPE, StockLockPayload.CODEC, StockLockPayload::handle);
+        registrar.playToServer(
+                CouplingActionPayload.TYPE,
+                CouplingActionPayload.CODEC,
+                CouplingActionPayload::handle);
         registrar.playToServer(LiveryPayload.TYPE, LiveryPayload.CODEC, LiveryPayload::handle);
         registrar.playToServer(EngineNumberPayload.TYPE, EngineNumberPayload.CODEC, EngineNumberPayload::handle);
         registrar.playToClient(RecipeBookPayload.TYPE, RecipeBookPayload.CODEC, RecipeBookPayload::handle);

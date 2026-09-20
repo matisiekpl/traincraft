@@ -9,10 +9,10 @@ import net.minecraft.world.item.ItemStack;
 import java.util.function.Consumer;
 
 /**
- * The tool that couples rolling stock.
+ * The stake.
  *
- * <p>Community Edition's {@code ItemStacked}. It has no use of its own: the stock answers the
- * click, through {@code Coupling.onClickWithStake}.
+ * <p>Community Edition's {@code ItemStacked}. Coupling moved to the stock's own screen, so the
+ * item is left as the crafted token it always was and no longer answers a click.
  */
 public class StakeItem extends Item {
 
@@ -28,16 +28,10 @@ public class StakeItem extends Item {
             Consumer<Component> lines,
             net.minecraft.world.item.TooltipFlag flag) {
         lines.accept(
-                Component.literal("Right click on a rolling stock").withStyle(ChatFormatting.GRAY));
-        lines.accept(Component.literal(" to enter attaching mode.").withStyle(ChatFormatting.GRAY));
-        lines.accept(
-                Component.literal("Click a few time to reset links.")
+                Component.literal("Rolling stock couples from its own screen,")
                         .withStyle(ChatFormatting.GRAY));
         lines.accept(
-                Component.literal("Sneak+Right click on a locomotive")
-                        .withStyle(ChatFormatting.GRAY));
-        lines.accept(
-                Component.literal(" to set mode: 'Can pull/Can be pulled'")
+                Component.literal(" one toggle per end, front and rear.")
                         .withStyle(ChatFormatting.GRAY));
     }
 }

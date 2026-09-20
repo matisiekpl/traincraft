@@ -15,110 +15,173 @@ import java.util.List;
  * Couples stock together and keeps coupled stock together.
  *
  * <p>Community Edition's {@code LinkHandler}. Two jobs share the class because they share the
- * distance measurement: the search for another piece of stock in attaching mode, and the spring
- * that runs every tick on a link that already exists.
+ * distance measurement: the search for a partner for an end the player has set coupleable, and the
+ * spring that runs every tick on a link that already exists.
  */
 public final class LinkHandler {
 
     private static final double ATTACH_SEARCH = 15.0;
     private static final double LOST_LINK_DISTANCE = 20.0;
 
-    public void handleStake(RollingStockEntity one) {
-        if (one.isAttaching) {
-            List<net.minecraft.world.entity.Entity> found =
-                    new ArrayList<>(
-                            one.level()
-                                    .getEntities(
-                                            one,
-                                            one.getBoundingBox()
-                                                    .inflate(ATTACH_SEARCH, 5.0, ATTACH_SEARCH)));
-            Vec3 bogie = one.bogiePosition();
-            if (bogie != null) {
-                found.addAll(
-                        one.level()
-                                .getEntities(
-                                        one,
-                                        AABB.ofSize(
-                                                        bogie,
-                                                        one.getBbWidth(),
-                                                        one.getBbHeight(),
-                                                        one.getBbWidth())
-                                                .inflate(7.0, 5.0, 7.0)));
-            }
-            for (var entity : found) {
-                if (entity instanceof RollingStockEntity other && other.isAttaching) {
-                    addStake(other, one, true);
-                }
+    /** Ticks a piece of stock has to have been on the rails before its position means anything. */
+    private static final int SETTLED_TICKS = 5;
+
+    /** How far a coupling may be followed when checking that a candidate is not already behind. */
+    private static final int CONSIST_WALK_LIMIT = 64;
+
+    public void tick(RollingStockEntity one) {
+        for (VehicleEnd end : VehicleEnd.values()) {
+            if (one.isArmed() && !one.hasLink(end)) {
+                searchForPartner(one, end);
             }
         }
         if (one.cartLinked1 != null) {
-            stakePhysic(one.cartLinked1, one, 1);
+            springTick(one.cartLinked1, one, 1);
         }
         if (one.cartLinked2 != null) {
-            stakePhysic(one.cartLinked2, one, 2);
+            springTick(one.cartLinked2, one, 2);
         }
     }
 
     /**
-     * Couples two pieces of stock that are both in attaching mode and close enough.
+     * Looks for another armed piece of stock with a free end facing this one, and takes the nearest.
      *
-     * <p>The reach is {@code cart1.getLinkageDistance(cart1)} -- upstream asks the first cart about
+     * <p>The reach is {@code self.getLinkageDistance(self)} -- upstream asks the first cart about
      * itself, not about the one it is being coupled to, so the second cart's length does not enter
      * into it.
      */
-    public void addStake(RollingStockEntity cart1, RollingStockEntity cart2, boolean byPlayer) {
-        if (cart1.level().isClientSide() || !cart2.isAttaching || !cart1.isAttaching) {
+    private void searchForPartner(RollingStockEntity self, VehicleEnd end) {
+        if (self.level().isClientSide() || self.updateTicks < SETTLED_TICKS) {
             return;
         }
-        double reach = cart1.getLinkageDistance(cart1);
-        Vec3 separation = nearestSeparation(cart1, cart2);
-        if (Math.sqrt(separation.x * separation.x + separation.z * separation.z) > reach) {
-            return;
+        double reach = self.getLinkageDistance(self);
+        RollingStockEntity nearest = null;
+        VehicleEnd nearestEnd = null;
+        double shortest = Double.MAX_VALUE;
+        for (RollingStockEntity other : candidates(self)) {
+            VehicleEnd theirs = other.endFacing(self);
+            if (!accepts(self, end, other, theirs)) {
+                continue;
+            }
+            Vec3 separation = nearestSeparation(self, other);
+            double distance = Math.sqrt(separation.x * separation.x + separation.z * separation.z);
+            if (distance > reach || distance >= shortest) {
+                continue;
+            }
+            if (!StockCollision.onSameAxis(self, other, separation, distance)) {
+                continue;
+            }
+            nearest = other;
+            nearestEnd = theirs;
+            shortest = distance;
         }
+        if (nearest != null) {
+            couple(self, end, nearest, nearestEnd);
+        }
+    }
 
-        if (cart1.link1 == 0.0 || cart1.link1 == -1.0) {
-            cart1.link1 = cart2.getUniqueTrainID();
-        } else if (cart1.link2 == 0.0 || cart1.link2 == -1.0) {
-            cart1.link2 = cart2.getUniqueTrainID();
+    private static List<RollingStockEntity> candidates(RollingStockEntity self) {
+        List<net.minecraft.world.entity.Entity> found =
+                new ArrayList<>(
+                        self.level()
+                                .getEntities(
+                                        self,
+                                        self.getBoundingBox()
+                                                .inflate(ATTACH_SEARCH, 5.0, ATTACH_SEARCH)));
+        Vec3 bogie = self.bogiePosition();
+        if (bogie != null) {
+            found.addAll(
+                    self.level()
+                            .getEntities(
+                                    self,
+                                    AABB.ofSize(
+                                                    bogie,
+                                                    self.getBbWidth(),
+                                                    self.getBbHeight(),
+                                                    self.getBbWidth())
+                                            .inflate(7.0, 5.0, 7.0)));
         }
-        if (cart1.cartLinked1 == null) {
-            cart1.cartLinked1 = cart2;
-        } else if (cart1.cartLinked2 == null) {
-            cart1.cartLinked2 = cart2;
+        List<RollingStockEntity> stock = new ArrayList<>();
+        for (var entity : found) {
+            if (entity instanceof RollingStockEntity other && !stock.contains(other)) {
+                stock.add(other);
+            }
         }
+        return stock;
+    }
 
-        if (cart2.link1 == 0.0 || cart2.link1 == -1.0) {
-            cart2.link1 = cart1.getUniqueTrainID();
-        } else if (cart2.link2 == 0.0 || cart2.link2 == -1.0) {
-            cart2.link2 = cart1.getUniqueTrainID();
+    /** Everything about a candidate that does not depend on how far away it is. */
+    private static boolean accepts(
+            RollingStockEntity self,
+            VehicleEnd end,
+            RollingStockEntity other,
+            VehicleEnd theirs) {
+        if (other == self || other.updateTicks < SETTLED_TICKS) {
+            return false;
         }
-        if (cart2.cartLinked1 == null) {
-            cart2.cartLinked1 = cart1;
-        } else if (cart2.cartLinked2 == null) {
-            cart2.cartLinked2 = cart1;
+        if (!other.isArmed() || other.hasLink(theirs)) {
+            return false;
         }
+        if (self.endFacing(other) != end) {
+            return false;
+        }
+        return !areLinked(self, other) && !reachableThrough(self, other);
+    }
 
-        cart2.isAttached = true;
-        cart2.isAttaching = false;
-        cart1.isAttaching = false;
-        cart1.isAttached = true;
+    /**
+     * Whether the candidate is already somewhere in this piece of stock's own consist.
+     *
+     * <p>Without this a train whose two ends are brought together couples into a ring, which has no
+     * front and no back and which nothing downstream -- the consist walk, the coupling spring -- is
+     * written to survive.
+     */
+    private static boolean reachableThrough(RollingStockEntity self, RollingStockEntity other) {
+        List<RollingStockEntity> seen = new ArrayList<>();
+        List<RollingStockEntity> queue = new ArrayList<>();
+        queue.add(self);
+        while (!queue.isEmpty() && seen.size() < CONSIST_WALK_LIMIT) {
+            RollingStockEntity current = queue.removeLast();
+            if (current == other) {
+                return true;
+            }
+            if (seen.contains(current)) {
+                continue;
+            }
+            seen.add(current);
+            if (current.cartLinked1 != null) {
+                queue.add(current.cartLinked1);
+            }
+            if (current.cartLinked2 != null) {
+                queue.add(current.cartLinked2);
+            }
+        }
+        return false;
+    }
+
+    /** Writes the coupling into the matching end of each piece of stock. */
+    public void couple(
+            RollingStockEntity self,
+            VehicleEnd selfEnd,
+            RollingStockEntity other,
+            VehicleEnd otherEnd) {
+        self.setLink(selfEnd, other.getUniqueTrainID());
+        self.setCoupled(selfEnd, other);
+        other.setLink(otherEnd, self.getUniqueTrainID());
+        other.setCoupled(otherEnd, self);
+
+        // One arming, one coupling: a vehicle stops hunting the moment it has what it was asked
+        // for, so a wagon left armed in a yard does not go on collecting whatever rolls past.
+        self.setArmed(false);
+        other.setArmed(false);
 
         // The neighbours' consists are thrown away rather than extended: the next pass of
         // handleTrain builds one that spans the new coupling.
-        if (cart2.cartLinked1 != null && cart2.cartLinked1.consist != null) {
-            Consist.ALL.remove(cart2.cartLinked1.consist);
-            cart2.cartLinked1.consist.members().clear();
-        }
-        if (cart2.cartLinked2 != null && cart2.cartLinked2.consist != null) {
-            Consist.ALL.remove(cart2.cartLinked2.consist);
-            cart2.cartLinked2.consist.members().clear();
-        }
+        self.dropConsist();
+        other.dropConsist();
 
-        if (byPlayer) {
-            Player player = cart1.level().getNearestPlayer(cart1, 20.0);
-            if (player != null) {
-                player.sendSystemMessage(Component.literal("attached!"));
-            }
+        Player player = self.level().getNearestPlayer(self, 20.0);
+        if (player != null) {
+            player.sendSystemMessage(Component.literal("attached!"));
         }
     }
 
@@ -144,11 +207,13 @@ public final class LinkHandler {
      * whose chunk has just loaded, has not yet been put where it belongs, and the distance between
      * them means nothing until it has.
      */
-    private void stakePhysic(RollingStockEntity cart1, RollingStockEntity cart2, int linkIndex) {
-        if (cart1.level().isClientSide() || cart1.updateTicks < 5 || cart2.updateTicks < 5) {
+    private void springTick(RollingStockEntity cart1, RollingStockEntity cart2, int linkIndex) {
+        if (cart1.level().isClientSide()
+                || cart1.updateTicks < SETTLED_TICKS
+                || cart2.updateTicks < SETTLED_TICKS) {
             return;
         }
-        if (!cart2.isAttached || !cart1.isAttached || !areLinked(cart2, cart1)) {
+        if (!areLinked(cart2, cart1)) {
             return;
         }
         boolean adjust1 = canCartBeAdjustedBy(cart1, cart2);
@@ -173,14 +238,8 @@ public final class LinkHandler {
                                         (int) cart1.getY(),
                                         (int) cart1.getZ())));
             }
-            if (linkIndex == 1) {
-                freeLink1(cart1);
-                freeLink1(cart2);
-            }
-            if (linkIndex == 2) {
-                freeLink2(cart1);
-                freeLink2(cart2);
-            }
+            VehicleEnd end = linkIndex == 1 ? VehicleEnd.FRONT : VehicleEnd.BACK;
+            cart2.decouple(end);
             return;
         }
 
@@ -206,22 +265,6 @@ public final class LinkHandler {
         }
         if (adjust2) {
             cart2.setDeltaMovement(cart2.getDeltaMovement().subtract(damping.x(), 0.0, damping.z()));
-        }
-    }
-
-    private static void freeLink1(RollingStockEntity entity) {
-        entity.link1 = 0.0;
-        entity.cartLinked1 = null;
-        if (entity.consist != null) {
-            entity.consist.members().clear();
-        }
-    }
-
-    private static void freeLink2(RollingStockEntity entity) {
-        entity.link2 = 0.0;
-        entity.cartLinked2 = null;
-        if (entity.consist != null) {
-            entity.consist.members().clear();
         }
     }
 

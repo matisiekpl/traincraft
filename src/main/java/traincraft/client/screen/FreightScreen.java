@@ -55,6 +55,15 @@ public class FreightScreen<M extends FreightMenu> extends AbstractContainerScree
         super.init();
         clearWidgets();
         builtLocked = freight.isLocked();
+        builtCoupling = CouplingButtons.state(freight);
+        CouplingButtons.add(
+                freight,
+                font,
+                minecraft.level,
+                leftPos,
+                topPos - 24,
+                imageWidth,
+                this::addRenderableWidget);
         if (!builtLocked) {
             addRenderableWidget(
                     Button.builder(Component.literal("Unlocked"), button -> toggleLock())
@@ -69,6 +78,7 @@ public class FreightScreen<M extends FreightMenu> extends AbstractContainerScree
     }
 
     private boolean builtLocked;
+    private long builtCoupling;
 
     private void toggleLock() {
         if (minecraft == null || minecraft.player == null) {
@@ -85,7 +95,8 @@ public class FreightScreen<M extends FreightMenu> extends AbstractContainerScree
     @Override
     protected void containerTick() {
         super.containerTick();
-        if (builtLocked != freight.isLocked()) {
+        if (builtLocked != freight.isLocked()
+                || builtCoupling != CouplingButtons.state(freight)) {
             rebuildWidgets();
         }
     }

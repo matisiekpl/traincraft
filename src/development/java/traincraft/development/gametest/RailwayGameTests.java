@@ -30,6 +30,8 @@ import traincraft.track.TrackType;
 import traincraft.track.block.TrackBlock;
 import traincraft.track.block.TrackBlockEntity;
 import traincraft.track.block.TrackOccupancyBlock;
+import traincraft.vehicle.coupling.LinkHandler;
+import traincraft.vehicle.coupling.VehicleEnd;
 import traincraft.vehicle.entity.AliceLocomotiveEntity;
 import traincraft.vehicle.entity.FreightCartYellowEntity;
 import traincraft.vehicle.entity.LocomotiveEntity;
@@ -119,9 +121,16 @@ public final class RailwayGameTests {
         bodies.put("locomotive_aligns_with_track", RailwayGameTests::locomotiveAlignsWithTrack);
         bodies.put("stock_is_aligned_when_placed", RailwayGameTests::stockIsAlignedWhenPlaced);
         bodies.put("cold_locomotive_will_not_move", RailwayGameTests::coldLocomotiveWillNotMove);
-        bodies.put("stake_couples_two_carts", RailwayGameTests::stakeCouplesTwoCarts);
+        bodies.put("coupleable_stock_couples", RailwayGameTests::coupleableStockCouples);
         bodies.put("a_stretched_coupling_pulls", RailwayGameTests::aStretchedCouplingPulls);
         bodies.put("a_lost_link_is_dropped", RailwayGameTests::aLostLinkIsDropped);
+        bodies.put("parallel_track_does_not_couple", RailwayGameTests::parallelTrackDoesNotCouple);
+        bodies.put(
+                "coupled_stock_does_not_couple_twice",
+                RailwayGameTests::coupledStockDoesNotCoupleTwice);
+        bodies.put(
+                "decoupling_a_middle_car_splits_the_consist",
+                RailwayGameTests::decouplingAMiddleCarSplits);
         bodies.put("freight_keeps_its_cargo", RailwayGameTests::freightKeepsItsCargo);
         bodies.put("track_refuses_to_float", RailwayGameTests::trackRefusesToFloat);
         bodies.put("track_dies_when_its_support_goes", RailwayGameTests::trackDiesWithItsSupport);
@@ -292,8 +301,8 @@ public final class RailwayGameTests {
                 });
     }
 
-    /** Two carts in attaching mode, close enough to each other, end up coupled both ways. */
-    private static void stakeCouplesTwoCarts(GameTestHelper helper) {
+    /** Two carts set coupleable, close enough to each other, end up coupled both ways. */
+    private static void coupleableStockCouples(GameTestHelper helper) {
         BlockPos origin = helper.absolutePos(new BlockPos(1, 2, 1));
         TrackPlan plan = TrackPlacementPlanner.plan(TrackType.VERY_LONG_STRAIGHT, 0);
         clear(helper, origin, plan);
@@ -303,27 +312,32 @@ public final class RailwayGameTests {
         FreightCartYellowEntity first = freight(helper, 3.5);
         FreightCartYellowEntity second = freight(helper, 5.0);
         // Both have to have taken a coupling id first, which they do on their own first tick --
-        // as they would have long before a player got a stake out.
+        // as they would have long before a player opened either screen.
         helper.runAfterDelay(
                 5,
                 () -> {
-                    first.isAttaching = true;
-                    second.isAttaching = true;
+                    first.setArmed(true);
+                    second.setArmed(true);
                 });
 
         helper.runAfterDelay(
                 15,
                 () -> {
-                    helper.assertTrue(first.isAttached, "The first cart did not couple");
-                    helper.assertTrue(second.isAttached, "The second cart did not couple");
+                    VehicleEnd firstEnd = first.endFacing(second);
+                    VehicleEnd secondEnd = second.endFacing(first);
+                    helper.assertTrue(first.hasLink(firstEnd), "The first cart did not couple");
+                    helper.assertTrue(second.hasLink(secondEnd), "The second cart did not couple");
                     helper.assertTrue(
-                            first.link1 == second.getUniqueTrainID(),
-                            "The first cart's link points at " + first.link1);
+                            !first.isArmed() && !second.isArmed(),
+                            "Coupling left the carts still hunting");
                     helper.assertTrue(
-                            second.link1 == first.getUniqueTrainID(),
-                            "The second cart's link points at " + second.link1);
+                            first.link(firstEnd) == second.getUniqueTrainID(),
+                            "The first cart's link points at " + first.link(firstEnd));
                     helper.assertTrue(
-                            first.cartLinked1 == second && second.cartLinked1 == first,
+                            second.link(secondEnd) == first.getUniqueTrainID(),
+                            "The second cart's link points at " + second.link(secondEnd));
+                    helper.assertTrue(
+                            first.coupled(firstEnd) == second && second.coupled(secondEnd) == first,
                             "The carts do not hold each other");
                     first.discard();
                     second.discard();
@@ -371,12 +385,87 @@ public final class RailwayGameTests {
         helper.runAfterDelay(
                 10,
                 () -> {
-                    helper.assertTrue(first.link1 == 0.0, "The link was kept: " + first.link1);
+                    helper.assertTrue(!first.hasAnyLink(), "The link was kept: " + first.link1);
                     helper.assertTrue(first.cartLinked1 == null, "The cart was kept");
                     first.discard();
                     second.discard();
                     helper.succeed();
                 });
+    }
+
+    /**
+     * Two coupleable carts on neighbouring tracks stay apart.
+     *
+     * <p>They are within the reach the coupling measures -- it measures a horizontal distance --
+     * and only the axis test tells them apart from two carts nose to tail on one track.
+     */
+    private static void parallelTrackDoesNotCouple(GameTestHelper helper) {
+        FreightCartYellowEntity first = freight(helper, 3.5);
+        FreightCartYellowEntity second =
+                helper.spawn(
+                        EntityRegistry.FREIGHT_CART_YELLOW.get(),
+                        new Vec3(
+                                2.5,
+                                2.2 + traincraft.vehicle.entity.RollingStockEntity.Y_OFFSET,
+                                3.5));
+        first.setNewUniqueID(first.getId());
+        second.setNewUniqueID(second.getId());
+        first.updateTicks = 10;
+        second.updateTicks = 10;
+        first.setArmed(true);
+        second.setArmed(true);
+
+        new LinkHandler().tick(first);
+
+        helper.assertTrue(!first.hasAnyLink(), "Coupled across to the next track");
+        helper.assertTrue(!second.hasAnyLink(), "Coupled across to the next track");
+        first.discard();
+        second.discard();
+        helper.succeed();
+    }
+
+    /** A pair already coupled at one end does not take a second coupling to each other. */
+    private static void coupledStockDoesNotCoupleTwice(GameTestHelper helper) {
+        FreightCartYellowEntity first = freight(helper, 3.5);
+        FreightCartYellowEntity second = freight(helper, 5.0);
+        couple(first, second);
+        second.setPos(first.getX(), first.getY(), first.getZ() - 1.5);
+        first.setArmed(true);
+        second.setArmed(true);
+
+        new LinkHandler().tick(first);
+
+        helper.assertTrue(
+                !first.hasLink(VehicleEnd.FRONT) || !first.hasLink(VehicleEnd.BACK),
+                "The same pair coupled at both ends");
+        first.discard();
+        second.discard();
+        helper.succeed();
+    }
+
+    /** Releasing the middle of three leaves three loose carts and no consist spanning them. */
+    private static void decouplingAMiddleCarSplits(GameTestHelper helper) {
+        FreightCartYellowEntity first = freight(helper, 2.0);
+        FreightCartYellowEntity middle = freight(helper, 3.5);
+        FreightCartYellowEntity last = freight(helper, 5.0);
+        couple(first, middle);
+        couple(middle, last);
+
+        middle.unLink();
+
+        helper.assertTrue(!middle.hasAnyLink(), "The middle cart kept a coupling");
+        helper.assertTrue(!first.hasAnyLink(), "The leading cart kept a coupling");
+        helper.assertTrue(!last.hasAnyLink(), "The trailing cart kept a coupling");
+        helper.assertTrue(
+                first.cartLinked1 == null && first.cartLinked2 == null,
+                "The leading cart still holds the middle one");
+        helper.assertTrue(
+                last.cartLinked1 == null && last.cartLinked2 == null,
+                "The trailing cart still holds the middle one");
+        first.discard();
+        middle.discard();
+        last.discard();
+        helper.succeed();
     }
 
     /** Cargo put into a freight cart is still there once it has run for a while. */
@@ -457,18 +546,14 @@ public final class RailwayGameTests {
                 new Vec3(1.5, 2.2 + traincraft.vehicle.entity.RollingStockEntity.Y_OFFSET, z));
     }
 
-    /** Couples two carts the way the stake would, without needing an item or a player. */
+    /** Couples two carts the way the buttons would, without needing a screen or a player. */
     private static void couple(
             traincraft.vehicle.entity.RollingStockEntity first,
             traincraft.vehicle.entity.RollingStockEntity second) {
         first.setNewUniqueID(first.getId());
         second.setNewUniqueID(second.getId());
-        first.link1 = second.getUniqueTrainID();
-        second.link1 = first.getUniqueTrainID();
-        first.cartLinked1 = second;
-        second.cartLinked1 = first;
-        first.isAttached = true;
-        second.isAttached = true;
+        new LinkHandler()
+                .couple(first, first.endFacing(second), second, second.endFacing(first));
         // The spring waits for both ends to have been ticking; a cart parked outside the test
         // area may never tick at all, so it is given the count it would have had.
         first.updateTicks = 10;

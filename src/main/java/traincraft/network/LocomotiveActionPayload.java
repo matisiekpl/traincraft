@@ -23,6 +23,8 @@ public record LocomotiveActionPayload(int entityId, int action) implements Custo
 
     public static final int ACTION_HORN = 4;
 
+    public static final int ACTION_PULL_MODE = 5;
+
     private static final int BRAKE_SPEED_LIMIT = 10;
     private static final int ENGINE_STOP_SPEED_LIMIT = 1;
 
@@ -92,6 +94,19 @@ public record LocomotiveActionPayload(int entityId, int action) implements Custo
                     return;
                 }
                 loco.openMenuFor(player);
+            }
+            case ACTION_PULL_MODE -> {
+                if (!loco.mayControl(player)) {
+                    return;
+                }
+                // Upstream's sneak-click with a stake, which said the same two things in chat.
+                boolean pulled = !loco.canBePulled();
+                loco.setCanBePulled(pulled);
+                loco.setCanBeAdjusted(pulled);
+                player.sendSystemMessage(
+                        Component.empty()
+                                .append(loco.getTrainName())
+                                .append(pulled ? " can be pulled" : " can pull"));
             }
             case ACTION_HORN -> {
                 if (player.getVehicle() == loco) {

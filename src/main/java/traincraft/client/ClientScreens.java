@@ -4,6 +4,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 
 import traincraft.client.screen.AdminBookScreen;
+import traincraft.client.screen.CouplingScreen;
 import traincraft.client.screen.LanternScreen;
 import traincraft.client.screen.LiveryScreen;
 import traincraft.client.screen.EngineNumberScreen;
@@ -17,6 +18,10 @@ public final class ClientScreens {
 
     public static void openLantern(BlockPos pos, int colour) {
         Minecraft.getInstance().gui.setScreen(new LanternScreen(pos, colour));
+    }
+
+    public static void openCoupling(RollingStockEntity stock) {
+        Minecraft.getInstance().gui.setScreen(new CouplingScreen(stock));
     }
 
     public static void openLivery(RollingStockEntity stock) {

@@ -22,7 +22,6 @@ import net.minecraft.world.level.storage.ValueInput;
 import net.minecraft.world.level.storage.ValueOutput;
 import net.minecraft.world.phys.Vec3;
 
-import traincraft.vehicle.coupling.Coupling;
 import traincraft.vehicle.inventory.FreightMenu;
 import traincraft.vehicle.inventory.VehicleInventory;
 
@@ -93,9 +92,6 @@ public abstract class FreightEntity extends RollingStockEntity implements Contai
         }
         if (held.getItem() instanceof DyeItem) {
             player.sendSystemMessage(Component.literal("No other colors available"));
-        }
-        if (Coupling.onClickWithStake(this, held, player, hand)) {
-            return InteractionResult.SUCCESS;
         }
         if (player instanceof ServerPlayer serverPlayer) {
             serverPlayer.openMenu(this, buffer -> buffer.writeVarInt(getId()));

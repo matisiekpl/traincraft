@@ -72,6 +72,25 @@ public class LocomotiveScreen extends AbstractContainerScreen<LocomotiveMenu> {
                                 button -> send(LocomotiveActionPayload.ACTION_LOCK))
                         .bounds(leftPos + 108, topPos - 10, 67, 10)
                         .build());
+        builtPulled = loco.canBePulled();
+        builtCoupling = CouplingButtons.state(loco);
+        // The left half of the strip: the right is the lock, the engine and the pull mode, and the
+        // brake sits below on this side.
+        CouplingButtons.add(
+                loco,
+                font,
+                minecraft.level,
+                leftPos,
+                topPos - 27,
+                104,
+                this::addRenderableWidget);
+        addRenderableWidget(
+                Button.builder(
+                                Component.literal(
+                                        loco.canBePulled() ? "Can be pulled" : "Can pull"),
+                                button -> send(LocomotiveActionPayload.ACTION_PULL_MODE))
+                        .bounds(leftPos + 108, topPos - 34, 67, 10)
+                        .build());
         if (!(loco instanceof SteamLocomotiveEntity)) {
             addRenderableWidget(
                     Button.builder(
@@ -92,6 +111,8 @@ public class LocomotiveScreen extends AbstractContainerScreen<LocomotiveMenu> {
 
     private boolean builtLocked;
     private boolean builtEngineOn;
+    private boolean builtPulled;
+    private long builtCoupling;
 
     /**
      * Rebuilds the buttons when the locomotive's state changes, and not before.
@@ -106,7 +127,9 @@ public class LocomotiveScreen extends AbstractContainerScreen<LocomotiveMenu> {
         super.containerTick();
         if (builtBraked != loco.isParkingBrakeOn()
                 || builtLocked != loco.isLocked()
-                || builtEngineOn != loco.isEngineOn()) {
+                || builtEngineOn != loco.isEngineOn()
+                || builtPulled != loco.canBePulled()
+                || builtCoupling != CouplingButtons.state(loco)) {
             rebuildWidgets();
         }
     }

@@ -7,10 +7,13 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 
-import traincraft.vehicle.coupling.Coupling;
+import traincraft.item.AdminBookItem;
+import traincraft.item.WrenchItem;
+
 
 public abstract class PassengerEntity extends RollingStockEntity {
 
@@ -28,6 +31,14 @@ public abstract class PassengerEntity extends RollingStockEntity {
             return InteractionResult.PASS;
         }
         if (level().isClientSide()) {
+            // Decorative stock seats nobody and holds nothing, so a click has nothing else to do
+            // and its couplings are what it opens -- the same route the paintbrush takes.
+            ItemStack held = player.getItemInHand(hand);
+            if (!rideable()
+                    && !(held.getItem() instanceof WrenchItem)
+                    && !(held.getItem() instanceof AdminBookItem)) {
+                traincraft.client.ClientScreens.openCoupling(this);
+            }
             return InteractionResult.SUCCESS;
         }
         if (toggleLock(player, player.getItemInHand(hand))) {
@@ -37,9 +48,6 @@ public abstract class PassengerEntity extends RollingStockEntity {
             return InteractionResult.SUCCESS;
         }
         if (refusesLocked(player, player.getItemInHand(hand))) {
-            return InteractionResult.SUCCESS;
-        }
-        if (Coupling.onClickWithStake(this, player.getItemInHand(hand), player, hand)) {
             return InteractionResult.SUCCESS;
         }
         if (rideable() && getFirstPassenger() == null) {

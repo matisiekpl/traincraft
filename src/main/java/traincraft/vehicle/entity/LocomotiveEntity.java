@@ -29,7 +29,6 @@ import org.jspecify.annotations.Nullable;
 import traincraft.track.TrackMovement;
 import traincraft.TraincraftConfig;
 import traincraft.vehicle.control.LocomotiveDrive;
-import traincraft.vehicle.coupling.Coupling;
 import traincraft.vehicle.definition.Exhaust;
 import traincraft.vehicle.inventory.LocomotiveMenu;
 import traincraft.vehicle.inventory.VehicleInventory;
@@ -52,6 +51,8 @@ public abstract class LocomotiveEntity extends RollingStockEntity implements Con
     private static final EntityDataAccessor<Boolean> ENGINE_ON =
             SynchedEntityData.defineId(LocomotiveEntity.class, EntityDataSerializers.BOOLEAN);
     private static final EntityDataAccessor<Boolean> PARKING_BRAKE =
+            SynchedEntityData.defineId(LocomotiveEntity.class, EntityDataSerializers.BOOLEAN);
+    private static final EntityDataAccessor<Boolean> CAN_BE_PULLED =
             SynchedEntityData.defineId(LocomotiveEntity.class, EntityDataSerializers.BOOLEAN);
     private static final EntityDataAccessor<Float> MAX_SPEED =
             SynchedEntityData.defineId(LocomotiveEntity.class, EntityDataSerializers.FLOAT);
@@ -110,6 +111,7 @@ public abstract class LocomotiveEntity extends RollingStockEntity implements Con
         builder.define(SPEED_KMH, 0);
         builder.define(ENGINE_ON, startsLit());
         builder.define(PARKING_BRAKE, false);
+        builder.define(CAN_BE_PULLED, false);
         builder.define(MAX_SPEED, (float) spec().maxSpeed());
         builder.define(OVERHEAT_LEVEL, 0);
         builder.define(HEAT_STATE, HeatState.COLD.ordinal());
@@ -190,8 +192,6 @@ public abstract class LocomotiveEntity extends RollingStockEntity implements Con
     /** Upstream's pull mode: false means this locomotive pulls, true means it is pulled. */
     private boolean canBeAdjusted;
 
-    private boolean canBePulled;
-
     @Override
     public boolean canBeAdjusted(RollingStockEntity other) {
         return canBeAdjusted;
@@ -202,11 +202,11 @@ public abstract class LocomotiveEntity extends RollingStockEntity implements Con
     }
 
     public boolean canBePulled() {
-        return canBePulled;
+        return entityData.get(CAN_BE_PULLED);
     }
 
     public void setCanBePulled(boolean pulled) {
-        canBePulled = pulled;
+        entityData.set(CAN_BE_PULLED, pulled);
     }
 
     private double currentMassPulled;
@@ -677,9 +677,6 @@ public abstract class LocomotiveEntity extends RollingStockEntity implements Con
         if (refusesLocked(player, player.getItemInHand(hand))) {
             return InteractionResult.SUCCESS;
         }
-        if (Coupling.onClickWithStake(this, player.getItemInHand(hand), player, hand)) {
-            return InteractionResult.SUCCESS;
-        }
         if (TraincraftConfig.CHUNK_LOADING.get() && player.getItemInHand(hand).is(traincraft.item.TraincraftItems.item("chunk_loader_activator"))) {
             setChunkLoading(!chunkLoading);
             player.getItemInHand(hand).hurtAndBreak(1, player, hand);
@@ -783,7 +780,7 @@ public abstract class LocomotiveEntity extends RollingStockEntity implements Con
         super.readAdditionalSaveData(input);
         chunkLoading = input.getBooleanOr("chunkLoading", false);
         canBeAdjusted = input.getBooleanOr("canBeAdjusted", false);
-        canBePulled = input.getBooleanOr("canBePulled", false);
+        setCanBePulled(input.getBooleanOr("canBePulled", false));
         fuel.restore(input.getIntOr("fuelTrain", 0));
         entityData.set(FUEL, fuel.amount());
         setEngineOn(input.getBooleanOr("isLocoTurnedOn", false));
@@ -799,7 +796,7 @@ public abstract class LocomotiveEntity extends RollingStockEntity implements Con
         output.putBoolean("chunkLoading", chunkLoading);
         super.addAdditionalSaveData(output);
         output.putBoolean("canBeAdjusted", canBeAdjusted);
-        output.putBoolean("canBePulled", canBePulled);
+        output.putBoolean("canBePulled", canBePulled());
 
         output.putInt("fuelTrain", fuel.amount());
         output.putBoolean("isLocoTurnedOn", isEngineOn());

@@ -15,6 +15,7 @@ import traincraft.Traincraft;
 import traincraft.network.LocomotiveActionPayload;
 import traincraft.network.LocomotiveKeyPayload;
 import traincraft.vehicle.entity.LocomotiveEntity;
+import traincraft.vehicle.entity.RollingStockEntity;
 import traincraft.vehicle.entity.ZeppelinEntity;
 
 @EventBusSubscriber(modid = Traincraft.MODID, value = Dist.CLIENT)
@@ -78,6 +79,10 @@ public final class KeyBindings {
                 ClientPacketDistributor.sendToServer(
                         new LocomotiveActionPayload(
                                 loco.getId(), LocomotiveActionPayload.ACTION_OPEN_MENU));
+            } else if (minecraft.player.getVehicle() instanceof RollingStockEntity stock) {
+                // Stock with no container of its own has nothing for the server to open, so the
+                // couplings are shown straight away; the toggle itself is still checked there.
+                ClientScreens.openCoupling(stock);
             }
             zeppelinKey(minecraft, ZeppelinEntity.KEY_MENU);
         }

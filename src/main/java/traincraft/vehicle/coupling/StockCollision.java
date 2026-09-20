@@ -108,15 +108,7 @@ public final class StockCollision {
         double distance = delta.horizontalDistance();
         double reach = cart ? self.getLinkageDistance(self) : 0.7;
         if (distance < 1.0E-4 || distance > reach) return;
-        if (cart) {
-            // Minecraft yaw is zero towards +Z, unlike CE's model-space yaw.
-            double angle = Math.toRadians(self.getYRot());
-            double alignment = (-Math.sin(angle) * delta.x + Math.cos(angle) * delta.z) / distance;
-            if (Math.abs(alignment) < 0.8) return;
-            // The angle test alone admits a staggered cart on the next parallel track.
-            double lateral = Math.abs(Math.cos(angle) * delta.x + Math.sin(angle) * delta.z);
-            if (lateral >= (self.getBbWidth() + other.getBbWidth()) * 0.5) return;
-        }
+        if (cart && !onSameAxis(self, other, delta, distance)) return;
 
         long tick = self.level().getGameTime();
         if (self.collisions().hasHandled(tick, other.getId())) return;
@@ -138,6 +130,23 @@ public final class StockCollision {
         } else {
             pushOther(self, other, delta, dx, dz);
         }
+    }
+
+    /**
+     * Whether the other body is on this one's own rail axis rather than beside it.
+     *
+     * <p>Minecraft yaw is zero towards +Z, unlike CE's model-space yaw. The angle test alone admits
+     * a staggered cart on the next parallel track, so the lateral offset is measured as well. The
+     * coupling search asks the same question of a candidate, and neither reading of the separation
+     * vector's direction changes the answer.
+     */
+    public static boolean onSameAxis(
+            RollingStockEntity self, Entity other, Vec3 delta, double distance) {
+        double angle = Math.toRadians(self.getYRot());
+        double alignment = (-Math.sin(angle) * delta.x + Math.cos(angle) * delta.z) / distance;
+        if (Math.abs(alignment) < 0.8) return false;
+        double lateral = Math.abs(Math.cos(angle) * delta.x + Math.sin(angle) * delta.z);
+        return lateral < (self.getBbWidth() + other.getBbWidth()) * 0.5;
     }
 
     private static final double BUFFER_GIVE = 0.15;
