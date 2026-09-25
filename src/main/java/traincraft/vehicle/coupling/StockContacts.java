@@ -1,11 +1,15 @@
 package traincraft.vehicle.coupling;
 
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.tick.LevelTickEvent;
+
+import org.jspecify.annotations.Nullable;
 
 import traincraft.Traincraft;
 import traincraft.vehicle.entity.RollingStockEntity;
@@ -43,6 +47,12 @@ public final class StockContacts {
     private static final int ITERATIONS = 4;
 
     private static final int GROUP_WALK_LIMIT = 64;
+
+    /** The block probe at the leading end: how deep, how wide and at what height above the rail. */
+    private static final double PROBE_DEPTH = 0.1;
+    private static final double PROBE_HALF_WIDTH = 0.25;
+    private static final double PROBE_BOTTOM = 0.3;
+    private static final double PROBE_TOP = 1.3;
 
     private static final Map<Level, List<RollingStockEntity>> ENLISTED = new WeakHashMap<>();
 
@@ -135,6 +145,9 @@ public final class StockContacts {
     /** Where two pieces of stock stand relative to each other along the rail they share. */
     private record Measure(Vec3 axis, double gap) {}
 
+    /** A block ahead of a piece of stock, {@code gap} from its end along its direction of travel. */
+    private record BlockContact(RollingStockEntity stock, Group group, Vec3 axis, double gap) {}
+
     /**
      * One pass over the given stock. Public so a test can run it on stock it has just placed
      * without waiting for the end of the tick.
@@ -155,8 +168,13 @@ public final class StockContacts {
             if (!distinct.contains(group)) distinct.add(group);
         }
         propagatePushes(distinct, contacts);
-        crash(contacts);
-        settle(contacts);
+        List<BlockContact> blocks = new ArrayList<>();
+        for (RollingStockEntity one : stock) {
+            BlockContact block = blockContact(one, groups.get(one));
+            if (block != null) blocks.add(block);
+        }
+        crash(contacts, blocks);
+        settle(contacts, blocks);
 
         for (Group group : distinct) {
             Train train = group.train;
@@ -218,11 +236,11 @@ public final class StockContacts {
                         || first.position().subtract(second.position()).horizontalDistanceSqr() > SEARCH_DISTANCE_SQR) {
                     continue;
                 }
-                Vec3 separation = LinkHandler.nearestSeparation(first, second);
+                Vec3 separation = second.bodyMiddle().subtract(first.bodyMiddle());
                 double distance = separation.horizontalDistance();
-                if (distance < 1.0E-4
-                        || !StockCollision.onSameAxis(first, second, separation, distance)
-                                && !StockCollision.onSameAxis(second, first, separation, distance)) {
+                if (distance >= 1.0E-4
+                        && !StockCollision.onSameAxis(first, second, separation, distance)
+                        && !StockCollision.onSameAxis(second, first, separation, distance)) {
                     continue;
                 }
                 contacts.add(new Contact(first, second, firstGroup, secondGroup));
@@ -231,15 +249,27 @@ public final class StockContacts {
         return contacts;
     }
 
+    /**
+     * How far apart the facing ends of two bodies are, along the line between their middles. The
+     * ends are the model's, the same the hitbox parts are laid out to, so stock stands buffer to
+     * buffer whatever its length and wherever its position sits along it. Negative is an overlap.
+     */
+    public static double bufferGap(RollingStockEntity from, RollingStockEntity to) {
+        return measure(from, to).gap();
+    }
+
     /** The axis points from {@code from} to {@code to}; a negative gap is an overlap. */
     private static Measure measure(RollingStockEntity from, RollingStockEntity to) {
-        Vec3 separation = LinkHandler.nearestSeparation(to, from);
+        Vec3 separation = to.bodyMiddle().subtract(from.bodyMiddle());
         double distance = separation.horizontalDistance();
-        if (distance < 1.0E-4) {
-            return new Measure(Vec3.ZERO, -LinkHandler.optimalDistance(from, to));
-        }
-        Vec3 axis = new Vec3(separation.x / distance, 0.0, separation.z / distance);
-        return new Measure(axis, distance - LinkHandler.optimalDistance(from, to));
+        Vec3 axis =
+                distance < 1.0E-4
+                        ? from.bodyAxis()
+                        : new Vec3(separation.x / distance, 0.0, separation.z / distance);
+        Vec3 fromEnd = from.endFacing(axis);
+        Vec3 toEnd = to.endFacing(axis.scale(-1.0));
+        Vec3 between = toEnd.subtract(fromEnd);
+        return new Measure(axis, between.x * axis.x + between.z * axis.z);
     }
 
     private static double along(RollingStockEntity stock, Vec3 axis) {
@@ -289,8 +319,67 @@ public final class StockContacts {
         }
     }
 
-    /** Two trains under power that meet hard enough: the pair that touched leaves the rails. */
-    private static void crash(List<Contact> contacts) {
+    /**
+     * A solid block in the way of the leading end of a piece of stock.
+     *
+     * <p>Only looked for on straight track: on a curve or a slope the end of a long body stands off
+     * the rail, and a probe there would find the tunnel wall beside the line rather than anything on
+     * it.
+     */
+    private static @Nullable BlockContact blockContact(RollingStockEntity stock, Group group) {
+        if (!stock.isOnStraightTrack()) return null;
+        Vec3 motion = stock.getDeltaMovement();
+        double speed = motion.horizontalDistance();
+        if (speed < 1.0E-4) return null;
+        Vec3 axis = new Vec3(motion.x / speed, 0.0, motion.z / speed);
+        AABB probe = probe(stock, axis);
+        double depth = penetration(stock, probe, axis);
+        if (depth > 0.0) {
+            return new BlockContact(stock, group, axis, -depth);
+        }
+        double reach = speed + TOUCH_TOLERANCE;
+        Vec3 allowed = Entity.collideBoundingBox(stock, axis.scale(reach), probe, stock.level(), List.of());
+        double gap = allowed.x * axis.x + allowed.z * axis.z;
+        return gap < reach - 1.0E-7 ? new BlockContact(stock, group, axis, gap) : null;
+    }
+
+    /**
+     * A thin slab just inside the end of the body at buffer height: above the rail and whatever it
+     * is laid on, below the roof of a two-high tunnel, and narrower than the track.
+     */
+    private static AABB probe(RollingStockEntity stock, Vec3 axis) {
+        Vec3 end = stock.endFacing(axis);
+        Vec3 lateral = new Vec3(-axis.z, 0.0, axis.x).scale(PROBE_HALF_WIDTH);
+        Vec3 inner = end.subtract(axis.scale(PROBE_DEPTH)).add(lateral);
+        Vec3 outer = end.subtract(lateral);
+        double base = stock.getY() - stock.yOffset();
+        return new AABB(inner.x, base + PROBE_BOTTOM, inner.z, outer.x, base + PROBE_TOP, outer.z);
+    }
+
+    /**
+     * How far the end has already gone into whatever the probe touches, measured from the face it
+     * went in through. Zero when the probe is clear.
+     */
+    private static double penetration(RollingStockEntity stock, AABB probe, Vec3 axis) {
+        double end = Math.max(probe.minX * axis.x, probe.maxX * axis.x)
+                + Math.max(probe.minZ * axis.z, probe.maxZ * axis.z);
+        double depth = 0.0;
+        for (var shape : stock.level().getBlockCollisions(stock, probe)) {
+            if (shape.isEmpty()) continue;
+            AABB solid = shape.bounds();
+            double face = Math.min(solid.minX * axis.x, solid.maxX * axis.x)
+                    + Math.min(solid.minZ * axis.z, solid.maxZ * axis.z);
+            depth = Math.max(depth, end - face);
+        }
+        return depth;
+    }
+
+    /**
+     * Collisions hard enough to derail: two trains under power that meet, and anything that runs
+     * into a block, which stands in for a train that cannot be moved. The vehicles that touched
+     * leave the rails and everything behind them stops dead.
+     */
+    private static void crash(List<Contact> contacts, List<BlockContact> blocks) {
         for (Contact contact : contacts) {
             Train first = contact.firstGroup.train;
             Train second = contact.secondGroup.train;
@@ -310,10 +399,28 @@ public final class StockContacts {
             contact.first.derailFromCollision(lateral);
             contact.second.derailFromCollision(lateral.scale(-1.0));
         }
+        for (BlockContact block : blocks) {
+            Train train = block.group.train;
+            double closing = along(block.stock, block.axis);
+            if (train.crashed || block.gap > closing + TOUCH_TOLERANCE || !ContactResponse.derails(closing)) {
+                continue;
+            }
+            train.stop();
+            train.crashed = true;
+            block.stock.derailFromCollision(new Vec3(-block.axis.z, 0.0, block.axis.x));
+        }
     }
 
-    /** Every other contact: the buffers meet without bouncing, and momentum is shared by mass. */
-    private static void settle(List<Contact> contacts) {
+    /**
+     * Every other contact: the buffers meet without bouncing, and momentum is shared by mass. A
+     * block moves for nothing, so the whole train that ran into it -- whatever was pushing
+     * included -- is stopped short of it and set back out of it.
+     */
+    private static void settle(List<Contact> contacts, List<BlockContact> blocks) {
+        double[] blockGaps = new double[blocks.size()];
+        for (int i = 0; i < blocks.size(); i++) {
+            blockGaps[i] = blocks.get(i).gap;
+        }
         for (int iteration = 0; iteration < ITERATIONS; iteration++) {
             for (Contact contact : contacts) {
                 Train first = contact.firstGroup.train;
@@ -344,6 +451,19 @@ public final class StockContacts {
                                 Math.max(0.0, measure.gap()));
                 first.push(measure.axis().scale(after.first() - speedFirst));
                 second.push(measure.axis().scale(after.second() - speedSecond));
+            }
+            for (int i = 0; i < blocks.size(); i++) {
+                BlockContact block = blocks.get(i);
+                Train train = block.group.train;
+                if (train.crashed || block.stock.isWrecked()) continue;
+                if (blockGaps[i] < 0.0) {
+                    train.shift(block.axis.scale(blockGaps[i]));
+                    blockGaps[i] = 0.0;
+                }
+                double speed = along(block.stock, block.axis);
+                // Against something immovable the train's own mass does not matter.
+                ContactResponse.Axial after = ContactResponse.plastic(speed, 0.0, 1.0, 0.0, blockGaps[i]);
+                train.push(block.axis.scale(after.first() - speed));
             }
         }
     }

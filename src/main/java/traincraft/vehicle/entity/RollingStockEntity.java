@@ -674,6 +674,38 @@ public abstract class RollingStockEntity extends VehicleEntity implements TrackM
         return wrecked;
     }
 
+    /** Set by the last run over the rails; only there does the body lie along the track. */
+    private boolean onStraightTrack;
+
+    public boolean isOnStraightTrack() {
+        return onStraightTrack;
+    }
+
+    public VehicleBounds bounds() {
+        return bounds;
+    }
+
+    /**
+     * The world direction of the model's front, the same one the hitbox parts and the bogie are
+     * laid out along.
+     */
+    public Vec3 bodyAxis() {
+        double heading = Math.toRadians(getYRot());
+        return new Vec3(Math.sin(heading), 0.0, -Math.cos(heading));
+    }
+
+    /** The end of the body -- its buffer beam -- that faces the given direction. */
+    public Vec3 endFacing(Vec3 direction) {
+        Vec3 axis = bodyAxis();
+        double extent = axis.dot(direction) >= 0.0 ? bounds.front() : bounds.back();
+        return position().add(axis.scale(extent));
+    }
+
+    /** Halfway between the two ends of the body, which is not where a locomotive's position is. */
+    public Vec3 bodyMiddle() {
+        return position().add(bodyAxis().scale((bounds.front() + bounds.back()) * 0.5));
+    }
+
     /** Whether this piece of stock's own tick holds it still, so nothing can shove it. */
     public boolean isHeldInPlace() {
         return false;
@@ -876,6 +908,7 @@ public abstract class RollingStockEntity extends VehicleEntity implements TrackM
 
     /** Resolve rail geometry before the spawn packet exposes the placement pose to clients. */
     public void alignToTrackOnPlacement() {
+        onStraightTrack = false;
         BlockPos pos = BlockPos.containing(getX(), Math.floor(getY() - yOffset() + 0.1), getZ());
         boolean onTrack =
                 driveOverTrackAt(pos)
@@ -938,6 +971,7 @@ public abstract class RollingStockEntity extends VehicleEntity implements TrackM
             return;
         }
 
+        onStraightTrack = false;
         BlockPos pos = BlockPos.containing(getX(), Math.floor(getY() - yOffset() + 0.1), getZ());
         double before = TrackMovement.planarSpeed(this);
         boolean on =
@@ -1126,6 +1160,9 @@ public abstract class RollingStockEntity extends VehicleEntity implements TrackM
         }
 
         boolean fullBody = body == this;
+        if (fullBody) {
+            onStraightTrack = shape == RailShape.NORTH_SOUTH || shape == RailShape.EAST_WEST;
+        }
         if (fullBody && bogie != null && bogieDerailed) {
             derailSpeed = 0.0;
             unLink();
@@ -1190,6 +1227,7 @@ public abstract class RollingStockEntity extends VehicleEntity implements TrackM
         if (body == this) {
             railYaw = null;
             slopeRise = Vec3.ZERO;
+            onStraightTrack = type.category() == TrackCategory.STRAIGHT;
             switch (type.category()) {
                 case STRAIGHT, SLOPE -> railYaw = (meta == 0 || meta == 2) ? 0.0F : 90.0F;
                 case TURN, SWITCH -> {
@@ -1325,6 +1363,7 @@ public abstract class RollingStockEntity extends VehicleEntity implements TrackM
      */
     protected void fallOffTrack() {
         slopeRise = Vec3.ZERO;
+        onStraightTrack = false;
         if (!isNoGravity()) {
             setDeltaMovement(getDeltaMovement().add(0.0, -0.04, 0.0));
         }

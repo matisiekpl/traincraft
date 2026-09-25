@@ -43,28 +43,32 @@ final class CollisionGameTests {
         tests.put("slow_locomotive_contact_does_not_derail", CollisionGameTests::slowContact);
         tests.put("locomotive_pushes_a_loose_rake", CollisionGameTests::pushesRake);
         tests.put("wrecked_stock_stays_off_the_track", CollisionGameTests::wreckedStock);
+        tests.put("pushed_rake_stops_at_a_buffer_stop", helper -> bufferStop(helper, false));
+        tests.put("pushed_rake_derails_at_a_buffer_stop", helper -> bufferStop(helper, true));
+        tests.put("every_vehicle_meets_buffer_to_buffer", CollisionGameTests::everyVehicleMeets);
+        tests.put("every_vehicle_stops_at_a_block", CollisionGameTests::everyVehicleStopsAtBlock);
     }
 
     private static void solve(RollingStockEntity... stock) {
         StockContacts.solve(List.of(stock));
     }
 
-    /** The gap between the nearest contact points, less the buffer-to-buffer spacing. */
+    /**
+     * The space between two bodies as their hitbox parts lay them out, worked out here from the
+     * bounds rather than by the code under test: both bodies are projected onto the line between
+     * their middles, and a negative result is how far they overlap.
+     */
     private static double gap(RollingStockEntity one, RollingStockEntity two) {
-        double nearest = Double.MAX_VALUE;
-        for (Vec3 a : contactPoints(one)) {
-            for (Vec3 b : contactPoints(two)) {
-                nearest = Math.min(nearest, a.subtract(b).horizontalDistance());
-            }
-        }
-        return nearest - LinkHandler.optimalDistance(one, two);
+        Vec3 axis = two.bodyMiddle().subtract(one.bodyMiddle()).multiply(1, 0, 1).normalize();
+        double[] first = extent(one, axis);
+        double[] second = extent(two, axis);
+        return second[0] - first[1];
     }
 
-    private static List<Vec3> contactPoints(RollingStockEntity stock) {
-        List<Vec3> points = new ArrayList<>();
-        points.add(stock.position());
-        if (stock.bogiePosition() != null) points.add(stock.bogiePosition());
-        return points;
+    private static double[] extent(RollingStockEntity stock, Vec3 axis) {
+        double front = stock.position().add(stock.bodyAxis().scale(stock.bounds().front())).dot(axis);
+        double back = stock.position().add(stock.bodyAxis().scale(stock.bounds().back())).dot(axis);
+        return new double[] {Math.min(front, back), Math.max(front, back)};
     }
 
     /** A locomotive whose own tick lets it move: fuelled, warm and with the engine running. */
@@ -94,7 +98,8 @@ final class CollisionGameTests {
                 Vec3 forward = new Vec3(-Math.sin(angle), 0, Math.cos(angle));
                 Vec3 origin = new Vec3(5, 3, 5);
                 var one = stock(helper, locomotive, origin, yaw);
-                var two = stock(helper, false, origin.add(forward), yaw);
+                var two = stock(helper, false, origin.add(forward.scale(8)), yaw);
+                spaceAfter(one, two, -0.5, forward);
                 one.setDeltaMovement(forward.scale(0.1));
                 solve(one, two);
                 helper.assertTrue(
@@ -295,7 +300,8 @@ final class CollisionGameTests {
      */
     private static void neverOverlaps(GameTestHelper helper) {
         var one = stock(helper, true, new Vec3(5, 3, 5), 0);
-        var two = stock(helper, false, new Vec3(5, 3, 6), 0);
+        var two = stock(helper, false, new Vec3(5, 3, 12), 0);
+        spaceAfter(one, two, -0.5);
         one.setDeltaMovement(0, 0, 0.3);
         solve(one, two);
         helper.assertTrue(gap(one, two) >= -1.0E-6, "Stock overlaps: gap=" + gap(one, two));
@@ -322,7 +328,8 @@ final class CollisionGameTests {
         one.setNewUniqueID(one.getId());
         tail.setNewUniqueID(tail.getId());
         new LinkHandler().couple(one, one.endFacing(tail), tail, tail.endFacing(one));
-        var two = locomotive(helper, new Vec3(5, 3, 9.5), 180);
+        var two = locomotive(helper, new Vec3(5, 3, 16), 180);
+        spaceAfter(one, two, -0.3);
         running(two);
         one.setDeltaMovement(0, 0, 0.1);
         tail.setDeltaMovement(0, 0, 0.1);
@@ -344,7 +351,8 @@ final class CollisionGameTests {
     /** Below the derailing speed, two locomotives just meet buffer to buffer and share momentum. */
     private static void slowContact(GameTestHelper helper) {
         var one = locomotive(helper, new Vec3(5, 3, 5), 0);
-        var two = locomotive(helper, new Vec3(5, 3, 6), 180);
+        var two = locomotive(helper, new Vec3(5, 3, 12), 180);
+        spaceAfter(one, two, -0.3);
         running(one);
         running(two);
         double speed = 5.0 / 216.0;
@@ -366,7 +374,8 @@ final class CollisionGameTests {
      * A locomotive driven into three loose wagons pushes them all, none of them sliding into the
      * next, and when the locomotive stops they stop with it rather than rolling on.
      */
-    private static void pushesRake(GameTestHelper helper) {
+    /** Two very long straights end to end along +Z, cleared above so nothing but the test is in the way. */
+    private static BlockPos layLine(GameTestHelper helper) {
         BlockPos origin = helper.absolutePos(new BlockPos(1, 2, 1));
         for (int piece = 0; piece < 2; piece++) {
             BlockPos at = origin.offset(0, 0, 12 * piece);
@@ -380,23 +389,39 @@ final class CollisionGameTests {
             }
             helper.assertTrue(TrackPlacer.apply(helper.getLevel(), at, plan).placed(), "Track placement failed");
         }
-        double y = origin.getY() + 0.2 + RollingStockEntity.Y_OFFSET;
-        double x = origin.getX() + 0.5;
-        AliceLocomotiveEntity loco = EntityRegistry.LOCO_STEAM_ALICE.get()
-                .create(helper.getLevel(), net.minecraft.world.entity.EntitySpawnReason.COMMAND);
-        loco.setPos(x, y, origin.getZ() + 3.5);
-        loco.alignToTrackOnPlacement();
+        return origin;
+    }
+
+    /** Stock made for the test alone: not added to the level, so only the test ticks it. */
+    private static <T extends RollingStockEntity> T onLine(
+            GameTestHelper helper, net.minecraft.world.entity.EntityType<T> type, BlockPos origin, double z) {
+        T stock = type.create(helper.getLevel(), net.minecraft.world.entity.EntitySpawnReason.COMMAND);
+        stock.setPos(origin.getX() + 0.5, origin.getY() + 0.2 + RollingStockEntity.Y_OFFSET, z);
+        stock.alignToTrackOnPlacement();
+        return stock;
+    }
+
+    /** Moves {@code stock} along +Z until it stands {@code gap} clear of {@code ahead}'s end. */
+    private static void spaceAfter(RollingStockEntity ahead, RollingStockEntity stock, double gap) {
+        spaceAfter(ahead, stock, gap, new Vec3(0, 0, 1));
+    }
+
+    /** The same along any direction; {@code stock} must already stand beyond {@code ahead}'s middle. */
+    private static void spaceAfter(RollingStockEntity ahead, RollingStockEntity stock, double gap, Vec3 direction) {
+        stock.shiftAlongTrack(direction.scale(gap - gap(ahead, stock)));
+    }
+
+    private static void pushesRake(GameTestHelper helper) {
+        BlockPos origin = layLine(helper);
+        AliceLocomotiveEntity loco = onLine(helper, EntityRegistry.LOCO_STEAM_ALICE.get(), origin, origin.getZ() + 3.5);
         running(loco);
         List<RollingStockEntity> train = new ArrayList<>();
         train.add(loco);
-        double z = loco.getZ() + 2.37 + 0.5;
         for (int i = 0; i < 3; i++) {
-            var wagon = EntityRegistry.FREIGHT_CART_YELLOW.get()
-                    .create(helper.getLevel(), net.minecraft.world.entity.EntitySpawnReason.COMMAND);
-            wagon.setPos(x, y, z);
-            wagon.alignToTrackOnPlacement();
+            RollingStockEntity previous = train.getLast();
+            var wagon = onLine(helper, EntityRegistry.FREIGHT_CART_YELLOW.get(), origin, previous.getZ() + 3.0);
+            spaceAfter(previous, wagon, i == 0 ? 0.5 : 0.3);
             train.add(wagon);
-            z += 2.94 + 0.3;
         }
         double start = train.getLast().getZ();
         for (int tick = 0; tick < 40; tick++) {
@@ -425,6 +450,142 @@ final class CollisionGameTests {
                     "Stock rolled on after the push ended: " + train.indexOf(stock) + " " + stock.getDeltaMovement());
         }
         for (RollingStockEntity stock : train) stock.discard();
+        helper.succeed();
+    }
+
+    /** How far past the face of a block a probe may leave an end, for floating-point slack. */
+    private static final double BLOCK_SLACK = 1.0E-6;
+
+    /** Where a block stands in front of the +Z end of a body, one cell above the rail. */
+    private static BlockPos blockAfter(RollingStockEntity stock, BlockPos origin) {
+        Vec3 end = stock.endFacing(new Vec3(0, 0, 1));
+        return new BlockPos(origin.getX(), origin.getY() + 1, (int) Math.floor(end.z) + 1);
+    }
+
+    /**
+     * A locomotive pushing two loose wagons into a block on the line. Slowly, the whole train comes
+     * to rest against it with nothing in the block or in anything else; fast, the wagon that hits
+     * the block leaves the rails and the rest stops dead.
+     */
+    private static void bufferStop(GameTestHelper helper, boolean fast) {
+        BlockPos origin = layLine(helper);
+        AliceLocomotiveEntity loco = onLine(helper, EntityRegistry.LOCO_STEAM_ALICE.get(), origin, origin.getZ() + 3.5);
+        running(loco);
+        List<RollingStockEntity> train = new ArrayList<>();
+        train.add(loco);
+        for (int i = 0; i < 2; i++) {
+            RollingStockEntity previous = train.getLast();
+            var wagon = onLine(helper, EntityRegistry.FREIGHT_CART_YELLOW.get(), origin, previous.getZ() + 3.0);
+            spaceAfter(previous, wagon, i == 0 ? 0.05 : 0.0);
+            train.add(wagon);
+        }
+        RollingStockEntity lead = train.getLast();
+        BlockPos stop = blockAfter(lead, origin).offset(0, 0, 1);
+        helper.getLevel().setBlockAndUpdate(stop, Blocks.STONE.defaultBlockState());
+        double speed = fast ? 0.1 : 0.03;
+        for (int tick = 0; tick < 120; tick++) {
+            loco.setDeltaMovement(0, 0, speed);
+            for (RollingStockEntity stock : train) stock.tick();
+            StockContacts.solve(train);
+            if (lead.isWrecked()) break;
+            helper.assertTrue(
+                    lead.endFacing(new Vec3(0, 0, 1)).z <= stop.getZ() + BLOCK_SLACK,
+                    "The leading wagon went into the block at tick " + tick + ": " + lead.endFacing(new Vec3(0, 0, 1)));
+            for (int i = 1; i < train.size(); i++) {
+                double gap = gap(train.get(i - 1), train.get(i));
+                helper.assertTrue(gap >= -0.05, "Stock " + (i - 1) + " and " + i + " overlap at tick " + tick + ": " + gap);
+            }
+        }
+        if (fast) {
+            helper.assertTrue(lead.isWrecked(), "A train run hard into a block did not derail the wagon that hit it");
+            for (RollingStockEntity stock : train) {
+                helper.assertTrue(
+                        stock.getDeltaMovement().horizontalDistanceSqr() == 0.0,
+                        "Stock kept moving after hitting the block: " + train.indexOf(stock) + " " + stock.getDeltaMovement());
+            }
+            helper.assertTrue(!loco.isWrecked() && !train.get(1).isWrecked(), "Stock away from the block was derailed");
+        } else {
+            helper.assertTrue(!lead.isWrecked(), "A gentle stop against a block derailed the wagon");
+            helper.assertTrue(
+                    stop.getZ() - lead.endFacing(new Vec3(0, 0, 1)).z < 0.1,
+                    "The train never reached the block: " + lead.endFacing(new Vec3(0, 0, 1)));
+            helper.assertTrue(
+                    Math.abs(loco.getDeltaMovement().z) < 1.0E-6,
+                    "The locomotive kept pushing into the stopped train: " + loco.getDeltaMovement());
+        }
+        for (RollingStockEntity stock : train) stock.discard();
+        helper.succeed();
+    }
+
+    /** Every kind of rolling stock this mod registers, made fresh for the test. */
+    private static List<net.minecraft.world.entity.EntityType<?>> everyStockType(GameTestHelper helper) {
+        List<net.minecraft.world.entity.EntityType<?>> types = new ArrayList<>();
+        for (var type : net.minecraft.core.registries.BuiltInRegistries.ENTITY_TYPE) {
+            if (!net.minecraft.core.registries.BuiltInRegistries.ENTITY_TYPE.getKey(type).getNamespace()
+                    .equals(traincraft.Traincraft.MODID)) {
+                continue;
+            }
+            var probe = type.create(helper.getLevel(), net.minecraft.world.entity.EntitySpawnReason.COMMAND);
+            if (probe instanceof RollingStockEntity) types.add(type);
+            if (probe != null) probe.discard();
+        }
+        helper.assertTrue(types.size() > 100, "Found only " + types.size() + " kinds of stock");
+        return types;
+    }
+
+    @SuppressWarnings("unchecked")
+    private static RollingStockEntity onLine(
+            GameTestHelper helper, net.minecraft.world.entity.EntityType<?> type, BlockPos origin) {
+        return onLine(helper, (net.minecraft.world.entity.EntityType<RollingStockEntity>) type, origin, origin.getZ() + 9.5);
+    }
+
+    /** A loose wagon run into any piece of stock stops against its end, not inside it. */
+    private static void everyVehicleMeets(GameTestHelper helper) {
+        BlockPos origin = layLine(helper);
+        for (var type : everyStockType(helper)) {
+            RollingStockEntity stock = onLine(helper, type, origin);
+            var wagon = onLine(helper, EntityRegistry.FREIGHT_CART_YELLOW.get(), origin, stock.getZ() + 6.0);
+            spaceAfter(stock, wagon, -0.5);
+            wagon.setDeltaMovement(0, 0, -0.03);
+            solve(stock, wagon);
+            double gap = gap(stock, wagon);
+            helper.assertTrue(gap >= -1.0E-6, "A wagon stopped inside " + type + ": gap=" + gap);
+            stock.discard();
+            wagon.discard();
+        }
+        helper.succeed();
+    }
+
+    /**
+     * Any piece of stock run into a block stops at the face of it by its own end, not by the middle
+     * of the body; run in hard, it derails.
+     */
+    private static void everyVehicleStopsAtBlock(GameTestHelper helper) {
+        BlockPos origin = layLine(helper);
+        for (var type : everyStockType(helper)) {
+            for (boolean fast : new boolean[] {false, true}) {
+                RollingStockEntity stock = onLine(helper, type, origin);
+                helper.assertTrue(stock.isOnStraightTrack(), type + " did not settle on the straight");
+                BlockPos stop = blockAfter(stock, origin);
+                // Just short of the face, so this tick's travel would carry it in.
+                stock.shiftAlongTrack(new Vec3(0, 0, stop.getZ() - 0.01 - stock.endFacing(new Vec3(0, 0, 1)).z));
+                helper.getLevel().setBlockAndUpdate(stop, Blocks.STONE.defaultBlockState());
+                double speed = (fast ? 20.0 : 5.0) / 216.0;
+                stock.setDeltaMovement(0, 0, speed);
+                solve(stock);
+                if (fast) {
+                    helper.assertTrue(stock.isWrecked(), type + " ran hard into a block and stayed on the rails");
+                } else {
+                    double end = stock.endFacing(new Vec3(0, 0, 1)).z + stock.getDeltaMovement().z;
+                    helper.assertTrue(!stock.isWrecked(), type + " derailed against a block at walking pace");
+                    helper.assertTrue(
+                            end <= stop.getZ() + BLOCK_SLACK,
+                            type + " would run " + (end - stop.getZ()) + " into the block");
+                }
+                helper.getLevel().setBlockAndUpdate(stop, Blocks.AIR.defaultBlockState());
+                stock.discard();
+            }
+        }
         helper.succeed();
     }
 
