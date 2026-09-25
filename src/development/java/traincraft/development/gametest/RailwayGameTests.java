@@ -940,7 +940,9 @@ public final class RailwayGameTests {
                 loco.setDeltaMovement(loco.getDeltaMovement().normalize().scale(0.075));
                 loco.tick();
                 wagon.tick();
-                helper.assertTrue(loco.cartLinked1 == wagon && wagon.cartLinked1 == loco,
+                helper.assertTrue(LinkHandler.areLinked(loco, wagon)
+                                && (loco.cartLinked1 == wagon || loco.cartLinked2 == wagon)
+                                && (wagon.cartLinked1 == loco || wagon.cartLinked2 == loco),
                         "Coupling broke on the switch at tick " + tick
                                 + " direction=" + direction
                                 + " loco=" + loco.position().subtract(Vec3.atLowerCornerOf(origin))
