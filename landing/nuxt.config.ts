@@ -18,6 +18,10 @@ export default defineNuxtConfig({
       link: [
         {rel: 'icon', type: 'image/png', href: '/favicon.png'},
       ],
+      script: [
+        {async: true, src: 'https://analytics.mateuszwozniak.com/js/pa-fA5oNLUBn-Og6e7bP8Q1O.js'},
+        {innerHTML: 'window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()'},
+      ],
     },
   },
 })
