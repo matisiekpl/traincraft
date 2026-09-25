@@ -1,0 +1,141 @@
+@import "tailwindcss";
+@import "@fontsource/press-start-2p";
+
+@theme {
+  --color-mc-bg: #14141a;
+  --color-mc-bg-alt: #1c1c24;
+  --color-mc-panel: #c6c6c6;
+  --color-mc-panel-light: #ffffff;
+  --color-mc-panel-dark: #565656;
+  --color-mc-slot: #8b8b8b;
+  --color-mc-card: #3b3b46;
+  --color-mc-card-light: #55555f;
+  --color-mc-card-dark: #22222a;
+  --color-mc-stone: #7f7f7f;
+  --color-mc-grass: #5b8731;
+  --color-mc-amber: #e0a13b;
+  --color-mc-red: #b02e26;
+  --color-mc-text: #e6e6ea;
+  --color-mc-muted: #a0a0ab;
+
+  --font-pixel: "Press Start 2P", ui-monospace, monospace;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-mc-bg);
+  color: var(--color-mc-text);
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.pixel-font {
+  font-family: var(--font-pixel);
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+
+.pixel-panel {
+  background-color: var(--color-mc-panel);
+  color: #1d1d21;
+  box-shadow:
+    inset 4px 4px 0 var(--color-mc-panel-light),
+    inset -4px -4px 0 var(--color-mc-panel-dark);
+}
+
+.pixel-card {
+  background-color: var(--color-mc-card);
+  box-shadow:
+    inset 4px 4px 0 var(--color-mc-card-light),
+    inset -4px -4px 0 var(--color-mc-card-dark);
+}
+
+.pixel-btn {
+  font-family: var(--font-pixel);
+  background-color: var(--color-mc-slot);
+  color: #ffffff;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.45);
+  box-shadow:
+    inset 4px 4px 0 #b4b4b4,
+    inset -4px -4px 0 #4a4a4a;
+  cursor: pointer;
+  transition: background-color 80ms steps(2);
+}
+
+.pixel-btn:hover {
+  background-color: #a0a0a0;
+  outline: 2px solid #ffffff;
+  outline-offset: 0;
+}
+
+.pixel-btn:active {
+  box-shadow:
+    inset -4px -4px 0 #b4b4b4,
+    inset 4px 4px 0 #4a4a4a;
+}
+
+.pixel-btn-primary {
+  background-color: #4b8b3b;
+  box-shadow:
+    inset 4px 4px 0 #6fb45c,
+    inset -4px -4px 0 #2c5623;
+}
+
+.pixel-btn-primary:hover {
+  background-color: #59a146;
+}
+
+.pixel-btn-primary:active {
+  box-shadow:
+    inset -4px -4px 0 #6fb45c,
+    inset 4px 4px 0 #2c5623;
+}
+
+.pixel-btn:disabled {
+  background-color: #6e6e6e;
+  color: #b9b9b9;
+  cursor: not-allowed;
+  box-shadow:
+    inset 4px 4px 0 #808080,
+    inset -4px -4px 0 #4f4f4f;
+}
+
+.pixel-btn:disabled:hover {
+  background-color: #6e6e6e;
+  outline: none;
+}
+
+.ballast-strip {
+  height: 16px;
+  background-image: repeating-linear-gradient(
+    90deg,
+    #4a4a52 0 8px,
+    #3a3a42 8px 16px,
+    #5a5a62 16px 24px,
+    #35353d 24px 32px
+  );
+}
+
+.pixelated {
+  image-rendering: pixelated;
+}
+
+.scrim {
+  background-image: linear-gradient(
+    to top,
+    rgba(10, 10, 14, 1) 0%,
+    rgba(10, 10, 14, 0.85) 22%,
+    rgba(10, 10, 14, 0.35) 55%,
+    rgba(10, 10, 14, 0.55) 100%
+  );
+}
+
+::selection {
+  background-color: var(--color-mc-amber);
+  color: #14141a;
+}
