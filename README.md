@@ -2,9 +2,7 @@
 
 Minecraft 26.2 mod built with NeoForge and Java 25.
 
-Port of Traincraft to NeoForge by Mateusz Woźniak. Traincraft was originally created by
-Spitfire4466 and Mrbrutal; the 1.7.10 Community Edition was maintained by EternalBlueFlame
-and NitroxydeX.
+Port of Traincraft Community Edition from Minecraft 1.7.10 to 26.2.
 
 Landing page and download: [traincraft.mateuszwozniak.com](https://traincraft.mateuszwozniak.com)
 
@@ -32,3 +30,16 @@ Run from this directory:
 `trackitems` generates item resources from the track catalog. GameTests cover placement
 and removal of every catalog plan, adjacent assemblies, blocked placement, switching
 and locomotive operation. Unit tests do not replace visual checks in the client.
+
+## Credits
+
+- Port to Minecraft 26.2 and NeoForge: Mateusz Woźniak
+- Traincraft: Spitfire4466 and Mrbrutal
+- 1.7.10 Community Edition: EternalBlueFlame and NitroxydeX
+
+The locomotives, rolling stock, models, textures and track designs come from the original
+Traincraft and its Community Edition.
+
+- [traincraft-mod.com](http://www.traincraft-mod.com)
+- [CurseForge project](https://www.curseforge.com/minecraft/mc-mods/traincraft)
+- [Traincraft Discord](https://discord.gg/SgpnCnK)
