@@ -60,7 +60,6 @@ useHead({
   <main>
     <HeroSection/>
     <div class="ballast-strip"></div>
-    <OverviewSection/>
     <IconRail/>
     <ScreenshotGallery/>
     <CreditsSection/>

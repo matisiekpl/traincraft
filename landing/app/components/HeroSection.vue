@@ -23,7 +23,6 @@ import {site} from '~/data/site'
 
       <p class="max-w-2xl text-lg text-mc-text drop-shadow-[2px_2px_0_rgba(0,0,0,0.8)] sm:text-xl">
         A NeoForge port of Traincraft Community Edition, moved from Minecraft 1.7.10 to {{ site.minecraftVersion }}.
-        The locomotives, the rolling stock and the track system come across with it.
       </p>
 
       <div class="flex flex-wrap gap-4">

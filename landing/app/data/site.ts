@@ -9,13 +9,6 @@ export const site = {
   neoforgeVersion: '26.2.0.75',
 }
 
-export const overview = [
-  'Steam, diesel and electric locomotives pull the trains. The steam roster runs from the Adler and the logging shays through the A4 Mallard, the GS4 Daylight and the Berkshires; diesel covers road units such as the GE ES44 and the SD40-2 next to yard shunters like the ChME3 and the V60; electric machines like the BR 185 run under overhead wire. Behind them couple passenger coaches, freight wagons, tank cars, tenders, cabooses, work trains and snow plows.',
-  'Track is laid as prefabricated pieces rather than block by block. Straights come in several lengths and turns in several radii, and the set carries on into switches, parallel switches, slopes and road crossings, in wood, gravel and ballast. Signals, a wig-wag crossing signal, switch stands, buffer stops, speed signs and overhead wire go up along the line.',
-  'Vehicles are built at the Train Workbench and the Assembly Tables, and they run on fuel with a chain of its own: oil sands and petroleum ore feed the Distillation Tower, which yields Diesel and Refined Fuel, while the Open Hearth Furnace, Diesel Generator, Water Wheel and Wind Mill supply the rest of the works.',
-  'In the cab the HUD reads speed in km/h beside the fuel, heat and boiler gauges, and the whistle sits on a keybind. Villages gain a Station Chief who trades in railway goods, advancements follow the build-up of a railway, JEI lists the Assembly Table recipes, and an Airship and a Zeppelin fly above the network.',
-]
-
 export const credits = [
   {
     role: 'Port to Minecraft 26.2 and NeoForge',
