@@ -57,6 +57,7 @@ import traincraft.vehicle.coupling.Consist;
 import traincraft.vehicle.coupling.LinkHandler;
 import traincraft.vehicle.coupling.VehicleEnd;
 import traincraft.vehicle.coupling.StockCollision;
+import traincraft.vehicle.coupling.StockContacts;
 import traincraft.vehicle.definition.VehicleBounds;
 import traincraft.vehicle.definition.VehicleDefinition;
 import traincraft.vehicle.simulation.BogieState;
@@ -650,6 +651,72 @@ public abstract class RollingStockEntity extends VehicleEntity implements TrackM
         }
     }
 
+    // --- Buffer contacts --------------------------------------------------------------------
+
+    /** Loose stock that the last contact pass found being pushed. Not saved: a push is a tick. */
+    private boolean pushed;
+
+    /** Thrown off the rails by a collision; it stays off them until it is broken up. */
+    private boolean wrecked;
+
+    private static final double DERAIL_SHIFT = 0.9;
+    private static final float DERAIL_SKEW = 12.0F;
+
+    public boolean isPushed() {
+        return pushed;
+    }
+
+    public void setPushed(boolean pushed) {
+        this.pushed = pushed;
+    }
+
+    public boolean isWrecked() {
+        return wrecked;
+    }
+
+    /** Whether this piece of stock's own tick holds it still, so nothing can shove it. */
+    public boolean isHeldInPlace() {
+        return false;
+    }
+
+    /**
+     * Leaves the rails after a collision: couplings break, and the body is thrown sideways and
+     * skewed across the track, where it lies until a player breaks it up.
+     */
+    public void derailFromCollision(Vec3 lateral) {
+        if (wrecked || level().isClientSide()) {
+            return;
+        }
+        unLink();
+        setArmed(false);
+        wrecked = true;
+        pushed = false;
+        bogie = null;
+        setDeltaMovement(0.0, getDeltaMovement().y, 0.0);
+        Vec3 side = lateral.horizontalDistanceSqr() < 1.0E-8 ? Vec3.ZERO : lateral.normalize();
+        move(MoverType.SELF, side.scale(DERAIL_SHIFT));
+        double heading = Math.toRadians(getYRot());
+        double turn = -Math.sin(heading) * side.z - Math.cos(heading) * side.x;
+        float yaw = getYRot() + (turn >= 0.0 ? DERAIL_SKEW : -DERAIL_SKEW);
+        setYRot(yaw);
+        setYHeadRot(yaw);
+        level().playSound(
+                null,
+                getX(),
+                getY(),
+                getZ(),
+                net.minecraft.sounds.SoundEvents.ANVIL_LAND,
+                net.minecraft.sounds.SoundSource.NEUTRAL,
+                1.0F,
+                0.6F);
+        Component message = Component.literal(getTrainName().getString() + " derailed in a collision");
+        for (Player player : level().players()) {
+            if (player.distanceToSqr(this) < 64.0 * 64.0) {
+                player.sendSystemMessage(message);
+            }
+        }
+    }
+
     /** Both contacts participate, including the bogie which is no longer a world entity. */
     private void pushNeighbours() {
         collisions.tick(this);
@@ -771,8 +838,9 @@ public abstract class RollingStockEntity extends VehicleEntity implements TrackM
         return SpeedHandler.handleSpeed(railMaxSpeed, false, 0.0);
     }
 
+    /** Loose stock being pushed rolls freely; left to itself, the track drags it to a stop. */
     protected boolean hasTrackDrag() {
-        return true;
+        return !pushed;
     }
 
     /**
@@ -855,6 +923,21 @@ public abstract class RollingStockEntity extends VehicleEntity implements TrackM
             StockLog.write(this);
         }
 
+        if (wrecked) {
+            // Off the rails for good: it lies where it came to rest until someone breaks it up.
+            setDeltaMovement(0.0, getDeltaMovement().y, 0.0);
+            fallOffTrack();
+            updateTicks++;
+            if (getHurtTime() > 0) {
+                setHurtTime(getHurtTime() - 1);
+            }
+            if (getDamage() > 0.0F) {
+                setDamage(getDamage() - 1.0F);
+            }
+            syncCoupling();
+            return;
+        }
+
         BlockPos pos = BlockPos.containing(getX(), Math.floor(getY() - yOffset() + 0.1), getZ());
         double before = TrackMovement.planarSpeed(this);
         boolean on =
@@ -884,6 +967,7 @@ public abstract class RollingStockEntity extends VehicleEntity implements TrackM
         pushNeighbours();
         handleTrain();
         linkHandler.tick(this);
+        StockContacts.enlist(this);
         if (getHurtTime() > 0) {
             setHurtTime(getHurtTime() - 1);
         }
@@ -1317,6 +1401,7 @@ public abstract class RollingStockEntity extends VehicleEntity implements TrackM
         setArmed(input.getBooleanOr("Coupling", false));
         String colour = input.getStringOr("trainColor", defaultColour());
         entityData.set(COLOUR, spec().colours().contains(colour) ? colour : defaultColour());
+        wrecked = input.getBooleanOr("wrecked", false);
         cartLinked1 = null;
         cartLinked2 = null;
     }
@@ -1333,6 +1418,7 @@ public abstract class RollingStockEntity extends VehicleEntity implements TrackM
         output.putDouble("Link2", link2);
         output.putBoolean("Coupling", isArmed());
         output.putString("trainColor", getColour());
+        output.putBoolean("wrecked", wrecked);
     }
 
     // --- Damage -----------------------------------------------------------------------------

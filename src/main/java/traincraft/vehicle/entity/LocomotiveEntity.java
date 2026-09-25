@@ -480,6 +480,14 @@ public abstract class LocomotiveEntity extends RollingStockEntity implements Con
         return spec().bogieLocoPosition();
     }
 
+    /** The cases in which {@link #tick} and the heat state zero the speed every tick. */
+    @Override
+    public boolean isHeldInPlace() {
+        return !isEngineOn()
+                || isParkingBrakeOn() && getState() != HeatState.BROKEN
+                || getState() == HeatState.COLD;
+    }
+
     /** A locomotive is not dragged by the track; only the brake slows it. See TrackMovement. */
     @Override
     protected boolean hasTrackDrag() {

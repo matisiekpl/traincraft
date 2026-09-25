@@ -16,7 +16,6 @@ import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 
 import traincraft.Traincraft;
-import traincraft.vehicle.entity.LocomotiveEntity;
 import traincraft.vehicle.entity.RollingStockEntity;
 
 import java.util.HashSet;
@@ -24,8 +23,9 @@ import java.util.LinkedHashSet;
 import java.util.Set;
 
 /**
- * CE's rolling-stock and additional collision handlers, sharing contact detection and pair
- * bookkeeping. Bogies are simulation points in this port, so their contacts are checked here.
+ * CE's collision handlers for everything but other stock -- mobs, players, items and vanilla
+ * minecarts -- sharing contact detection and pair bookkeeping. Bogies are simulation points in
+ * this port, so their contacts are checked here. Stock against stock is {@link StockContacts}.
  */
 public final class StockCollision {
     private long lastTick = Long.MIN_VALUE;
@@ -95,14 +95,10 @@ public final class StockCollision {
             mob.startRiding(self);
             return;
         }
-        boolean cart = other instanceof RollingStockEntity || other instanceof AbstractMinecart;
+        // Stock against stock is StockContacts' job, once everything has moved this tick.
+        if (other instanceof RollingStockEntity) return;
+        boolean cart = other instanceof AbstractMinecart;
         if (!cart && (!other.isPushable() || other.isPassenger())) return;
-        if (other instanceof RollingStockEntity stock
-                && (self.cartLinked1 == stock
-                        || self.cartLinked2 == stock
-                        || stock.cartLinked1 == self
-                        || stock.cartLinked2 == self
-                        || self.consist != null && self.consist == stock.consist)) return;
 
         Vec3 delta = separation(self, other);
         double distance = delta.horizontalDistance();
@@ -112,10 +108,6 @@ public final class StockCollision {
 
         long tick = self.level().getGameTime();
         if (self.collisions().hasHandled(tick, other.getId())) return;
-        if (other instanceof RollingStockEntity stock) {
-            if (stock.collisions().hasHandled(tick, self.getId())) return;
-            stock.collisions().handled.add(self.getId());
-        }
         self.collisions().handled.add(other.getId());
 
         // Additional CollisionHandler's inverse-distance impulse, also used by short wagons.
@@ -123,10 +115,7 @@ public final class StockCollision {
         double dx = delta.x / distance * strength;
         double dz = delta.z / distance * strength;
         if (cart) {
-            pushStock(self, other, dx, dz);
-            if (other instanceof RollingStockEntity stock) {
-                separate(self, stock, delta, distance, reach - BUFFER_GIVE);
-            }
+            pushMinecart(self, other, dx, dz);
         } else {
             pushOther(self, other, delta, dx, dz);
         }
@@ -149,45 +138,17 @@ public final class StockCollision {
         return lateral < (self.getBbWidth() + other.getBbWidth()) * 0.5;
     }
 
-    private static final double BUFFER_GIVE = 0.15;
-
-    private static void separate(
-            RollingStockEntity self, RollingStockEntity other, Vec3 delta, double distance, double minimum) {
-        if (distance >= minimum) return;
-        Vec3 axis = new Vec3(delta.x, 0.0, delta.z).scale(1.0 / distance);
-        double overlap = minimum - distance;
-        double selfApproach = self.getDeltaMovement().dot(axis);
-        double otherApproach = -other.getDeltaMovement().dot(axis);
-        double selfShare =
-                selfApproach > 0 && otherApproach > 0 ? 0.5 : otherApproach > 0 ? 0.0 : 1.0;
-        self.shiftAlongTrack(axis.scale(-overlap * selfShare));
-        other.shiftAlongTrack(axis.scale(overlap * (1.0 - selfShare)));
-        if (selfApproach > 0) {
-            self.setDeltaMovement(self.getDeltaMovement().subtract(axis.scale(selfApproach)));
-        }
-        if (otherApproach > 0) {
-            other.setDeltaMovement(other.getDeltaMovement().add(axis.scale(otherApproach)));
-        }
-    }
-
-    private static void pushStock(RollingStockEntity self, Entity other, double d0, double d1) {
+    /** CE's cart-to-cart exchange, kept for vanilla minecarts, which are not on Traincraft's axis. */
+    private static void pushMinecart(RollingStockEntity self, Entity other, double d0, double d1) {
         double d9 = other.getDeltaMovement().x + self.getDeltaMovement().x;
         double d8 = other.getDeltaMovement().z + self.getDeltaMovement().z;
-        boolean otherPowered =
-                other instanceof RollingStockEntity stock
-                        ? stock.isLocomotive()
-                        : other instanceof MinecartFurnace;
+        boolean otherPowered = other instanceof MinecartFurnace;
         boolean selfPowered = self.isLocomotive();
 
         if (otherPowered == selfPowered) {
-            // Neither drives the other: they share out what they were both carrying, and a
-            // locomotive being run into reverses the sign of it.
+            // Neither drives the other: they share out what they were both carrying.
             d9 *= selfPowered ? 0.4 : 0.5;
             d8 *= selfPowered ? 0.4 : 0.5;
-            if (other instanceof LocomotiveEntity) {
-                d9 *= -1.0;
-                d8 *= -1.0;
-            }
             float retention = selfPowered ? 0.2F : 0.02F;
             double separationScale = selfPowered ? 1.0 : 0.5;
             scale(self, retention);

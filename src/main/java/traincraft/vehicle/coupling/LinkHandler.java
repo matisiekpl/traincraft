@@ -51,7 +51,7 @@ public final class LinkHandler {
      * into it.
      */
     private void searchForPartner(RollingStockEntity self, VehicleEnd end) {
-        if (self.level().isClientSide() || self.updateTicks < SETTLED_TICKS) {
+        if (self.level().isClientSide() || self.updateTicks < SETTLED_TICKS || self.isWrecked()) {
             return;
         }
         double reach = self.getLinkageDistance(self);
@@ -116,7 +116,7 @@ public final class LinkHandler {
             VehicleEnd end,
             RollingStockEntity other,
             VehicleEnd theirs) {
-        if (other == self || other.updateTicks < SETTLED_TICKS) {
+        if (other == self || other.updateTicks < SETTLED_TICKS || other.isWrecked()) {
             return false;
         }
         if (!other.isArmed() || other.hasLink(theirs)) {
