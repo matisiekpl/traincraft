@@ -20,7 +20,7 @@ export const credits = [
   },
   {
     role: '1.7.10 Community Edition',
-    names: 'EternalBlueFlame and NitroxydeX',
+    names: 'Bidahochi, EternalBlueFlame and NitroxydeX',
   },
 ]
 
@@ -28,6 +28,7 @@ export const originalLinks = [
   {label: 'traincraft-mod.com', href: 'http://www.traincraft-mod.com'},
   {label: 'CurseForge project', href: 'https://www.curseforge.com/minecraft/mc-mods/traincraft'},
   {label: 'Traincraft Discord', href: 'https://discord.gg/SgpnCnK'},
+  {label: "Bidahochi's FoxMods & BAP Discord", href: 'https://discord.gg/QZp59fq'},
 ]
 
 export const icons = [

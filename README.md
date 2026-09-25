@@ -35,7 +35,7 @@ and locomotive operation. Unit tests do not replace visual checks in the client.
 
 - Port to Minecraft 26.2 and NeoForge: Mateusz Woźniak
 - Traincraft: Spitfire4466 and Mrbrutal
-- 1.7.10 Community Edition: EternalBlueFlame and NitroxydeX
+- 1.7.10 Community Edition: Bidahochi, EternalBlueFlame and NitroxydeX
 
 The locomotives, rolling stock, models, textures and track designs come from the original
 Traincraft and its Community Edition.
@@ -43,3 +43,4 @@ Traincraft and its Community Edition.
 - [traincraft-mod.com](http://www.traincraft-mod.com)
 - [CurseForge project](https://www.curseforge.com/minecraft/mc-mods/traincraft)
 - [Traincraft Discord](https://discord.gg/SgpnCnK)
+- [Bidahochi's FoxMods & BAP Discord](https://discord.gg/QZp59fq)
