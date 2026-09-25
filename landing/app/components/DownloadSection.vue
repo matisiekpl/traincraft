@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import {site} from '~/data/site'
+
+const trackDownload = () => window.plausible('Download')
 </script>
 
 <template>
@@ -18,6 +20,7 @@ import {site} from '~/data/site'
         <a
           v-if="site.released"
           :href="site.downloadUrl"
+          @click="trackDownload"
           class="pixel-btn pixel-btn-primary px-7 py-4 text-xs sm:text-sm"
           rel="noopener"
         >Download the jar</a>
