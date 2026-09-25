@@ -8,8 +8,6 @@ and NitroxydeX.
 
 Landing page and download: [traincraft.mateuszwozniak.com](https://traincraft.mateuszwozniak.com)
 
-![Traincraft locomotives on ballast track in Minecraft 26.2](landing/public/screenshots/hero@1200.webp)
-
 ![A diesel locomotive and a shunter at a passing loop, with the cab HUD showing speed, heat and fuel](landing/public/screenshots/cab-hud.webp)
 
 ![Track, signals and a station in a village, with a diesel locomotive and a tank train on the main line](landing/public/screenshots/overview.webp)
