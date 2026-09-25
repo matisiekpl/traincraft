@@ -28,6 +28,7 @@ jobs:
         run: |
           mkdir -p dist
           mv build/libs/tc-*.jar "dist/tc-${GITHUB_REF_NAME}.jar"
+          cp "dist/tc-${GITHUB_REF_NAME}.jar" dist/tc.jar
 
       - uses: actions/upload-artifact@v4
         with:
@@ -37,5 +38,7 @@ jobs:
 
       - uses: softprops/action-gh-release@v2
         with:
-          files: dist/tc-${{ github.ref_name }}.jar
+          files: |
+            dist/tc-${{ github.ref_name }}.jar
+            dist/tc.jar
           fail_on_unmatched_files: true
