@@ -6,27 +6,20 @@ Port of Traincraft to NeoForge by Mateusz Woźniak. Traincraft was originally cr
 Spitfire4466 and Mrbrutal; the 1.7.10 Community Edition was maintained by EternalBlueFlame
 and NitroxydeX.
 
+Landing page and download: [traincraft.mateuszwozniak.com](https://traincraft.mateuszwozniak.com)
+
+![Traincraft locomotives on ballast track in Minecraft 26.2](landing/public/screenshots/hero@1200.webp)
+
+![A diesel locomotive and a shunter at a passing loop, with the cab HUD showing speed, heat and fuel](landing/public/screenshots/cab-hud.webp)
+
+![Track, signals and a station in a village, with a diesel locomotive and a tank train on the main line](landing/public/screenshots/overview.webp)
+
 ## Source Sets
 
 - `main`: railway gameplay, vehicle simulation, client rendering and bundled definitions.
 - `development`: GameTests and scripted client scenarios, excluded from the published JAR.
 - `test`: unit tests and resource contract tests.
 - `tools`: capture orchestration, image comparison and resource generators.
-
-## Architecture
-
-`traincraft.track` owns placement plans and track geometry. `TrackPlacer` applies plans to
-the world; `TrackBreaker` removes only blocks belonging to the selected assembly.
-Plan offsets are relative to the placement origin. Owner-relative offsets are calculated
-by `TrackPlan`, using the same owning rail selected during placement.
-
-`traincraft.vehicle` separates entity integration from fuel, boiler, control and inventory
-state. Client rendering consumes per-entity animation state and immutable model geometry.
-`traincraft.bootstrap` registers gameplay content; development registration is separate.
-
-Track definitions live in `data/tc/track_definitions.json` and
-`data/tc/track_placements.json`. Vehicle definitions live in `data/tc/vehicles.json`.
-Vehicle meshes live in `assets/tc/vehicle_models`.
 
 ## Verification
 
