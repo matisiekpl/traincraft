@@ -3,6 +3,7 @@ package traincraft.village;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -58,7 +59,7 @@ class VillageDataTest {
             JsonObject trade = new Gson().fromJson(Files.readString(path), JsonObject.class);
             checkItem(trade.get("wants"), items, problems, path);
             checkItem(trade.get("gives"), items, problems, path);
-            trades.add("tc:" + DATA.resolve("villager_trade").relativize(path).toString().replace(".json", ""));
+            trades.add("tc:" + DATA.resolve("villager_trade").relativize(path).toString().replace(File.separatorChar, '/').replace(".json", ""));
         }
         for (int level = 1; level <= 5; level++) {
             JsonObject tag = new Gson().fromJson(Files.readString(DATA.resolve("tags/villager_trade/station_chief/level_" + level + ".json")), JsonObject.class);
