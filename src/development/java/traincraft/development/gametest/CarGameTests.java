@@ -1,5 +1,6 @@
 package traincraft.development.gametest;
 
+import java.util.List;
 import java.util.Map;
 import java.util.function.Consumer;
 import net.minecraft.core.BlockPos;
@@ -11,9 +12,12 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.BaseRailBlock;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.RailBlock;
+import net.minecraft.world.level.block.state.properties.RailShape;
 import net.minecraft.world.level.material.Fluids;
 import traincraft.bootstrap.EntityRegistry;
 import traincraft.production.ProductionRegistry;
+import traincraft.vehicle.coupling.StockContacts;
 import traincraft.vehicle.entity.TracksBuilderEntity;
 
 final class CarGameTests {
@@ -26,6 +30,7 @@ final class CarGameTests {
         tests.put("tracks_builder_lays_traincraft_track", CarGameTests::builderLaysTraincraftTrack);
         tests.put("tracks_builder_stops_over_air", CarGameTests::builderStopsOverAir);
         tests.put("tracks_builder_climbs_on_a_slope", CarGameTests::builderLaysSlope);
+        tests.put("tracks_builder_keeps_digging", CarGameTests::builderKeepsDigging);
     }
 
     private static <T extends Entity> T at(GameTestHelper h, EntityType<T> type, int x, int z) {
@@ -179,6 +184,47 @@ final class CarGameTests {
         var ahead = builder.railPosition().east();
         h.assertTrue(h.getLevel().getBlockState(ahead).getBlock() instanceof traincraft.track.block.TrackBlock, "A small straight goes down ahead at rail level");
         h.assertTrue(builder.getItem(TracksBuilderEntity.MATERIALS_FROM + 1).getCount() == 3, "One track item is consumed");
+        h.succeed();
+    }
+
+    /**
+     * A working builder facing solid rock keeps digging and laying track with the collision
+     * solver running, as it does in the level, instead of being derailed against the blocks its
+     * own front end stands in before they are dug.
+     */
+    private static void builderKeepsDigging(GameTestHelper h) {
+        var origin = h.absolutePos(new BlockPos(1, 2, 2));
+        for (int dx = 0; dx < 13; dx++) {
+            for (int dz = -2; dz <= 2; dz++) {
+                h.getLevel().setBlockAndUpdate(origin.offset(dx, 0, dz), Blocks.STONE.defaultBlockState());
+                for (int dy = 1; dy <= 3; dy++) {
+                    var state = dx < 3 ? Blocks.AIR.defaultBlockState() : Blocks.STONE.defaultBlockState();
+                    h.getLevel().setBlockAndUpdate(origin.offset(dx, dy, dz), state);
+                }
+            }
+        }
+        for (int dx = 0; dx < 3; dx++) {
+            h.getLevel().setBlockAndUpdate(
+                    origin.offset(dx, 1, 0), Blocks.RAIL.defaultBlockState().setValue(RailBlock.SHAPE, RailShape.EAST_WEST));
+        }
+        var builder = at(h, EntityRegistry.PASSENGER_TRACKS_BUILDER.get(), 2, 2);
+        builder.setPos(builder.getX(), builder.getY() + 0.2 + traincraft.vehicle.entity.RollingStockEntity.Y_OFFSET, builder.getZ());
+        builder.alignToTrackOnPlacement();
+        h.assertTrue(builder.isOnStraightTrack(), "The builder did not settle on the straight");
+        builder.setItem(TracksBuilderEntity.FUEL_SLOT, new ItemStack(Items.COAL));
+        builder.setItem(TracksBuilderEntity.MATERIALS_FROM + 1, new ItemStack(Items.RAIL, 16));
+        builder.setYRot(-90.0F);
+        builder.setStarted(true);
+        var start = builder.railPosition();
+        for (int i = 0; i < 80; i++) {
+            builder.tick();
+            StockContacts.solve(List.of(builder));
+        }
+        h.assertTrue(!builder.isWrecked(), "The builder derailed against the rock it digs");
+        h.assertTrue(builder.isWorking(), "The builder stopped working: " + builder.statusText());
+        h.assertTrue(builder.getX() > start.getX() + 2.5, "The builder did not advance: " + builder.position());
+        h.assertTrue(h.getLevel().getBlockState(start.east(3)).getBlock() instanceof BaseRailBlock, "No rail three blocks into the rock");
+        h.assertTrue(h.getLevel().getBlockState(start.east(3).above()).isAir(), "The tunnel is not cleared");
         h.succeed();
     }
 }

@@ -327,7 +327,7 @@ public final class StockContacts {
      * it.
      */
     private static @Nullable BlockContact blockContact(RollingStockEntity stock, Group group) {
-        if (!stock.isOnStraightTrack()) return null;
+        if (!stock.stopsAtBlocks() || !stock.isOnStraightTrack()) return null;
         Vec3 motion = stock.getDeltaMovement();
         double speed = motion.horizontalDistance();
         if (speed < 1.0E-4) return null;

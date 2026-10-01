@@ -220,6 +220,12 @@ public abstract class TracksBuilderEntity extends FreightEntity {
         return !isWorking();
     }
 
+    /** While it works the builder digs the blocks its front end stands in; they are no wall. */
+    @Override
+    public boolean stopsAtBlocks() {
+        return !isWorking();
+    }
+
     @Override
     public void tick() {
         super.tick();

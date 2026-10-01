@@ -712,6 +712,15 @@ public abstract class RollingStockEntity extends VehicleEntity implements TrackM
     }
 
     /**
+     * Whether a solid block ahead of the leading end stops this stock, or derails it when it is
+     * going fast enough. A machine that clears its own way says no: its body stands in the
+     * blocks it is about to dig.
+     */
+    public boolean stopsAtBlocks() {
+        return true;
+    }
+
+    /**
      * Leaves the rails after a collision: couplings break, and the body is thrown sideways and
      * skewed across the track, where it lies until a player breaks it up.
      */
