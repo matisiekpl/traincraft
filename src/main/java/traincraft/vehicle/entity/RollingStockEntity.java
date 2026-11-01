@@ -1421,8 +1421,7 @@ public abstract class RollingStockEntity extends VehicleEntity implements TrackM
     }
 
     public int speedKmH() {
-
-        return (int) (TrackMovement.planarSpeed(this) * 6.0 * 36.0);
+        return (int) (TrackMovement.planarSpeed(this) * (TraincraftConfig.REAL_TRAIN_SPEED.get() ? 2.0 : 6.0) * 36.0);
     }
 
     // --- Persistence ------------------------------------------------------------------------

@@ -5,6 +5,8 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
+import net.neoforged.neoforge.client.gui.ConfigurationScreen;
+import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 
 import traincraft.Traincraft;
 
@@ -20,6 +22,7 @@ import traincraft.Traincraft;
 public class TraincraftClient {
     public TraincraftClient(IEventBus modBus, ModContainer container) {
         Traincraft.LOGGER.info("Traincraft client loading");
-        container.registerConfig(ModConfig.Type.CLIENT, TraincraftClientConfig.SPEC);
+        container.registerConfig(ModConfig.Type.CLIENT, TraincraftClientConfig.SPEC, "traincraft-client.toml");
+        container.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
     }
 }

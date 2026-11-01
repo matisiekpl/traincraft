@@ -48,7 +48,7 @@ useHead({
           {'@type': 'Person', name: 'Mrbrutal'},
         ],
         keywords: 'traincraft 26.2, traincraft 26, traincraft neoforge, minecraft 26.2 train mod, traincraft port',
-        softwareVersion: '0.1.0',
+        softwareVersion: '0.2.0',
         codeRepository: site.githubUrl,
       }),
     },
