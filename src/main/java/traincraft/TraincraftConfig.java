@@ -37,20 +37,41 @@ public final class TraincraftConfig {
 
     static {
         ModConfigSpec.Builder builder = new ModConfigSpec.Builder();
-        FUEL_ORES = builder.define("ENABLE_FUEL_ORES_SPAWN", true);
-        COPPER_ORE = builder.define("ENABLE_COPPER_SPAWN", true);
-        STEAM_TRAINS = builder.define("ENABLE_STEAM_TRAINS", true);
-        DIESEL_TRAINS = builder.define("ENABLE_DIESEL_TRAINS", true);
-        ELECTRIC_TRAINS = builder.define("ENABLE_ELECTRIC_TRAINS", true);
-        TRACKS_BUILDER = builder.define("ENABLE_TRACKS_BUILDER", true);
-        TENDERS = builder.define("ENABLE_TENDERS", true);
-        CHUNK_LOADING = builder.define("ENABLE_CHUNK_LOADING", true);
+        FUEL_ORES = builder
+                .comment("Generates oil sand and petroleum ores in new chunks")
+                .worldRestart()
+                .define("ENABLE_FUEL_ORES_SPAWN", true);
+        COPPER_ORE = builder
+                .comment("Generates copper ore in new chunks")
+                .worldRestart()
+                .define("ENABLE_COPPER_SPAWN", true);
+        STEAM_TRAINS = builder
+                .comment("Allows placing steam locomotives")
+                .define("ENABLE_STEAM_TRAINS", true);
+        DIESEL_TRAINS = builder
+                .comment("Allows placing diesel locomotives")
+                .define("ENABLE_DIESEL_TRAINS", true);
+        ELECTRIC_TRAINS = builder
+                .comment("Allows placing electric locomotives")
+                .define("ENABLE_ELECTRIC_TRAINS", true);
+        TRACKS_BUILDER = builder
+                .comment("Allows placing the tracks builder")
+                .define("ENABLE_TRACKS_BUILDER", true);
+        TENDERS = builder
+                .comment("Allows placing tenders")
+                .define("ENABLE_TENDERS", true);
+        CHUNK_LOADING = builder
+                .comment("Lets the chunk loader activator make a locomotive keep the chunks around it loaded")
+                .define("ENABLE_CHUNK_LOADING", true);
         POSSIBLE_COLOURS_IN_CHAT = builder
                 .comment("Disables the chat messages telling you the possible colors when coloring trains with dye")
                 .define("SHOW_POSSIBLE_TRAINS_COLORS_IN_CHAT", true);
-        REAL_TRAIN_SPEED = builder.define("REAL_TRAIN_SPEED", false);
+        REAL_TRAIN_SPEED = builder
+                .comment("Locomotives run three times faster, so the km/h on the speedometer matches the distance covered")
+                .define("REAL_TRAIN_SPEED", false);
         MODPACK_BALANCE = builder
                 .comment("This will disable some of Traincrafts easier recipes to balance Modpacks")
+                .worldRestart()
                 .define("MAKE_MODPACKS_GREAT_AGAIN", false);
         SPLIT_CREATIVE_TAB = builder
                 .comment("setting this to true will split the creative tab in 2, one is used for trains, the other for materials and Tracks.")
@@ -60,6 +81,7 @@ public final class TraincraftConfig {
                 .defineInRange("WINDMILL_CHECK_RADIUS", 1, -1, 10);
         DISABLE_TRAIN_WORKBENCH = builder
                 .comment("disables the train workbench, for those of you who want to use a custom part builder")
+                .worldRestart()
                 .define("DISABLE_TRAIN_WORKBENCH", false);
         WAGON_REMOVAL_NOTICES = builder
                 .comment("When OP and creative mode, tells you the owner of the train or rollingstock you just removed")

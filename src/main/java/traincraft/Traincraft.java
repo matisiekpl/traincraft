@@ -30,7 +30,7 @@ public class Traincraft {
 
     public Traincraft(IEventBus modBus, ModContainer container) {
         LOGGER.info("Traincraft loading");
-        container.registerConfig(ModConfig.Type.COMMON, TraincraftConfig.SPEC);
+        container.registerConfig(ModConfig.Type.COMMON, TraincraftConfig.SPEC, "traincraft-common.toml");
         ConfigCondition.CODECS.register(modBus);
         traincraft.village.VillageRegistry.register(modBus);
         traincraft.production.ProductionRegistry.register(modBus);
